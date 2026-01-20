@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial project setup for Pferdesicht\n\n- Add CLAUDE.md with project guidelines and tone of voice\n- Create directory structure \\(content, assets, src, docs\\)\n- Add .gitignore for common exclusions\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial project setup for Pferdesicht\n\n- Add CLAUDE.md with project guidelines and tone of voice\n- Create directory structure \\(content, assets, src, docs\\)\n- Add .gitignore for common exclusions\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nExpand CLAUDE.md with complete brand documentation\n\n- Add Diana persona \\(30+ years experience, voice guidelines\\)\n- Add Anna persona \\(target audience, 3-layer motivation model\\)\n- Define \"Quiet Luxury\" concept and core fears\n- Add mission statement \"Wissen als Rüstung\"\n- Document content products \\(G18, 12 knowledge clusters\\)\n- List existing brand documents and their versions\n- Add terminology glossary\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
