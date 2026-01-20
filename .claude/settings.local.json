@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial project setup for Pferdesicht\n\n- Add CLAUDE.md with project guidelines and tone of voice\n- Create directory structure \\(content, assets, src, docs\\)\n- Add .gitignore for common exclusions\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
