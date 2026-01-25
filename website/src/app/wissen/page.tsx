@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -9,138 +9,79 @@ import { cn } from "@/lib/utils";
 // Types
 // ============================================
 
-interface Article {
-  slug: string;
+interface PostFrontmatter {
   title: string;
-  excerpt: string;
+  description: string;
+  date: string;
+  author: string;
+  image: string;
+  imageAlt?: string;
   category: string;
-  categorySlug: string;
-  readingTime: string;
-  image?: string;
+  tags?: string[];
+  readingTime?: string;
   featured?: boolean;
 }
 
+interface PostMeta {
+  slug: string;
+  frontmatter: PostFrontmatter;
+}
+
 // ============================================
-// Sample Data
+// Categories
 // ============================================
 
 const categories = [
   { slug: "alle", label: "Alle Artikel" },
-  { slug: "fuetterung", label: "Fütterung" },
-  { slug: "thermoregulation", label: "Thermoregulation" },
-  { slug: "bewegung", label: "Bewegung" },
+  { slug: "fütterung", label: "Fütterung" },
+  { slug: "pflege", label: "Pflege" },
+  { slug: "gesundheit", label: "Gesundheit" },
   { slug: "haltung", label: "Haltung" },
-  { slug: "parasiten", label: "Parasiten" },
-];
-
-const articles: Article[] = [
-  {
-    slug: "fruktan-mythos-oder-gefahr",
-    title: "Fruktan: Mythos oder echte Gefahr?",
-    excerpt:
-      "Was du über Fruktan wirklich wissen musst – und warum die Panik oft übertrieben ist. Ein evidenzbasierter Blick auf die Fakten.",
-    category: "Fütterung",
-    categorySlug: "fuetterung",
-    readingTime: "8 Min.",
-    featured: true,
-  },
-  {
-    slug: "eindecken-wann-wirklich-noetig",
-    title: "Eindecken: Wann ist es wirklich nötig?",
-    excerpt:
-      "Die Thermoregulation des Pferdes verstehen und die richtige Entscheidung treffen – ohne Gruppendruck vom Stall.",
-    category: "Thermoregulation",
-    categorySlug: "thermoregulation",
-    readingTime: "12 Min.",
-    featured: true,
-  },
-  {
-    slug: "fellwechsel-unterstuetzen",
-    title: "Fellwechsel richtig unterstützen",
-    excerpt:
-      "Der Fellwechsel ist eine Höchstleistung für den Pferdekörper. So kannst du dein Pferd sinnvoll unterstützen.",
-    category: "Fütterung",
-    categorySlug: "fuetterung",
-    readingTime: "10 Min.",
-  },
-  {
-    slug: "anweiden-schritt-fuer-schritt",
-    title: "Anweiden: Der sichere Weg auf die Weide",
-    excerpt:
-      "Schritt-für-Schritt zum erfolgreichen Anweiden. Vermeide die häufigsten Fehler und schütze dein Pferd vor Hufrehe.",
-    category: "Fütterung",
-    categorySlug: "fuetterung",
-    readingTime: "15 Min.",
-  },
-  {
-    slug: "selektive-entwurmung",
-    title: "Selektive Entwurmung: Der moderne Ansatz",
-    excerpt:
-      "Warum blindes Entwurmen der Vergangenheit angehört und wie du mit Kotproben gezielt vorgehst.",
-    category: "Parasiten",
-    categorySlug: "parasiten",
-    readingTime: "11 Min.",
-  },
-  {
-    slug: "offenstall-vs-box",
-    title: "Offenstall vs. Box: Was ist besser?",
-    excerpt:
-      "Die ehrliche Antwort: Es kommt drauf an. Hier erfährst du, welche Faktoren wirklich zählen.",
-    category: "Haltung",
-    categorySlug: "haltung",
-    readingTime: "14 Min.",
-  },
-  {
-    slug: "bewegung-im-winter",
-    title: "Bewegung im Winter: So bleibst du aktiv",
-    excerpt:
-      "Kälte, Matsch, kurze Tage – wie du dein Pferd trotzdem sinnvoll bewegst und fit hältst.",
-    category: "Bewegung",
-    categorySlug: "bewegung",
-    readingTime: "9 Min.",
-  },
-  {
-    slug: "heu-qualitaet-erkennen",
-    title: "Heu-Qualität erkennen und beurteilen",
-    excerpt:
-      "Gutes Heu ist die Basis der Pferdefütterung. Lerne, Qualität zu erkennen – mit allen Sinnen.",
-    category: "Fütterung",
-    categorySlug: "fuetterung",
-    readingTime: "7 Min.",
-  },
+  { slug: "allgemein", label: "Allgemein" },
 ];
 
 // ============================================
 // Article Card Component
 // ============================================
 
-function ArticleCard({ article }: { article: Article }) {
+function ArticleCard({ post }: { post: PostMeta }) {
+  const { slug, frontmatter } = post;
+
   return (
     <Link
-      href={`/wissen/${article.slug}`}
+      href={`/blog/${slug}`}
       className="group block bg-paper rounded-2xl border border-loam-100 shadow-soft overflow-hidden hover:shadow-soft-lg transition-shadow"
     >
-      {/* Image Placeholder */}
-      <div className="aspect-[16/10] bg-gradient-to-br from-sage-100 to-sage-50 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <svg
-            className="w-12 h-12 text-sage-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1}
-              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
-        </div>
+      {/* Image */}
+      <div className="aspect-[16/10] relative overflow-hidden bg-sage-50">
+        {frontmatter.image ? (
+          <Image
+            src={frontmatter.image}
+            alt={frontmatter.imageAlt || frontmatter.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg
+              className="w-12 h-12 text-sage-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+        )}
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
           <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-loam-700 rounded-full">
-            {article.category}
+            {frontmatter.category}
           </span>
         </div>
       </div>
@@ -148,13 +89,15 @@ function ArticleCard({ article }: { article: Article }) {
       {/* Content */}
       <div className="p-6">
         <h3 className="font-serif text-xl text-loam-900 mb-3 group-hover:text-sage-700 transition-colors line-clamp-2">
-          {article.title}
+          {frontmatter.title}
         </h3>
         <p className="text-loam-600 text-sm leading-relaxed mb-4 line-clamp-3">
-          {article.excerpt}
+          {frontmatter.description}
         </p>
         <div className="flex items-center justify-between">
-          <span className="text-xs text-loam-500">{article.readingTime} Lesezeit</span>
+          <span className="text-xs text-loam-500">
+            {frontmatter.readingTime || "5 Min."} Lesezeit
+          </span>
           <span className="text-sage-600 text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
             Lesen
             <svg
@@ -181,47 +124,60 @@ function ArticleCard({ article }: { article: Article }) {
 // Featured Article Card
 // ============================================
 
-function FeaturedArticleCard({ article }: { article: Article }) {
+function FeaturedArticleCard({ post }: { post: PostMeta }) {
+  const { slug, frontmatter } = post;
+
   return (
     <Link
-      href={`/wissen/${article.slug}`}
+      href={`/blog/${slug}`}
       className="group block bg-paper rounded-2xl border border-loam-100 shadow-soft overflow-hidden hover:shadow-soft-lg transition-shadow"
     >
       <div className="grid md:grid-cols-2">
-        {/* Image Placeholder */}
-        <div className="aspect-[16/10] md:aspect-auto bg-gradient-to-br from-sage-100 to-sage-50 relative overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <svg
-              className="w-16 h-16 text-sage-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-          </div>
+        {/* Image */}
+        <div className="aspect-[16/10] md:aspect-auto relative overflow-hidden bg-sage-50">
+          {frontmatter.image ? (
+            <Image
+              src={frontmatter.image}
+              alt={frontmatter.imageAlt || frontmatter.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <svg
+                className="w-16 h-16 text-sage-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+          )}
         </div>
 
         {/* Content */}
         <div className="p-8 flex flex-col justify-center">
           <div className="mb-4">
             <span className="px-3 py-1 bg-sage-100 text-xs font-medium text-sage-700 rounded-full">
-              {article.category}
+              {frontmatter.category}
             </span>
           </div>
           <h3 className="font-serif text-2xl lg:text-3xl text-loam-900 mb-4 group-hover:text-sage-700 transition-colors">
-            {article.title}
+            {frontmatter.title}
           </h3>
-          <p className="text-loam-600 leading-relaxed mb-6">
-            {article.excerpt}
+          <p className="text-loam-600 leading-relaxed mb-6 line-clamp-3">
+            {frontmatter.description}
           </p>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-loam-500">{article.readingTime} Lesezeit</span>
+            <span className="text-sm text-loam-500">
+              {frontmatter.readingTime || "5 Min."} Lesezeit
+            </span>
             <span className="text-sage-600 font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
               Artikel lesen
               <svg
@@ -250,14 +206,37 @@ function FeaturedArticleCard({ article }: { article: Article }) {
 // ============================================
 
 export default function WissenPage() {
+  const [posts, setPosts] = useState<PostMeta[]>([]);
   const [activeCategory, setActiveCategory] = useState("alle");
+  const [isLoading, setIsLoading] = useState(true);
 
-  const featuredArticles = articles.filter((a) => a.featured);
-  const filteredArticles =
+  // Fetch posts from API
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const response = await fetch("/api/posts");
+        if (response.ok) {
+          const data = await response.json();
+          setPosts(data);
+        }
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchPosts();
+  }, []);
+
+  // Filter posts
+  const featuredPosts = posts.filter((p) => p.frontmatter.featured);
+  const filteredPosts =
     activeCategory === "alle"
-      ? articles.filter((a) => !a.featured)
-      : articles.filter(
-          (a) => a.categorySlug === activeCategory && !a.featured
+      ? posts.filter((p) => !p.frontmatter.featured)
+      : posts.filter(
+          (p) =>
+            p.frontmatter.category.toLowerCase() === activeCategory &&
+            !p.frontmatter.featured
         );
 
   return (
@@ -281,15 +260,15 @@ export default function WissenPage() {
       </section>
 
       {/* Featured Articles */}
-      {featuredArticles.length > 0 && (
+      {!isLoading && featuredPosts.length > 0 && (
         <section className="py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-2xl text-loam-900 mb-8">
               Empfohlene Artikel
             </h2>
             <div className="grid lg:grid-cols-2 gap-8">
-              {featuredArticles.map((article) => (
-                <FeaturedArticleCard key={article.slug} article={article} />
+              {featuredPosts.slice(0, 2).map((post) => (
+                <FeaturedArticleCard key={post.slug} post={post} />
               ))}
             </div>
           </div>
@@ -318,11 +297,27 @@ export default function WissenPage() {
             ))}
           </div>
 
-          {/* Articles Grid */}
-          {filteredArticles.length > 0 ? (
+          {/* Loading State */}
+          {isLoading ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredArticles.map((article) => (
-                <ArticleCard key={article.slug} article={article} />
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div
+                  key={i}
+                  className="bg-paper rounded-2xl overflow-hidden border border-loam-100 animate-pulse"
+                >
+                  <div className="aspect-[16/10] bg-loam-100" />
+                  <div className="p-6 space-y-3">
+                    <div className="h-6 bg-loam-100 rounded w-3/4" />
+                    <div className="h-4 bg-loam-100 rounded w-full" />
+                    <div className="h-4 bg-loam-100 rounded w-2/3" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : filteredPosts.length > 0 ? (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredPosts.map((post) => (
+                <ArticleCard key={post.slug} post={post} />
               ))}
             </div>
           ) : (
