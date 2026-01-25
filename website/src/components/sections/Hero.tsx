@@ -40,7 +40,7 @@ export function Hero({
   headline,
   subheadline,
   actions,
-  backgroundImage = "/images/heroes/hero-pferd-winter-schnee-v4.png",
+  backgroundImage = "/images/hero-pferd-winter-schnee-v4.png",
   className,
   children,
 }: HeroProps) {

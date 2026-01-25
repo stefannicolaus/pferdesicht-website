@@ -34,8 +34,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/heroes/quiz-hero-desktop-v2.png"
-            alt="Pferd auf der Koppel"
+            src="/hero-koppel.png"
+            alt="Braunes Pferd mit weißer Blesse im goldenen Licht"
             fill
             className="object-cover"
             priority
@@ -201,7 +201,7 @@ export default function Home() {
             {/* Image */}
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/content/pferd-fell-textur.png"
+                src="/images/Diana_Pferdesicht.jpeg"
                 alt="Diana von Pferdesicht"
                 fill
                 className="object-cover"
