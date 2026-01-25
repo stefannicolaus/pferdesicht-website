@@ -284,7 +284,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {/* Block 1 - Experten-Netzwerk */}
             <div>
               <div className="flex items-center gap-3 mb-4">
@@ -299,12 +299,12 @@ export default function Home() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
                     />
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M12 5.5v6M9 8.5h6"
+                      d="M12 10.5v3m0 0v3m0-3h3m-3 0H9"
                     />
                   </svg>
                 </div>
@@ -350,6 +350,37 @@ export default function Home() {
                 Seil fällt. Ein Pferd, das bei dir bleibt – nicht weil es muss, sondern
                 weil es sich in jedem Moment freiwillig und voller Vertrauen für dich
                 entscheidet.
+              </p>
+            </div>
+
+            {/* Block 3 - Therapeutische Perspektive */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 text-sage-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-medium text-sage-600 uppercase tracking-wider">
+                  Die therapeutische Perspektive
+                </h3>
+              </div>
+              <p className="text-loam-600 leading-relaxed">
+                16 Jahre Reittherapie haben mich gelehrt: Das Pferd reagiert nie
+                grundlos – es spiegelt. Ich habe über 200 Menschen begleitet und dabei
+                gesehen, was normale Trainer oft übersehen: Die Beziehung zwischen
+                Mensch und Pferd ist keine Einbahnstraße. Wenn du verstehst, warum dein
+                Pferd reagiert, findest du die Lösung.
               </p>
             </div>
           </div>
