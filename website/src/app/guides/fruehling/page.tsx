@@ -50,7 +50,7 @@ const modules = [
     number: "04",
     title: "Parasiten & Entwurmung",
     description:
-      "Schluss mit blindem Entwurmen nach Kalender. Lerne den modernen, evidenzbasierten Ansatz der selektiven Entwurmung.",
+      "Schluss mit blindem Entwurmen nach Kalender. Lerne den modernen Ansatz der selektiven Entwurmung – fundiert recherchiert und im Stall bewährt.",
     topics: [
       "Welche Parasiten sind wirklich relevant?",
       "Kotproben richtig nutzen",
@@ -68,7 +68,7 @@ const faqs = [
   {
     question: "Für wen ist der Frühlings-Guide geeignet?",
     answer:
-      "Der Guide ist für alle Pferdebesitzer gedacht, die fundiertes Wissen suchen – egal ob Anfänger oder erfahren. Die Inhalte sind verständlich erklärt, aber wissenschaftlich fundiert. Besonders profitieren Besitzer von Pferden mit Stoffwechselproblemen oder erhöhtem Hufrehe-Risiko.",
+      "Der Guide ist für alle Pferdebesitzer gedacht, die fundiertes Wissen suchen – egal ob Anfänger oder erfahren. Die Inhalte sind verständlich erklärt und im Stall-Alltag getestet. Besonders profitieren Besitzer von Pferden mit Stoffwechselproblemen oder erhöhtem Hufrehe-Risiko.",
   },
   {
     question: "Wie erhalte ich Zugang nach dem Kauf?",
@@ -170,15 +170,15 @@ export default function FruehlingGuidePage() {
               </h1>
               <p className="text-xl text-loam-300 leading-relaxed mb-8">
                 Alles, was du über Anweiden, Fellwechsel, Fütterung und
-                Parasiten wissen musst – evidenzbasiert, praxisnah und
-                verständlich erklärt.
+                Parasiten wissen musst – fundiert recherchiert, im Alltag
+                getestet und verständlich erklärt.
               </p>
 
               {/* Key Points */}
               <ul className="space-y-3 mb-10">
                 {[
                   "4 Module mit über 25.000 Wörtern",
-                  "Wissenschaftlich fundiert, verständlich erklärt",
+                  "Fundiert recherchiert, verständlich erklärt",
                   "Konkrete Handlungspläne und Checklisten",
                   "14 Tage Geld-zurück-Garantie",
                 ].map((point, index) => (
@@ -384,9 +384,9 @@ export default function FruehlingGuidePage() {
                     d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                   />
                 ),
-                title: "Evidenzbasiert",
+                title: "Fundiert recherchiert",
                 description:
-                  "Alle Inhalte basieren auf aktuellen wissenschaftlichen Erkenntnissen – keine Mythen, keine Traditionen ohne Fundament.",
+                  "Für dich sortiert und geprüft – keine Mythen, keine Traditionen ohne Fundament, sondern Wissen aus 30 Jahren Erfahrung.",
               },
               {
                 icon: (

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Über Diana",
   description:
-    "Lerne Diana kennen – 30+ Jahre Pferdeerfahrung, Reittherapeutin und Gründerin von Pferdesicht. Evidenzbasiertes Wissen für verantwortungsvolle Pferdebesitzer.",
+    "Lerne Diana kennen – 30+ Jahre Pferdeerfahrung, Reittherapeutin und Gründerin von Pferdesicht. Fundiertes Wissen, im Alltag getestet.",
 };
 
 // ============================================
@@ -363,8 +363,8 @@ export default function UeberDianaPage() {
             Bereit für den Perspektivwechsel?
           </h2>
           <p className="text-xl text-loam-300 mb-10 max-w-2xl mx-auto">
-            Starte mit meinem Frühlings-Guide – über 25.000 Wörter
-            evidenzbasiertes Wissen zu Anweiden, Fellwechsel, Fütterung und
+            Starte mit meinem Frühlings-Guide – über 25.000 Wörter fundiert
+            recherchiertes Wissen zu Anweiden, Fellwechsel, Fütterung und
             Parasiten.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

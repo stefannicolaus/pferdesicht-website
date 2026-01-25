@@ -3,11 +3,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Evidenzbasiertes Wissen für verantwortungsvolle Pferdebesitzer. Fundiert recherchiert, verständlich erklärt.",
+    "Wissen für verantwortungsvolle Pferdebesitzer. Fundiert recherchiert, verständlich erklärt, im Alltag getestet.",
   openGraph: {
     title: "Blog | Pferdesicht",
     description:
-      "Evidenzbasiertes Wissen für verantwortungsvolle Pferdebesitzer.",
+      "Wissen für verantwortungsvolle Pferdebesitzer – fundiert recherchiert und im Alltag getestet.",
   },
 };
 

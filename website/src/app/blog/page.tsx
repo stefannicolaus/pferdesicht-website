@@ -111,8 +111,8 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="text-xl text-loam-600 max-w-2xl">
-            Evidenzbasiertes Wissen für verantwortungsvolle Pferdebesitzer.
-            Fundiert recherchiert, verständlich erklärt.
+            Wissen, das ich für dich recherchiert, geprüft und im Alltag
+            getestet habe. Verständlich erklärt – aus 30 Jahren Erfahrung.
           </p>
         </div>
       </section>

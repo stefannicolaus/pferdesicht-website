@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wissen",
   description:
-    "Evidenzbasierte Artikel zu Pferdefütterung, Haltung, Thermoregulation und mehr. Fundiertes Wissen von Diana – sortiert, verständlich und praxisnah.",
+    "Artikel zu Pferdefütterung, Haltung, Thermoregulation und mehr. Von Diana recherchiert, sortiert und im Alltag getestet – verständlich und praxisnah.",
 };
 
 export default function WissenLayout({

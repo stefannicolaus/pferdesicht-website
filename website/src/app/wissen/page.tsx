@@ -252,8 +252,9 @@ export default function WissenPage() {
               Fundiertes Wissen für dein Pferd
             </h1>
             <p className="text-xl text-loam-600 leading-relaxed">
-              Evidenzbasierte Artikel zu Fütterung, Haltung, Gesundheit und
-              mehr. Sortiert, verständlich und praxisnah – von Diana für dich.
+              Wissen, das ich für dich recherchiert, geprüft und im Stall-Alltag
+              getestet habe. Sortiert und verständlich – damit du nicht 47 Tabs
+              offen haben musst.
             </p>
           </div>
         </div>

@@ -98,7 +98,7 @@ export const navigation: NavItem[] = [
   {
     label: "Wissen",
     href: "/wissen",
-    description: "Evidenzbasiertes Wissen zur Pferdehaltung",
+    description: "Fundiert recherchiert, verständlich erklärt",
     children: [
       {
         label: "Alle Artikel",
@@ -180,7 +180,7 @@ export const footerNavigation = {
 export const branding = {
   name: "Pferdesicht",
   tagline: "Vertraue deiner Perspektive.",
-  description: "Evidenzbasierte Pferdehaltung im DACH-Raum",
+  description: "Fundiertes Wissen für Pferdebesitzer im DACH-Raum",
   founder: "Diana",
   founderTitle: "Gründerin & Reittherapeutin",
 
@@ -206,8 +206,8 @@ export const branding = {
   // SEO defaults
   seo: {
     titleTemplate: "%s | Pferdesicht",
-    defaultTitle: "Pferdesicht – Evidenzbasierte Pferdehaltung",
-    defaultDescription: "Wissen als Rüstung: Diana hilft dir, fundierte Entscheidungen für dein Pferd zu treffen. Evidenzbasierte Tipps für Fütterung, Haltung und mehr.",
+    defaultTitle: "Pferdesicht – Fundiertes Wissen für dein Pferd",
+    defaultDescription: "Wissen als Rüstung: Diana hilft dir, fundierte Entscheidungen für dein Pferd zu treffen. Recherchiert, sortiert und im Alltag getestet.",
     locale: "de_DE",
     siteName: "Pferdesicht",
   },

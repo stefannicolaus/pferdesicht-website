@@ -18,11 +18,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pferdesicht – Evidenzbasierte Pferdehaltung",
+    default: "Pferdesicht – Fundiertes Wissen für dein Pferd",
     template: "%s | Pferdesicht",
   },
   description:
-    "Wissen als Rüstung: Diana hilft dir, fundierte Entscheidungen für dein Pferd zu treffen. Evidenzbasierte Tipps für Fütterung, Haltung und mehr.",
+    "Wissen als Rüstung: Diana hilft dir, fundierte Entscheidungen für dein Pferd zu treffen. Recherchiert, sortiert und im Alltag getestet.",
   keywords: [
     "Pferdehaltung",
     "Pferdefütterung",
