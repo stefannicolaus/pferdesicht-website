@@ -1,0 +1,293 @@
+/* Google Fonts - EB Garamond & Poppins */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ============================================
+   Pferdesicht Design System - CSS Variables
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --color-loam: #2c2a25;
+  --color-sage: #78866b;
+  --color-gold: #c8a476;
+  --color-bg-light: #f3f0eb;
+  --color-paper: #faf9f7;
+
+  /* Semantic Colors */
+  --background: var(--color-paper);
+  --foreground: var(--color-loam);
+  --accent: var(--color-sage);
+  --accent-warm: var(--color-gold);
+
+  /* Typography */
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
+
+/* Tailwind v4 Theme Integration */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  /* Custom Colors */
+  --color-loam: #2c2a25;
+  --color-sage: #78866b;
+  --color-gold: #c8a476;
+  --color-bg-light: #f3f0eb;
+  --color-paper: #faf9f7;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use serif font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--color-loam);
+}
+
+/* ============================================
+   Paper Grain Effect
+   Subtle texture for "Organic Luxury" feel
+   ============================================ */
+
+.bg-paper-grain {
+  background-color: var(--color-paper);
+  position: relative;
+}
+
+.bg-paper-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* ============================================
+   Warm Film Grain Effect
+   Adds nostalgic warmth to hero sections
+   ============================================ */
+
+.warm-film-grain {
+  position: relative;
+}
+
+.warm-film-grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
+  opacity: 0.06;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Additional warm tint layer */
+.warm-film-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(200, 164, 118, 0.08) 0%,
+    rgba(120, 134, 107, 0.05) 50%,
+    rgba(200, 164, 118, 0.08) 100%
+  );
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* ============================================
+   Hero Text Shadow
+   Elegant shadow for text over images
+   ============================================ */
+
+.hero-text-shadow {
+  text-shadow:
+    0 2px 4px rgba(44, 42, 37, 0.12),
+    0 4px 12px rgba(44, 42, 37, 0.08),
+    0 8px 24px rgba(44, 42, 37, 0.06);
+}
+
+/* Stronger variant for light backgrounds */
+.hero-text-shadow-strong {
+  text-shadow:
+    0 2px 4px rgba(44, 42, 37, 0.2),
+    0 4px 16px rgba(44, 42, 37, 0.15),
+    0 8px 32px rgba(44, 42, 37, 0.1);
+}
+
+/* ============================================
+   Tactile Button
+   Physical, "pressable" feeling buttons
+   ============================================ */
+
+.tactile-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 1px 2px rgba(44, 42, 37, 0.08),
+    0 2px 4px rgba(44, 42, 37, 0.06),
+    0 4px 8px rgba(44, 42, 37, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
+}
+
+.tactile-button:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 2px 4px rgba(44, 42, 37, 0.1),
+    0 4px 8px rgba(44, 42, 37, 0.08),
+    0 8px 16px rgba(44, 42, 37, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.tactile-button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 1px 2px rgba(44, 42, 37, 0.1),
+    0 2px 4px rgba(44, 42, 37, 0.06),
+    inset 0 1px 2px rgba(44, 42, 37, 0.1);
+}
+
+.tactile-button:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+/* Primary variant - Sage Green */
+.tactile-button-primary {
+  background: var(--color-sage);
+  color: white;
+}
+
+.tactile-button-primary:hover {
+  background: #6a7760;
+}
+
+/* Secondary variant - Loam */
+.tactile-button-secondary {
+  background: var(--color-loam);
+  color: white;
+}
+
+.tactile-button-secondary:hover {
+  background: #3d3a33;
+}
+
+/* Ghost variant - Transparent with border */
+.tactile-button-ghost {
+  background: transparent;
+  color: var(--color-loam);
+  box-shadow: inset 0 0 0 1.5px var(--color-loam);
+}
+
+.tactile-button-ghost:hover {
+  background: var(--color-loam);
+  color: white;
+  box-shadow:
+    0 2px 4px rgba(44, 42, 37, 0.1),
+    0 4px 8px rgba(44, 42, 37, 0.08);
+}
+
+/* Gold accent variant */
+.tactile-button-gold {
+  background: var(--color-gold);
+  color: var(--color-loam);
+}
+
+.tactile-button-gold:hover {
+  background: #d4b085;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(120, 134, 107, 0.25);
+  color: var(--color-loam);
+}
+
+/* Focus ring for accessibility */
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: var(--color-sage);
+}
+
+/* Text balance for headings */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Prose styles for content */
+.prose-pferdesicht {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-loam);
+}
+
+.prose-pferdesicht h1,
+.prose-pferdesicht h2,
+.prose-pferdesicht h3,
+.prose-pferdesicht h4 {
+  font-family: var(--font-serif);
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+
+.prose-pferdesicht p {
+  margin-bottom: 1.5em;
+}
+
+.prose-pferdesicht a {
+  color: var(--color-sage);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.prose-pferdesicht a:hover {
+  color: #5f6b54;
+}
