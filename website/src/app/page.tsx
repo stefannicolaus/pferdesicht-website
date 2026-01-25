@@ -280,36 +280,101 @@ export default function Home() {
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-loam-900 mb-6">
               Wissen schafft Gesundheit.
               <br />
-              <span className="text-sage-600">Beziehung schafft Vertrauen.</span>
+              <span className="italic text-sage-600">Beziehung schafft Vertrauen.</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-            {/* Block 1 */}
+            {/* Block 1 - Experten-Netzwerk */}
             <div>
-              <h3 className="font-serif text-2xl text-loam-900 mb-4">
-                Das Experten-Netzwerk
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 text-sage-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 5.5v6M9 8.5h6"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-medium text-sage-600 uppercase tracking-wider">
+                  Das Experten-Netzwerk
+                </h3>
+              </div>
               <p className="text-loam-600 leading-relaxed">
-                15 Jahre Gespräche mit über 1.000 Tierärzten, Therapeuten,
-                Hufschmieden und Ernährungsberatern. Dazu ein Hintergrund im
-                Futtermittelvertrieb und jahrelange eigene Recherche. Dieses
-                Wissen fließt in jeden Artikel, jeden Guide und jede Empfehlung.
+                Mein Wissen ist über 15 Jahre gewachsen. Es basiert auf tausenden
+                Gesprächen mit Tierärzten, Therapeuten, Hufschmieden und
+                Ernährungsexperten – entstanden aus der direkten Praxis unseres
+                Futtermittel-Vertriebs. Ergänzt durch unzählige Stunden intensiver
+                Eigenrecherche. Keine Mythen, sondern Fakten, die dir Sicherheit geben.
               </p>
             </div>
 
-            {/* Block 2 */}
+            {/* Block 2 - Blick hinter die Kulissen */}
             <div>
-              <h3 className="font-serif text-2xl text-loam-900 mb-4">
-                Der Blick hinter die Kulissen
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 text-sage-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-medium text-sage-600 uppercase tracking-wider">
+                  Der Blick hinter die Kulissen
+                </h3>
+              </div>
               <p className="text-loam-600 leading-relaxed">
-                5 Jahre habe ich renommierte Freiheitsdressur-Ausbilder
-                begleitet und beobachtet. Nicht, um Tricks zu lernen, sondern um
-                zu verstehen: Wie entsteht echte Partnerschaft? Die Antwort:
-                Durch freiwillige Verbindung auf Basis von Vertrauen.
+                Durch Kooperationen durfte ich 5 Jahre lang den bekanntesten Trainern
+                der Freiarbeit über die Schulter schauen. Dort habe ich gelernt, was
+                Partnerschaft wirklich bedeutet: Eine Verbindung, die hält, wenn das
+                Seil fällt. Ein Pferd, das bei dir bleibt – nicht weil es muss, sondern
+                weil es sich in jedem Moment freiwillig und voller Vertrauen für dich
+                entscheidet.
               </p>
             </div>
+          </div>
+
+          {/* Link zu Diana's Story */}
+          <div className="text-center mt-12">
+            <Link
+              href="/ueber-diana"
+              className="inline-flex items-center gap-2 text-loam-600 hover:text-sage-700 italic"
+            >
+              Wie ich lernte, meinem Bauchgefühl wieder zu vertrauen – Dianas Story
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
