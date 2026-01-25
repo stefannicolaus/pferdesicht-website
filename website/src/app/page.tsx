@@ -34,7 +34,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/hero-koppel.png"
+            src="/images/heroes/hero-koppel.png"
             alt="Braunes Pferd mit weißer Blesse im goldenen Licht"
             fill
             className="object-cover"
