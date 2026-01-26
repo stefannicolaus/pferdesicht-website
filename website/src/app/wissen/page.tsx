@@ -198,7 +198,7 @@ export default function WissenPage() {
                 </svg>
                 <input
                   type="text"
-                  placeholder="Suche nach Themen, Tipps oder Perspektiven..."
+                  placeholder="Suchen..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className={cn(
@@ -336,6 +336,9 @@ export default function WissenPage() {
                   Mein Wissen ist über 30 Jahre gewachsen: aus tausenden
                   Expertengesprächen, aktueller Veterinärmedizin und dem, was ich
                   auf die harte Tour lernen musste.
+                </p>
+                <p className="font-medium text-loam-900">
+                  Du bist nicht „zu pingelig". Du schaust hin.
                 </p>
               </div>
             </div>

@@ -61,8 +61,10 @@ export default function Home() {
             {/* Subtext with gold border */}
             <div className="border-l-4 border-gold-400 pl-6 mb-10">
               <p className="text-white/90 text-lg leading-relaxed">
-                Du hinterfragst nicht zu viel – du bist konsequent. Hier bekommst
-                du getestete, praxisnahe Informationen zu natürlicher Pferdehaltung.
+                Du bist nicht „pingelig", wenn du Dinge hinterfragst – du bist
+                konsequent. Doch dein Weg zur natürlichen Haltung ist gepflastert
+                mit widersprüchlichen Informationen. Ich filtere das für dich:
+                Fundiert sortiert und im Matsch des Alltags getestet.
               </p>
             </div>
 
@@ -120,8 +122,9 @@ export default function Home() {
               Wie fit ist dein Pferd für den Frühling?
             </h2>
             <p className="text-lg text-loam-600 max-w-2xl mx-auto">
-              Fellwechsel, Anweiden, Parasiten – überall liest du etwas anderes.
-              Unser Quiz sortiert das für dich.
+              Fellwechsel, Anweiden, Parasiten – alle reden gleichzeitig auf dich
+              ein. Aber was ist wirklich wichtig für DEIN Pferd? In 2 Minuten
+              weißt du es.
             </p>
           </div>
 
@@ -263,11 +266,15 @@ export default function Home() {
           <blockquote className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white leading-relaxed mb-8">
             &ldquo;Es gibt nie nur{" "}
             <span className="italic text-gold-400">die eine richtige Lösung</span>,
-            wenn es um dein Pferd geht. Jedes Pferd ist anders. Jede Situation
-            ist anders. Deine Aufgabe ist es, hinzuschauen und die Signale zu
-            lesen.&rdquo;
+            wenn es um dein Pferd geht.&rdquo;
           </blockquote>
-          <p className="text-gold-400 font-medium">— Diana</p>
+          <p className="text-loam-300 text-lg leading-relaxed max-w-2xl mx-auto">
+            Standard-Antworten werden Individuen niemals gerecht. Was für das
+            Pferd deiner Stallkollegin funktioniert, kann für deines der falsche
+            Weg sein. Wer nur nach „Schema F" sucht, überhört oft die leisen
+            Signale. Denn Pferdehaltung ist kein statischer Zustand, sondern ein
+            lebendiger Prozess. Lerne, diese Signale zu lesen und hinzuspüren.
+          </p>
         </div>
       </section>
 
