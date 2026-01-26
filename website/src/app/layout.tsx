@@ -38,6 +38,12 @@ export const metadata: Metadata = {
     locale: "de_DE",
     siteName: "Pferdesicht",
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
