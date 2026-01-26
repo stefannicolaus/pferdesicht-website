@@ -235,7 +235,7 @@ export default function Home() {
                 </p>
               </div>
               <Link
-                href="/ueber-diana"
+                href="/ueber-mich"
                 className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-700 font-medium mt-8"
               >
                 Mehr über mich
@@ -395,7 +395,7 @@ export default function Home() {
           {/* Link zu Diana's Story */}
           <div className="text-center mt-12">
             <Link
-              href="/ueber-diana"
+              href="/ueber-mich"
               className="inline-flex items-center gap-2 text-loam-600 hover:text-sage-700 italic"
             >
               Wie ich lernte, meinem Bauchgefühl wieder zu vertrauen – Dianas Story
@@ -544,6 +544,3 @@ export default function Home() {
     </>
   );
 }
-// Test Auto-Deploy Mon Jan 26 07:55:59 EST 2026
-// Auto-Deploy Test Mon Jan 26 08:17:15 EST 2026
-// Auto-Deploy Test nach Public Mon Jan 26 08:48:14 EST 2026
