@@ -1,14 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Check, ChevronRight } from "lucide-react"
-import Header from "@/components/layout/Header"
-import Footer from "@/components/layout/Footer"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Header />
-
       {/* ============================================ */}
       {/* HERO SECTION - Fullscreen with gradient */}
       {/* ============================================ */}
@@ -284,8 +280,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }
