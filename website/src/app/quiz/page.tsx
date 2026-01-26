@@ -2,632 +2,637 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 // ============================================
 // Types
 // ============================================
 
-interface QuizQuestion {
+interface Answer {
+  value: string;
+  label: string;
+  points?: number;
+  contextTrigger?: {
+    question: string;
+    placeholder: string;
+  };
+  bucket?: "A" | "B" | "C" | "D";
+}
+
+interface Question {
   id: number;
-  category: "fellwechsel" | "anweiden" | "parasiten" | "fuetterung";
   question: string;
-  answers: {
-    text: string;
-    points: number;
-  }[];
-}
-
-interface QuizResult {
-  level: "green" | "yellow" | "red";
-  title: string;
-  description: string;
-  recommendations: string[];
+  answers: Answer[];
 }
 
 // ============================================
-// Quiz Data - 8 Fragen zum Frühlings-Check
+// Quiz Data
 // ============================================
 
-const quizQuestions: QuizQuestion[] = [
-  // FELLWECHSEL (2 Fragen)
+const questions: Question[] = [
   {
     id: 1,
-    category: "fellwechsel",
-    question: "Wie zeigt sich der Fellwechsel bei deinem Pferd aktuell?",
+    question: "Wie ist dein Pferd untergebracht?",
     answers: [
-      { text: "Das Fell löst sich gleichmäßig und mein Pferd wirkt fit", points: 0 },
-      { text: "Der Fellwechsel zieht sich, mein Pferd ist etwas schlapper", points: 1 },
-      { text: "Mein Pferd haart stark, wirkt müde und hat stumpfes Fell", points: 2 },
+      { value: "offenstall", label: "Offenstall / Aktivstall" },
+      { value: "box-paddock", label: "Box mit Paddock" },
+      {
+        value: "vollpension",
+        label: "Vollpension (entscheide wenig selbst)",
+        contextTrigger: {
+          question: "Wie viel Einfluss hast du auf Fütterung und Weidegang?",
+          placeholder: "z.B. Kann ich beim Anweiden mitreden? Wer entscheidet über die Fütterung?"
+        }
+      },
     ],
   },
   {
     id: 2,
-    category: "fellwechsel",
-    question: "Unterstützt du den Fellwechsel gezielt mit Zusatzfutter?",
+    question: "Wie würdest du dein Pferd beschreiben?",
     answers: [
-      { text: "Ja, mit Zink, Biotin oder Kräutern", points: 0 },
-      { text: "Nein, aber ich überlege es", points: 1 },
-      { text: "Nein, ich wusste nicht, dass das sinnvoll ist", points: 2 },
+      {
+        value: "leichtfuttrig",
+        label: "Leichtfuttrig",
+        points: 3,
+        contextTrigger: {
+          question: "Neigt dein Pferd zu Gewichtsproblemen?",
+          placeholder: "z.B. Wird schnell rund, hat Fettpolster am Mähnenkamm..."
+        }
+      },
+      { value: "normal", label: "Normal" },
+      { value: "schwerfuttrig", label: "Schwerfuttrig" },
     ],
   },
-  // ANWEIDEN (2 Fragen)
   {
     id: 3,
-    category: "anweiden",
-    question: "Wie gehst du das Anweiden im Frühjahr an?",
+    question: "Hat dein Pferd eine Vorgeschichte mit...",
     answers: [
-      { text: "Langsam steigern: Start mit 10-15 Min, täglich erhöhen", points: 0 },
-      { text: "Ich achte drauf, aber nicht streng nach Plan", points: 1 },
-      { text: "Mein Pferd kommt direkt auf die Weide, wenn das Gras da ist", points: 2 },
+      {
+        value: "ems-cushing",
+        label: "EMS / Cushing",
+        points: 5,
+        contextTrigger: {
+          question: "Magst du mir kurz erzählen, was passiert ist?",
+          placeholder: "z.B. Wann diagnostiziert? Wie wird es behandelt?"
+        }
+      },
+      {
+        value: "hufrehe",
+        label: "Hufrehe",
+        points: 4,
+        contextTrigger: {
+          question: "Magst du mir kurz erzählen, was passiert ist?",
+          placeholder: "z.B. Wann war der letzte Schub? Welche Auslöser?"
+        }
+      },
+      {
+        value: "kolik",
+        label: "Kolik",
+        points: 1,
+        contextTrigger: {
+          question: "Magst du mir kurz erzählen, was passiert ist?",
+          placeholder: "z.B. Wie oft? Gab es erkennbare Auslöser?"
+        }
+      },
+      { value: "nichts", label: "Nein, nichts davon" },
     ],
   },
   {
     id: 4,
-    category: "anweiden",
-    question: "Kennst du das Hufrehe-Risiko durch Fruktan im Frühlingsgras?",
+    question: "Wie alt ist dein Pferd?",
     answers: [
-      { text: "Ja, ich meide kalte Nächte + sonnige Tage für den Weidegang", points: 0 },
-      { text: "Ich habe davon gehört, bin aber unsicher", points: 1 },
-      { text: "Nein, das ist mir neu", points: 2 },
+      { value: "unter-10", label: "Unter 10 Jahre" },
+      { value: "10-18", label: "10–18 Jahre" },
+      {
+        value: "ueber-18",
+        label: "Über 18 Jahre",
+        points: 2,
+        contextTrigger: {
+          question: "Gibt es altersbedingte Besonderheiten?",
+          placeholder: "z.B. Zahnprobleme, Stoffwechsel, Beweglichkeit..."
+        }
+      },
     ],
   },
-  // PARASITEN (2 Fragen)
   {
     id: 5,
-    category: "parasiten",
-    question: "Wann hast du zuletzt eine Kotprobe deines Pferdes untersuchen lassen?",
+    question: "Wie ist dein Weide-Zugang?",
     answers: [
-      { text: "In den letzten 3 Monaten", points: 0 },
-      { text: "Vor mehr als 6 Monaten", points: 1 },
-      { text: "Noch nie oder ich entwurme einfach regelmäßig ohne Test", points: 2 },
+      { value: "24h", label: "24h Weide", points: 3 },
+      {
+        value: "stundenweide",
+        label: "Stundenweide",
+        points: 1,
+        contextTrigger: {
+          question: "Wie läuft das Anweiden bei euch ab?",
+          placeholder: "z.B. Wer entscheidet? Gibt es einen Plan?"
+        }
+      },
+      {
+        value: "keine",
+        label: "Keine eigene Weide",
+        contextTrigger: {
+          question: "Wie handhabst du die Frühlingsfütterung ohne Weide?",
+          placeholder: "z.B. Gibt es Alternativen? Bekommst du Heu von Frühlingswiesen?"
+        }
+      },
     ],
   },
   {
     id: 6,
-    category: "parasiten",
-    question: "Wie handhabst du die Entwurmung?",
+    question: "Was ist deine GRÖSSTE Sorge im Frühling?",
     answers: [
-      { text: "Selektiv nach Kotproben-Ergebnis", points: 0 },
-      { text: "Festes Intervall (z.B. alle 3 Monate) ohne vorherigen Test", points: 1 },
-      { text: "Wenn mir einfällt, dass es Zeit wird", points: 2 },
+      { value: "anweiden", label: "Anweiden – will keine Hufrehe riskieren", bucket: "A" },
+      { value: "fellwechsel", label: "Fellwechsel – Pferd kommt nicht in Gang", bucket: "B" },
+      { value: "parasiten", label: "Parasiten – unsicher wegen Entwurmung", bucket: "C" },
+      { value: "alles", label: "Alles zusammen – brauche Überblick", bucket: "D" },
     ],
   },
-  // FÜTTERUNG (2 Fragen)
   {
     id: 7,
-    category: "fuetterung",
-    question: "Wie passt du die Fütterung im Frühjahr an?",
+    question: "Wie lange hast du schon ein Pferd?",
     answers: [
-      { text: "Ich reduziere Kraftfutter, wenn das Gras kommt", points: 0 },
-      { text: "Ich behalte alles bei wie im Winter", points: 1 },
-      { text: "Ich bin unsicher, was ich ändern sollte", points: 2 },
+      { value: "unter-2", label: "Unter 2 Jahre" },
+      { value: "2-10", label: "2–10 Jahre" },
+      { value: "ueber-10", label: "Über 10 Jahre" },
     ],
   },
   {
     id: 8,
-    category: "fuetterung",
-    question: "Wie gut kennst du den Nährstoffbedarf deines Pferdes?",
+    question: "Was beschreibt dich am besten?",
     answers: [
-      { text: "Ich habe eine Rationsberechnung machen lassen", points: 0 },
-      { text: "Ich schätze nach Körpergewicht und Aktivität", points: 1 },
-      { text: "Ich füttere nach Gefühl und was andere machen", points: 2 },
+      { value: "google", label: "Ich google viel, aber finde widersprüchliche Infos" },
+      { value: "stallnachbarn", label: "Ich verlasse mich auf Stallnachbarn" },
+      { value: "wissenschaft", label: "Ich will wissenschaftlich fundierte Antworten" },
+      { value: "handlung", label: "Ich brauche konkrete Handlungsschritte" },
     ],
   },
 ];
 
 // ============================================
-// Results based on score
-// ============================================
-
-function getResult(score: number): QuizResult {
-  if (score <= 2) {
-    return {
-      level: "green",
-      title: "Sehr gut vorbereitet!",
-      description:
-        "Du hast den Frühling im Griff. Dein Pferd ist in guten Händen – du achtest auf die wichtigen Details und handelst vorausschauend.",
-      recommendations: [
-        "Weiter so mit der gezielten Fellwechsel-Unterstützung",
-        "Behalte dein Anweide-Protokoll bei",
-        "Die selektive Entwurmung ist der goldene Standard",
-        "Dein Fütterungsmanagement ist durchdacht",
-      ],
-    };
-  } else if (score <= 5) {
-    return {
-      level: "yellow",
-      title: "Gute Basis, aber Optimierungspotenzial",
-      description:
-        "Du machst vieles richtig, aber an einigen Stellen fehlt dir vielleicht noch das Wissen oder die Sicherheit. Das ist normal – und genau dafür bin ich da.",
-      recommendations: [
-        "Fellwechsel: Gezielte Mineralstoff-Gabe kann Wunder wirken",
-        "Anweiden: Ein fester Plan schützt vor Hufrehe",
-        "Parasiten: Eine Kotprobe kostet weniger als eine Wurmkur",
-        "Fütterung: Weniger ist im Frühjahr oft mehr",
-      ],
-    };
-  } else {
-    return {
-      level: "red",
-      title: "Hier lohnt sich ein genauerer Blick",
-      description:
-        "Keine Sorge – dass du hier bist, zeigt ja, dass du hinschaust. In meinem Frühlings-Guide erkläre ich dir Schritt für Schritt, worauf es wirklich ankommt.",
-      recommendations: [
-        "Fellwechsel verstehen: Warum dein Pferd jetzt Unterstützung braucht",
-        "Anweiden ohne Risiko: Der 4-Wochen-Fahrplan",
-        "Entwurmung neu denken: Selektiv statt Schema F",
-        "Fütterung anpassen: Was dein Pferd im Frühjahr wirklich braucht",
-      ],
-    };
-  }
-}
-
-// ============================================
-// Category Labels
-// ============================================
-
-const categoryLabels: Record<QuizQuestion["category"], string> = {
-  fellwechsel: "Fellwechsel",
-  anweiden: "Anweiden",
-  parasiten: "Parasiten",
-  fuetterung: "Fütterung",
-};
-
-// ============================================
-// Component: Progress Bar
-// ============================================
-
-function ProgressBar({ current, total }: { current: number; total: number }) {
-  const progress = (current / total) * 100;
-
-  return (
-    <div className="w-full">
-      <div className="flex justify-between text-sm text-loam-500 mb-2">
-        <span>Frage {current} von {total}</span>
-        <span>{Math.round(progress)}%</span>
-      </div>
-      <div className="h-2 bg-loam-100 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-sage-500 rounded-full transition-all duration-500 ease-out"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-    </div>
-  );
-}
-
-// ============================================
-// Component: Question Card
-// ============================================
-
-function QuestionCard({
-  question,
-  selectedAnswer,
-  onSelect,
-}: {
-  question: QuizQuestion;
-  selectedAnswer: number | null;
-  onSelect: (points: number) => void;
-}) {
-  return (
-    <div className="animate-fade-in">
-      {/* Category Badge */}
-      <span className="inline-block bg-sage-100 text-sage-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
-        {categoryLabels[question.category]}
-      </span>
-
-      {/* Question */}
-      <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8 leading-snug">
-        {question.question}
-      </h2>
-
-      {/* Answers */}
-      <div className="space-y-4">
-        {question.answers.map((answer, index) => (
-          <button
-            key={index}
-            onClick={() => onSelect(answer.points)}
-            className={cn(
-              "w-full text-left p-5 rounded-xl border-2 transition-all duration-200",
-              "hover:border-sage-400 hover:bg-sage-50",
-              selectedAnswer === answer.points
-                ? "border-sage-500 bg-sage-50 ring-2 ring-sage-200"
-                : "border-loam-200 bg-white"
-            )}
-          >
-            <div className="flex items-start gap-4">
-              {/* Radio Circle */}
-              <div
-                className={cn(
-                  "w-6 h-6 rounded-full border-2 flex-shrink-0 mt-0.5",
-                  "flex items-center justify-center transition-colors",
-                  selectedAnswer === answer.points
-                    ? "border-sage-500 bg-sage-500"
-                    : "border-loam-300"
-                )}
-              >
-                {selectedAnswer === answer.points && (
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 12 12">
-                    <circle cx="6" cy="6" r="3" />
-                  </svg>
-                )}
-              </div>
-              {/* Answer Text */}
-              <span className="text-loam-700 leading-relaxed">{answer.text}</span>
-            </div>
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ============================================
-// Component: Result Card
-// ============================================
-
-function ResultCard({
-  result,
-  score,
-  onEmailSubmit,
-  email,
-  setEmail,
-  isSubmitting,
-  isSubmitted,
-}: {
-  result: QuizResult;
-  score: number;
-  onEmailSubmit: (e: React.FormEvent) => void;
-  email: string;
-  setEmail: (email: string) => void;
-  isSubmitting: boolean;
-  isSubmitted: boolean;
-}) {
-  const colors = {
-    green: {
-      bg: "bg-green-50",
-      border: "border-green-200",
-      icon: "text-green-500",
-      badge: "bg-green-100 text-green-700",
-    },
-    yellow: {
-      bg: "bg-amber-50",
-      border: "border-amber-200",
-      icon: "text-amber-500",
-      badge: "bg-amber-100 text-amber-700",
-    },
-    red: {
-      bg: "bg-red-50",
-      border: "border-red-200",
-      icon: "text-red-500",
-      badge: "bg-red-100 text-red-700",
-    },
-  };
-
-  const colorScheme = colors[result.level];
-
-  return (
-    <div className="animate-fade-in">
-      {/* Result Badge */}
-      <div className="text-center mb-8">
-        <div
-          className={cn(
-            "inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6",
-            colorScheme.badge
-          )}
-        >
-          {result.level === "green" && (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          )}
-          {result.level === "yellow" && (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-          )}
-          {result.level === "red" && (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          )}
-          {score} von 16 Punkten
-        </div>
-
-        <h2 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-4">
-          {result.title}
-        </h2>
-        <p className="text-lg text-loam-600 max-w-2xl mx-auto leading-relaxed">
-          {result.description}
-        </p>
-      </div>
-
-      {/* Recommendations */}
-      <div className={cn("rounded-2xl p-6 sm:p-8 mb-10", colorScheme.bg, "border", colorScheme.border)}>
-        <h3 className="font-serif text-xl text-loam-900 mb-4">
-          Deine persönlichen Empfehlungen:
-        </h3>
-        <ul className="space-y-3">
-          {result.recommendations.map((rec, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <svg
-                className={cn("w-5 h-5 mt-0.5 flex-shrink-0", colorScheme.icon)}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              <span className="text-loam-700">{rec}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Email Opt-In */}
-      {!isSubmitted ? (
-        <div className="bg-loam-900 rounded-2xl p-6 sm:p-8 text-center">
-          <div className="w-16 h-16 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg className="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </div>
-          <h3 className="font-serif text-2xl text-white mb-3">
-            Deinen persönlichen Report per E-Mail
-          </h3>
-          <p className="text-loam-300 mb-6 max-w-md mx-auto">
-            Ich schicke dir deine Auswertung mit detaillierten Tipps für jede Kategorie – kostenlos.
-          </p>
-
-          <form onSubmit={onEmailSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Deine E-Mail-Adresse"
-                required
-                className={cn(
-                  "flex-1 px-5 py-3.5 rounded-full",
-                  "bg-white/10 border border-white/20",
-                  "text-white placeholder:text-loam-400",
-                  "focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent"
-                )}
-              />
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={cn(
-                  "px-6 py-3.5 bg-gold-500 text-loam-900 font-semibold rounded-full",
-                  "hover:bg-gold-400 transition-colors",
-                  "disabled:opacity-50 disabled:cursor-not-allowed",
-                  "flex items-center justify-center gap-2"
-                )}
-              >
-                {isSubmitting ? (
-                  <>
-                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                    </svg>
-                    Wird gesendet...
-                  </>
-                ) : (
-                  "Absenden"
-                )}
-              </button>
-            </div>
-            <p className="text-loam-400 text-sm mt-4">
-              Kein Spam, versprochen. Du kannst dich jederzeit abmelden.
-            </p>
-          </form>
-        </div>
-      ) : (
-        <div className="bg-sage-600 rounded-2xl p-6 sm:p-8 text-center">
-          <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <h3 className="font-serif text-2xl text-white mb-3">
-            Perfekt, dein Report ist unterwegs!
-          </h3>
-          <p className="text-white/90 mb-6">
-            Schau in dein Postfach – und vergiss nicht, auch im Spam-Ordner nachzuschauen.
-          </p>
-        </div>
-      )}
-
-      {/* CTA to Guide */}
-      <div className="text-center mt-10 pt-10 border-t border-loam-200">
-        <p className="text-loam-600 mb-4">
-          Du willst es ganz genau wissen?
-        </p>
-        <Link
-          href="/guides/fruehling"
-          className="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white font-semibold px-8 py-4 rounded-full transition-colors"
-        >
-          Zum Frühlings-Guide
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-// ============================================
-// Main Quiz Page Component
+// Component
 // ============================================
 
 export default function QuizPage() {
+  const [step, setStep] = useState<"landing" | "quiz" | "email" | "complete">("landing");
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<(number | null)[]>(
-    new Array(quizQuestions.length).fill(null)
-  );
-  const [showResult, setShowResult] = useState(false);
+  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [contextAnswers, setContextAnswers] = useState<Record<number, string>>({});
+  const [showContextTrigger, setShowContextTrigger] = useState<number | null>(null);
   const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const totalQuestions = quizQuestions.length;
-  const currentQuestionData = quizQuestions[currentQuestion];
-  const totalScore = answers.reduce((sum: number, a) => sum + (a ?? 0), 0);
-
-  const handleAnswerSelect = (points: number) => {
-    const newAnswers = [...answers];
-    newAnswers[currentQuestion] = points;
-    setAnswers(newAnswers);
+  // Calculate total points
+  const calculatePoints = (): number => {
+    let points = 0;
+    Object.entries(answers).forEach(([questionId, answerValue]) => {
+      const question = questions.find(q => q.id === parseInt(questionId));
+      const answer = question?.answers.find(a => a.value === answerValue);
+      if (answer?.points) {
+        points += answer.points;
+      }
+    });
+    return points;
   };
 
-  const handleNext = () => {
-    if (currentQuestion < totalQuestions - 1) {
-      setCurrentQuestion(currentQuestion + 1);
+  // Get bucket from question 6
+  const getBucket = (): string => {
+    const answer = questions[5].answers.find(a => a.value === answers[6]);
+    return answer?.bucket || "D";
+  };
+
+  // Get risk level
+  const getRiskLevel = (): { level: string; color: string; message: string } => {
+    const points = calculatePoints();
+    if (points <= 2) {
+      return {
+        level: "Grün",
+        color: "text-green-600",
+        message: "Du bist gut vorbereitet! Mit ein paar gezielten Tipps wird der Frühling entspannt."
+      };
+    } else if (points <= 5) {
+      return {
+        level: "Gelb",
+        color: "text-yellow-600",
+        message: "Es gibt einige Punkte, auf die du achten solltest. Dein persönlicher Fahrplan hilft dir dabei."
+      };
     } else {
-      setShowResult(true);
+      return {
+        level: "Rot",
+        color: "text-red-600",
+        message: "Bei deinem Pferd ist besondere Vorsicht geboten. Der Fahrplan zeigt dir, worauf du achten musst."
+      };
     }
   };
 
-  const handleBack = () => {
-    if (currentQuestion > 0) {
-      setCurrentQuestion(currentQuestion - 1);
+  // Handle answer selection
+  const handleAnswer = (questionId: number, value: string) => {
+    setAnswers(prev => ({ ...prev, [questionId]: value }));
+
+    // Check for context trigger
+    const question = questions.find(q => q.id === questionId);
+    const answer = question?.answers.find(a => a.value === value);
+
+    if (answer?.contextTrigger) {
+      setShowContextTrigger(questionId);
+    } else {
+      setShowContextTrigger(null);
+      // Auto-advance after short delay
+      setTimeout(() => {
+        if (currentQuestion < questions.length - 1) {
+          setCurrentQuestion(prev => prev + 1);
+        } else {
+          setStep("email");
+        }
+      }, 300);
     }
   };
 
+  // Handle context answer and continue
+  const handleContextContinue = () => {
+    setShowContextTrigger(null);
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(prev => prev + 1);
+    } else {
+      setStep("email");
+    }
+  };
+
+  // Handle email submission
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call - replace with actual implementation
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
 
-    // TODO: Send to email service (e.g., ConvertKit, Mailchimp)
-    console.log("Email submitted:", email, "Score:", totalScore);
+    // Here you would send data to your backend:
+    // - answers
+    // - contextAnswers
+    // - email
+    // - firstName
+    // - calculatePoints()
+    // - getBucket()
+
+    console.log("Quiz submission:", {
+      answers,
+      contextAnswers,
+      email,
+      firstName,
+      points: calculatePoints(),
+      bucket: getBucket(),
+    });
 
     setIsSubmitting(false);
-    setIsSubmitted(true);
+    setStep("complete");
   };
 
-  const result = getResult(totalScore);
+  // Get current question's selected answer for context trigger
+  const getCurrentContextTrigger = () => {
+    if (showContextTrigger === null) return null;
+    const question = questions.find(q => q.id === showContextTrigger);
+    const answer = question?.answers.find(a => a.value === answers[showContextTrigger]);
+    return answer?.contextTrigger;
+  };
 
-  return (
-    <>
-      {/* Hero Section */}
-      <section className="bg-bg-light py-12 lg:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-sm font-medium text-sage-600 uppercase tracking-wider mb-4 block">
-            Frühlings-Check
-          </span>
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-loam-900 leading-tight mb-4">
-            Wie fit ist dein Pferd{" "}
-            <span className="italic">für den Frühling?</span>
-          </h1>
-          <p className="text-lg text-loam-600">
-            8 kurze Fragen – in 2 Minuten weißt du, wo du stehst.
-          </p>
-        </div>
-      </section>
+  // ============================================
+  // Render: Landing Page
+  // ============================================
+  if (step === "landing") {
+    return (
+      <div className="min-h-screen bg-bg-light">
+        <div className="max-w-2xl mx-auto px-4 py-16 lg:py-24">
+          <div className="text-center mb-12">
+            <p className="text-sage-600 font-medium mb-4">Kostenloser Frühlings-Check</p>
+            <h1 className="font-serif text-4xl sm:text-5xl text-loam-900 mb-6">
+              Welcher Frühlings-Typ bist du?
+            </h1>
+            <p className="text-xl text-loam-600">
+              8 Fragen – dein persönlicher Frühlings-Fahrplan per E-Mail
+            </p>
+          </div>
 
-      {/* Quiz Section */}
-      <section className="py-12 lg:py-16">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          {!showResult ? (
-            <>
-              {/* Progress Bar */}
-              <div className="mb-10">
-                <ProgressBar current={currentQuestion + 1} total={totalQuestions} />
-              </div>
-
-              {/* Question */}
-              <div className="bg-paper rounded-2xl border border-loam-100 p-6 sm:p-10 shadow-soft">
-                <QuestionCard
-                  question={currentQuestionData}
-                  selectedAnswer={answers[currentQuestion]}
-                  onSelect={handleAnswerSelect}
-                />
-
-                {/* Navigation */}
-                <div className="flex justify-between mt-10 pt-6 border-t border-loam-100">
-                  <button
-                    onClick={handleBack}
-                    disabled={currentQuestion === 0}
-                    className={cn(
-                      "flex items-center gap-2 px-5 py-2.5 rounded-full transition-colors",
-                      currentQuestion === 0
-                        ? "text-loam-300 cursor-not-allowed"
-                        : "text-loam-600 hover:text-loam-900 hover:bg-loam-100"
-                    )}
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    Zurück
-                  </button>
-
-                  <button
-                    onClick={handleNext}
-                    disabled={answers[currentQuestion] === null}
-                    className={cn(
-                      "flex items-center gap-2 px-6 py-2.5 rounded-full font-medium transition-colors",
-                      answers[currentQuestion] === null
-                        ? "bg-loam-100 text-loam-400 cursor-not-allowed"
-                        : "bg-sage-600 text-white hover:bg-sage-700"
-                    )}
-                  >
-                    {currentQuestion === totalQuestions - 1 ? "Auswertung anzeigen" : "Weiter"}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
+          <div className="bg-white rounded-2xl p-8 shadow-soft-lg border border-loam-100 mb-8">
+            <h2 className="font-serif text-xl text-loam-900 mb-6">Das bekommst du:</h2>
+            <div className="space-y-4">
+              {[
+                { icon: "🎯", text: "Auf deine Situation zugeschnitten" },
+                { icon: "✅", text: "Sofort umsetzbare Tipps" },
+                { icon: "💬", text: "Kein Fachchinesisch – verständlich erklärt" },
+              ].map((item, index) => (
+                <div key={index} className="flex items-center gap-4">
+                  <span className="text-2xl">{item.icon}</span>
+                  <p className="text-loam-700">{item.text}</p>
                 </div>
-              </div>
-            </>
-          ) : (
-            /* Result */
-            <div className="bg-paper rounded-2xl border border-loam-100 p-6 sm:p-10 shadow-soft">
-              <ResultCard
-                result={result}
-                score={totalScore}
-                onEmailSubmit={handleEmailSubmit}
-                email={email}
-                setEmail={setEmail}
-                isSubmitting={isSubmitting}
-                isSubmitted={isSubmitted}
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <button
+              onClick={() => setStep("quiz")}
+              className="tactile-button tactile-button-primary text-lg px-8 py-4"
+            >
+              Quiz starten
+            </button>
+            <p className="text-sm text-loam-500 mt-4">
+              Dauert nur 2 Minuten • Kostenlos
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ============================================
+  // Render: Quiz Questions
+  // ============================================
+  if (step === "quiz") {
+    const question = questions[currentQuestion];
+    const contextTrigger = getCurrentContextTrigger();
+
+    return (
+      <div className="min-h-screen bg-bg-light">
+        {/* Progress Bar */}
+        <div className="sticky top-0 bg-white border-b border-loam-100 z-10">
+          <div className="max-w-2xl mx-auto px-4 py-4">
+            <div className="flex items-center justify-between mb-2">
+              <button
+                onClick={() => {
+                  if (showContextTrigger !== null) {
+                    setShowContextTrigger(null);
+                  } else if (currentQuestion > 0) {
+                    setCurrentQuestion(prev => prev - 1);
+                  } else {
+                    setStep("landing");
+                  }
+                }}
+                className="text-loam-500 hover:text-loam-700 flex items-center gap-1"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück
+              </button>
+              <span className="text-sm text-loam-600 font-medium">
+                {currentQuestion + 1} / {questions.length}
+              </span>
+            </div>
+            <div className="h-2 bg-loam-100 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-sage-500 transition-all duration-500 ease-out"
+                style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
               />
+            </div>
+          </div>
+        </div>
+
+        {/* Question */}
+        <div className="max-w-2xl mx-auto px-4 py-12">
+          {!showContextTrigger ? (
+            <div key={currentQuestion}>
+              <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8 text-center">
+                {question.question}
+              </h2>
+
+              <div className="space-y-3">
+                {question.answers.map((answer) => (
+                  <button
+                    key={answer.value}
+                    onClick={() => handleAnswer(question.id, answer.value)}
+                    className={`w-full p-5 rounded-xl border-2 text-left transition-all duration-200 ${
+                      answers[question.id] === answer.value
+                        ? "border-sage-500 bg-sage-50"
+                        : "border-loam-200 bg-white hover:border-sage-300 hover:bg-sage-50/50"
+                    }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center ${
+                        answers[question.id] === answer.value
+                          ? "border-sage-500 bg-sage-500"
+                          : "border-loam-300"
+                      }`}>
+                        {answers[question.id] === answer.value && (
+                          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        )}
+                      </div>
+                      <span className="text-loam-800">{answer.label}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            /* Context Trigger */
+            <div key={`context-${currentQuestion}`}>
+              <div className="bg-sage-50 rounded-2xl p-6 mb-6">
+                <p className="text-sage-700 text-sm mb-2">Du hast gewählt:</p>
+                <p className="text-loam-900 font-medium">
+                  {question.answers.find(a => a.value === answers[question.id])?.label}
+                </p>
+              </div>
+
+              <h3 className="font-serif text-xl text-loam-900 mb-4">
+                {contextTrigger?.question}
+              </h3>
+              <p className="text-loam-500 text-sm mb-4">
+                Optional – hilft mir, deinen Fahrplan noch besser anzupassen
+              </p>
+
+              <textarea
+                value={contextAnswers[question.id] || ""}
+                onChange={(e) => setContextAnswers(prev => ({
+                  ...prev,
+                  [question.id]: e.target.value
+                }))}
+                placeholder={contextTrigger?.placeholder}
+                className="w-full h-32 p-4 border border-loam-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent resize-none"
+              />
+
+              <div className="flex gap-4 mt-6">
+                <button
+                  onClick={handleContextContinue}
+                  className="flex-1 tactile-button tactile-button-ghost"
+                >
+                  Überspringen
+                </button>
+                <button
+                  onClick={handleContextContinue}
+                  className="flex-1 tactile-button tactile-button-primary"
+                >
+                  Weiter
+                </button>
+              </div>
             </div>
           )}
         </div>
-      </section>
+      </div>
+    );
+  }
 
-      {/* Trust Indicators */}
-      {!showResult && (
-        <section className="pb-16">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-loam-500">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <span>Keine Daten gespeichert</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>2 Minuten</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                <span>100% kostenfrei</span>
-              </div>
+  // ============================================
+  // Render: Email Capture
+  // ============================================
+  if (step === "email") {
+    const risk = getRiskLevel();
+
+    return (
+      <div className="min-h-screen bg-bg-light">
+        <div className="max-w-2xl mx-auto px-4 py-16 lg:py-24">
+          <div className="text-center mb-8">
+            <div className="w-16 h-16 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
             </div>
+            <h1 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-4">
+              Geschafft!
+            </h1>
+            <p className="text-lg text-loam-600">
+              Dein Quiz-Ergebnis ist fertig.
+            </p>
           </div>
-        </section>
-      )}
-    </>
-  );
+
+          {/* Preview Result */}
+          <div className="bg-white rounded-2xl p-6 shadow-soft border border-loam-100 mb-8">
+            <p className="text-sm text-loam-500 mb-2">Dein Risiko-Level:</p>
+            <p className={`text-2xl font-serif font-medium ${risk.color} mb-4`}>
+              {risk.level}
+            </p>
+            <p className="text-loam-600">
+              {risk.message}
+            </p>
+          </div>
+
+          {/* Email Form */}
+          <div className="bg-white rounded-2xl p-8 shadow-soft-lg border border-loam-100">
+            <h2 className="font-serif text-xl text-loam-900 mb-2 text-center">
+              Wohin darf ich deinen persönlichen Frühlings-Fahrplan schicken?
+            </h2>
+            <p className="text-loam-500 text-sm text-center mb-6">
+              Basierend auf deinen Antworten – individuell für dich erstellt.
+            </p>
+
+            <form onSubmit={handleEmailSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="firstName" className="block text-sm font-medium text-loam-700 mb-1">
+                  Vorname
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required
+                  placeholder="Dein Vorname"
+                  className="w-full px-4 py-3 border border-loam-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-loam-700 mb-1">
+                  E-Mail
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  placeholder="deine@email.de"
+                  className="w-full px-4 py-3 border border-loam-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full tactile-button tactile-button-primary py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    Wird erstellt...
+                  </span>
+                ) : (
+                  "Fahrplan per E-Mail erhalten"
+                )}
+              </button>
+
+              <p className="text-xs text-loam-500 text-center">
+                Kein Spam. Du kannst dich jederzeit abmelden.
+                <br />
+                <Link href="/datenschutz" className="underline hover:text-loam-700">
+                  Datenschutz
+                </Link>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ============================================
+  // Render: Complete
+  // ============================================
+  if (step === "complete") {
+    return (
+      <div className="min-h-screen bg-bg-light">
+        <div className="max-w-2xl mx-auto px-4 py-16 lg:py-24 text-center">
+          <div className="w-20 h-20 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-8">
+            <svg className="w-10 h-10 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+
+          <h1 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-4">
+            Check dein Postfach!
+          </h1>
+          <p className="text-lg text-loam-600 mb-2">
+            Dein persönlicher Frühlings-Fahrplan ist unterwegs zu:
+          </p>
+          <p className="text-loam-900 font-medium mb-8">{email}</p>
+
+          <div className="bg-gold-50 border border-gold-200 rounded-2xl p-6 mb-8 text-left">
+            <h3 className="font-medium text-loam-900 mb-2">Was jetzt passiert:</h3>
+            <ul className="space-y-2 text-loam-600">
+              <li className="flex items-start gap-2">
+                <span className="text-gold-500 mt-1">1.</span>
+                <span>Du bekommst sofort deinen Frühlings-Fahrplan per E-Mail</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-gold-500 mt-1">2.</span>
+                <span>In den nächsten Tagen: Vertiefende Tipps zu deinem Schwerpunkt-Thema</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-gold-500 mt-1">3.</span>
+                <span>Wöchentlich: Fundiertes Wissen für Pferdemenschen, die hinschauen</span>
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-loam-500 text-sm mb-8">
+            Keine E-Mail bekommen? Schau im Spam-Ordner nach oder schreib mir an hallo@pferdesicht.com
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/wissen" className="tactile-button tactile-button-ghost">
+              Zum Blog
+            </Link>
+            <Link href="/" className="tactile-button tactile-button-primary">
+              Zur Startseite
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
 }

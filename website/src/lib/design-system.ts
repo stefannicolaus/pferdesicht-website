@@ -141,8 +141,8 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    label: "Über Diana",
-    href: "/ueber-diana",
+    label: "Über mich",
+    href: "/ueber-mich",
     description: "Lerne Diana kennen",
   },
   {
