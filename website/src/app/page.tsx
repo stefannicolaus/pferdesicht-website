@@ -268,7 +268,7 @@ export default function PferdesichtPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {/* Card 1 */}
             <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
-              <Link href="/blog/koerpersprache-der-dialog-beginnt" className="block">
+              <Link href="/blog/eindecken-winter" className="block">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src="/images/thumbnails/thumbnail-training.png"
@@ -285,11 +285,11 @@ export default function PferdesichtPage() {
                     <span>8 Min Lesezeit</span>
                   </div>
                   <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
-                    Körpersprache: Der Dialog beginnt, bevor du sprichst
+                    Dein Pferd produziert 24/7 Magensäure. Und du fütterst 3x am Tag.
                   </h3>
                   <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
-                    Lerne die Signale zu erkennen, bevor dein Pferd „laut" werden muss. Die nonverbale Kommunikation,
-                    die alles verändert.
+                    Wann eine Decke wirklich Sinn macht – und wann du deinem Pferd damit mehr
+                    schadest als hilfst. Faktenbasiert und aus 20 Jahren Praxiserfahrung.
                   </p>
                   <span className="text-xs font-bold font-sans uppercase tracking-widest border-b border-gold/50 pb-1 text-loam group-hover:border-gold transition-colors">
                     Beitrag lesen
@@ -300,7 +300,7 @@ export default function PferdesichtPage() {
 
             {/* Card 2 */}
             <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
-              <Link href="/blog/pferd-eindecken-winter" className="block">
+              <Link href="/blog/fuetterung-winter" className="block">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src="/images/thumbnails/thumbnail-winter-v3.png"
@@ -317,7 +317,7 @@ export default function PferdesichtPage() {
                     <span>8 Min Lesezeit</span>
                   </div>
                   <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
-                    0 Grad am Stall: Pferd eindecken – ja oder nein?
+                    Dein Pferd produziert 24/7 Magensäure. Und du fütterst 3x am Tag.
                   </h3>
                   <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
                     Wann eine Decke wirklich Sinn macht und warum Heu die beste Heizung ist. Faktenbasiert aus 20 Jahren
@@ -332,7 +332,7 @@ export default function PferdesichtPage() {
 
             {/* Card 3 */}
             <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
-              <Link href="/blog/mindset-reiter" className="block">
+              <Link href="/blog/bewegung-winter" className="block">
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src="/images/thumbnails/thumbnail-mindset.png"
@@ -349,10 +349,10 @@ export default function PferdesichtPage() {
                     <span>12 Min Lesezeit</span>
                   </div>
                   <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
-                    Angst im Sattel: Vom Tabu zur Stärke
+                    Alle wärmen 10 Minuten auf. Im Sommer wie im Winter.
                   </h3>
                   <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
-                    Warum Angst ein wichtiger Ratgeber ist und wie du lernst, mit ihr zu reiten statt gegen sie.
+                    Warum kalte Sehnen ein Risiko sind und was dein Pferd im Winter wirklich braucht.
                   </p>
                   <span className="text-xs font-bold font-sans uppercase tracking-widest border-b border-gold/50 pb-1 text-loam group-hover:border-gold transition-colors">
                     Beitrag lesen
