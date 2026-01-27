@@ -1,445 +1,396 @@
-import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+"use client"
 
-export const metadata: Metadata = {
-  title: "Über Diana",
-  description:
-    "Lerne Diana kennen – 30+ Jahre Pferdeerfahrung, Reittherapeutin und Gründerin von Pferdesicht. Fundiertes Wissen, im Alltag getestet.",
-};
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
 
 export default function UeberMichPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <>
-      {/* Hero Section */}
-      <section className="bg-bg-light py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Photo */}
-          <div className="flex justify-center mb-10">
-            <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-white shadow-soft-lg">
-              <Image
-                src="/images/Diana_Pferdesicht.jpeg"
-                alt="Diana - Gründerin von Pferdesicht"
-                fill
-                className="object-cover"
-                priority
-              />
+    <main className="w-full bg-white">
+
+      {/* Hero Section with Image and Intro */}
+      <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8 md:gap-12 items-start">
+          {/* Image - Left Side */}
+          <div className="relative overflow-hidden rounded-sm group aspect-square mx-auto lg:mx-0 w-full max-w-[320px]">
+            <img
+              src="/images/Diana_Pferdesicht.jpeg"
+              alt="Diana - Gründerin von Pferdesicht"
+              className="w-full h-full object-cover object-top filter sepia-[.15] saturate-[.85] contrast-[.95] transition duration-700 group-hover:scale-105 group-hover:filter-none"
+            />
+            <div
+              className="absolute inset-0 pointer-events-none opacity-20 mix-blend-overlay"
+              style={{
+                backgroundImage:
+                  "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22 opacity=%221%22/%3E%3C/svg%3E')",
+              }}
+            />
+            <div className="absolute inset-0 ring-1 ring-inset ring-[#C8A476]/20 pointer-events-none" />
+          </div>
+
+          {/* Text Content - Right Side */}
+          <div className="flex flex-col justify-start space-y-6">
+            <div>
+              <p className="text-sage text-xs font-sans font-semibold tracking-widest uppercase mb-4">Über Diana</p>
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-loam mb-6 leading-tight">
+                Für Pferdemenschen, die hinschauen.
+              </h1>
+            </div>
+
+            <div className="space-y-4 text-loam/80 leading-relaxed">
+              <p>
+                Pferde fand ich schon als kleines Kind toll. Mit 12, als ich anfing zu reiten, war ich vollkommen
+                begeistert – aber gleichzeitig fühlte sich irgendetwas falsch an.
+              </p>
+              <p>
+                Wie wenn dein Bauch dir sagt: Da stimmt was nicht – aber alle um dich herum sagen: Stell dich nicht so
+                an.
+              </p>
             </div>
           </div>
-
-          {/* Text */}
-          <div className="text-center">
-            <p className="text-sage-600 font-medium mb-2">Diana</p>
-            <p className="text-loam-500 text-sm mb-6">Gründerin von Pferdesicht</p>
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-loam-900 mb-8">
-              Für Pferdemenschen, die hinschauen.
-            </h1>
-          </div>
-
-          {/* Intro Text */}
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-loam-700 leading-relaxed mb-6">
-              Pferde fand ich schon als kleines Kind toll. Mit 12, als ich anfing zu reiten,
-              war ich vollkommen begeistert – aber gleichzeitig fühlte sich irgendetwas falsch an.
-            </p>
-            <p className="text-lg text-loam-600 leading-relaxed italic mb-6">
-              Wie wenn dein Bauch dir sagt: Da stimmt was nicht – aber alle um dich
-              herum sagen: Stell dich nicht so an.
-            </p>
-            <p className="text-lg text-loam-700 leading-relaxed mb-6">
-              Die Pferde standen in Boxen. Den ganzen Tag. Wenn sie rauskamen, gingen sie ab –
-              wie Sprungfedern, die zu lange zusammengepresst wurden. Im Winter waren die
-              Schulpferde kaum handelbar. Ins Gelände? Einmal im Jahr, wenn überhaupt.
-            </p>
-            <p className="text-lg text-loam-700 leading-relaxed">
-              Aber ich konnte nicht benennen, was falsch war. Weil alle sagten:
-              <strong> Das ist normal. So sind Pferde halt.</strong>
-            </p>
-          </div>
         </div>
       </section>
 
-      {/* Gaslighting Quotes */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-4 text-center">
-            Die Sätze, bei denen die wenigsten sich trauen, offen etwas dazu zu sagen
-          </h2>
-          <p className="text-loam-600 mb-8 text-center">Vielleicht kennst du sie auch:</p>
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              `„Dann hau da mal drauf."`,
-              `„Dicke Beine sind normal bei dem."`,
-              `„Dann reit da halt drüber."`,
-              `„Der verarscht dich nur."`,
-              `„Ein Pferd steht nun mal so."`,
-              `„Das macht man hier schon immer so."`,
-              `„Du denkst zu viel."`,
-              `„Das Pferd soll einfach funktionieren."`,
-            ].map((quote, index) => (
-              <div
-                key={index}
-                className="bg-bg-light p-4 rounded-xl border border-loam-200 italic text-loam-700"
-              >
-                {quote}
-              </div>
-            ))}
-          </div>
-
-          <p className="text-sm text-loam-500 text-center mb-8">
-            (Wahrscheinlich von der Person, die beim Ausreiten selbst am meisten Angst hat.)
-          </p>
-
-          <div className="bg-loam-900 p-8 rounded-2xl text-center">
-            <p className="text-loam-300 mb-4">
-              Und unter all dem liegt dieser eine Satz, den niemand ausspricht – aber viele fühlen:
+      {/* Main Story Section */}
+      <article className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="prose prose-lg max-w-none">
+          {/* Die Sätze */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">
+              Die Sätze, bei denen die wenigsten sich trauen, offen etwas dazu zu sagen
+            </h2>
+            <p className="text-loam/80 leading-relaxed">Vielleicht kennst du sie auch:</p>
+            <div className="space-y-3 bg-sage/5 rounded-sm p-6 border-l-4 border-sage">
+              <p className="text-loam/80">„Dann hau da mal drauf."</p>
+              <p className="text-loam/80">„Dicke Beine sind normal bei dem."</p>
+              <p className="text-loam/80">„Dann reit da halt drüber."</p>
+              <p className="text-loam/80">„Der verarscht dich nur."</p>
+              <p className="text-loam/80">„Ein Pferd steht nun mal so."</p>
+              <p className="text-loam/80">„Das macht man hier schon immer so."</p>
+              <p className="text-loam/80">„Du denkst zu viel."</p>
+              <p className="text-loam/80">„Das Pferd soll einfach funktionieren."</p>
+            </div>
+            <p className="text-loam/70 leading-relaxed italic text-lg">
+              Und unter all dem liegt dieser eine Satz, den niemand ausspricht – aber viele fühlen: Wenn du anders
+              denkst, dann bist DU das Problem.
             </p>
-            <p className="text-xl text-white font-medium">
-              Wenn du anders denkst, dann bist DU das Problem.
+            <p className="text-loam/80 leading-relaxed">Auch ich habe das lange geglaubt.</p>
+          </section>
+
+          {/* So macht man das eben */}
+          <section className="space-y-4 border-l-4 border-gold pl-6 py-4 mb-12">
+            <h3 className="font-serif text-xl sm:text-2xl text-loam">„So macht man das eben."</h3>
+            <p className="text-loam/80 leading-relaxed font-semibold">
+              Vier Worte, die vermutlich mehr Pferde krank gemacht haben als jede Krankheit.
             </p>
-            <p className="text-loam-400 mt-4">
-              Auch ich habe das lange geglaubt.
+            <p className="text-loam/80 leading-relaxed">
+              Lange Zeit dachte ich, ich müsste mich anpassen. So halten wie alle. So füttern wie alle. So reiten wie
+              alle. Einfach mitlaufen. Nicht, weil es sich richtig angefühlt hat – sondern weil ich dachte, ich müsste
+              die Erwartungen der Anderen erfüllen.
             </p>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* "So macht man das eben" */}
-      <section className="py-16 lg:py-20 bg-bg-light">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-6">
-            „So macht man das eben."
-          </h2>
-          <p className="text-lg text-loam-700 leading-relaxed mb-6">
-            Vier Worte, die vermutlich mehr Pferde krank gemacht haben als jede Krankheit.
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Lange Zeit dachte ich, ich müsste mich anpassen. So halten wie alle. So füttern
-            wie alle. So reiten wie alle. Einfach mitlaufen.
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed">
-            Nicht, weil es sich richtig angefühlt hat – sondern weil ich dachte, ich müsste
-            die Erwartungen der Anderen erfüllen.
-          </p>
-        </div>
-      </section>
-
-      {/* Der Moment - Benny */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8">
-            Der Moment, der alles verändert hat
-          </h2>
-
-          <div className="prose-pferdesicht">
-            <p className="text-lg leading-relaxed mb-6">
-              Mit 12 bekam ich ein Pflegepferd: Benny. Ich liebte dieses Pferd. Mein Papa
-              wollte ihn mir kaufen, aber ich war noch zu jung.
+          {/* Der Wendepunkt - Benny */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">
+              Der Moment, der alles verändert hat
+            </h2>
+            <p className="text-loam/80 leading-relaxed">
+              Mit 12 bekam ich ein Pflegepferd: Benny. Ich liebte dieses Pferd. Mein Papa wollte ihn mir kaufen, aber
+              ich war noch zu jung. Mit 14 wurde Benny verkauft. Ich war am Boden zerstört.
             </p>
-            <p className="text-lg leading-relaxed mb-6">
-              Mit 14 wurde Benny verkauft. Ich war am Boden zerstört.
+            <p className="text-loam/80 leading-relaxed">Und dann kam ein Brief.</p>
+            <p className="text-loam/80 leading-relaxed">
+              Ich erinnere mich noch an den Moment, als ich den Briefumschlag mit den Fotos öffnete. Benny in seinem
+              neuen Offenstall mit einem anderen Pferd zusammen, eine große Weide im Hintergrund. Er sah aus wie ein
+              vollkommen anderes Pferd.
             </p>
-            <p className="text-lg leading-relaxed mb-6">
-              Und dann kam ein Brief.
+            <blockquote className="border-l-4 border-accent pl-6 py-4 italic text-loam/80 text-lg">
+              Zum ersten Mal sah ich ein Pferd, das aussah wie... ein Pferd. Nicht wie ein Tier, das abgestumpft in
+              seiner Box auf die nächste langweilige Reitstunde wartet.
+            </blockquote>
+            <p className="text-loam/80 leading-relaxed">
+              Ich vermisste ihn ganz schrecklich. Und gleichzeitig war ich vollkommen glücklich, dass es ihm jetzt so
+              viel besser ging. In diesem Moment wusste ich: Es geht also auch anders. Und ich schwor mir: Wenn ich mal
+              ein eigenes Pferd habe, wird es anders.
             </p>
-            <p className="text-lg leading-relaxed mb-6">
-              Ich erinnere mich noch an den Moment, als ich den Briefumschlag mit den Fotos
-              öffnete. Benny in seinem neuen Offenstall mit einem anderen Pferd zusammen,
-              eine große Weide im Hintergrund. Er sah aus wie ein vollkommen anderes Pferd.
+          </section>
+
+          {/* Der Wendepunkt - Denken */}
+          <section className="space-y-4 bg-accent/5 rounded-sm p-8 border border-accent/10 mb-12">
+            <h3 className="font-serif text-xl sm:text-2xl text-foreground">
+              Nicht mein Denken war falsch. Die Umgebung war falsch für mein Denken.
+            </h3>
+            <p className="text-loam/80 leading-relaxed">
+              Der Wendepunkt kam nicht laut. Er kam leise – als inneres Wissen: Ich will Pferde nicht kontrollieren. Ich
+              will sie wirklich verstehen.
             </p>
-            <p className="text-lg leading-relaxed mb-6 font-medium text-loam-900">
-              Zum ersten Mal sah ich ein Pferd, das aussah wie... ein Pferd. Nicht wie ein
-              Tier, das abgestumpft in seiner Box auf die nächste langweilige Reitstunde wartet.
+            <p className="text-loam/80 leading-relaxed">Ich habe angefangen, mich neu auszurichten:</p>
+            <ul className="space-y-2">
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">Wissen, das Sinn macht.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">Fütterung, die stärkt.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">Haltung, die dem Pferd dient – nicht alten Mustern.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">Training, das Beziehung baut.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">
+                  Eine innere Haltung, die nicht auf Angst basiert – sondern auf Verbundenheit und Vertrauen.
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          {/* Was ich glaube */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">Was ich glaube</h2>
+            <p className="text-loam/80 leading-relaxed">
+              Ich glaube, dass die Pferdebesitzer, die „zu viel" fragen und „zu genau" hinschauen, nicht das Problem
+              sind – sondern die Lösung für eine natürliche Haltung. Für das Wohlergehen unserer Pferde.
             </p>
-          </div>
-
-          <div className="bg-sage-50 p-8 rounded-2xl border border-sage-200 mt-8">
-            <p className="text-lg text-loam-900 font-medium mb-4">
-              In diesem Moment wusste ich: Es geht also auch anders.
+            <p className="text-loam/80 leading-relaxed">
+              Das Problem sind die, die NICHT fragen. Die die Verantwortung unreflektiert abgeben. Die sagen: „Der
+              Trainer, Stallbesitzer, Tierarzt, Therapeut, Futtermittelberater, Hufschmied, Sattler wird schon wissen,
+              was er tut."
             </p>
-            <p className="text-loam-600">
-              Und ich gab mir ein innerliches Versprechen: Wenn ich mal ein eigenes Pferd habe,
-              wird es anders.
+            <p className="text-loam/80 leading-relaxed">
+              Versteh mich nicht falsch: Diese Menschen sind wichtig. Aber sie ersetzen nicht deine Verantwortung. Sie
+              ersetzen nicht dein Hinschauen. Sie ersetzen nicht dein Bauchgefühl.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Nicht mein Denken war falsch */}
-      <section className="py-16 lg:py-20 bg-sage-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8">
-            Nicht mein Denken war falsch. Die Umgebung war falsch für mein Denken.
-          </h2>
-
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Der Wendepunkt kam nicht laut. Er kam leise – als inneres Wissen:
-          </p>
-          <p className="text-xl text-loam-900 font-medium mb-8">
-            Ich will Pferde nicht kontrollieren. Ich will sie wirklich verstehen.
-          </p>
-
-          <p className="text-lg text-loam-600 leading-relaxed mb-4">
-            Ich habe angefangen, mich neu auszurichten:
-          </p>
-          <div className="space-y-3">
-            {[
-              "Wissen, das Sinn macht.",
-              "Fütterung, die stärkt.",
-              "Haltung, die atmen lässt.",
-              "Training, das Beziehung baut.",
-              "Eine innere Haltung, die nicht auf Angst basiert – sondern auf Verbundenheit und Vertrauen.",
-            ].map((item, index) => (
-              <div key={index} className="flex gap-3 items-start">
-                <svg className="w-5 h-5 text-sage-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                <p className="text-loam-700">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Was ich glaube */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8">
-            Was ich glaube
-          </h2>
-
-          <div className="bg-sage-50 p-8 rounded-2xl border border-sage-200 mb-8">
-            <p className="text-xl text-loam-900 font-medium leading-relaxed mb-4">
-              Ich glaube, dass die Pferdebesitzer, die „zu viel" fragen und „zu genau" hinschauen,
-              nicht das Problem sind – sondern die Lösung.
+            <blockquote className="border-l-4 border-accent pl-6 py-4 italic text-loam/80 text-lg">
+              Verantwortung abgeben ist bequem. Aber bequem ist nicht das Gleiche wie richtig.
+            </blockquote>
+            <p className="text-loam/80 leading-relaxed">
+              Wenn du spürst, dass etwas nicht stimmt – dann stimmt wahrscheinlich tatsächlich etwas nicht. Du bist
+              nicht „zu pingelig". Du bist nicht „zu kompliziert". Du schaust hin. Und genau das macht den Unterschied.
             </p>
-            <p className="text-loam-600">
-              Die Lösung für eine natürliche Haltung. Für das Wohlergehen unserer Pferde.
+          </section>
+
+          {/* Was ich dir geben will */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">
+              Was ich dir geben will
+            </h2>
+            <p className="text-loam/80 leading-relaxed font-semibold">Wissen als Rüstung.</p>
+            <p className="text-loam/80 leading-relaxed">
+              Damit du nicht mehr blind vertrauen musst. Damit du selbst entscheiden kannst. Damit du die Verantwortung
+              auf Dauer auch tatsächlich tragen kannst – weil du weißt, was du tust.
             </p>
-          </div>
-
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Das Problem sind die, die NICHT fragen. Die die Verantwortung unreflektiert abgeben.
-          </p>
-
-          <p className="text-lg text-loam-700 leading-relaxed font-medium">
-            Verantwortung abgeben ist bequem. Aber bequem ist nicht das Gleiche wie richtig.
-          </p>
-        </div>
-      </section>
-
-      {/* Was ich dir geben will */}
-      <section className="py-16 lg:py-20 bg-bg-light">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-4">
-            Was ich dir geben will
-          </h2>
-          <p className="text-2xl text-sage-600 font-serif mb-8">Wissen als Rüstung.</p>
-
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Nicht nur Wissen über Pferde – sondern auch das Wissen, das ich auf die harte
-            Tour lernen musste:
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Wie du erkennst, welchen Experten du vertrauen kannst. Wie du dich am Stall
-            durchsetzt – nicht mit dem Kopf durch die Wand, sondern durch gute Kommunikation.
-            Wie du mit Stallpolitik umgehst, ohne dich verbiegen zu müssen.
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed mb-6">
-            Damit du nicht die teuren Fehler machst, die ich schon gemacht habe. Damit du
-            nicht um 3 Uhr nachts googelst, ob das normal ist.
-          </p>
-
-          <div className="bg-loam-900 p-8 rounded-2xl text-white mt-8">
-            <p className="text-xl leading-relaxed">
-              Dieser Weg, den ich über 30 Jahre gegangen bin – den musst du nicht alleine gehen.
-              Und du brauchst keine 30 Jahre.
+            <p className="text-loam/80 leading-relaxed">
+              Damit du nicht die teuren Fehler machst, die ich schon gemacht habe. Damit du nicht um 3 Uhr nachts
+              googelst, ob das normal ist. Damit du nicht hilflos neben deinem Pferd stehst und nicht weißt, was du tun
+              sollst.
             </p>
-          </div>
-        </div>
-      </section>
+            <p className="text-loam/80 leading-relaxed">
+              Ich habe Zehntausende Euro unnötig ausgegeben – für Tierärzte, Zusätze, Therapeuten, Equipment, Lehrgänge
+              – weil ich das Wissen damals noch nicht hatte. Ich möchte dir helfen, dich davor zu bewahren, dasselbe
+              Lehrgeld zu bezahlen.
+            </p>
+          </section>
 
-      {/* Mein Weg - 6 Points */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-10 text-center">
-            Mein Weg
-          </h2>
-
-          <div className="space-y-8">
-            {[
-              {
-                num: 1,
-                title: "Über 30 Jahre mit Pferden",
-                text: "Mit allem, was dazugehört. Die Fehler. Die Tierarztrechnungen. Die schlaflosen Nächte.",
-                gold: false,
-              },
-              {
-                num: 2,
-                title: "Ausbildung zur Reittherapeutin (Abschluss 2009)",
-                text: "16 Jahre Praxis. Über 200 Menschen begleitet.",
-                gold: false,
-              },
-              {
-                num: 3,
-                title: "Pferde als Lehrer",
-                text: "Pferde lügen nicht. Sie reagieren. Sie sind Spiegel der Seele.",
-                gold: false,
-              },
-              {
-                num: 4,
-                title: "15 Jahre in der Pferdebranche",
-                text: "Bei Hempura (Vertrieb, Management) – tausende Gespräche.",
-                gold: false,
-              },
-              {
-                num: 5,
-                title: "5 Jahre hinter den Kulissen",
-                text: "Bei einer der bekanntesten Freiheitsdressur-Trainerinnen Europas.",
-                gold: false,
-              },
-              {
-                num: 6,
-                title: "Mein eigenes Pferd – seit 20 Jahren",
-                text: "Ramses, mein Friese, im Offenstall.",
-                gold: true,
-              },
-            ].map((item) => (
-              <div key={item.num} className="flex gap-4">
-                <div className={`flex-shrink-0 w-10 h-10 rounded-full ${item.gold ? 'bg-gold-500' : 'bg-sage-600'} text-white flex items-center justify-center font-medium`}>
-                  {item.num}
-                </div>
+          {/* Mein Weg */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">Mein Weg</h2>
+            <ul className="space-y-4">
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">1.</span>
                 <div>
-                  <p className="font-medium text-loam-900 text-lg mb-1">{item.title}</p>
-                  <p className="text-loam-600">{item.text}</p>
+                  <p className="font-semibold text-loam">Über 30 Jahre mit Pferden</p>
+                  <p className="text-loam/80">
+                    Mit allem, was dazugehört. Die Fehler. Die Tierarztrechnungen. Die schlaflosen Nächte. Aber auch:
+                    Die Momente, in denen alles stimmt. Die Ruhe, wenn du weißt, dass es deinem Pferd gut geht.
+                  </p>
                 </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">2.</span>
+                <div>
+                  <p className="font-semibold text-loam">Ausbildung zur Reittherapeutin (Abschluss 2009)</p>
+                  <p className="text-loam/80">
+                    16 Jahre Praxis. Über 200 Menschen begleitet – Kinder und Erwachsene mit körperlichen und geistigen
+                    Behinderungen, Down-Syndrom, ADHS, psychischen Störungen, Lernschwächen. Menschen, die von anderen
+                    Menschen verletzt wurden und bei Pferden zum ersten Mal wieder Vertrauen fassen konnten.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">3.</span>
+                <div>
+                  <p className="font-semibold text-loam">Pferde als Lehrer</p>
+                  <p className="text-loam/80">
+                    Pferde lügen nicht. Sie reagieren. Sie sind Spiegel der Seele. Und sie haben mir mehr über Menschen
+                    beigebracht als jedes Psychologie-Buch.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">4.</span>
+                <div>
+                  <p className="font-semibold text-loam">15 Jahre in der Pferdebranche</p>
+                  <p className="text-loam/80">
+                    Bei Hempura (Vertrieb, Management) – tausende Gespräche mit Tierärzten, Therapeuten, Hufschmieden,
+                    Trainern. Tausende Fragen von Pferdebesitzern wie dir. Jede einzelne hat mein Verständnis vertieft.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">5.</span>
+                <div>
+                  <p className="font-semibold text-loam">5 Jahre hinter den Kulissen</p>
+                  <p className="text-loam/80">
+                    Bei einer der bekanntesten Freiheitsdressur-Trainerinnen Europas – Aufbau des kompletten
+                    Online-Business, Kursentwicklung, Projektmanagement. Ich habe gesehen, was hinter der Bühne
+                    passiert. Das Schöne. Und das nicht so Schöne. Es hat mir gezeigt: Nicht alles, was glänzt, ist
+                    Gold. Und nicht alles, was funktioniert, ist gut fürs Pferd.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-accent flex-shrink-0 font-bold">6.</span>
+                <div>
+                  <p className="font-semibold text-loam">Mein eigenes Pferd – seit 20 Jahren</p>
+                  <p className="text-loam/80">
+                    Ramses, mein Friese, im Offenstall. Er hat mich mehr gelehrt als alle Kurse zusammen.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          {/* Das Team */}
+          <section className="space-y-4 bg-accent/5 rounded-sm p-8 border border-accent/10 mb-12">
+            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-foreground">Das Team hinter Pferdesicht</h2>
+            <p className="text-loam/80 leading-relaxed">
+              Hinter Pferdesicht steckt nicht nur ich – sondern auch mein Mann Stefan. Gemeinsam haben wir in den
+              letzten 20 Jahren mehrere erfolgreiche Projekte in der Pferdewelt aufgebaut – und auch einige außerhalb.
+            </p>
+            <p className="text-loam/80 leading-relaxed">
+              Er der Stratege, ich die konsequente Umsetzerin. Er sorgt dafür, dass ich mich auf das konzentrieren kann,
+              was ich am besten kann: Dir das Wissen zu geben, das dein Pferd verdient.
+            </p>
+          </section>
+
+          {/* Für wen ist Pferdesicht */}
+          <section className="space-y-6 mb-12">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-loam leading-tight">
+              Für wen ist Pferdesicht?
+            </h2>
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">
+                  Für dich, wenn du spürst, dass es einen anderen Weg geben muss.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">
+                  Für dich, wenn du keine Lust mehr hast auf „Das haben wir schon immer so gemacht".
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">Für dich, wenn du Wissen willst – nicht Meinungen.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">
+                  Für dich, wenn du bereit bist, hinzuschauen. Auch wenn es unbequem ist.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent flex-shrink-0">✓</span>
+                <span className="text-foreground/80">
+                  Und für dich, wenn du dich schon auf den Weg gemacht hast und dir Unterstützung wünschst – weil es mit
+                  dem richtigen Wissen schneller geht und mit weniger Fehlern.
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          {/* Abschluss */}
+          <section className="space-y-6 border-t border-accent/20 pt-12">
+            <p className="text-loam/80 leading-relaxed">Das hier ist mein Weg. Vielleicht auch deiner.</p>
+            <p className="text-loam/80 leading-relaxed">
+              Wenn du spürst, dass du eine andere Art von Pferdewelt willst – sanft, stark, klar, wahrhaftig – mit dem
+              Wohl unserer Pferde im Mittelpunkt – dann bleib hier.
+            </p>
+            <p className="text-loam/80 leading-relaxed">Ich teile mein Wissen. Ehrlich, offen, regelmäßig.</p>
+            <ul className="space-y-2 ml-4">
+              <li className="text-loam/80">Über Pferdegesundheit, die nicht kompliziert sein muss.</li>
+              <li className="text-loam/80">Über Haltung, die dem Pferd dient – nicht alten Mustern.</li>
+              <li className="text-loam/80">Über die Beziehung zwischen Mensch und Pferd.</li>
+              <li className="text-loam/80">
+                Über dieses tiefe Gefühl, dass Pferde so viel mehr brauchen als das, was man ihnen oft zugesteht.
+              </li>
+            </ul>
+
+            <blockquote className="border-l-4 border-accent pl-6 py-4">
+              <p className="italic text-loam/80 mb-4">
+                Die Pferdebesitzer, die „zu viel" fragen, sind nicht das Problem. Sie sind die Lösung für eine
+                natürliche Haltung und das Wohlergehen unserer Pferde.
+              </p>
+              <p className="italic text-loam/80 mb-4">
+                Deine Fragen und Bedenken sind nicht zu viel. Das ist genau das, was unsere Pferde brauchen.
+              </p>
+              <p className="italic text-loam/80 mb-2">Vertraue deiner Perspektive.</p>
+              <p className="text-accent font-serif text-lg">— Diana</p>
+            </blockquote>
+          </section>
+
+          {/* CTA Section */}
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 pt-12 border-t border-accent/20">
+            <Link href="/blog/pferd-eindecken-winter" className="group">
+              <div className="bg-gold/10 rounded-sm p-6 transition hover:bg-gold/20 h-full border border-gold/20 hover:border-gold/40">
+                <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3 font-sans">
+                  Kostenlos Herunterladen
+                </p>
+                <h3 className="font-serif text-2xl text-loam mb-3 font-bold">Winter-Guide</h3>
+                <p className="text-loam/70 text-sm font-sans leading-relaxed">
+                  So bereitest du dein Pferd perfekt auf den Winter vor – mit wissenschaftlichen Fakten und 20 Jahren
+                  Praxiserfahrung.
+                </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-16 lg:py-20 bg-bg-light">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-6">
-            Das Team hinter Pferdesicht
-          </h2>
-          <p className="text-lg text-loam-600 leading-relaxed mb-4">
-            Hinter Pferdesicht steckt nicht nur ich – sondern auch mein Mann Stefan.
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed mb-4">
-            Gemeinsam haben wir in den letzten 20 Jahren mehrere erfolgreiche Projekte in
-            der Pferdewelt aufgebaut – und auch einige außerhalb. Er der Stratege, ich die
-            konsequente Umsetzerin.
-          </p>
-          <p className="text-lg text-loam-600 leading-relaxed">
-            Er sorgt dafür, dass ich mich auf das konzentrieren kann, was ich am besten kann:
-            Dir das Wissen zu geben, das dein Pferd verdient.
-          </p>
-        </div>
-      </section>
-
-      {/* Für wen */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-8">
-            Für wen ist Pferdesicht?
-          </h2>
-          <div className="space-y-4">
-            {[
-              "Für dich, wenn du spürst, dass es einen anderen Weg geben muss.",
-              `Für dich, wenn du keine Lust mehr hast auf „Das haben wir schon immer so gemacht".`,
-              "Für dich, wenn du Wissen willst – nicht Meinungen.",
-              "Für dich, wenn du bereit bist, hinzuschauen. Auch wenn es unbequem ist.",
-              "Und für dich, wenn du dich schon auf den Weg gemacht hast und dir Unterstützung wünschst.",
-            ].map((item, index) => (
-              <div key={index} className="flex gap-4 items-start">
-                <svg className="w-6 h-6 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                <p className="text-lg text-loam-700">{item}</p>
+            </Link>
+            <Link href="/blog" className="group">
+              <div className="bg-gold/10 rounded-sm p-6 transition hover:bg-gold/20 h-full border border-gold/20 hover:border-gold/40">
+                <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3 font-sans">
+                  Aktuelle Inhalte
+                </p>
+                <h3 className="font-serif text-2xl text-loam mb-3 font-bold">Zum Blog</h3>
+                <p className="text-loam/70 text-sm font-sans leading-relaxed">
+                  Fundierte Artikel über Pferdegesundheit, Haltung und die Beziehung zwischen Mensch und Pferd.
+                </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Quote */}
-      <section className="py-16 lg:py-20 bg-loam-900">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="font-serif text-2xl sm:text-3xl text-white leading-relaxed italic">
-            „Die Pferdebesitzer, die ‚zu viel' fragen, sind nicht das Problem.
-            Sie sind die Lösung für eine natürliche Haltung und das Wohlergehen unserer Pferde."
-          </blockquote>
-        </div>
-      </section>
-
-      {/* Signature */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg text-loam-700 mb-2">
-            Deine Fragen und Bedenken sind nicht zu viel.
-          </p>
-          <p className="text-lg text-loam-700 mb-8">
-            Das ist genau das, was unsere Pferde brauchen.
-          </p>
-          <p className="text-2xl text-loam-900 font-serif italic mb-4">
-            „Vertraue deiner Perspektive."
-          </p>
-          <p className="text-loam-600">— Deine Diana von Pferdesicht</p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-bg-light">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Winter Guide */}
-            <div className="bg-white p-6 rounded-2xl border border-loam-200 text-center">
-              <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+            </Link>
+            <Link href="#newsletter" className="group">
+              <div className="bg-gold/10 rounded-sm p-6 transition hover:bg-gold/20 h-full border border-gold/20 hover:border-gold/40">
+                <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-3 font-sans">Wöchentlich</p>
+                <h3 className="font-serif text-2xl text-loam mb-3 font-bold">Newsletter</h3>
+                <p className="text-loam/70 text-sm font-sans leading-relaxed">
+                  Abonniere für wöchentliche Insights, Tipps und exklusive Inhalte für Pferdemenschen.
+                </p>
               </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-2">Winter-Guide</h3>
-              <p className="text-loam-600 text-sm mb-4">Kostenlos herunterladen</p>
-              <Link href="/guides/winter" className="text-sage-600 font-medium hover:text-sage-700">
-                Jetzt holen →
-              </Link>
-            </div>
-
-            {/* Blog */}
-            <div className="bg-white p-6 rounded-2xl border border-loam-200 text-center">
-              <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
-              </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-2">Blog</h3>
-              <p className="text-loam-600 text-sm mb-4">Aktuelle Beiträge lesen</p>
-              <Link href="/wissen" className="text-sage-600 font-medium hover:text-sage-700">
-                Zum Blog →
-              </Link>
-            </div>
-
-            {/* Newsletter */}
-            <div className="bg-white p-6 rounded-2xl border border-loam-200 text-center">
-              <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-2">Newsletter</h3>
-              <p className="text-loam-600 text-sm mb-4">Wöchentlich neues Wissen</p>
-              <button className="text-sage-600 font-medium hover:text-sage-700">
-                Anmelden →
-              </button>
-            </div>
-          </div>
+            </Link>
+          </section>
         </div>
-      </section>
-    </>
-  );
+      </article>
+
+      {/* Footer */}
+    </main>
+  )
 }

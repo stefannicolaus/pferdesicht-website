@@ -1,288 +1,177 @@
-/* Google Fonts - EB Garamond & Poppins */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap');
-
 @import "tailwindcss";
-@config "../../tailwind.config.ts";
 
-/* ============================================
-   Pferdesicht Design System - CSS Variables
-   ============================================ */
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand Colors */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-serif: "EB Garamond", "Georgia", serif;
+  --font-sans: "Poppins", "Poppins Fallback"; /* Changed from Geist to Poppins for body text */
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  --color-bg-light: #f3f0eb; /* Exact hex values from design system */
+  --color-bg-texture: #ebe6df;
   --color-loam: #2c2a25;
   --color-sage: #78866b;
   --color-gold: #c8a476;
-  --color-bg-light: #f3f0eb;
-  --color-paper: #faf9f7;
+  --color-white-soft: #faf9f6;
 
-  /* Semantic Colors */
-  --background: var(--color-paper);
-  --foreground: var(--color-loam);
-  --accent: var(--color-sage);
-  --accent-warm: var(--color-gold);
-
-  /* Typography */
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-sans: 'Poppins', system-ui, sans-serif;
-}
-
-/* Tailwind v4 Theme Integration */
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
-
-  /* Custom Colors */
-  --color-loam: #2c2a25;
-  --color-sage: #78866b;
-  --color-gold: #c8a476;
-  --color-bg-light: #f3f0eb;
-  --color-paper: #faf9f7;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* ============================================
-   Base Styles
-   ============================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  ::selection {
+    background-color: #c8a476;
+    color: #2c2a25;
+  }
 
-/* Headings use serif font */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 500;
-}
+  /* Added uniform paper grain texture without stripes */
+  .bg-paper-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
 
-/* ============================================
-   Paper Grain Effect
-   Subtle texture for "Organic Luxury" feel
-   ============================================ */
+  /* Added warm film grain filter for organic retro aesthetic */
+  .warm-film-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.15'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
 
-.bg-paper-grain {
-  background-color: var(--color-paper);
-  position: relative;
-}
+  /* Added soft text shadow for hero typography readability */
+  .hero-text-shadow {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
-.bg-paper-grain::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  pointer-events: none;
-  mix-blend-mode: multiply;
-}
+  /* Added tactile button styling with inner border and soft shadow */
+  .tactile-button {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0
+      rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
 
-/* ============================================
-   Warm Film Grain Effect
-   Adds nostalgic warmth to hero sections
-   ============================================ */
+  .tactile-button:hover {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0
+      rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
 
-.warm-film-grain {
-  position: relative;
-}
-
-.warm-film-grain::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)'/%3E%3C/svg%3E");
-  opacity: 0.06;
-  pointer-events: none;
-  mix-blend-mode: overlay;
-}
-
-/* Additional warm tint layer */
-.warm-film-grain::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(200, 164, 118, 0.08) 0%,
-    rgba(120, 134, 107, 0.05) 50%,
-    rgba(200, 164, 118, 0.08) 100%
-  );
-  pointer-events: none;
-  mix-blend-mode: multiply;
-}
-
-/* ============================================
-   Hero Text Shadow
-   Elegant shadow for text over images
-   ============================================ */
-
-.hero-text-shadow {
-  text-shadow:
-    0 2px 4px rgba(44, 42, 37, 0.12),
-    0 4px 12px rgba(44, 42, 37, 0.08),
-    0 8px 24px rgba(44, 42, 37, 0.06);
-}
-
-/* Stronger variant for light backgrounds */
-.hero-text-shadow-strong {
-  text-shadow:
-    0 2px 4px rgba(44, 42, 37, 0.2),
-    0 4px 16px rgba(44, 42, 37, 0.15),
-    0 8px 32px rgba(44, 42, 37, 0.1);
-}
-
-/* ============================================
-   Tactile Button
-   Physical, "pressable" feeling buttons
-   ============================================ */
-
-.tactile-button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.875rem 2rem;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.9375rem;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow:
-    0 1px 2px rgba(44, 42, 37, 0.08),
-    0 2px 4px rgba(44, 42, 37, 0.06),
-    0 4px 8px rgba(44, 42, 37, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: none;
-  outline: none;
-}
-
-.tactile-button:hover {
-  transform: translateY(-1px);
-  box-shadow:
-    0 2px 4px rgba(44, 42, 37, 0.1),
-    0 4px 8px rgba(44, 42, 37, 0.08),
-    0 8px 16px rgba(44, 42, 37, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
-.tactile-button:active {
-  transform: translateY(0);
-  box-shadow:
-    0 1px 2px rgba(44, 42, 37, 0.1),
-    0 2px 4px rgba(44, 42, 37, 0.06),
-    inset 0 1px 2px rgba(44, 42, 37, 0.1);
-}
-
-.tactile-button:focus-visible {
-  outline: 2px solid var(--color-sage);
-  outline-offset: 2px;
-}
-
-/* Primary variant - Sage Green */
-.tactile-button-primary {
-  background: var(--color-sage);
-  color: white;
-}
-
-.tactile-button-primary:hover {
-  background: #6a7760;
-}
-
-/* Secondary variant - Loam */
-.tactile-button-secondary {
-  background: var(--color-loam);
-  color: white;
-}
-
-.tactile-button-secondary:hover {
-  background: #3d3a33;
-}
-
-/* Ghost variant - Transparent with border */
-.tactile-button-ghost {
-  background: transparent;
-  box-shadow: inset 0 0 0 1.5px var(--color-loam);
-}
-
-.tactile-button-ghost:hover {
-  background: var(--color-loam);
-  color: white;
-  box-shadow:
-    0 2px 4px rgba(44, 42, 37, 0.1),
-    0 4px 8px rgba(44, 42, 37, 0.08);
-}
-
-/* Gold accent variant */
-.tactile-button-gold {
-  background: var(--color-gold);
-}
-
-.tactile-button-gold:hover {
-  background: #d4b085;
-}
-
-/* ============================================
-   Utility Classes
-   ============================================ */
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Selection color */
-::selection {
-  background: rgba(120, 134, 107, 0.25);
-}
-
-/* Focus ring for accessibility */
-.focus-ring {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus-ring:focus-visible {
-  outline-color: var(--color-sage);
-}
-
-/* Text balance for headings */
-.text-balance {
-  text-wrap: balance;
-}
-
-/* Prose styles for content */
-.prose-pferdesicht {
-  font-family: var(--font-sans);
-  font-size: 1.0625rem;
-  line-height: 1.75;
-}
-
-.prose-pferdesicht h1,
-.prose-pferdesicht h2,
-.prose-pferdesicht h3,
-.prose-pferdesicht h4 {
-  font-family: var(--font-serif);
-  margin-top: 2em;
-  margin-bottom: 0.75em;
-}
-
-.prose-pferdesicht p {
-  margin-bottom: 1.5em;
-}
-
-.prose-pferdesicht a {
-  color: var(--color-sage);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s;
-}
-
-.prose-pferdesicht a:hover {
-  color: #5f6b54;
+  .tactile-button:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
 }

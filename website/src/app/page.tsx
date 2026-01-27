@@ -1,301 +1,497 @@
-import Link from "next/link"
+"use client"
+
+import type React from "react"
 import Image from "next/image"
-import { Check, ChevronRight } from "lucide-react"
 
-export default function HomePage() {
+import { ArrowRight, Shield, Brain, Heart, Menu, Sparkles, X, CheckCircle2 } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
+
+export default function PferdesichtPage() {
+  const [isHeroModalOpen, setIsHeroModalOpen] = useState(false)
+  const [heroSubmitted, setHeroSubmitted] = useState(false)
+  const [isSecuritySubmitted, setIsSecuritySubmitted] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const handleHeroSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setHeroSubmitted(true)
+    setTimeout(() => {
+      setIsHeroModalOpen(false)
+      setHeroSubmitted(false)
+    }, 3000)
+  }
+
+  const handleSecuritySubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSecuritySubmitted(true)
+    setTimeout(() => {
+      setIsSecuritySubmitted(false)
+    }, 5000)
+  }
+
   return (
-    <main className="min-h-screen bg-white">
-      {/* ============================================ */}
-      {/* HERO SECTION - Fullscreen with gradient */}
-      {/* ============================================ */}
-      <section className="relative min-h-screen flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/heroes/hero-koppel.png"
-            alt="Braunes Pferd mit weißer Blesse im goldenen Licht"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Dark gradient from left */}
-          <div className="absolute inset-0 bg-gradient-to-r from-loam-900/80 via-loam-900/40 to-loam-900/10" />
-        </div>
+    <div className="relative overflow-x-hidden">
+      {/* Texture Overlay */}
+      <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.05] bg-paper-grain" />
 
-        {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <div className="max-w-2xl">
-            {/* Badge */}
-            <span className="inline-block bg-white/10 backdrop-blur-sm text-white text-sm font-medium px-4 py-1.5 rounded-full mb-8 border border-white/20">
+      {/* Header */}
+
+      {/* Hero Section */}
+      <section className="relative w-full h-screen min-h-[600px] max-h-[900px] flex items-center overflow-hidden">
+        <Image
+          src="/hero-koppel.png"
+          alt="Brown horse with white blaze in golden hour paddock"
+          fill
+          priority
+          className="object-cover object-[75%_center] warm-film-grain"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-loam/80 via-loam/40 to-loam/10" />
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-gold text-[#EBE6DF] text-xs font-sans font-bold tracking-widest uppercase mb-6 md:mb-8">
               PERSPEKTIVWECHSEL
-            </span>
-
-            {/* Headline - Problem + Lösung Format */}
-            <h1 className="font-serif text-5xl lg:text-6xl text-white mb-6 leading-tight">
-              Finde DEINE Perspektive im<br />
-              <span className="italic text-gold-400">Meinungs-Dschungel.</span>
+            </div>
+            <h1 className="text-[#F3F0EB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.1] mb-6 md:mb-8 font-serif hero-text-shadow">
+              Finde die Wahrheit für dein Pferd im{" "}
+              <span className="italic text-[#C5A065] font-normal">Meinungs-Dschungel</span>.
             </h1>
-
-            {/* Subheadline - Validierung */}
-            <div className="border-l-4 border-gold-400 pl-6 mb-10">
-              <p className="text-white/90 text-lg leading-relaxed">
-                Du bist nicht „pingelig", wenn du Dinge hinterfragst – du bist konsequent. Doch dein Weg zur natürlichen Haltung ist gepflastert mit widersprüchlichen Informationen. Ich filtere das für dich: Fundiert sortiert und im Matsch des Alltags getestet.
-              </p>
-            </div>
-
-            {/* CTA Button */}
-            <Link
-              href="#quiz"
-              className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-loam-900 font-medium px-10 py-5 rounded-xl transition-colors"
-            >
-              Frühlings-Check starten
-              <ChevronRight className="w-5 h-5" />
-            </Link>
-
-            {/* Trust Badges */}
-            <div className="flex gap-6 text-white/80 text-sm mt-6">
-              <div className="flex items-center gap-2">
-                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
-                <span>2 Minuten</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
-                <span>Persönlicher Fahrplan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
-                <span>100% kostenfrei</span>
+            <p className="text-[#EBE6DF]/90 text-base sm:text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mb-8 md:mb-12 border-l-2 border-gold/50 pl-4 md:pl-6">
+              Du bist nicht „pingelig", wenn du Dinge hinterfragst – du bist konsequent. Doch dein Weg zur natürlichen
+              Haltung ist gepflastert mit widersprüchlichen Informationen. Ich filtere das für dich: Fundiert sortiert
+              und im Matsch des Alltags getestet.
+            </p>
+            <div className="flex flex-col gap-4 font-sans">
+              <Link
+                href="/quiz"
+                className="w-full sm:w-auto px-8 py-4 bg-gold hover:bg-[#b8956a] text-white text-base font-bold tracking-wide rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-xl transition-colors"
+              >
+                Frühlings-Check starten
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-[#EBE6DF]/80 text-xs font-sans">
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-sage" />
+                  2 Minuten
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-sage" />
+                  Persönlicher Fahrplan
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-sage" />
+                  100% kostenfrei
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============================================ */}
-      {/* GASLIGHTING SECTION - "Kennst du das?" */}
-      {/* ============================================ */}
-      <section className="py-20 bg-loam-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Heading */}
-          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-12 text-center">
-            Kennst du das?
-          </h2>
-
-          {/* Gaslighting-Sätze als Quotes */}
-          <div className="space-y-6 mb-12">
-            <blockquote className="border-l-4 border-sage-400 pl-6 py-2 text-loam-700 italic text-lg">
-              "Du denkst zu viel."
-            </blockquote>
-
-            <blockquote className="border-l-4 border-sage-400 pl-6 py-2 text-loam-700 italic text-lg">
-              "Das haben wir schon immer so gemacht."
-            </blockquote>
-
-            <blockquote className="border-l-4 border-sage-400 pl-6 py-2 text-loam-700 italic text-lg">
-              "Der verarscht dich nur."
-            </blockquote>
-
-            <blockquote className="border-l-4 border-sage-400 pl-6 py-2 text-loam-700 italic text-lg">
-              "Du bist zu pingelig."
-            </blockquote>
-          </div>
-
-          {/* Validierung */}
-          <div className="text-center">
-            <p className="text-2xl text-white font-medium mb-4">
-              Du bist nicht das Problem. Das System ist das Problem.
-            </p>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              Wer hinschaut, wird abgestempelt. Dabei ist Aufmerksamkeit genau das, 
-              was natürliche Pferdehaltung braucht.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================ */}
-      {/* BENEFITS SECTION - 3 Schichten Modell */}
-      {/* ============================================ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">
-              Was du hier bekommst
-            </h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              Wissen, das dir niemand mehr nehmen kann – für jede Situation.
-            </p>
-          </div>
-
-          {/* 3 Benefits Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Benefit 1: Schicht 1 (Explizit) - Wissen */}
-            <div className="bg-loam-50 rounded-lg p-8">
-              <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
-                <Check className="w-6 h-6 text-sage-700" />
-              </div>
-              <h3 className="font-serif text-xl text-white mb-4">
-                Sicherheit in deinen Entscheidungen
-              </h3>
-              <p className="text-white/90 leading-relaxed">
-                Du willst wissen, dass es deinem Pferd gut geht – nicht nur hoffen. 
-                Verstehe die Zusammenhänge von Haltung, Fütterung und Gesundheit, 
-                sodass du fundiert entscheiden kannst.
+      {/* Quiz Section - Sage Background */}
+      <section className="py-20 md:py-24 bg-sage relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Column - Text */}
+            <div className="text-center lg:text-left">
+              <span className="text-white/90 font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+                DEIN PERSÖNLICHER FRÜHLINGS-FAHRPLAN
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 leading-[1.1] text-balance">
+                Wie fit ist dein Pferd für den <span className="italic">Frühling</span>?
+              </h2>
+              <p className="text-white/85 text-lg font-sans font-light leading-relaxed mb-8">
+                Fellwechsel, Anweiden, Parasiten – alle reden gleichzeitig auf dich ein. Aber was ist wirklich wichtig für DEIN Pferd? In 2 Minuten weißt du es.
               </p>
+              <div className="flex flex-col items-center lg:items-start gap-4">
+                <Link
+                  href="/quiz"
+                  className="w-full sm:w-auto px-8 py-4 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-lg transition-colors"
+                >
+                  Quiz starten
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <p className="text-white/60 text-xs font-sans flex flex-wrap items-center gap-3">
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    8 kurze Fragen
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    Sofort Ergebnis
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    Report per E-Mail
+                  </span>
+                </p>
+              </div>
             </div>
-
-            {/* Benefit 2: Schicht 2 (Implizit) - Validierung */}
-            <div className="bg-loam-50 rounded-lg p-8">
-              <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
-                <Check className="w-6 h-6 text-sage-700" />
+            {/* Right Column - Benefits */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-sm p-8 border border-white/20">
+              <h3 className="text-white font-sans font-bold text-sm tracking-widest uppercase mb-6">Was du bekommst:</h3>
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-gold text-lg">🎯</span>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-sans font-semibold mb-1">Risiko-Einschätzung</h4>
+                    <p className="text-white/70 text-sm font-sans">Deine persönliche Ampel: Grün, Gelb oder Rot</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-gold text-lg">📊</span>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-sans font-semibold mb-1">Deine Prioritäten</h4>
+                    <p className="text-white/70 text-sm font-sans">Was jetzt wichtig ist – und was warten kann</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-gold text-lg">📅</span>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-sans font-semibold mb-1">Persönlicher Kalender</h4>
+                    <p className="text-white/70 text-sm font-sans">Wochen-Plan Februar bis Mai – zum Abhaken</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="font-serif text-xl text-white mb-4">
-                Das Ende des nagenden Zweifels
-              </h3>
-              <p className="text-white/90 leading-relaxed">
-                Dieses Gefühl, vielleicht doch etwas falsch zu machen – es darf 
-                aufhören. Lerne zu unterscheiden zwischen unbegründeter Sorge und 
-                berechtigter Vorsicht.
-              </p>
-            </div>
-
-            {/* Benefit 3: Schicht 3 (Unbewusst) - Transformation (NICHT explizit benannt) */}
-            <div className="bg-loam-50 rounded-lg p-8">
-              <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
-                <Check className="w-6 h-6 text-sage-700" />
-              </div>
-              <h3 className="font-serif text-xl text-white mb-4">
-                Handlungsfähigkeit statt Überforderung
-              </h3>
-              <p className="text-white/90 leading-relaxed">
-                Wissen gibt dir die Ruhe, auch in kritischen Momenten klar zu denken. 
-                Du wirst nicht perfekt – aber du wirst handlungsfähig.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============================================ */}
-      {/* QUIZ TEASER */}
-      {/* ============================================ */}
-      <section id="quiz" className="py-20 bg-loam-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl mb-6">
-            Ist dein Pferd bereit für den Frühling?
-          </h2>
-          <p className="text-xl text-white/90 mb-8">
-            In 2 Minuten weißt du es.
+      {/* Ich bin Diana Section */}
+      <section className="py-20 md:py-24 bg-[#faf8f5]">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-lg ring-4 ring-sage/20">
+            <img
+              src="/images/Diana_Pferdesicht.jpeg"
+              alt="Diana - Gründerin von Pferdesicht"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-serif text-loam mb-4">Ich bin Diana.</h2>
+          <p className="text-loam/80 text-lg font-sans font-light leading-relaxed mb-8 max-w-xl mx-auto">
+            Seit über 30 Jahren begleiten mich Pferde. Ich filtere für dich die Wahrheit im Meinungs-Dschungel.
           </p>
           <Link
-            href="/quiz"
-            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-medium px-10 py-5 rounded-lg transition-colors"
+            href="/ueber-mich"
+            className="inline-flex items-center gap-2 text-gold font-sans font-bold text-sm tracking-widest uppercase hover:text-[#b8956a] transition-colors"
           >
-            Quiz starten
-            <ChevronRight className="w-5 h-5" />
+            Mehr über mich
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>
 
-      {/* ============================================ */}
-      {/* ÜBER DIANA - Kurz */}
-      {/* ============================================ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Text */}
-            <div>
-              <h2 className="font-serif text-3xl sm:text-4xl text-white mb-6">
-                Über Diana
-              </h2>
-              <p className="text-lg text-loam-700 mb-6 leading-relaxed">
-                Ich bin Diana – 30+ Jahre Pferdeerfahrung, 20 Jahre Offenstall-Management, 
-                16 Jahre Reittherapeutin. Ich durfte lernen, mich zu behaupten – 
-                durch Fehler, teure Tierarztrechnungen und schlaflose Nächte.
-              </p>
-              <p className="text-lg text-loam-700 mb-8 leading-relaxed">
-                Heute gebe ich dir die Worte, das Wissen und den Mut, den ich damals nicht hatte.
-              </p>
-              <Link
-                href="/ueber-diana"
-                className="inline-flex items-center gap-2 text-sage-700 hover:text-sage-800 font-medium"
-              >
-                Mehr über Diana
-                <ChevronRight className="w-4 h-4" />
-              </Link>
-            </div>
-
-            {/* Image */}
-            <div className="relative h-96 rounded-lg overflow-hidden">
-              <Image
-                src="/images/placeholder-diana.png"
-                alt="Diana mit Pferd"
-                fill
-                className="object-cover"
-              />
-            </div>
+      {/* Quote Section */}
+      <section className="py-24 md:py-32 bg-bg-light relative">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="flex justify-center mb-8">
+            <Sparkles className="w-10 h-10 text-gold" />
           </div>
-        </div>
-      </section>
-
-      {/* ============================================ */}
-      {/* WISSEN PREVIEW */}
-      {/* ============================================ */}
-      <section className="py-20 bg-loam-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">
-              Entdecke Wissen
-            </h2>
-            <p className="text-lg text-white/90">
-              Wissenschaftlich fundiert. Praxisnah erklärt.
+          <h2 className="text-3xl md:text-5xl font-serif text-loam mb-8 leading-tight text-balance">
+            Es gibt nie nur die eine <span className="italic text-sage">richtige Lösung</span>,<br />
+            wenn es um Dein Pferd geht.
+          </h2>
+          <div className="relative">
+            <p className="text-loam/80 text-lg md:text-xl font-sans font-light leading-loose max-w-2xl mx-auto text-pretty">
+              Standard-Antworten werden Individuen niemals gerecht. Was für das Pferd deiner Stallkollegin funktioniert,
+              kann für deines der falsche Weg sein. Wer nur nach „Schema F" sucht, überhört oft die leisen Signale. Denn
+              Pferdehaltung ist kein statischer Zustand, sondern ein lebendiger Prozess. Lerne, diese Signale zu lesen
+              und hinzuspüren.
             </p>
-          </div>
-
-          {/* Featured Articles Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[1, 2, 3].map((i) => (
-              <article key={i} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="relative h-48">
-                  <Image
-                    src={`/images/placeholder-article-${i}.png`}
-                    alt="Artikel Bild"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-xl text-white mb-2">
-                    Artikel Titel {i}
-                  </h3>
-                  <p className="text-white/90 mb-4">
-                    Kurze Beschreibung des Artikels...
-                  </p>
-                  <Link
-                    href={`/wissen/artikel-${i}`}
-                    className="text-sage-700 hover:text-sage-800 font-medium inline-flex items-center gap-1"
-                  >
-                    Weiterlesen
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          {/* CTA to All Articles */}
-          <div className="text-center">
-            <Link
-              href="/wissen"
-              className="inline-flex items-center gap-2 border-2 border-loam-900 text-white hover:bg-loam-900 hover:text-white font-medium px-8 py-3 rounded-lg transition-colors"
-            >
-              Alle Artikel entdecken
-              <ChevronRight className="w-5 h-5" />
-            </Link>
+            <div className="w-24 h-px bg-gold/40 mx-auto mt-12" />
           </div>
         </div>
       </section>
-    </main>
+
+      {/* Knowledge Section */}
+      <section className="py-24 bg-bg-light border-b border-loam/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-5xl font-serif text-loam text-center mb-20 leading-tight text-balance">
+            Wissen schafft Gesundheit.
+            <br />
+            <span className="italic text-sage">Beziehung schafft Vertrauen.</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 relative">
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gold/30 transform -translate-x-1/2" />
+            <div className="flex flex-col items-start pr-0 md:pr-10">
+              <div className="w-12 h-12 rounded-full border border-sage/30 flex items-center justify-center text-sage mb-6 bg-white">
+                <Brain className="w-6 h-6" />
+              </div>
+              <h3 className="font-sans font-bold text-sm tracking-widest uppercase text-loam mb-4">
+                Das Experten-Netzwerk
+              </h3>
+              <p className="font-sans font-light text-loam/80 leading-relaxed text-lg">
+                Mein Wissen ist über 15 Jahre gewachsen. Es basiert auf tausenden Gesprächen mit Tierärzten,
+                Therapeuten, Hufschmieden und Ernährungsexperten – entstanden aus der direkten Praxis unseres
+                Futtermittel-Vertriebs. Ergänzt durch unzählige Stunden intensiver Eigenrecherche. Keine Mythen, sondern
+                Fakten, die dir Sicherheit geben.
+              </p>
+            </div>
+            <div className="flex flex-col items-start pl-0 md:pl-10">
+              <div className="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold mb-6 bg-white">
+                <Heart className="w-6 h-6" />
+              </div>
+              <h3 className="font-sans font-bold text-sm tracking-widest uppercase text-loam mb-4">
+                Der Blick hinter die Kulissen
+              </h3>
+              <p className="font-sans font-light text-loam/80 leading-relaxed text-lg">
+                Durch Kooperationen durfte ich 5 Jahre lang den bekanntesten Trainern der Freiarbeit über die Schulter
+                schauen. Dort habe ich gelernt, was Partnerschaft wirklich bedeutet: Eine Verbindung, die hält, wenn das
+                Seil fällt. Ein Pferd, das bei dir bleibt – nicht weil es muss, sondern weil es sich in jedem Moment
+                freiwillig und voller Vertrauen für dich entscheidet.
+              </p>
+            </div>
+          </div>
+          <div className="mt-16 text-center">
+            <a
+              className="inline-flex items-center gap-2 text-sage font-serif text-xl italic hover:text-loam transition-colors border-b border-sage/30 hover:border-loam/30 pb-1"
+              href="#"
+            >
+              Wie ich lernte, meinem Bauchgefühl wieder zu vertrauen – Dianas Story
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Cards Section */}
+      <section className="py-24 bg-bg-light">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Card 1 */}
+            <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
+              <Link href="/blog/koerpersprache-der-dialog-beginnt" className="block">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src="/images/thumbnails/thumbnail-training.png"
+                    alt="Pferd galoppiert frei in der Arena"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 warm-film-grain"
+                  />
+                  <span className="absolute top-4 left-4 bg-white/90 px-3 py-1 text-[10px] font-sans font-bold tracking-widest text-loam uppercase backdrop-blur-sm">
+                    Training
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center gap-2 text-xs font-sans text-sage mb-4">
+                    <span>8 Min Lesezeit</span>
+                  </div>
+                  <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
+                    Körpersprache: Der Dialog beginnt, bevor du sprichst
+                  </h3>
+                  <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
+                    Lerne die Signale zu erkennen, bevor dein Pferd „laut" werden muss. Die nonverbale Kommunikation,
+                    die alles verändert.
+                  </p>
+                  <span className="text-xs font-bold font-sans uppercase tracking-widest border-b border-gold/50 pb-1 text-loam group-hover:border-gold transition-colors">
+                    Beitrag lesen
+                  </span>
+                </div>
+              </Link>
+            </article>
+
+            {/* Card 2 */}
+            <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
+              <Link href="/blog/pferd-eindecken-winter" className="block">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src="/images/thumbnails/thumbnail-winter-v3.png"
+                    alt="Haflinger mit dickem Winterfell im Schnee"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 warm-film-grain"
+                  />
+                  <span className="absolute top-4 left-4 bg-white/90 px-3 py-1 text-[10px] font-sans font-bold tracking-widest text-loam uppercase backdrop-blur-sm">
+                    Gesundheit & Haltung
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center gap-2 text-xs font-sans text-sage mb-4">
+                    <span>8 Min Lesezeit</span>
+                  </div>
+                  <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
+                    0 Grad am Stall: Pferd eindecken – ja oder nein?
+                  </h3>
+                  <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
+                    Wann eine Decke wirklich Sinn macht und warum Heu die beste Heizung ist. Faktenbasiert aus 20 Jahren
+                    Erfahrung.
+                  </p>
+                  <span className="text-xs font-bold font-sans uppercase tracking-widest border-b border-gold/50 pb-1 text-loam group-hover:border-gold transition-colors">
+                    Beitrag lesen
+                  </span>
+                </div>
+              </Link>
+            </article>
+
+            {/* Card 3 */}
+            <article className="group bg-white rounded-sm shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden">
+              <Link href="/blog/mindset-reiter" className="block">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src="/images/thumbnails/thumbnail-mindset.png"
+                    alt="Inniger Moment zwischen Mensch und Pferd"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 warm-film-grain"
+                  />
+                  <span className="absolute top-4 left-4 bg-white/90 px-3 py-1 text-[10px] font-sans font-bold tracking-widest text-loam uppercase backdrop-blur-sm">
+                    Mindset
+                  </span>
+                </div>
+                <div className="p-8">
+                  <div className="flex items-center gap-2 text-xs font-sans text-sage mb-4">
+                    <span>12 Min Lesezeit</span>
+                  </div>
+                  <h3 className="text-2xl font-serif text-loam mb-3 leading-tight group-hover:text-gold transition-colors">
+                    Angst im Sattel: Vom Tabu zur Stärke
+                  </h3>
+                  <p className="text-sm font-sans text-gray-500 mb-6 line-clamp-2">
+                    Warum Angst ein wichtiger Ratgeber ist und wie du lernst, mit ihr zu reiten statt gegen sie.
+                  </p>
+                  <span className="text-xs font-bold font-sans uppercase tracking-widest border-b border-gold/50 pb-1 text-loam group-hover:border-gold transition-colors">
+                    Beitrag lesen
+                  </span>
+                </div>
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+
+      {isHeroModalOpen && (
+        <div
+          className="fixed inset-0 bg-black/70 backdrop-blur-md z-[100] flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setIsHeroModalOpen(false)}
+        >
+          <div
+            className="bg-white max-w-lg w-full rounded-sm shadow-2xl p-10 relative animate-in zoom-in-95 duration-200 border-2 border-gold/20"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsHeroModalOpen(false)}
+              className="absolute top-4 right-4 text-loam/60 hover:text-loam transition-colors z-10"
+              aria-label="Schließen"
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            {!heroSubmitted ? (
+              <>
+                <div className="flex items-center justify-center mb-6">
+                  <Shield className="w-16 h-16 text-gold" />
+                </div>
+                <h3 className="text-3xl font-serif text-loam mb-4 text-center font-bold leading-tight">
+                  Ist dein Pferd <span className="italic text-sage font-normal">wirklich entspannt</span>?
+                </h3>
+                <p className="text-loam font-sans text-base leading-relaxed mb-6 text-center">
+                  Lade dir die kostenlose Stress-Checkliste herunter und lerne, die subtilen Zeichen zu erkennen, bevor
+                  aus kleinen Signalen große Probleme werden.
+                </p>
+
+                <form onSubmit={handleHeroSubmit} className="w-full space-y-4">
+                  <input
+                    type="email"
+                    placeholder="Deine E-Mail für den Download"
+                    required
+                    className="w-full py-3.5 px-4 bg-paper border-2 border-loam/20 focus:border-gold text-loam placeholder-loam/50 focus:outline-none font-sans text-base rounded-sm transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full py-4 px-8 bg-gold hover:bg-[#b08e58] text-loam font-sans font-bold text-sm tracking-widest uppercase rounded-sm tactile-button transition-colors"
+                  >
+                    Ja, ich will Sicherheit
+                  </button>
+                  <p className="text-center text-xs text-loam/60 font-sans">
+                    Kostenlos &amp; 100% Spam-frei. Abmeldung jederzeit.
+                  </p>
+                </form>
+              </>
+            ) : (
+              <div className="text-center py-8">
+                <div className="flex justify-center mb-6">
+                  <CheckCircle2 className="w-20 h-20 text-sage" />
+                </div>
+                <h3 className="text-3xl font-serif text-loam mb-3 font-bold">Sicherheit zuerst</h3>
+                <p className="text-lg font-serif italic text-gold mb-6">Weil genaues Hinsehen der beste Schutz ist.</p>
+                <div className="bg-paper rounded-sm p-6 mb-6 text-left">
+                  <p className="text-loam font-sans text-base leading-relaxed mb-4">
+                    Stress ist der unsichtbare Feind der Pferdegesundheit. Lerne ihn frühzeitig zu erkennen, bevor er
+                    krank macht.
+                  </p>
+                  <p className="text-loam font-sans text-base leading-relaxed">
+                    Diese Checkliste ist dein tägliches Werkzeug, um dein Bauchgefühl mit Fakten zu bestätigen.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 text-left bg-sage/10 rounded-sm p-4 mb-4">
+                  <CheckCircle2 className="w-5 h-5 text-sage flex-shrink-0 mt-0.5" />
+                  <p className="text-sm text-loam font-sans">
+                    <span className="font-semibold">Postfach prüfen:</span> Die Checkliste wartet bereits auf dich
+                  </p>
+                </div>
+                <p className="text-center text-xs text-loam/60 font-sans">
+                  Falls du nichts siehst, prüfe bitte auch deinen Spam-Ordner.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {isSecuritySubmitted && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[100] p-6">
+          <div className="bg-white rounded-lg max-w-2xl w-full p-8 md:p-12 relative shadow-2xl">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 mb-6">
+                <CheckCircle2 className="w-12 h-12 text-green-600" />
+              </div>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-loam mb-4">
+                Perfekt! Deine Checkliste ist unterwegs.
+              </h3>
+              <p className="text-lg text-loam/80 font-sans leading-relaxed">
+                Prüfe gleich dein Postfach. In wenigen Minuten erhältst du den Download-Link zu deiner kostenlosen
+                Stress-Checkliste.
+              </p>
+            </div>
+
+            <div className="bg-sage/10 border-l-4 border-sage p-6 mb-6">
+              <h4 className="font-serif text-xl font-bold text-loam mb-3">Was dich in der Checkliste erwartet:</h4>
+              <ul className="space-y-2 text-loam/80 font-sans">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
+                  <span>5 eindeutige Stress-Signale, die du täglich checken kannst</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
+                  <span>Bebilderte Anleitungen nach tierärztlichen Standards</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
+                  <span>Sofort umsetzbare Maßnahmen für den Stall-Alltag</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-sage mt-0.5 flex-shrink-0" />
+                  <span>Wissenschaftlich fundiert – verständlich erklärt</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gold/10 border border-gold/30 p-4 text-center">
+              <p className="text-sm text-loam/70 font-sans">
+                <strong className="text-loam">Datenschutz:</strong> Deine E-Mail wird niemals weitergegeben. Du kannst
+                dich jederzeit mit einem Klick abmelden.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   )
 }
