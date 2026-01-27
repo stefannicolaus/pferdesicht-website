@@ -1,13 +1,14 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug, getPostSlugs } from "@/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { KeyTakeaway, ScientificFact, ExpertQuote, QuizCTA } from "@/components/blog";
+import { KeyTakeaway, ScientificFact, ExpertQuote, QuizCTA, SummaryBox } from "@/components/blog";
 
 const components = {
   KeyTakeaway,
   ScientificFact,
   ExpertQuote,
   QuizCTA,
+  SummaryBox,
 };
 
 export async function generateStaticParams() {
