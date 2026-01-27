@@ -1,6 +1,14 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug, getPostSlugs } from "@/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { KeyTakeaway, ScientificFact, ExpertQuote, QuizCTA } from "@/components/blog";
+
+const components = {
+  KeyTakeaway,
+  ScientificFact,
+  ExpertQuote,
+  QuizCTA,
+};
 
 export async function generateStaticParams() {
   const slugs = getPostSlugs();
@@ -11,7 +19,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return { title: "Artikel nicht gefunden" };
-  
   return {
     title: `${post.frontmatter.title} | Pferdesicht`,
     description: post.frontmatter.description,
@@ -21,14 +28,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  
-  if (!post) {
-    notFound();
-  }
+  if (!post) notFound();
 
   return (
     <article className="max-w-3xl mx-auto px-4 py-12">
-      {/* Hero Image */}
       {post.frontmatter.image && (
         <div className="relative aspect-video mb-8 rounded-lg overflow-hidden">
           <img
@@ -38,30 +41,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           />
         </div>
       )}
-      
-      {/* Category & Reading Time */}
       <div className="flex items-center gap-4 text-sm text-loam/60 mb-4">
         <span className="px-3 py-1 bg-sage/10 text-sage rounded-full">
           {post.frontmatter.category}
         </span>
-        {post.frontmatter.readingTime && (
-          <span>{post.frontmatter.readingTime}</span>
-        )}
+        {post.frontmatter.readingTime && <span>{post.frontmatter.readingTime}</span>}
       </div>
-      
-      {/* Title */}
-      <h1 className="font-serif text-4xl md:text-5xl text-loam mb-6">
-        {post.frontmatter.title}
-      </h1>
-      
-      {/* Description */}
+      <h1 className="font-serif text-4xl md:text-5xl text-loam mb-6">{post.frontmatter.title}</h1>
       {post.frontmatter.description && (
-        <p className="text-xl text-loam/70 mb-8 leading-relaxed">
-          {post.frontmatter.description}
-        </p>
+        <p className="text-xl text-loam/70 mb-8 leading-relaxed">{post.frontmatter.description}</p>
       )}
-      
-      {/* Author & Date */}
       <div className="flex items-center gap-4 pb-8 mb-8 border-b border-loam/10">
         <div>
           <p className="font-medium text-loam">{post.frontmatter.author}</p>
@@ -74,10 +63,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </p>
         </div>
       </div>
-      
-      {/* Content */}
       <div className="blog-content">
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} components={components} />
       </div>
     </article>
   );
