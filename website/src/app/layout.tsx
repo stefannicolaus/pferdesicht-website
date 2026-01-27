@@ -22,23 +22,7 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: "Pferdesicht.com - Finde die Wahrheit für dein Pferd",
   description: "Fundierte Informationen zur natürlichen Pferdehaltung. Authentisch, fundiert, modern.",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }], apple: "/favicon.svg" },
 }
 
 export default function RootLayout({
