@@ -31,26 +31,42 @@ export default function HomePage() {
             </span>
 
             {/* Headline - Problem + Lösung Format */}
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white mb-6 leading-tight">
-              Finde DEINE Perspektive im{" "}
+            <h1 className="font-serif text-5xl lg:text-6xl text-white mb-6 leading-tight">
+              Finde DEINE Perspektive im<br />
               <span className="italic text-gold-400">Meinungs-Dschungel.</span>
             </h1>
 
             {/* Subheadline - Validierung */}
             <div className="border-l-4 border-gold-400 pl-6 mb-10">
               <p className="text-white/90 text-lg leading-relaxed">
-                Du hinterfragst nicht zu viel – du bist konsequent. Hier bekommst du 
-                getestete, praxisnahe Informationen zu natürlicher Pferdehaltung.
+                Du bist nicht „pingelig", wenn du Dinge hinterfragst – du bist konsequent. Doch dein Weg zur natürlichen Haltung ist gepflastert mit widersprüchlichen Informationen. Ich filtere das für dich: Fundiert sortiert und im Matsch des Alltags getestet.
               </p>
             </div>
 
             {/* CTA Button */}
             <Link
               href="#quiz"
-              className="inline-block bg-gold-500 hover:bg-gold-600 text-loam-900 font-medium px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-loam-900 font-medium px-10 py-5 rounded-xl transition-colors"
             >
               Frühlings-Check starten
+              <ChevronRight className="w-5 h-5" />
             </Link>
+
+            {/* Trust Badges */}
+            <div className="flex gap-6 text-white/80 text-sm mt-6">
+              <div className="flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
+                <span>2 Minuten</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
+                <span>Persönlicher Fahrplan</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-white/60 rounded-full"></span>
+                <span>100% kostenfrei</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -61,7 +77,7 @@ export default function HomePage() {
       <section className="py-20 bg-loam-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
-          <h2 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-12 text-center">
+          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-12 text-center">
             Kennst du das?
           </h2>
 
@@ -86,10 +102,10 @@ export default function HomePage() {
 
           {/* Validierung */}
           <div className="text-center">
-            <p className="text-2xl text-loam-900 font-medium mb-4">
+            <p className="text-2xl text-white font-medium mb-4">
               Du bist nicht das Problem. Das System ist das Problem.
             </p>
-            <p className="text-lg text-loam-600 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Wer hinschaut, wird abgestempelt. Dabei ist Aufmerksamkeit genau das, 
               was natürliche Pferdehaltung braucht.
             </p>
@@ -104,10 +120,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-4">
+            <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">
               Was du hier bekommst
             </h2>
-            <p className="text-lg text-loam-600 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Wissen, das dir niemand mehr nehmen kann – für jede Situation.
             </p>
           </div>
@@ -119,10 +135,10 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
                 <Check className="w-6 h-6 text-sage-700" />
               </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-4">
+              <h3 className="font-serif text-xl text-white mb-4">
                 Sicherheit in deinen Entscheidungen
               </h3>
-              <p className="text-loam-600 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 Du willst wissen, dass es deinem Pferd gut geht – nicht nur hoffen. 
                 Verstehe die Zusammenhänge von Haltung, Fütterung und Gesundheit, 
                 sodass du fundiert entscheiden kannst.
@@ -134,10 +150,10 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
                 <Check className="w-6 h-6 text-sage-700" />
               </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-4">
+              <h3 className="font-serif text-xl text-white mb-4">
                 Das Ende des nagenden Zweifels
               </h3>
-              <p className="text-loam-600 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 Dieses Gefühl, vielleicht doch etwas falsch zu machen – es darf 
                 aufhören. Lerne zu unterscheiden zwischen unbegründeter Sorge und 
                 berechtigter Vorsicht.
@@ -149,10 +165,10 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-sage-200 rounded-lg flex items-center justify-center mb-6">
                 <Check className="w-6 h-6 text-sage-700" />
               </div>
-              <h3 className="font-serif text-xl text-loam-900 mb-4">
+              <h3 className="font-serif text-xl text-white mb-4">
                 Handlungsfähigkeit statt Überforderung
               </h3>
-              <p className="text-loam-600 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 Wissen gibt dir die Ruhe, auch in kritischen Momenten klar zu denken. 
                 Du wirst nicht perfekt – aber du wirst handlungsfähig.
               </p>
@@ -174,7 +190,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/quiz"
-            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-loam-900 font-medium px-8 py-4 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-medium px-10 py-5 rounded-lg transition-colors"
           >
             Quiz starten
             <ChevronRight className="w-5 h-5" />
@@ -190,7 +206,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Text */}
             <div>
-              <h2 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl text-white mb-6">
                 Über Diana
               </h2>
               <p className="text-lg text-loam-700 mb-6 leading-relaxed">
@@ -229,10 +245,10 @@ export default function HomePage() {
       <section className="py-20 bg-loam-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl text-loam-900 mb-4">
+            <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">
               Entdecke Wissen
             </h2>
-            <p className="text-lg text-loam-600">
+            <p className="text-lg text-white/90">
               Wissenschaftlich fundiert. Praxisnah erklärt.
             </p>
           </div>
@@ -250,10 +266,10 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-xl text-loam-900 mb-2">
+                  <h3 className="font-serif text-xl text-white mb-2">
                     Artikel Titel {i}
                   </h3>
-                  <p className="text-loam-600 mb-4">
+                  <p className="text-white/90 mb-4">
                     Kurze Beschreibung des Artikels...
                   </p>
                   <Link
@@ -272,7 +288,7 @@ export default function HomePage() {
           <div className="text-center">
             <Link
               href="/wissen"
-              className="inline-flex items-center gap-2 border-2 border-loam-900 text-loam-900 hover:bg-loam-900 hover:text-white font-medium px-8 py-3 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 border-2 border-loam-900 text-white hover:bg-loam-900 hover:text-white font-medium px-8 py-3 rounded-lg transition-colors"
             >
               Alle Artikel entdecken
               <ChevronRight className="w-5 h-5" />
