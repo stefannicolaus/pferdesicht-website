@@ -1,279 +1,233 @@
-# PFERDESICHT PROJECT RULES
+# PFERDESICHT – Projektdokumentation für Claude Code
 
-## CRITICAL: PROJECT DOCUMENTATION
-
-**BEFORE writing ANY content, ALWAYS:**
-1. Read `/PROJECT_GUIDE.md` for document references
-2. Read the referenced project docs in `/project-docs/`
-3. Follow the guidelines from those docs
-
-**Example workflow:**
-```
-User: "Create Homepage Hero section"
-Claude Code: 
-1. Reads PROJECT_GUIDE.md → sees "For Homepage Hero use golden-circle WHY"
-2. Reads /project-docs/pferdesicht-golden-circle-v2_2.md
-3. Extracts WHY section
-4. Uses it for Hero content
-```
-
-**Never write generic content. Always use project docs as source.**
-
----
-# PFERDESICHT – Projekt-Dokumentation für Claude Code
-
-## Projektübersicht
-
-**Pferdesicht** ist eine deutschsprachige Bildungsplattform für evidenzbasierte Pferdehaltung im DACH-Raum (Deutschland, Österreich, Schweiz). Die Plattform wird von **Diana** betrieben, die über 30 Jahre Pferdeerfahrung mitbringt.
-
-**Website:** pferdesicht.com  
-**Sprache:** Deutsch (DACH-Raum)  
-**Zielgruppe:** Verantwortungsvolle Pferdebesitzerinnen ("Anna")
+> **WICHTIG:** Dies ist eine KURZE Übersicht. Für Details lies die referenzierten Dokumente in `/project-docs/`.
 
 ---
 
-## Die Mission: "Wissen als Rüstung"
+## Projekt
 
-> "Heute gebe ich dir die Worte, das Wissen und den Mut, den ich damals nicht hatte."
-
-Diana befähigt Pferdebesitzer, fundierte Entscheidungen zu treffen – statt auf Tradition oder Gruppendruck zu vertrauen.
-
-**Kernaussage:** Pferdebesitzer, die "zu viele Fragen" stellen, sind nicht das Problem – sie sind die Lösung für natürliche Pferdehaltung.
-
-**Tagline:** "Vertraue deiner Perspektive."
+**Name:** Pferdesicht  
+**URL:** pferdesicht.com  
+**Sprache:** Deutsch (DACH: Deutschland, Österreich, Schweiz)  
+**Tech-Stack:** Next.js, Tailwind CSS, Vercel  
+**Inhaber:** Diana + Stefan (Technik)
 
 ---
 
-## Diana – Die Stimme hinter Pferdesicht
+## Mission: "Wissen als Rüstung"
 
-### Hintergrund
+> *"Heute gebe ich dir die Worte, das Wissen und den Mut, den ich damals nicht hatte."*
+
+Pferdesicht befähigt Pferdebesitzer, fundierte Entscheidungen zu treffen – statt auf Tradition, Stallgerede oder Gruppendruck zu vertrauen.
+
+**Kernaussage:** Pferdebesitzer, die "zu viele Fragen" stellen, sind nicht das Problem – sie sind die Lösung.
+
+**Tagline:** *Vertraue deiner Perspektive.*
+
+---
+
+## Diana – Die Stimme
+
+**Hintergrund:**
 - 30+ Jahre Pferdeerfahrung
-- 20 Jahre Offenstallmanagement
+- 20 Jahre Offenstallmanagement  
 - 16 Jahre Reittherapeutin
 - 15 Jahre bei Hempura (Hanfprodukte für Pferde)
 
-### Diana's Dreifach-Autorität
-1. **Praktikerin:** Jahrzehnte eigene Stallführung, tausende Pferde beobachtet
-2. **Reittherapeutin:** Geschulter Blick für Körpersprache und Verhalten
-3. **Freiheitsdressur:** Kommunikation ohne Zwang als Grundhaltung
+**Tonalität:**
+- Küchentisch-Gespräch, keine Akademiker-Sprache
+- Warmherzig aber direkt
+- "Ich zeige dir, was ich gelernt habe" (nicht: "Du musst...")
+- Prozess-orientiert, nicht absolutistisch
 
-### Tonalität
-| Diana IST | Diana ist NICHT |
-|-----------|-----------------|
-| Warm, direkt, kompetent | Belehrend, besserwisserisch |
-| "Küchentisch-Gespräch" | Akademische Distanz |
-| Erfahrungsbasiert mit Fakten | Nur Bauchgefühl ODER nur Studien |
-| Validierend | Kritisierend |
-
-**Sprachliche Muster:**
+**DO:**
 - "In meiner Erfahrung..."
-- "Was ich beobachtet habe..."
-- "Kann sein, muss nicht. Hier ist, worauf du achten kannst."
+- "Viele Pferdebesitzer fragen sich..."
+- "Das hat mich selbst überrascht..."
 
-**NICHT:**
-- "Du musst..." / "Man sollte..."
-- Übertriebene Dringlichkeit
-- Absolutismen ("Immer", "Niemals")
+**DON'T:**
+- Belehrend oder oberlehrerhaft
+- Aggressive Dringlichkeit ("JETZT handeln!")
+- Absolutistische Aussagen ohne Kontext
+
+→ **Details:** `@project-docs/pferdesicht-diana-bibel-v3_0-komplett.md`
 
 ---
 
 ## Anna – Die Zielgruppe
 
-### Wer ist Anna?
-Anna ist die **verantwortungsvolle Pferdebesitzerin** (25-55 Jahre, überwiegend weiblich), die:
-- Detaillierte Fragen stellt und "zu genau" hinschaut
-- Am Stall oft als "zu pingelig" abgestempelt wird
-- Zwischen widersprüchlichen Meinungen gefangen ist
-- Innere Sicherheit sucht, nicht externe Bestätigung
+**Wer ist Anna:**
+- Verantwortungsvolle Pferdebesitzerin, 25-55 Jahre
+- Stellt "zu viele" Fragen, wird dafür belächelt
+- Überinformiert aber nicht wissend (Google-Chaos)
+- Sucht: Orientierung, Bestätigung, klare Antworten
 
-### Anna's Kernproblem: Das Informations-Dilemma
+**Anna's 3 Schichten:**
+1. **Oberfläche:** "Ich will wissen, wie ich X richtig mache"
+2. **Darunter:** "Ich will sicher sein, dass es meinem Pferd gut geht"
+3. **Kern:** "Ich will mich nicht schuldig fühlen müssen"
 
-> **Anna ist nicht uninformiert – sie ist ÜBERINFORMIERT, aber nicht WISSEND.**
+**Anna's Urängste:**
+- Etwas zu übersehen, das dem Pferd schadet
+- Vor anderen als "hysterisch" oder "überbesorgt" dazustehen
+- Eine falsche Entscheidung zu treffen, die irreversibel ist
 
-Sie hat:
-- 47 Tabs offen
-- 3 widersprüchliche Meinungen gelesen
-- Mehr Fragen als vorher
+**Quiet Luxury (was Anna wirklich kauft):**
+Der tiefe Frieden zu wissen, dass man alles richtig macht – ohne ständig zweifeln zu müssen.
 
-**Dianas Rolle:** Nicht mehr Information liefern, sondern SORTIERTES WISSEN.
+→ **Details:** `@project-docs/pferdesicht-anna-empowerment-framework-v2_6-komplett.md`
 
-### Was Anna wirklich sucht: "Quiet Luxury"
+---
 
-> *Die tiefe Ruhe zu wissen, dass es ihrem Pferd gut geht – auch wenn sie nicht da ist.*
+## Design-System: "Organic Luxury"
 
-| Was Anna NICHT sucht | Was Anna WIRKLICH sucht |
-|---------------------|------------------------|
-| Teure Produkte | Sicherheit in Entscheidungen |
-| Status im Stall | Handlungsfähigkeit |
-| Perfektion | Das Ende des Zweifelns |
-| Jemand der sagt was zu tun ist | Jemand der hilft selbst zu entscheiden |
+**Farben:**
+- Loam (Haupttext): `#2c2a25`
+- Sage (Akzent): `#78866b`
+- Gold (Highlights): `#c8a476`
+- Background Light: `#f3f0eb`
+- Paper: `#faf9f7`
 
-### Das 3-Schichten-Modell (Anna's Motivation)
+**Typografie:**
+- Headlines: EB Garamond (Serif)
+- Body: Poppins (Sans-Serif)
+
+**Stil:** Warm, authentisch, editorial – keine kalte Perfektion
+
+---
+
+## Dokument-Struktur
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│ SCHICHT 1: Was Anna SAGT                                    │
-│ "Ich will wissen, ob ich richtig eindecke."                 │
-│ → Im Content DIREKT beantworten                             │
-├─────────────────────────────────────────────────────────────┤
-│ SCHICHT 2: Was Anna FÜHLT                                   │
-│ "Ich habe Angst, meinem Pferd zu schaden."                  │
-│ → Im Content SANFT benennen und validieren                  │
-├─────────────────────────────────────────────────────────────┤
-│ SCHICHT 3: Was Anna NICHT AUSSPRICHT                        │
-│ "Ich will endlich aufhören zu zweifeln."                    │
-│ → NICHT im Content benennen – nur WISSEN geben              │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Anna's Urängste
-1. **Dem Pferd schaden** – durch Unwissenheit oder falsche Entscheidungen
-2. **Kosten-Explosion** – teure Tierarztrechnungen, vermeidbare Fehler
-3. **Nicht ernst genommen werden** – am Stall, beim Tierarzt
-4. **Falsche Profis vertrauen** – und es zu spät merken
-
----
-
-## Die zwei Welten von Pferdesicht
-
-### Welt 1: Prävention
-"Damit es gar nicht erst passiert"
-- Anna kommt BEVOR es Probleme gibt
-- Blog-Beiträge, Lead Magnets, Kurse
-
-### Welt 2: Orientierung
-"Wenn es passiert ist"
-- Anna kommt WEIL es schon Probleme gibt
-- Krisen-Content, Begleitung
-
-**Beide Welten führen zum gleichen Ziel:** Anna's "Quiet Luxury"
-
----
-
-## Content-Produkte
-
-### Aktuelles Hauptprodukt: G18 Frühlings-Guide
-- 4 Module: Fruktan/Anweiden, Fellwechsel, Fütterung, Parasiten/Entwurmung
-- 25.000+ Wörter wissenschaftlich fundierter Content
-- Preis: €47
-
-### Die 12 Wissens-Cluster
-1. Thermoregulation & Eindecken
-2. Fütterung & Verdauung
-3. Bewegung & Training
-4. Fell- & Hufpflege
-5. Verhalten & Psychologie
-6. Parasiten & Entwurmung
-7. Erste Hilfe & Notfall
-8. Zahngesundheit
-9. Stoffwechsel & Erkrankungen
-10. Haltungsformen (Box vs. Offenstall)
-11. Mensch-Pferd-Beziehung
-12. Stallgemeinschaft & Behaupten
-
----
-
-## Visuelle Ebenen
-
-Pferdesicht nutzt zwei visuelle Ebenen für unterschiedliche Zwecke:
-
-### Ebene 1: "Organic Luxury" (Clean)
-
-| Einsatz | Wirkung |
-|---------|---------|
-| Website Header, Hero-Bilder | Hochwertig, vertrauensbildend |
-| Kurs-Cover, Produkt-Mockups | "Das ist eine seriöse Expertin" |
-| Landing Pages, Marketing | Professionell, ruhig |
-
-**Farben:** Sage Green (#78866b), Loam (#2c2a25), Gold (#c8a476)
-
-### Ebene 2: "Napkin Sketch" (Küchentisch)
-
-| Einsatz | Wirkung |
-|---------|---------|
-| Modul-Erklärungen, Prozesse | Persönlich, nahbar |
-| Social Media Erklär-Posts | "Diana erklärt es dir" |
-| Email-Grafiken, Lead Magnets | Am Küchentisch erklärt |
-
-**Stil:**
-- Weißer Servietten-Hintergrund (KEINE Flecken)
-- Schwarze Filzstift-Linien
-- NUR Sage Green (#78866b) als Farbakzent
-- Imperfekte Handschrift (wackelig, aber lesbar)
-- Max. 5-7 Wörter pro Grafik
-
-**Einführungstext für erste Napkin-Grafik:**
-> *"Ich bin keine Grafikerin. Aber manchmal erkläre ich Dinge am liebsten so, wie ich sie meiner Freundin am Küchentisch erklären würde – mit einer schnellen Skizze auf dem nächsten Stück Papier."*
-
-**Master-Template:** `src/prompts/napkin_style_master.md`
-**Referenz-Bild:** `assets/test_napkin_final.png`
-
----
-
-## Bestehende Dokumente (im Claude.ai Projekt)
-
-| Dokument | Version | Zweck |
-|----------|---------|-------|
-| **Master-Prompt** | v3.13 | Workflow für Blogbeiträge |
-| **Diana-Bibel** | v3.0 | Positionen, Fakten, Tonalität, Tracking |
-| **Anna Empowerment Framework** | v2.6 | Vollständige Zielgruppen-Analyse |
-| **Golden Circle** | v2.2 | WHY/HOW/WHAT, Brand Foundation |
-| **12-Cluster-Analyse** | v1.1 | Detail-Kosten und Risiken pro Thema |
-| **Produktstrategie** | v1.2 | Guide-Bibliothek, Funnel-Architektur |
-| **Modul-Erstellungs-Workflow** | v1.2 | Für Kurs-Module (nicht Blogbeiträge) |
-| **Leadmagnet-Masterprompt** | v1.0 | Für Leadmagnet-Erstellung |
-| **Sales-Copy-Frameworks** | - | Landing Page Texte (DACH-gerecht) |
-| **Slide-Bibliothek** | v3.0 | 35 Canva-Template-Typen für Videos |
-
----
-
-## Ordnerstruktur (lokal)
-
-```
-Pferdesicht/
-├── CLAUDE.md          # Diese Datei – Projekt-Kontext
-├── content/           # Artikel, Module, Guides
-├── assets/            # Bilder, Grafiken
-├── docs/              # Dokumentation, Workflows
-└── src/               # Quellcode (Scripts, Automatisierung)
+/project-docs/
+├── CORE (Immer relevant)
+│   ├── pferdesicht-diana-bibel-v3_0-komplett.md      # Brand Voice, Positionen
+│   ├── pferdesicht-anna-empowerment-framework-v2_6-komplett.md  # Zielgruppe
+│   └── pferdesicht-golden-circle-v2_2.md             # WHY/HOW/WHAT
+│
+├── WORKFLOWS (Je nach Task)
+│   ├── pferdesicht-master-prompt-v3_13-komplett.md   # Blog-Artikel (7 Phasen)
+│   ├── pferdesicht-modul-erstellungs-workflow-v1_2.md # Guide-Module
+│   ├── pferdesicht-leadmagnet-workflow-v1_1.md       # 10-Seiten-PDFs
+│   └── pferdesicht-leadmagnet-masterprompt-v1_0.md   # Leadmagnet Details
+│
+├── PRODUCTS (Fertige Inhalte)
+│   ├── g18-modul1-fellwechsel-v13-final.md
+│   ├── g18-modul2-fruktan-anweiden-v12-final.md
+│   ├── g18-modul3-parasiten-entwurmung-v2_0-final.md
+│   ├── g18-modul4-fuetterung-fruehling-v6-final.md
+│   ├── g18-modul5-integration-fahrplan-v2_0-final.md
+│   └── g18-einleitung-v2_0-draft.md                  # Sales-Copy
+│
+├── MARKETING
+│   ├── pferdesicht-sales-copy-frameworks.md          # DACH-optimierte Formeln
+│   ├── pferdesicht-g18-content-ableitungsmatrix-v1.md # Content-Planung
+│   └── pferdesicht-slide-bibliothek-v3.md            # Canva-Templates
+│
+└── STRATEGY
+    ├── pferdesicht-produktstrategie-v1_2-komplett.md # Gesamtarchitektur
+    ├── pferdesicht-12-cluster-analyse-v1_1.md        # Themen-Strategie
+    └── pferdesicht-ueber-mich-v4_2.md                # About-Page Content
 ```
 
 ---
 
-## Wichtige Begriffe
+## Task → Dokument Mapping
+
+| Wenn du... | Lies zuerst... |
+|------------|----------------|
+| **Website-Text schreibst** | `@project-docs/pferdesicht-diana-bibel-v3_0-komplett.md` |
+| **Homepage baust** | `@project-docs/pferdesicht-golden-circle-v2_2.md` + `@project-docs/pferdesicht-ueber-mich-v4_2.md` |
+| **Blog-Artikel schreibst** | `@project-docs/pferdesicht-master-prompt-v3_13-komplett.md` |
+| **Kurs-Modul erstellst** | `@project-docs/pferdesicht-modul-erstellungs-workflow-v1_2.md` |
+| **Leadmagnet baust** | `@project-docs/pferdesicht-leadmagnet-workflow-v1_1.md` |
+| **Sales-Copy schreibst** | `@project-docs/pferdesicht-sales-copy-frameworks.md` |
+| **G18 Sales-Page baust** | `@project-docs/g18-einleitung-v2_0-draft.md` (EXAKT übernehmen!) |
+| **Zielgruppe verstehen willst** | `@project-docs/pferdesicht-anna-empowerment-framework-v2_6-komplett.md` |
+
+---
+
+## Wichtige Regeln
+
+1. **Niemals Content umschreiben** der bereits in `/project-docs/` finalisiert ist – nur formatieren/implementieren
+
+2. **Diana's Stimme prüfen** bei allem Text-Output gegen `@project-docs/pferdesicht-diana-bibel-v3_0-komplett.md`
+
+3. **Umlaute:** In finalen Outputs immer korrekte Umlaute (ä, ö, ü, ß)
+
+4. **Box UND Offenstall:** Beide Haltungsformen gleichwertig ansprechen
+
+5. **Keine Absolutismen:** "In vielen Fällen..." statt "Immer..."
+
+6. **DACH-Tonalität:** Kompetenz-basiert, keine US-Style Dringlichkeit
+
+7. **NIEMALS eigenständig Texte ändern** – nur wenn explizit beauftragt
+
+---
+
+## Glossar
 
 | Begriff | Bedeutung |
 |---------|-----------|
-| **Anna** | Persona der Zielgruppe (verantwortungsvolle Pferdebesitzerin) |
-| **G18** | Produktcode für den Frühlings-Guide |
-| **Quiet Luxury** | Anna's eigentliches Ziel: Innere Ruhe durch Wissen |
-| **Wissen als Rüstung** | Diana's Kernphilosophie |
-| **3-Schichten** | Modell für Anna's Motivation (sagt/fühlt/nicht ausspricht) |
-| **DACH** | Deutschland, Österreich, Schweiz |
-| **DOI** | Double Opt-in (für Email-Marketing) |
-| **Gaslighting-Sätze** | Typische Abwertungen am Stall ("Du denkst zu viel") |
+| **Anna** | Zielgruppen-Persona (nicht echter Name) |
+| **G18** | Frühlings-Gesundheitsguide (Premium-Produkt, €47) |
+| **12 Cluster** | Thematische Kategorien für alle Inhalte |
+| **Quiet Luxury** | Das Gefühl, alles richtig zu machen |
+| **Gaslighting-Sätze** | Typische Abwertungen im Stall ("Du denkst zu viel") |
+| **Offenstall** | Pferdehaltung mit freiem Auslauf (Diana's Expertise) |
 
 ---
 
-## Signatur & Abschluss
+## Beispiel-Prompts für Claude Code
 
-Jeder Content endet mit:
+### Blog-Artikel erstellen:
+```
+Lies @project-docs/pferdesicht-master-prompt-v3_13-komplett.md und folge dem 7-Phasen-Prozess.
 
-> **"Vertraue deiner Perspektive."**  
-> — Deine Diana von Pferdesicht
+Erstelle einen Blog-Artikel:
+- Thema: "Fellwechsel im Frühjahr – Was dein Pferd jetzt braucht"
+- Länge: 1.800-2.200 Wörter
+- Zielgruppe: Anna (siehe @project-docs/pferdesicht-anna-empowerment-framework-v2_6-komplett.md)
+- Tonalität: Diana's Stimme (siehe @project-docs/pferdesicht-diana-bibel-v3_0-komplett.md)
+
+Prüfe vor Abgabe:
+- [ ] Key Takeaways (5 Stück) am Ende
+- [ ] Mindestens 3 kreative Elemente (Vergleiche, Aha-Momente)
+- [ ] Keine absolutistischen Aussagen
+- [ ] Diana's Tonalität durchgehend
+```
+
+### Website-Sektion erstellen:
+```
+Erstelle die Hero-Section für die Homepage.
+
+Lies zuerst:
+- @project-docs/pferdesicht-golden-circle-v2_2.md (WHY-Section für Headline)
+- @project-docs/pferdesicht-diana-bibel-v3_0-komplett.md (Signature Phrases)
+- @project-docs/pferdesicht-sales-copy-frameworks.md (Headline-Formeln)
+
+WICHTIG: Nutze den EXAKTEN Content aus den Docs, erfinde nichts neu.
+```
+
+### Text korrigieren (NICHT umschreiben):
+```
+Korrigiere NUR die Umlaute und Tippfehler in dieser Datei.
+Ändere KEINE Formulierungen, KEINEN Satzbau, KEINE Wortwahl.
+```
 
 ---
 
-## Hinweise für Claude Code
+## ⚠️ KRITISCHE WARNUNG
 
-1. **Sprache:** Alle Inhalte auf Deutsch (DACH-Raum)
-2. **Tonalität:** Warm, kompetent, "Küchentisch-Gespräch" – nie belehrend
-3. **Wissenschaft:** Fakten mit Quellen, aber verständlich erklärt
-4. **Box UND Offenstall:** Beide Haltungsformen gleichwertig ansprechen
-5. **Umlaute:** In finalen Outputs korrekte Umlaute (ä, ö, ü, ß), in Zwischendateien egal
+**Claude Code darf NIEMALS:**
+- Texte "verbessern" ohne expliziten Auftrag
+- Formulierungen eigenständig ändern
+- "Generische" Texte schreiben wenn Projekt-Docs existieren
+- Sales-Copy abschwächen oder neutralisieren
+
+**Bei Unsicherheit:** IMMER fragen, NICHT eigenständig handeln.
 
 ---
 
-*CLAUDE.md v1.0*  
-*Erstellt: 20.01.2026*  
-*Für: Pferdesicht lokales Entwicklungsprojekt*
+*CLAUDE.md v2.0 – Optimiert für Claude Code mit korrekten Pfaden*  
+*Erstellt: 27.01.2026*
