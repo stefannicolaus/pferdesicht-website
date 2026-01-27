@@ -66,7 +66,8 @@ export function QuizCTA() {
         <a href="/quiz" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold/90 font-semibold uppercase tracking-wider text-sm rounded transition-colors w-full md:w-auto" style={{ color: "#2c2a25" }}>
           Quiz starten <span className="ml-1">→</span>
         </a>
-        <div className="flex items-center justify-center gap-6 mt-6 text-xs font-sans text-white/60">
+        <p className="text-sm font-sans text-white/70 mt-6 mb-3">In 2 Minuten bekommst du:</p>
+        <div className="flex items-center justify-center gap-6 text-xs font-sans text-white/60">
           <span className="flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5" /> 8 kurze Fragen
           </span>
