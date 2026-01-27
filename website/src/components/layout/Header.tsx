@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { navigation, branding, type NavItem } from "@/lib/design-system";
+import { navigation, type NavItem } from "@/lib/design-system";
 
 // ============================================
 // Icons
@@ -70,10 +70,10 @@ function ChevronDownIcon({ className }: { className?: string }) {
 function Logo() {
   return (
     <Link href="/" className="flex flex-col group">
-      <span className="font-serif text-2xl font-bold italic text-loam-900 group-hover:text-sage-600 transition-colors leading-tight">
+      <span className="font-serif text-2xl font-bold italic text-loam group-hover:text-gold transition-colors leading-tight">
         Pferdesicht.com
       </span>
-      <span className="text-xs uppercase tracking-wider text-gold-500">
+      <span className="text-xs uppercase tracking-wider text-sage">
         Vertraue deiner Perspektive
       </span>
     </Link>
@@ -97,9 +97,9 @@ function DesktopNavItem({ item }: { item: NavItem }) {
       {hasChildren ? (
         <button
           className={cn(
-            "flex items-center gap-1 px-3 py-2 text-sm font-medium text-loam-700",
-            "hover:text-sage-600 transition-colors",
-            "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2 rounded-md"
+            "flex items-center gap-1 px-3 py-2 text-sm font-medium text-loam",
+            "hover:text-gold transition-colors",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 rounded-md"
           )}
           aria-expanded={isOpen}
         >
@@ -115,9 +115,9 @@ function DesktopNavItem({ item }: { item: NavItem }) {
         <Link
           href={item.href}
           className={cn(
-            "block px-3 py-2 text-sm font-medium text-loam-700",
-            "hover:text-sage-600 transition-colors",
-            "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2 rounded-md"
+            "block px-3 py-2 text-sm font-medium text-loam",
+            "hover:text-gold transition-colors",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 rounded-md"
           )}
         >
           {item.label}
@@ -135,29 +135,29 @@ function DesktopNavItem({ item }: { item: NavItem }) {
               : "opacity-0 -translate-y-2 pointer-events-none"
           )}
         >
-          <div className="bg-paper rounded-xl shadow-soft-lg border border-loam-100 p-2 min-w-[240px]">
+          <div className="bg-white rounded-sm shadow-lg border border-gold/20 p-2 min-w-[240px]">
             {item.children!.map((child) => (
               <Link
                 key={child.href}
                 href={child.href}
                 className={cn(
-                  "block px-4 py-3 rounded-lg",
-                  "hover:bg-sage-50 transition-colors",
-                  "focus:outline-none focus-visible:bg-sage-50"
+                  "block px-4 py-3 rounded-sm",
+                  "hover:bg-sage/10 transition-colors",
+                  "focus:outline-none focus-visible:bg-sage/10"
                 )}
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-loam-900">
+                  <span className="text-sm font-medium text-loam">
                     {child.label}
                   </span>
                   {child.badge && (
-                    <span className="px-2 py-0.5 text-xs font-medium bg-gold-100 text-gold-700 rounded-full">
+                    <span className="px-2 py-0.5 text-xs font-medium bg-gold/20 text-gold rounded-full">
                       {child.badge}
                     </span>
                   )}
                 </div>
                 {child.description && (
-                  <p className="mt-1 text-xs text-loam-500">
+                  <p className="mt-1 text-xs text-loam/60">
                     {child.description}
                   </p>
                 )}
@@ -191,7 +191,6 @@ function MobileNav({
     );
   };
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -205,10 +204,9 @@ function MobileNav({
 
   return (
     <>
-      {/* Backdrop */}
       <div
         className={cn(
-          "fixed inset-0 bg-loam-900/20 backdrop-blur-sm z-40 lg:hidden",
+          "fixed inset-0 bg-loam/20 backdrop-blur-sm z-40 lg:hidden",
           "transition-opacity duration-300",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
@@ -216,25 +214,23 @@ function MobileNav({
         aria-hidden="true"
       />
 
-      {/* Slide-out Panel */}
       <div
         className={cn(
           "fixed top-0 right-0 bottom-0 w-full max-w-sm bg-paper z-50 lg:hidden",
           "transform transition-transform duration-300 ease-out",
-          "shadow-soft-lg",
+          "shadow-lg",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-loam-100">
-          <span className="font-serif text-xl font-medium text-loam-900">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-gold/20">
+          <span className="font-serif text-xl font-medium text-loam">
             Menü
           </span>
           <button
             onClick={onClose}
             className={cn(
-              "p-2 -mr-2 text-loam-600 hover:text-loam-900",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 rounded-md"
+              "p-2 -mr-2 text-loam hover:text-gold",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md"
             )}
             aria-label="Menü schließen"
           >
@@ -242,7 +238,6 @@ function MobileNav({
           </button>
         </div>
 
-        {/* Navigation Links */}
         <nav className="px-4 py-6 overflow-y-auto max-h-[calc(100vh-80px)]">
           <ul className="space-y-1">
             {navigation.map((item) => (
@@ -252,16 +247,16 @@ function MobileNav({
                     <button
                       onClick={() => toggleExpanded(item.label)}
                       className={cn(
-                        "w-full flex items-center justify-between px-4 py-3 rounded-lg",
-                        "text-left font-medium text-loam-800",
-                        "hover:bg-sage-50 transition-colors",
-                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500"
+                        "w-full flex items-center justify-between px-4 py-3 rounded-sm",
+                        "text-left font-medium text-loam",
+                        "hover:bg-sage/10 transition-colors",
+                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                       )}
                     >
                       {item.label}
                       <ChevronDownIcon
                         className={cn(
-                          "w-5 h-5 text-loam-400 transition-transform duration-200",
+                          "w-5 h-5 text-loam/40 transition-transform duration-200",
                           expandedItems.includes(item.label) && "rotate-180"
                         )}
                       />
@@ -281,15 +276,15 @@ function MobileNav({
                               href={child.href}
                               onClick={onClose}
                               className={cn(
-                                "block px-4 py-2.5 rounded-lg",
-                                "text-sm text-loam-600 hover:text-loam-900",
-                                "hover:bg-sage-50 transition-colors"
+                                "block px-4 py-2.5 rounded-sm",
+                                "text-sm text-loam/70 hover:text-loam",
+                                "hover:bg-sage/10 transition-colors"
                               )}
                             >
                               <div className="flex items-center gap-2">
                                 {child.label}
                                 {child.badge && (
-                                  <span className="px-2 py-0.5 text-xs font-medium bg-gold-100 text-gold-700 rounded-full">
+                                  <span className="px-2 py-0.5 text-xs font-medium bg-gold/20 text-gold rounded-full">
                                     {child.badge}
                                   </span>
                                 )}
@@ -305,9 +300,9 @@ function MobileNav({
                     href={item.href}
                     onClick={onClose}
                     className={cn(
-                      "block px-4 py-3 rounded-lg",
-                      "font-medium text-loam-800",
-                      "hover:bg-sage-50 transition-colors"
+                      "block px-4 py-3 rounded-sm",
+                      "font-medium text-loam",
+                      "hover:bg-sage/10 transition-colors"
                     )}
                   >
                     {item.label}
@@ -317,12 +312,11 @@ function MobileNav({
             ))}
           </ul>
 
-          {/* CTA Button */}
           <div className="mt-8 px-4">
             <Link
               href="/guides/fruehling"
               onClick={onClose}
-              className="tactile-button tactile-button-primary w-full justify-center"
+              className="block w-full px-6 py-3 bg-gold hover:bg-gold/90 text-white text-center font-medium rounded-sm transition-colors"
             >
               Frühlings-Guide entdecken
             </Link>
@@ -341,7 +335,6 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -355,40 +348,35 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-40 w-full",
+        "bg-bg-light/95 backdrop-blur-sm border-b border-gold/20",
         "transition-all duration-300",
-        isScrolled
-          ? "bg-paper/95 backdrop-blur-md shadow-soft border-b border-loam-100/50"
-          : "bg-transparent"
+        isScrolled && "shadow-sm"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
           <Logo />
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navigation.map((item) => (
               <DesktopNavItem key={item.label} item={item} />
             ))}
           </nav>
 
-          {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/guides/fruehling"
-              className="tactile-button tactile-button-primary text-sm"
+              className="px-4 py-2 bg-gold hover:bg-gold/90 text-white text-sm font-medium tracking-wide rounded-sm transition-colors border border-gold/50"
             >
               Frühlings-Guide
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(true)}
             className={cn(
-              "lg:hidden p-2 -mr-2 text-loam-600 hover:text-loam-900",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 rounded-md"
+              "lg:hidden p-2 -mr-2 text-loam hover:text-gold",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md"
             )}
             aria-label="Menü öffnen"
           >
@@ -397,7 +385,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       <MobileNav
         isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}

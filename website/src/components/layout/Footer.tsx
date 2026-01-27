@@ -70,7 +70,7 @@ function NewsletterForm() {
         />
         <button
           type="submit"
-          className="tactile-button tactile-button-primary whitespace-nowrap"
+          className="px-4 py-2.5 bg-loam hover:bg-loam/90 text-white text-sm font-medium rounded-sm transition-colors whitespace-nowrap"
         >
           Anmelden
         </button>
