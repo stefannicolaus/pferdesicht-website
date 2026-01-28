@@ -35,9 +35,7 @@ export default function PferdesichtPage() {
       {/* Texture Overlay */}
       <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.05] bg-paper-grain" />
 
-      {/* Header */}
-
-      {/* Hero Section */}
+      {/* Hero Section - NEU: VOC-basierte Headline */}
       <section className="relative w-full h-screen min-h-[600px] max-h-[900px] flex items-center overflow-hidden">
         <Image
           src="/hero-koppel.png"
@@ -51,16 +49,17 @@ export default function PferdesichtPage() {
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
             <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-gold text-[#EBE6DF] text-xs font-sans font-bold tracking-widest uppercase mb-6 md:mb-8">
-              PERSPEKTIVWECHSEL
+              FÜR PFERDEMENSCHEN, DIE HINSCHAUEN
             </div>
-            <h1 className="text-[#F3F0EB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.1] mb-6 md:mb-8 font-serif hero-text-shadow">
-              Finde die Wahrheit für dein Pferd im{" "}
-              <span className="italic text-[#C5A065] font-normal">Meinungs-Dschungel</span>.
+            {/* NEU: VOC-basierte Headline aus Storybook */}
+            <h1 className="text-[#F3F0EB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] mb-6 md:mb-8 font-serif hero-text-shadow">
+              Was, wenn dein Bauchgefühl bei deinem Pferd{" "}
+              <span className="italic text-[#C5A065] font-normal">die ganze Zeit richtig war</span>?
             </h1>
+            {/* NEU: Validierungs-Subheadline */}
             <p className="text-[#EBE6DF]/90 text-base sm:text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mb-8 md:mb-12 border-l-2 border-gold/50 pl-4 md:pl-6">
-              Du bist nicht „pingelig", wenn du Dinge hinterfragst – du bist konsequent. Doch dein Weg zur natürlichen
-              Haltung ist gepflastert mit widersprüchlichen Informationen. Ich filtere das für dich: Fundiert sortiert
-              und im Matsch des Alltags getestet.
+              Im Meinungs-Dschungel sagt jeder was anderes. Ich habe das für dich sortiert – 
+              fundiert recherchiert, im Alltag getestet. Für Box und Offenstall.
             </p>
             <div className="flex flex-col gap-4 font-sans">
               <Link
@@ -89,6 +88,112 @@ export default function PferdesichtPage() {
         </div>
       </section>
 
+      {/* ============================================ */}
+      {/* NEU: GASLIGHTING SECTION - "Kennst du das?" */}
+      {/* ============================================ */}
+      <section className="py-16 md:py-20 bg-[#faf8f5]">
+        <div className="max-w-4xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+              KENNST DU DAS?
+            </span>
+            <h2 className="text-3xl md:text-4xl font-serif text-loam leading-tight">
+              Im Stall bist du „die Komplizierte".
+            </h2>
+          </div>
+
+          {/* Gaslighting Zitate */}
+          <div className="space-y-6 mb-12">
+            <blockquote className="border-l-4 border-gold/50 pl-6 py-2 text-loam/80 italic text-lg md:text-xl font-serif">
+              „Du denkst zu viel."
+            </blockquote>
+            <blockquote className="border-l-4 border-gold/50 pl-6 py-2 text-loam/80 italic text-lg md:text-xl font-serif">
+              „Das ist halt so."
+            </blockquote>
+            <blockquote className="border-l-4 border-gold/50 pl-6 py-2 text-loam/80 italic text-lg md:text-xl font-serif">
+              „Das haben wir schon immer so gemacht."
+            </blockquote>
+            <blockquote className="border-l-4 border-gold/50 pl-6 py-2 text-loam/80 italic text-lg md:text-xl font-serif">
+              „Du bist zu pingelig."
+            </blockquote>
+          </div>
+
+          {/* Validierung */}
+          <div className="text-center bg-white rounded-sm p-8 md:p-10 shadow-sm border border-loam/5">
+            <p className="text-xl md:text-2xl text-loam font-serif font-medium mb-2">
+              Du bist nicht zu pingelig. Du schaust hin.
+            </p>
+            <p className="text-lg md:text-xl text-sage font-serif font-medium mb-4">
+              Und genau das macht den Unterschied.
+            </p>
+            <p className="text-loam/70 text-base md:text-lg font-sans font-light">
+              <strong className="text-loam">Hier bist du richtig.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* NEU: 3-SCHICHTEN BENEFITS SECTION */}
+      {/* ============================================ */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+              WAS DU HIER FINDEST
+            </span>
+            <h2 className="text-3xl md:text-4xl font-serif text-loam leading-tight">
+              Wissen als Rüstung.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Schicht 1: Explizit - Sicherheit */}
+            <div className="bg-[#faf8f5] rounded-sm p-8 border border-loam/5">
+              <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6">
+                <Shield className="w-6 h-6 text-sage" />
+              </div>
+              <h3 className="font-serif text-xl text-loam mb-3">
+                Sicherheit in deinen Entscheidungen
+              </h3>
+              <p className="text-loam/70 font-sans font-light leading-relaxed">
+                Wenn die Stallkollegin fragt „Warum machst du das so?" – 
+                hast du eine Antwort. Eine fundierte.
+              </p>
+            </div>
+
+            {/* Schicht 2: Implizit - Ende des Zweifels */}
+            <div className="bg-[#faf8f5] rounded-sm p-8 border border-loam/5">
+              <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-6">
+                <Heart className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="font-serif text-xl text-loam mb-3">
+                Das Ende des nagenden Zweifels
+              </h3>
+              <p className="text-loam/70 font-sans font-light leading-relaxed">
+                Kein nächtliches Googeln mehr. Keine widersprüchlichen Ratschläge. 
+                Endlich Klarheit, der du vertrauen kannst.
+              </p>
+            </div>
+
+            {/* Schicht 3: Unbewusst - Handlungsfähigkeit */}
+            <div className="bg-[#faf8f5] rounded-sm p-8 border border-loam/5">
+              <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6">
+                <Brain className="w-6 h-6 text-sage" />
+              </div>
+              <h3 className="font-serif text-xl text-loam mb-3">
+                Handlungsfähig, wenn es zählt
+              </h3>
+              <p className="text-loam/70 font-sans font-light leading-relaxed">
+                Wenn dein Pferd dich braucht, stehst du nicht hilflos daneben. 
+                Du weißt, was zu tun ist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quiz Section - Sage Background */}
       <section className="py-20 md:py-24 bg-sage relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -99,17 +204,17 @@ export default function PferdesichtPage() {
                 DEIN PERSÖNLICHER FRÜHLINGS-FAHRPLAN
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 leading-[1.1] text-balance">
-                Wie fit ist dein Pferd für den <span className="italic">Frühling</span>?
+                In 2 Minuten weißt du, wo dein Pferd <span className="italic">Unterstützung</span> braucht.
               </h2>
               <p className="text-white/85 text-lg font-sans font-light leading-relaxed mb-8">
-                Fellwechsel, Anweiden, Parasiten – alle reden gleichzeitig auf dich ein. Aber was ist wirklich wichtig für DEIN Pferd? In 2 Minuten weißt du es.
+                Fellwechsel, Anweiden, Parasiten – ich zeige dir, was bei DEINEM Pferd jetzt Priorität hat.
               </p>
               <div className="flex flex-col items-center lg:items-start gap-4">
                 <Link
                   href="/quiz"
                   className="w-full sm:w-auto px-8 py-4 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-lg transition-colors"
                 >
-                  Quiz starten
+                  Mein Risiko-Check starten
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <p className="text-white/60 text-xs font-sans flex flex-wrap items-center gap-3">
@@ -177,7 +282,8 @@ export default function PferdesichtPage() {
           </div>
           <h2 className="text-3xl md:text-4xl font-serif text-loam mb-4">Ich bin Diana.</h2>
           <p className="text-loam/80 text-lg font-sans font-light leading-relaxed mb-8 max-w-xl mx-auto">
-            Seit über 30 Jahren begleiten mich Pferde. Ich filtere für dich die Wahrheit im Meinungs-Dschungel.
+            30 Jahre habe ich gebraucht. Du nicht. Ich filtere für dich die Wahrheit im Meinungs-Dschungel – 
+            damit du die Fehler nicht machst, die ich schon gemacht habe.
           </p>
           <Link
             href="/ueber-mich"
@@ -211,7 +317,7 @@ export default function PferdesichtPage() {
         </div>
       </section>
 
-      {/* Knowledge Section */}
+      {/* Knowledge Section - 3 Säulen: Experten + Reittherapie + Freiheitsdressur */}
       <section className="py-24 bg-bg-light border-b border-loam/5">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-5xl font-serif text-loam text-center mb-20 leading-tight text-balance">
@@ -219,41 +325,53 @@ export default function PferdesichtPage() {
             <br />
             <span className="italic text-sage">Beziehung schafft Vertrauen.</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 relative">
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gold/30 transform -translate-x-1/2" />
-            <div className="flex flex-col items-start pr-0 md:pr-10">
-              <div className="w-12 h-12 rounded-full border border-sage/30 flex items-center justify-center text-sage mb-6 bg-white">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Säule 1: Experten-Netzwerk */}
+            <div className="flex flex-col items-start p-8 bg-white rounded-sm shadow-sm">
+              <div className="w-12 h-12 rounded-full border border-sage/30 flex items-center justify-center text-sage mb-6 bg-sage/5">
                 <Brain className="w-6 h-6" />
               </div>
               <h3 className="font-sans font-bold text-sm tracking-widest uppercase text-loam mb-4">
                 Das Experten-Netzwerk
               </h3>
-              <p className="font-sans font-light text-loam/80 leading-relaxed text-lg">
-                Mein Wissen ist über 15 Jahre gewachsen. Es basiert auf tausenden Gesprächen mit Tierärzten,
-                Therapeuten, Hufschmieden und Ernährungsexperten – entstanden aus der direkten Praxis unseres
-                Futtermittel-Vertriebs. Ergänzt durch unzählige Stunden intensiver Eigenrecherche. Keine Mythen, sondern
-                Fakten, die dir Sicherheit geben.
+              <p className="font-sans font-light text-loam/80 leading-relaxed">
+                Du bekommst das Wissen aus <span className="font-semibold text-loam">15 Jahren</span> Gesprächen 
+                mit Tierärzten, Therapeuten und Hufschmieden – ohne jeden selbst fragen zu müssen.
               </p>
             </div>
-            <div className="flex flex-col items-start pl-0 md:pl-10">
-              <div className="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold mb-6 bg-white">
+
+            {/* Säule 2: Reittherapie-Perspektive */}
+            <div className="flex flex-col items-start p-8 bg-white rounded-sm shadow-sm">
+              <div className="w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold mb-6 bg-gold/5">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <h3 className="font-sans font-bold text-sm tracking-widest uppercase text-loam mb-4">
+                Die Reittherapie-Perspektive
+              </h3>
+              <p className="font-sans font-light text-loam/80 leading-relaxed">
+                Wenn dein Pferd sich „komisch" verhält, zeige ich dir, was es dir sagen will. 
+                <span className="font-semibold text-loam"> 16 Jahre</span> haben mich gelehrt: Pferde lügen nicht – sie spiegeln.
+              </p>
+            </div>
+
+            {/* Säule 3: Echte Partnerschaft */}
+            <div className="flex flex-col items-start p-8 bg-white rounded-sm shadow-sm">
+              <div className="w-12 h-12 rounded-full border border-sage/30 flex items-center justify-center text-sage mb-6 bg-sage/5">
                 <Heart className="w-6 h-6" />
               </div>
               <h3 className="font-sans font-bold text-sm tracking-widest uppercase text-loam mb-4">
-                Der Blick hinter die Kulissen
+                Echte Partnerschaft
               </h3>
-              <p className="font-sans font-light text-loam/80 leading-relaxed text-lg">
-                Durch Kooperationen durfte ich 5 Jahre lang den bekanntesten Trainern der Freiarbeit über die Schulter
-                schauen. Dort habe ich gelernt, was Partnerschaft wirklich bedeutet: Eine Verbindung, die hält, wenn das
-                Seil fällt. Ein Pferd, das bei dir bleibt – nicht weil es muss, sondern weil es sich in jedem Moment
-                freiwillig und voller Vertrauen für dich entscheidet.
+              <p className="font-sans font-light text-loam/80 leading-relaxed">
+                Ich zeige dir, wie Verbindung aussieht – nicht weil dein Pferd muss, 
+                sondern weil es sich für dich entscheidet.
               </p>
             </div>
           </div>
           <div className="mt-16 text-center">
             <a
               className="inline-flex items-center gap-2 text-sage font-serif text-xl italic hover:text-loam transition-colors border-b border-sage/30 hover:border-loam/30 pb-1"
-              href="#"
+              href="/ueber-mich"
             >
               Wie ich lernte, meinem Bauchgefühl wieder zu vertrauen – Dianas Story
               <ArrowRight className="w-5 h-5" />
