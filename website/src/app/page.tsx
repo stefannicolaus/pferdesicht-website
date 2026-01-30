@@ -53,8 +53,8 @@ export default function PferdesichtPage() {
 
         {/* Tablet/Mobile: Gestapelt */}
         <div className="lg:hidden">
-          {/* Hero Bild mit Overlay */}
-          <div className="relative h-[60vh] md:h-[50vh]">
+          {/* Hero Bild mit Overlay - MEHR HÖHE für Text oben */}
+          <div className="relative min-h-[70vh] md:min-h-[60vh]">
             <Image
               src="/images/heroes/hero-herde-mobile.png"
               alt="Pferde auf der Koppel im goldenen Abendlicht"
