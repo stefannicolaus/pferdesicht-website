@@ -21,12 +21,15 @@ export default function QuizLandingPage() {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-loam/50 via-loam/30 to-loam/60" />
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-loam/70 via-loam/60 to-loam/75" />
+        {/* Additional radial gradient for center focus */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(44,42,37,0.3)_0%,rgba(44,42,37,0.6)_100%)]" />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-[1.1] text-balance drop-shadow-lg">
-            Alle sagen was anderes.<br /><span className="italic text-gold">Wem sollst du glauben?</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-[1.1] text-balance [text-shadow:0_4px_20px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
+            Alle sagen was anderes.<br /><span className="italic text-gold [text-shadow:0_4px_20px_rgba(0,0,0,0.6),0_2px_8px_rgba(0,0,0,0.5)]">Wem sollst du glauben?</span>
           </h1>
-          <p className="text-white/90 text-lg md:text-xl font-sans font-light leading-relaxed mb-10 max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-white text-lg md:text-xl font-sans font-light leading-relaxed mb-10 max-w-2xl mx-auto [text-shadow:0_2px_10px_rgba(0,0,0,0.4)]">
             8 Fragen. 2 Minuten. Danach weißt du, was <strong>dein</strong> Pferd jetzt wirklich braucht – und was du getrost ignorieren kannst.
           </p>
           <Link
