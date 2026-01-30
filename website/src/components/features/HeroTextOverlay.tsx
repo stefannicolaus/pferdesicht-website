@@ -6,8 +6,8 @@ export function HeroTextOverlay() {
       {/* Subtiler Gradient-Overlay für Lesbarkeit */}
       <div className="absolute inset-0 bg-gradient-to-r from-loam/60 via-loam/30 to-transparent" />
 
-      {/* Text Container - 90% Breite nutzen */}
-      <div className="absolute top-20 lg:top-24 left-0 w-full lg:w-[90%] p-6 lg:p-10 xl:p-12">
+      {/* Text Container - HÖHER positioniert */}
+      <div className="absolute top-6 lg:top-8 left-0 w-full lg:w-[90%] p-6 lg:p-10 xl:p-12">
 
         {/* Badge */}
         <span className="inline-block px-4 py-2 bg-sage/80 text-cream text-[11px] font-sans font-semibold uppercase tracking-[0.1em] rounded mb-5 lg:mb-6 shadow-lg">
