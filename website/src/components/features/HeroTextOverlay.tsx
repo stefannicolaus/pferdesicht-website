@@ -10,7 +10,7 @@ export function HeroTextOverlay() {
       <div className="absolute top-6 lg:top-8 left-0 w-full lg:w-[90%] p-6 lg:p-10 xl:p-12">
 
         {/* Badge - MIT RAHMEN, TRANSPARENT, WEISSE SCHRIFT */}
-        <span className="inline-block px-4 py-2 bg-transparent border border-white/70 text-white text-[11px] font-sans font-semibold uppercase tracking-[0.1em] rounded mb-5 lg:mb-6">
+        <span className="inline-block px-4 py-2 bg-transparent border border-gold text-white text-[11px] font-sans font-semibold uppercase tracking-[0.1em] rounded mb-5 lg:mb-6">
           Für Pferdemenschen, die hinschauen
         </span>
 
