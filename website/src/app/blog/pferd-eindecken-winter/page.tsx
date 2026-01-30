@@ -116,7 +116,7 @@ export default function PferdEindeckenWinterPage() {
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8">
         <Link
-          href="/blog"
+          href="/wissen"
           className="inline-flex items-center gap-2 text-sm font-sans text-sage hover:text-loam transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -810,7 +810,7 @@ export default function PferdEindeckenWinterPage() {
             </p>
             <p>
               Mehr zum Thema:{" "}
-              <Link href="/blog" className="text-gold hover:underline">
+              <Link href="/wissen" className="text-gold hover:underline">
                 Alle Beiträge zur artgerechten Haltung
               </Link>
             </p>
@@ -840,6 +840,10 @@ export default function PferdEindeckenWinterPage() {
             </ul>
           </div>
 
+          {/* Disclaimer */}
+          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
+            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
+          </div>
         </div>
       </article>
 

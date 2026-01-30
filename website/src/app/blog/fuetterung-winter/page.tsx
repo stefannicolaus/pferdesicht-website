@@ -799,7 +799,7 @@ export default function FuetterungWinterPage() {
 
           {/* Disclaimer */}
           <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Dieser Beitrag basiert auf veterinärmedizinischen Erkenntnissen zur Pferdefütterung sowie meiner 20-jährigen praktischen Erfahrung in der Pferdehaltung. Er ersetzt keine tierärztliche Beratung bei gesundheitlichen Bedenken.
+            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
           </div>
         </div>
       </article>
