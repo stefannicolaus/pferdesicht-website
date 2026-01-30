@@ -335,9 +335,17 @@ export default function UeberMichPage() {
                   </div>
                   <div className="pt-8">
                     <h3 className="font-serif text-xl text-loam mb-2">Reittherapeutin</h3>
-                    <p className="text-loam/70 leading-relaxed">
+                    <p className="text-loam/70 leading-relaxed mb-4">
                       Über 200 Menschen begleitet – Kinder und Erwachsene mit körperlichen und geistigen Behinderungen, Down-Syndrom, ADHS, psychischen Störungen. Menschen, die von anderen Menschen verletzt wurden und bei Pferden zum ersten Mal wieder Vertrauen fassen konnten.
                     </p>
+                    <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+                      <Image
+                        src="/images/reittherapie-kind.png"
+                        alt="Kind bei der Reittherapie mit Pferden"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -378,8 +386,13 @@ export default function UeberMichPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Bild - Links */}
-              <div className="bg-gray-200 rounded-lg shadow-lg aspect-square flex items-center justify-center">
-                <p className="text-gray-500 font-sans text-sm">Bild folgt</p>
+              <div className="relative rounded-lg shadow-lg aspect-square overflow-hidden">
+                <Image
+                  src="/images/ramses.png"
+                  alt="Ramses - Dianas Friese"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               {/* Text - Rechts */}
