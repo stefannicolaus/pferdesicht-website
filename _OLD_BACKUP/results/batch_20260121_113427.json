@@ -1,0 +1,59 @@
+{
+  "timestamp": "20260121_113427",
+  "total_jobs": 3,
+  "ok_count": 3,
+  "retry_ok_count": 0,
+  "failed_count": 0,
+  "skipped_count": 0,
+  "job_results": [
+    {
+      "job_id": "fruktan_tagesverlauf",
+      "filename": "beispiel_fruktan_kurve.png",
+      "status": "ok",
+      "attempts": 1,
+      "error_message": null,
+      "extracted_text": "Fruktan-Tagesverlauf\nniedrig\nMorgens\nMittag\nAbends\nhoch\n",
+      "quality_scores": {
+        "Fruktan-Tagesverlauf": 1.0,
+        "hoch": 1.0,
+        "niedrig": 1.0,
+        "Morgens": 1.0,
+        "Mittag": 1.0,
+        "Abends": 1.0
+      }
+    },
+    {
+      "job_id": "checkliste_anweiden",
+      "filename": "beispiel_checkliste.png",
+      "status": "ok",
+      "attempts": 1,
+      "error_message": null,
+      "extracted_text": "ANWEIDEN-CHECKLISTE\nWETTER GECHECKT\nGRASHÖHE GEPRÜFT\nWEIDEZEIT BEGRENZT\nPFERD BEOBACTET\n",
+      "quality_scores": {
+        "Anweiden-Checkliste": 1.0,
+        "Wetter": 1.0,
+        "Grashöhe": 1.0,
+        "Weidezeit": 1.0,
+        "beobachtet": 0.9
+      }
+    },
+    {
+      "job_id": "temperatur_risiko",
+      "filename": "beispiel_temperatur.png",
+      "status": "ok",
+      "attempts": 1,
+      "error_message": null,
+      "extracted_text": "TEMERTUR\nTEMPERATUR UND\nFRUKTAN-RISIKO MATRIX\n— RISIKO\nKALT\nSONNIG\nHOCH RISIKO\n!\nNIEDRIG RISIKO\nWARM\nWOLUKG\nܐܐܐܐ\n",
+      "quality_scores": {
+        "Temperatur": 1.0,
+        "Risiko": 1.0,
+        "hoch": 1.0,
+        "niedrig": 1.0,
+        "kalt": 1.0,
+        "warm": 1.0
+      }
+    }
+  ],
+  "duration_seconds": 37.90913701057434,
+  "estimated_cost_usd": 0.123
+}

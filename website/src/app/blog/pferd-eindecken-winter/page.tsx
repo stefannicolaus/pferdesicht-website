@@ -2,13 +2,11 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useState, useEffect } from "react"
-import { Menu, X, Thermometer, CheckCircle2, ArrowLeft, Heart } from "lucide-react"
+import { useEffect } from "react"
+import { Thermometer, CheckCircle2, ArrowLeft, Heart } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
 
 export default function PferdEindeckenWinterPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -114,91 +112,6 @@ export default function PferdEindeckenWinterPage() {
           })
         }}
       />
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full bg-bg-light/95 backdrop-blur-sm border-b border-gold/20 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
-          <Link href="/" className="flex flex-col gap-0 text-loam hover:text-gold transition-colors">
-            <span className="text-xl md:text-2xl font-bold tracking-tight italic font-serif">Pferdesicht.com</span>
-            <span className="text-[9px] md:text-[10px] font-sans tracking-wider uppercase text-[#C5A065]">
-              Vertraue deiner Perspektive
-            </span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-10 font-sans">
-            <Link className="text-loam text-sm font-medium tracking-wide hover:text-gold transition-colors" href="/">
-              Start
-            </Link>
-            <Link
-              className="text-gold text-sm font-bold tracking-wide border-b-2 border-gold pb-1 transition-colors"
-              href="/blog"
-            >
-              Blog
-            </Link>
-            <Link
-              className="text-loam text-sm font-medium tracking-wide hover:text-gold transition-colors"
-              href="/quiz"
-            >
-              Quiz
-            </Link>
-            <Link
-              className="text-loam text-sm font-medium tracking-wide hover:text-gold transition-colors"
-              href="/ueber-mich"
-            >
-              Über mich
-            </Link>
-            <Link className="text-loam text-sm font-medium tracking-wide hover:text-gold transition-colors" href="#">
-              Kontakt
-            </Link>
-          </nav>
-          <button
-            className="md:hidden p-2 text-loam hover:text-gold transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gold/20 bg-paper">
-            <nav className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-col gap-4">
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Start
-              </Link>
-              <Link
-                className="text-gold text-base font-bold tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/blog"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/quiz"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Quiz
-              </Link>
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/ueber-mich"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Über mich
-              </Link>
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2"
-                href="#"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Kontakt
-              </Link>
-            </nav>
-          </div>
-        )}
-      </header>
 
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-8">
@@ -932,34 +845,6 @@ export default function PferdEindeckenWinterPage() {
 
       {/* Sticky Lead Magnet Banner */}
       <StickyLeadMagnetBanner />
-
-      {/* Footer */}
-      <footer className="bg-loam py-16 mt-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <Link href="/" className="inline-block">
-              <span className="text-3xl font-bold tracking-tight italic text-white-soft font-serif">
-                Pferdesicht.com
-              </span>
-            </Link>
-            <p className="text-sm font-sans text-white-soft/70 mt-2">
-              Dein vertrauensvoller Begleiter. Authentisch, fundiert, modern.
-            </p>
-          </div>
-          <div className="flex justify-center gap-8 text-xs font-sans uppercase tracking-widest text-white-soft/80">
-            <Link href="/impressum" className="hover:text-white-soft transition-colors">
-              Impressum
-            </Link>
-            <Link href="/datenschutz" className="hover:text-white-soft transition-colors">
-              Datenschutz
-            </Link>
-            <Link href="/agb" className="hover:text-white-soft transition-colors">
-              AGB
-            </Link>
-          </div>
-          <p className="text-center text-xs font-sans text-white-soft/60 mt-8">Made with ❤️ for horses.</p>
-        </div>
-      </footer>
     </main>
   )
 }

@@ -4,7 +4,18 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial project setup for Pferdesicht\n\n- Add CLAUDE.md with project guidelines and tone of voice\n- Create directory structure \\(content, assets, src, docs\\)\n- Add .gitignore for common exclusions\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nExpand CLAUDE.md with complete brand documentation\n\n- Add Diana persona \\(30+ years experience, voice guidelines\\)\n- Add Anna persona \\(target audience, 3-layer motivation model\\)\n- Define \"Quiet Luxury\" concept and core fears\n- Add mission statement \"Wissen als Rüstung\"\n- Document content products \\(G18, 12 knowledge clusters\\)\n- List existing brand documents and their versions\n- Add terminology glossary\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest website --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:v0-pferdesicht-com-9i.vercel.app)",
+      "Bash(git push)",
+      "mcp__ide__getDiagnostics",
+      "Bash(git push:*)"
     ]
   }
 }

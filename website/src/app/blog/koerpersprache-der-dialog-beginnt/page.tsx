@@ -65,37 +65,55 @@ export default function BlogArticlePage() {
           </button>
         </div>
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gold/20 bg-paper">
-            <nav className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex flex-col gap-4">
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Start
-              </Link>
-              <Link
-                className="text-gold text-base font-bold tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/blog"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2 border-b border-gold/10"
-                href="/ueber-mich"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Über mich
-              </Link>
-              <Link
-                className="text-loam text-base font-medium tracking-wide hover:text-gold transition-colors py-2"
-                href="#"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Kontakt
-              </Link>
-            </nav>
+          <div className="fixed inset-0 z-50 md:hidden">
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-loam/50"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+
+            {/* Menu Panel */}
+            <div className="absolute top-0 left-0 right-0 bg-paper border-b border-loam/20 shadow-lg">
+              {/* Menu Header mit Close Button */}
+              <div className="flex items-center justify-between px-4 py-4 border-b border-loam/10">
+                <span className="text-lg font-serif font-medium text-loam">Menü</span>
+                <button onClick={() => setMobileMenuOpen(false)} className="p-2">
+                  <X className="w-6 h-6 text-loam" />
+                </button>
+              </div>
+
+              {/* Menu Items */}
+              <nav className="px-4 py-6 space-y-1 bg-paper">
+                <Link
+                  href="/"
+                  className="block py-3 text-loam font-medium border-b border-loam/10 hover:text-gold transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Start
+                </Link>
+                <Link
+                  href="/blog"
+                  className="block py-3 text-gold font-bold border-b border-loam/10"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/ueber-mich"
+                  className="block py-3 text-loam font-medium border-b border-loam/10 hover:text-gold transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Über mich
+                </Link>
+                <Link
+                  href="/kontakt"
+                  className="block py-3 text-loam font-medium hover:text-gold transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Kontakt
+                </Link>
+              </nav>
+            </div>
           </div>
         )}
       </header>

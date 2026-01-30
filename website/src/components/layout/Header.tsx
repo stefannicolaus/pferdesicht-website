@@ -206,7 +206,7 @@ function MobileNav({
     <>
       <div
         className={cn(
-          "fixed inset-0 bg-loam/20 backdrop-blur-sm z-40 lg:hidden",
+          "fixed inset-0 bg-loam/50 z-40 lg:hidden",
           "transition-opacity duration-300",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
