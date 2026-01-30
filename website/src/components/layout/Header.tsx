@@ -215,34 +215,37 @@ function MobileNav({
         aria-hidden="true"
       />
 
-      {/* Menu Panel */}
+      {/* Menu Panel - elegant, dynamic height */}
       <div
         className={cn(
-          "fixed top-0 right-0 bottom-0 w-full max-w-sm z-[9999] lg:hidden",
+          "fixed top-0 right-0 w-full max-w-sm z-[9999] lg:hidden",
           "transform transition-transform duration-300 ease-out",
-          "shadow-2xl",
+          "shadow-2xl rounded-bl-2xl",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
-        style={{ backgroundColor: '#faf9f7' }}
+        style={{ backgroundColor: '#ffffff' }}
       >
-        <div className="flex items-center justify-between px-6 py-4 border-b border-gold/20">
-          <span className="font-serif text-xl font-medium text-loam">
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 py-5 border-b border-loam/10">
+          <span className="font-serif text-lg font-medium text-loam">
             Menü
           </span>
           <button
             onClick={onClose}
             className={cn(
-              "p-2 -mr-2 text-loam hover:text-gold",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md"
+              "p-2 -mr-2 text-loam/60 hover:text-loam",
+              "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-full",
+              "transition-colors"
             )}
             aria-label="Menü schließen"
           >
-            <CloseIcon className="w-6 h-6" />
+            <CloseIcon className="w-5 h-5" />
           </button>
         </div>
 
-        <nav className="px-4 py-6 overflow-y-auto max-h-[calc(100vh-80px)]">
-          <ul className="space-y-1">
+        {/* Navigation */}
+        <nav className="px-3 py-4">
+          <ul className="space-y-0.5">
             {navigation.map((item) => (
               <li key={item.label}>
                 {item.children ? (
@@ -250,38 +253,38 @@ function MobileNav({
                     <button
                       onClick={() => toggleExpanded(item.label)}
                       className={cn(
-                        "w-full flex items-center justify-between px-4 py-3 rounded-sm",
+                        "w-full flex items-center justify-between px-4 py-3 rounded-lg",
                         "text-left font-medium text-loam",
-                        "hover:bg-sage/10 transition-colors",
+                        "hover:bg-loam/5 transition-colors",
                         "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                       )}
                     >
                       {item.label}
                       <ChevronDownIcon
                         className={cn(
-                          "w-5 h-5 text-loam/40 transition-transform duration-200",
+                          "w-4 h-4 text-loam/30 transition-transform duration-200",
                           expandedItems.includes(item.label) && "rotate-180"
                         )}
                       />
                     </button>
                     <div
                       className={cn(
-                        "overflow-hidden transition-all duration-200",
+                        "overflow-hidden transition-all duration-300 ease-out",
                         expandedItems.includes(item.label)
                           ? "max-h-96 opacity-100"
                           : "max-h-0 opacity-0"
                       )}
                     >
-                      <ul className="pl-4 py-2 space-y-1">
+                      <ul className="pl-4 pb-2 space-y-0.5">
                         {item.children.map((child) => (
                           <li key={child.href}>
                             <Link
                               href={child.href}
                               onClick={onClose}
                               className={cn(
-                                "block px-4 py-2.5 rounded-sm",
-                                "text-sm text-loam/70 hover:text-loam",
-                                "hover:bg-sage/10 transition-colors"
+                                "block px-4 py-2.5 rounded-lg",
+                                "text-sm text-loam/60 hover:text-loam",
+                                "hover:bg-loam/5 transition-colors"
                               )}
                             >
                               <div className="flex items-center gap-2">
@@ -303,9 +306,9 @@ function MobileNav({
                     href={item.href}
                     onClick={onClose}
                     className={cn(
-                      "block px-4 py-3 rounded-sm",
+                      "block px-4 py-3 rounded-lg",
                       "font-medium text-loam",
-                      "hover:bg-sage/10 transition-colors"
+                      "hover:bg-loam/5 transition-colors"
                     )}
                   >
                     {item.label}
