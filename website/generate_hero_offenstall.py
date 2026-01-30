@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generiert Hero-Bild - Offenstall Setting, natürliche Atmosphäre
+Generiert Hero-Bild - Offenstall Setting, 3 Pferde verschiedene Farben/Posen
 """
 
 import os
@@ -56,7 +56,7 @@ def generate_image(prompt: str, aspect_ratio: str, output_path: Path) -> bool:
 
 def main():
     print("\n" + "=" * 60)
-    print("🐴 PFERDESICHT - Hero Natural: Offenstall Setting")
+    print("🐴 PFERDESICHT - Hero: 3 Pferde, verschiedene Farben/Posen")
     print("=" * 60)
 
     output_dir = Path(__file__).parent / "public" / "images" / "heroes"
@@ -65,11 +65,20 @@ def main():
 
 SCENE:
 - German Offenstall (open stable / paddock paradise) setting
-- 3 horses in a German summer pasture
+- EXACTLY 3 horses - NO MORE, NO LESS
 - NATURAL grouping - NOT in a row, NOT evenly spaced
 - One horse slightly forward, two behind at different distances
 - Like a real candid moment, not posed
 - Authentic Offenstall atmosphere with open space and natural environment
+
+HORSES - CRITICAL:
+- MAXIMUM 3 horses (not 4, not 5, exactly 3)
+- DIFFERENT breeds and colors: one bay, one chestnut, one darker (black or dark bay)
+- DIFFERENT poses: one grazing, one looking up, one walking
+- Natural relaxed behavior - NOT all standing alert looking at camera
+- Realistic anatomy and proportions
+- Natural coat texture with sunlight highlights
+- Heads clearly visible above grass line
 
 HORSE POSITIONING - CRITICAL:
 - All 3 horses positioned in LEFT 60% of the image
@@ -77,12 +86,11 @@ HORSE POSITIONING - CRITICAL:
 - NO horses in the right portion of the image
 - Horses must not be covered by any UI elements
 
-HORSES:
-- 3 horses total (bay and chestnut colors)
-- Natural relaxed poses - some grazing, one maybe looking up
-- Realistic anatomy and proportions
-- Natural coat texture with sunlight highlights
-- Heads clearly visible above grass line
+IMAGE DIMENSIONS - CRITICAL:
+- Image must fill ENTIRE 16:9 frame - FULL WIDTH
+- NO black bars, NO cropping, NO empty space
+- Landscape and sky continue across the COMPLETE image width
+- Right side shows continuous pasture, fence, sky - NOT cut off
 
 GRASS - IMPORTANT:
 - Tall healthy summer meadow (20-25cm)
@@ -93,17 +101,17 @@ GRASS - IMPORTANT:
 
 SKY:
 - Clear blue summer sky
-- Soft white clouds on right side
+- Soft white clouds scattered naturally
 - Deeper blue in upper left corner for text readability
 - Natural midday lighting
-- Sky extends across FULL WIDTH of image
+- Sky extends across FULL WIDTH of image - no cutoff
 
 BACKGROUND:
 - Wooden pasture fence typical for Offenstall
 - German countryside, trees on horizon
 - Maybe hint of shelter/run-in shed in far distance
 - Soft natural bokeh in far background
-- Background continues across full image width
+- Background continues seamlessly across ENTIRE image width
 
 PHOTOGRAPHY STYLE:
 - Shot on full-frame DSLR, 85mm or 135mm lens
@@ -113,13 +121,14 @@ PHOTOGRAPHY STYLE:
 - Indistinguishable from Getty Images stock photo
 
 COMPOSITION - CRITICAL:
-- Wide 16:9 landscape format for FULL-WIDTH hero background
+- Wide 16:9 landscape format - FULL WIDTH, NO BLACK AREAS
 - Image fills entire hero section edge to edge
 - Horses in LEFT 60% only
 - RIGHT 40% = sky, fence, grass (no horses) for Lead Magnet Box overlay
 - All horses fully visible with margin from edges
+- Continuous landscape from left edge to right edge
 
-ASPECT RATIO: 16:9
+ASPECT RATIO: 16:9 (1920x1080) - MUST BE COMPLETE, NO CROPPING
 RESOLUTION: 1920x1080"""
 
     success = generate_image(
