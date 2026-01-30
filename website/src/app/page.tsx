@@ -34,7 +34,7 @@ export default function PferdesichtPage() {
           alt="Pferde im Offenstall"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[center_70%] lg:object-center"
           sizes="100vw"
         />
 
