@@ -29,9 +29,9 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       {/* HERO SECTION - Flexibles Grid mit fixer Box-Breite */}
       {/* ============================================ */}
-      <section className="relative min-h-screen">
+      <section className="relative h-[85vh] min-h-[600px]">
         {/* Desktop: 1fr + 380px Grid */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_380px] min-h-screen">
+        <div className="hidden lg:grid lg:grid-cols-[1fr_420px] h-full">
           {/* Links: Bild mit Text-Overlay */}
           <div className="relative">
             <Image
