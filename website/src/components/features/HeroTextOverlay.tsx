@@ -24,13 +24,14 @@ export function HeroTextOverlay() {
           Und ich weiß schon lange nicht mehr, was ich glauben soll.
         </p>
 
-        {/* Subheadline - NUR Desktop */}
-        <div className="hidden lg:block border-l-[3px] border-gold/50 pl-5 max-w-lg">
-          <p className="font-sans text-sm md:text-base lg:text-[17px] font-normal text-white/85 leading-relaxed [text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
-            Dein Hufschmied sagt A. Der Tierarzt sagt B. Deine Stallkollegin schwört auf C.
-            Aber dieses Gefühl in dir sagt:{" "}
-            <span className="text-gold font-medium">Da stimmt was nicht.</span>{" "}
-            Also googelst du um 2 Uhr nachts.
+        {/* Subheadline - MOBILE + DESKTOP */}
+        <div className="border-l-[3px] border-gold/50 pl-4 lg:pl-5 max-w-md lg:max-w-lg">
+          <p className="font-sans text-sm lg:text-[17px] font-normal text-white/85 leading-relaxed [text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
+            Dein Hufschmied sagt A. Der Tierarzt sagt B.
+            <span className="hidden sm:inline"> Deine Stallkollegin schwört auf C.</span>
+            {" "}Aber dieses Gefühl in dir sagt:{" "}
+            <span className="text-gold font-medium">Da stimmt was nicht.</span>
+            <span className="hidden sm:inline">{" "}Also googelst du um 2 Uhr nachts.</span>
           </p>
         </div>
       </div>
