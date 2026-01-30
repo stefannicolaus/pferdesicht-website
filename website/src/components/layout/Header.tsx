@@ -219,11 +219,11 @@ function MobileNav({
       <div
         className={cn(
           "fixed top-0 right-0 bottom-0 w-full max-w-sm z-[9999] lg:hidden",
-          "bg-paper",
           "transform transition-transform duration-300 ease-out",
           "shadow-2xl",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
+        style={{ backgroundColor: '#faf9f7' }}
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-gold/20">
           <span className="font-serif text-xl font-medium text-loam">
