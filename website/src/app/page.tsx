@@ -35,7 +35,7 @@ export default function PferdesichtPage() {
           {/* Links: Bild mit Text-Overlay */}
           <div className="relative">
             <Image
-              src="/images/heroes/hero-herde-sunset.png"
+              src="/images/heroes/hero-herde-blue-sky.png"
               alt="Pferde im Offenstall bei Sonnenuntergang"
               fill
               priority
