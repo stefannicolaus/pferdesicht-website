@@ -20,7 +20,7 @@ export function HeroTextOverlay() {
           <div>
             {/* Zeile 1: Weiß */}
             <h1 className="font-serif text-[1.75rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-white leading-[1.1] max-w-none">
-              Jeder sagt mir was anderes.
+              Jeder im Stall sagt mir was anderes.
             </h1>
             {/* Zeile 2+: Gold Italic, GRÖSSER */}
             <p className="font-serif italic text-[2.25rem] sm:text-[3.25rem] md:text-[4rem] lg:text-[5rem] xl:text-[5.5rem] text-gold leading-[1.02] max-w-none">
