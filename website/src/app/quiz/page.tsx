@@ -15,8 +15,8 @@ export default function QuizLandingPage() {
 
   return (
     <div className="relative overflow-x-hidden">
-      {/* Texture Overlay */}
-      <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.05] bg-paper-grain" />
+      {/* Texture Overlay - low z-index to stay behind modals/menus */}
+      <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* Header */}
 
