@@ -2,17 +2,9 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-import { ArrowRight, Menu, X, Check } from "lucide-react"
+import { ArrowRight, X, Check } from "lucide-react"
 
 export default function QuizLandingPage() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  const scrollToStart = () => {
-    // For now, just link to /quiz/start when we build it
-    window.location.href = "/quiz/start"
-  }
-
   return (
     <div className="relative overflow-x-hidden">
       {/* Texture Overlay - low z-index to stay behind modals/menus */}
@@ -32,10 +24,10 @@ export default function QuizLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-loam/50 via-loam/30 to-loam/60" />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-[1.1] text-balance drop-shadow-lg">
-            Wie fit ist dein Pferd für den <span className="italic text-gold">Frühling</span>?
+            Alle sagen was anderes.<br /><span className="italic text-gold">Wem sollst du glauben?</span>
           </h1>
           <p className="text-white/90 text-lg md:text-xl font-sans font-light leading-relaxed mb-10 max-w-2xl mx-auto drop-shadow-md">
-            Finde in 2 Minuten heraus, worauf du jetzt achten solltest – und was du getrost ignorieren kannst.
+            8 Fragen. 2 Minuten. Danach weißt du, was <strong>dein</strong> Pferd jetzt wirklich braucht – und was du getrost ignorieren kannst.
           </p>
           <Link
             href="/quiz/start"
@@ -54,9 +46,30 @@ export default function QuizLandingPage() {
       <section className="py-20 md:py-24 bg-[#faf8f5]">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
-            <p className="text-loam/90 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto">
+            <p className="text-loam/90 text-lg md:text-xl font-sans font-light leading-relaxed max-w-2xl mx-auto mb-10">
               Vielleicht kennst du das:<br /><br />
               Der Frühling kommt, und plötzlich prasseln die Ratschläge auf dich ein: <em>Anweiden! Fellwechsel unterstützen! Entwurmen! Fütterung umstellen!</em> Aber was davon ist wirklich wichtig für <strong className="text-loam font-semibold">DEIN</strong> Pferd?
+            </p>
+
+            {/* Gaslighting Quotes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-10">
+              <div className="bg-white/60 border border-loam/10 rounded-sm px-5 py-4 text-left">
+                <p className="text-loam/70 font-sans italic text-sm">"Stell dich nicht so an, mein Pferd frisst das auch."</p>
+              </div>
+              <div className="bg-white/60 border border-loam/10 rounded-sm px-5 py-4 text-left">
+                <p className="text-loam/70 font-sans italic text-sm">"Das haben wir schon immer so gemacht."</p>
+              </div>
+              <div className="bg-white/60 border border-loam/10 rounded-sm px-5 py-4 text-left">
+                <p className="text-loam/70 font-sans italic text-sm">"Du machst dir zu viele Gedanken."</p>
+              </div>
+              <div className="bg-white/60 border border-loam/10 rounded-sm px-5 py-4 text-left">
+                <p className="text-loam/70 font-sans italic text-sm">"Du übertreibst, das ist doch völlig normal."</p>
+              </div>
+            </div>
+
+            <p className="text-loam/80 text-base font-sans font-medium">
+              Das Problem ist nicht, dass du zu viel fragst.<br />
+              Das Problem ist, dass dir niemand eine echte Antwort gibt.
             </p>
           </div>
           
@@ -192,31 +205,31 @@ export default function QuizLandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Für wen */}
             <div className="bg-white p-8 rounded-sm border border-sage/20 shadow-sm">
-              <h3 className="text-xl font-serif text-loam mb-6">Dieses Quiz ist für dich, wenn...</h3>
+              <h3 className="text-xl font-serif text-loam mb-6">Dieses Quiz ist für dich, wenn du dich fragst...</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-sage" />
                   </div>
-                  <span className="text-loam/80 font-sans">Du dein Pferd gut durch den Frühling bringen willst</span>
+                  <span className="text-loam/80 font-sans italic">"Muss ich jetzt schon ans Anweiden denken?"</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-sage" />
                   </div>
-                  <span className="text-loam/80 font-sans">Du nicht sicher bist, womit du anfangen sollst</span>
+                  <span className="text-loam/80 font-sans italic">"Braucht mein Pferd jetzt extra Mineralfutter?"</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-sage" />
                   </div>
-                  <span className="text-loam/80 font-sans">Du keine Lust auf stundenlange Recherche hast</span>
+                  <span className="text-loam/80 font-sans italic">"Wie unterstütze ich den Fellwechsel richtig?"</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-sage/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-sage" />
                   </div>
-                  <span className="text-loam/80 font-sans">Du lieber konkrete Tipps als allgemeine Ratschläge willst</span>
+                  <span className="text-loam/80 font-sans italic">"Womit sollte ich jetzt wirklich anfangen?"</span>
                 </li>
               </ul>
             </div>
@@ -256,7 +269,7 @@ export default function QuizLandingPage() {
             </div>
             <div className="text-center md:text-left">
               <p className="text-loam/90 text-lg font-sans font-light leading-relaxed">
-                Ich bin Diana – seit über 30 Jahren begleiten mich Pferde. 20 Jahre davon im Offenstall, wo ich gelernt habe: Das meiste Wissen muss man sich selbst erarbeiten. Heute teile ich, was ich gelernt habe – damit du nicht dieselben teuren Fehler machen musst.
+                Ich bin Diana. Vor 16 Jahren stand ich da, wo du jetzt vielleicht stehst: Mein Friese hatte Probleme, und jeder sagte mir was anderes. Ich habe gelernt, selbst zu recherchieren, Studien zu lesen, Tierärzte zu fragen – und vor allem: meinem Pferd zuzuhören. Heute gebe ich weiter, was ich gelernt habe.
               </p>
             </div>
           </div>
@@ -266,11 +279,12 @@ export default function QuizLandingPage() {
       {/* SECTION 7: FINAL CTA */}
       <section className="py-20 md:py-28 bg-loam">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
-            Bereit?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 leading-tight">
+            Du fragst nicht zu viel.<br />
+            <span className="text-gold italic">Finde heraus, was DEIN Pferd jetzt braucht.</span>
           </h2>
           <p className="text-white/80 text-lg md:text-xl font-sans font-light mb-10">
-            In 2 Minuten weißt du, worauf es jetzt ankommt.
+            8 Fragen. 2 Minuten. Klarheit.
           </p>
           <Link
             href="/quiz/start"
