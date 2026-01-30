@@ -86,56 +86,71 @@ export default function PferdesichtPage() {
 
           {/* Lead Magnet Card - Desktop: absolute rechts, Mobile: unten gestackt */}
           <div className="md:absolute md:right-8 xl:right-12 md:top-1/2 md:-translate-y-1/2 px-4 sm:px-6 md:px-0 pb-8 md:pb-0 mt-auto md:mt-0">
-            <div className="bg-sage/95 backdrop-blur-sm rounded-lg shadow-2xl p-6 sm:p-8 max-w-full md:w-[400px] mx-auto md:mx-0">
-              <span className="inline-block bg-gold text-white px-2.5 py-0.5 text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-3">
-                FRÜHLING 2026
+            <div className="bg-sage/85 backdrop-blur-sm rounded-lg shadow-2xl p-5 sm:p-6 md:p-8 w-full md:max-w-md mx-auto md:mx-0">
+              {/* Badge */}
+              <span className="inline-block px-3 py-1.5 bg-loam/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4">
+                Frühling 2026
               </span>
 
-              <h3 className="font-serif text-lg sm:text-xl text-white mb-2 leading-tight">
+              {/* Headline */}
+              <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-[#f5f2ed] mb-3 leading-tight">
                 Dein persönlicher Frühlings-Fahrplan
               </h3>
 
-              <p className="text-white/80 text-xs sm:text-sm font-sans font-light mb-4 leading-relaxed">
+              {/* Subheadline */}
+              <p className="font-sans text-sm sm:text-base text-[#f5f2ed]/90 font-light leading-relaxed mb-6">
                 Fellwechsel, Anweiden, Parasiten - finde heraus, worauf du bei deinem Pferd achten solltest.
               </p>
 
-              <p className="text-white/90 text-xs font-sans font-medium mb-2">
-                Dieses Quiz ist für dich, wenn du dich fragst:
-              </p>
+              {/* Quiz Questions Block - Quote-Style */}
+              <div className="border-l-2 border-gold/50 pl-4 ml-2 mb-8">
+                <p className="font-sans text-sm text-[#f5f2ed]/80 font-medium mb-3">
+                  Dieses Quiz ist für dich, wenn du dich fragst:
+                </p>
+                <div className="space-y-2">
+                  {[
+                    "Muss ich jetzt schon ans Anweiden denken?",
+                    "Braucht mein Pferd extra Mineralfutter?",
+                    "Wie unterstütze ich den Fellwechsel richtig?",
+                    "Womit sollte ich jetzt wirklich anfangen?",
+                  ].map((question, i) => (
+                    <p key={i} className="font-sans text-sm sm:text-base text-[#f5f2ed] font-normal leading-relaxed">
+                      „{question}"
+                    </p>
+                  ))}
+                </div>
+              </div>
 
-              <ul className="space-y-1.5 mb-4 text-white/70 text-xs font-sans italic">
-                <li>„Muss ich jetzt schon ans Anweiden denken?"</li>
-                <li>„Braucht mein Pferd extra Mineralfutter?"</li>
-                <li>„Wie unterstütze ich den Fellwechsel richtig?"</li>
-                <li>„Womit sollte ich jetzt wirklich anfangen?"</li>
-              </ul>
+              {/* Benefits Block */}
+              <div className="mb-6">
+                <p className="font-sans text-xs text-[#f5f2ed]/70 font-semibold uppercase tracking-wide mb-3">
+                  Was du bekommst:
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "Risiko-Check für dein Pferd",
+                    "Die 3 wichtigsten Dinge für deinen Start",
+                    "Wochen-Kalender Feb–Mai",
+                  ].map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <span className="font-sans text-sm text-[#f5f2ed]/90 font-normal">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <p className="text-white/90 text-xs font-sans font-medium mb-2">
-                Was du bekommst:
-              </p>
-
-              <ul className="space-y-1.5 mb-5">
-                {[
-                  "Risiko-Check für dein Pferd",
-                  "Die 3 wichtigsten Dinge für deinen Start",
-                  "Wochen-Kalender Feb–Mai",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-white text-xs font-sans">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-
+              {/* CTA Button */}
               <Link
                 href="/quiz"
-                className="w-full min-h-[48px] px-6 py-3.5 bg-gold hover:bg-[#b8956a] text-white text-sm font-sans font-bold tracking-wide rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-xl transition-colors"
+                className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
               >
                 Frühlingscheck starten
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </Link>
 
-              <p className="text-center text-white/60 text-[10px] font-sans mt-3">
+              {/* Click Triggers */}
+              <p className="mt-4 text-center font-sans text-xs text-[#f5f2ed]/60">
                 Kostenlos · 2 Min · Kein Spam
               </p>
             </div>
