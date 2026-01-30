@@ -204,9 +204,10 @@ function MobileNav({
 
   return (
     <>
+      {/* Backdrop */}
       <div
         className={cn(
-          "fixed inset-0 bg-loam/50 z-40 lg:hidden",
+          "fixed inset-0 bg-loam/50 z-[9998] lg:hidden",
           "transition-opacity duration-300",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
@@ -214,11 +215,13 @@ function MobileNav({
         aria-hidden="true"
       />
 
+      {/* Menu Panel */}
       <div
         className={cn(
-          "fixed top-0 right-0 bottom-0 w-full max-w-sm bg-paper z-50 lg:hidden",
+          "fixed top-0 right-0 bottom-0 w-full max-w-sm z-[9999] lg:hidden",
+          "bg-paper",
           "transform transition-transform duration-300 ease-out",
-          "shadow-lg",
+          "shadow-2xl",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
