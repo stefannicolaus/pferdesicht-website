@@ -26,11 +26,15 @@ export default function QuizLandingPage() {
         {/* Additional radial gradient for center focus */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(44,42,37,0.3)_0%,rgba(44,42,37,0.6)_100%)]" />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-[1.1] text-balance [text-shadow:0_4px_20px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
-            Alle sagen was anderes.<br /><span className="italic text-gold [text-shadow:0_4px_20px_rgba(0,0,0,0.6),0_2px_8px_rgba(0,0,0,0.5)]">Wem sollst du glauben?</span>
+          {/* Eyebrow Label */}
+          <p className="text-gold font-sans text-sm md:text-base font-semibold tracking-widest uppercase mb-4 [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]">
+            Dein persönlicher Frühjahrs-Fahrplan
+          </p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 leading-[1.15] text-balance [text-shadow:0_4px_20px_rgba(0,0,0,0.5),0_2px_8px_rgba(0,0,0,0.4)]">
+            Fellwechsel, Anweiden, Parasiten –<br /><span className="italic text-gold [text-shadow:0_4px_20px_rgba(0,0,0,0.6),0_2px_8px_rgba(0,0,0,0.5)]">alle sagen was anderes.</span>
           </h1>
           <p className="text-white text-lg md:text-xl font-sans font-light leading-relaxed mb-10 max-w-2xl mx-auto [text-shadow:0_2px_10px_rgba(0,0,0,0.4)]">
-            8 Fragen. 2 Minuten. Danach weißt du, was <strong>dein</strong> Pferd jetzt wirklich braucht – und was du getrost ignorieren kannst.
+            8 Fragen zu deinem Pferd. Dein persönlicher Report – abgestimmt auf eure Situation, nicht auf Stallgassen-Weisheiten.
           </p>
           <Link
             href="/quiz/start"
@@ -39,8 +43,8 @@ export default function QuizLandingPage() {
             Quiz starten
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <p className="text-white/70 text-sm font-sans mt-6">
-            8 kurze Fragen · 100% kostenfrei
+          <p className="text-white/80 text-sm font-sans mt-6 [text-shadow:0_1px_4px_rgba(0,0,0,0.3)]">
+            ✓ 8 Fragen · ✓ 2 Minuten · ✓ Sofort Ergebnis
           </p>
         </div>
       </section>
