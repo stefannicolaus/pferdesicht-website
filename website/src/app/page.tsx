@@ -83,29 +83,44 @@ export default function PferdesichtPage() {
             </div>
           </div>
 
-          {/* Lead Magnet Card - Desktop: absolute rechts (20% groesser), Mobile: unten gestackt */}
+          {/* Lead Magnet Card - Desktop: absolute rechts, Mobile: unten gestackt */}
           <div className="md:absolute md:right-8 xl:right-12 md:top-1/2 md:-translate-y-1/2 px-4 sm:px-6 md:px-0 pb-8 md:pb-0 mt-auto md:mt-0">
-            <div className="bg-sage/95 backdrop-blur-sm rounded-lg shadow-2xl p-8 md:p-10 max-w-full md:w-[420px] mx-auto md:mx-0">
-              <span className="inline-block bg-gold text-white px-2.5 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-3 sm:mb-4">
+            <div className="bg-sage/95 backdrop-blur-sm rounded-lg shadow-2xl p-6 sm:p-8 max-w-full md:w-[400px] mx-auto md:mx-0">
+              <span className="inline-block bg-gold text-white px-2.5 py-0.5 text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-3">
                 FRÜHLING 2026
               </span>
 
-              <h3 className="font-serif text-lg sm:text-xl md:text-2xl text-white mb-2 sm:mb-3 leading-tight">
+              <h3 className="font-serif text-lg sm:text-xl text-white mb-2 leading-tight">
                 Dein persönlicher Frühlings-Fahrplan
               </h3>
 
-              <p className="text-white/80 text-xs sm:text-sm font-sans font-light mb-4 sm:mb-5 leading-relaxed">
+              <p className="text-white/80 text-xs sm:text-sm font-sans font-light mb-4 leading-relaxed">
                 Fellwechsel, Anweiden, Parasiten - finde heraus, worauf du bei deinem Pferd achten solltest.
               </p>
 
-              <ul className="space-y-2 sm:space-y-2.5 mb-5 sm:mb-6">
+              <p className="text-white/90 text-xs font-sans font-medium mb-2">
+                Dieses Quiz ist für dich, wenn du dich fragst:
+              </p>
+
+              <ul className="space-y-1.5 mb-4 text-white/70 text-xs font-sans italic">
+                <li>„Muss ich jetzt schon ans Anweiden denken?"</li>
+                <li>„Braucht mein Pferd extra Mineralfutter?"</li>
+                <li>„Wie unterstütze ich den Fellwechsel richtig?"</li>
+                <li>„Womit sollte ich jetzt wirklich anfangen?"</li>
+              </ul>
+
+              <p className="text-white/90 text-xs font-sans font-medium mb-2">
+                Was du bekommst:
+              </p>
+
+              <ul className="space-y-1.5 mb-5">
                 {[
                   "Risiko-Check für dein Pferd",
-                  "Die 3 wichtigsten Dinge",
-                  "Wochen-Kalender Feb-Mai",
+                  "Die 3 wichtigsten Dinge für deinen Start",
+                  "Wochen-Kalender Feb–Mai",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 sm:gap-2.5 text-white text-xs sm:text-sm font-sans">
-                    <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold flex-shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-white text-xs font-sans">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
@@ -113,26 +128,15 @@ export default function PferdesichtPage() {
 
               <Link
                 href="/quiz"
-                className="w-full min-h-[48px] px-6 sm:px-8 py-3.5 sm:py-4 bg-gold hover:bg-[#b8956a] text-white text-sm sm:text-base font-sans font-bold tracking-wide rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-xl transition-colors"
+                className="w-full min-h-[48px] px-6 py-3.5 bg-gold hover:bg-[#b8956a] text-white text-sm font-sans font-bold tracking-wide rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-xl transition-colors"
               >
                 Frühlingscheck starten
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4 text-white/70 text-[10px] sm:text-xs font-sans">
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white/90" />
-                  Kostenlos
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white/90" />
-                  2 Min
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white/90" />
-                  Kein Spam
-                </span>
-              </div>
+              <p className="text-center text-white/60 text-[10px] font-sans mt-3">
+                Kostenlos · 2 Min · Kein Spam
+              </p>
             </div>
           </div>
         </div>
