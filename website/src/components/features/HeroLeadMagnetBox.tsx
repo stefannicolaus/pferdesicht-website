@@ -44,9 +44,11 @@ export function HeroLeadMagnetBox() {
         <div className="space-y-3 mb-6">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-3">
-              <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+              <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5 [filter:_drop-shadow(0_1px_2px_rgba(0,0,0,0.5))]" />
               <div>
-                <span className="text-gold font-medium">{benefit.title}</span>
+                <span className="text-gold font-semibold [text-shadow:_0_1px_3px_rgba(0,0,0,0.5)]">
+                  {benefit.title}
+                </span>
                 <p className="text-white font-semibold text-sm">{benefit.description}</p>
               </div>
             </div>
