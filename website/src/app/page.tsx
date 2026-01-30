@@ -59,7 +59,7 @@ export default function PferdesichtPage() {
             {/* Saubere halbtransparente Box fuer Lesbarkeit */}
             <div className="bg-loam/70 backdrop-blur-[2px] p-6 md:p-8 lg:p-10 rounded-lg max-w-2xl">
               <div className="inline-flex items-center px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 border border-gold text-[#EBE6DF] text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-4 sm:mb-6">
-                FUR PFERDEMENSCHEN, DIE HINSCHAUEN
+                FÜR PFERDEMENSCHEN, DIE HINSCHAUEN
               </div>
 
               <h1 className="text-[#F3F0EB] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-[1.15] mb-4 sm:mb-6 font-serif">
@@ -458,7 +458,7 @@ export default function PferdesichtPage() {
                 author: "Julia, Österreich",
               },
               {
-                transformation: "Hilflos zu Handlungsfahig",
+                transformation: "Hilflos zu Handlungsfähig",
                 quote: "Alle sagten: Das ist halt so. War es nicht.",
                 author: "Sandra, Bayern",
               },
@@ -609,7 +609,7 @@ export default function PferdesichtPage() {
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-              Personlich
+              Persönlich
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
@@ -692,7 +692,7 @@ export default function PferdesichtPage() {
                 <h3 className="text-2xl sm:text-3xl font-serif text-loam mb-2 sm:mb-3 font-bold">Sicherheit zuerst</h3>
                 <p className="text-base sm:text-lg font-serif italic text-gold mb-4 sm:mb-6">Weil genaues Hinsehen der beste Schutz ist.</p>
                 <p className="text-xs sm:text-sm text-loam/60 font-sans">
-                  Pruf dein Postfach!
+                  Prüf dein Postfach!
                 </p>
               </div>
             )}
