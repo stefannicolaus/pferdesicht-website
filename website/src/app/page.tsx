@@ -63,7 +63,8 @@ export default function PferdesichtPage() {
               </div>
 
               <h1 className="text-[#F3F0EB] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-[1.15] mb-4 sm:mb-6 font-serif">
-                Jeder sagt mir was anderes.
+                Jeder sagt mir was anderes.{" "}
+                <span className="block sm:inline italic text-[#d4b896]">Und ich weiß nicht mehr, was ich glauben soll.</span>
               </h1>
 
               <p className="hidden sm:block text-[#EBE6DF] text-base sm:text-lg font-sans font-light leading-relaxed max-w-xl mb-4 border-l-2 border-gold/70 pl-4 md:pl-6">
