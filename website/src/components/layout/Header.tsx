@@ -314,16 +314,6 @@ function MobileNav({
               </li>
             ))}
           </ul>
-
-          <div className="mt-8 px-4">
-            <Link
-              href="/guides/fruehling"
-              onClick={onClose}
-              className="block w-full px-6 py-3 bg-gold hover:bg-gold/90 text-white text-center font-medium rounded-sm transition-colors"
-            >
-              Frühlings-Guide entdecken
-            </Link>
-          </div>
         </nav>
       </div>
     </>
