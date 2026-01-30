@@ -21,7 +21,7 @@ const benefits = [
 export function HeroLeadMagnetBox() {
   return (
     <div className="h-full flex items-center justify-center p-4 lg:p-6">
-      {/* Floating Box - MEHR transparent mit Backdrop Blur */}
+      {/* Floating Box - transparent mit Backdrop Blur */}
       <div className="bg-sage/70 backdrop-blur-md rounded-xl p-6 lg:p-8 shadow-2xl max-w-sm">
 
         {/* Badge */}
@@ -46,8 +46,8 @@ export function HeroLeadMagnetBox() {
             <div key={index} className="flex items-start gap-3">
               <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
               <div>
-                <span className="text-white font-medium">{benefit.title}</span>
-                <p className="text-white/80 text-sm">{benefit.description}</p>
+                <span className="text-gold font-medium">{benefit.title}</span>
+                <p className="text-white font-semibold text-sm">{benefit.description}</p>
               </div>
             </div>
           ))}
@@ -62,7 +62,7 @@ export function HeroLeadMagnetBox() {
           <ArrowRight className="w-5 h-5" />
         </Link>
 
-        {/* Click Triggers - mit Checkmarks */}
+        {/* Click Triggers */}
         <div className="flex items-center justify-center gap-4 mt-4 text-white/70 text-xs">
           <span className="flex items-center gap-1">
             <Check className="w-3 h-3" />
