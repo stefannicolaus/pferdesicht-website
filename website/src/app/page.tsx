@@ -27,26 +27,26 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* ============================================ */}
-      {/* HERO SECTION - 2/3 - 1/3 Layout */}
+      {/* HERO SECTION - Flexibles Grid mit fixer Box-Breite */}
       {/* ============================================ */}
       <section className="relative min-h-screen">
-        {/* Desktop: 2/3 - 1/3 Grid */}
-        <div className="hidden lg:grid lg:grid-cols-3 min-h-screen">
-          {/* Linke 2/3: Bild mit Text-Overlay */}
-          <div className="col-span-2 relative">
+        {/* Desktop: 1fr + 380px Grid */}
+        <div className="hidden lg:grid lg:grid-cols-[1fr_380px] min-h-screen">
+          {/* Links: Bild mit Text-Overlay */}
+          <div className="relative">
             <Image
               src="/images/heroes/hero-herde-full.png"
               alt="Pferde im Offenstall bei Sonnenuntergang"
               fill
               priority
               className="object-cover warm-film-grain"
-              sizes="66vw"
+              sizes="calc(100vw - 380px)"
             />
             <HeroTextOverlay />
           </div>
 
-          {/* Rechte 1/3: Lead Magnet Box */}
-          <div className="col-span-1">
+          {/* Rechts: Lead Magnet Box (380px fix) */}
+          <div>
             <HeroLeadMagnetBox />
           </div>
         </div>

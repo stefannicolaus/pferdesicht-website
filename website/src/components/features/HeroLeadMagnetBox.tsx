@@ -37,30 +37,30 @@ export function HeroLeadMagnetBox() {
   return (
     <div className="h-full bg-sage flex flex-col justify-center p-5 lg:p-6 xl:p-8 shadow-[-8px_0_30px_rgba(0,0,0,0.3)]">
       {/* Badge */}
-      <span className="inline-block self-start px-3 py-1.5 bg-loam/30 text-[#f5f2ed] text-[10px] lg:text-xs font-sans font-semibold uppercase tracking-widest rounded mb-3 lg:mb-4">
+      <span className="inline-block self-start px-3 py-1.5 bg-loam/30 text-cream text-[10px] lg:text-xs font-sans font-semibold uppercase tracking-widest rounded mb-3 lg:mb-4">
         Frühling 2026
       </span>
 
       {/* Headline */}
-      <h2 className="font-serif text-xl lg:text-2xl xl:text-[1.75rem] text-[#f5f2ed] mb-2 lg:mb-3 leading-tight">
+      <h2 className="font-serif text-xl lg:text-2xl xl:text-[1.75rem] text-cream mb-2 lg:mb-3 leading-tight">
         Dein persönlicher Frühlings-Fahrplan
       </h2>
 
       {/* Subheadline */}
-      <p className="font-sans text-xs lg:text-sm text-[#f5f2ed]/80 font-light leading-relaxed mb-4 lg:mb-5">
+      <p className="font-sans text-xs lg:text-sm text-cream/80 font-light leading-relaxed mb-4 lg:mb-5">
         Fellwechsel, Anweiden, Parasiten - finde heraus, worauf du bei deinem Pferd achten solltest.
       </p>
 
       {/* Questions Block - Quote Style */}
-      <div className="border-l-2 border-gold/50 pl-3 lg:pl-4 mb-5 lg:mb-6">
-        <p className="font-sans text-[10px] lg:text-xs text-[#f5f2ed]/60 font-semibold uppercase tracking-wide mb-2">
+      <div className="border-l-[3px] border-gold/50 pl-3 lg:pl-4 mb-5 lg:mb-6">
+        <p className="font-sans text-[10px] lg:text-xs text-cream/60 font-semibold uppercase tracking-wide mb-2">
           Dieses Quiz ist für dich, wenn du dich fragst:
         </p>
         <div className="space-y-1 lg:space-y-1.5">
           {questions.map((question, index) => (
             <p
               key={index}
-              className="font-sans text-xs lg:text-sm text-[#f5f2ed] font-normal leading-relaxed"
+              className="font-sans text-xs lg:text-sm text-cream font-normal leading-relaxed"
             >
               „{question}"
             </p>
@@ -70,7 +70,7 @@ export function HeroLeadMagnetBox() {
 
       {/* Benefits Block with Icons */}
       <div className="mb-5 lg:mb-6">
-        <p className="font-sans text-[10px] lg:text-xs text-[#f5f2ed]/60 font-semibold uppercase tracking-wide mb-2 lg:mb-3">
+        <p className="font-sans text-[10px] lg:text-xs text-cream/60 font-semibold uppercase tracking-wide mb-2 lg:mb-3">
           Was du bekommst:
         </p>
         <div className="space-y-2 lg:space-y-3">
@@ -80,10 +80,10 @@ export function HeroLeadMagnetBox() {
                 <benefit.icon className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-gold" />
               </div>
               <div>
-                <p className="font-sans text-xs lg:text-sm text-[#f5f2ed] font-medium leading-tight">
+                <p className="font-sans text-xs lg:text-sm text-cream font-medium leading-tight">
                   {benefit.title}
                 </p>
-                <p className="font-sans text-[10px] lg:text-xs text-[#f5f2ed]/60 leading-tight">
+                <p className="font-sans text-[10px] lg:text-xs text-cream/60 leading-tight">
                   {benefit.description}
                 </p>
               </div>
@@ -102,7 +102,7 @@ export function HeroLeadMagnetBox() {
       </Link>
 
       {/* Click Triggers */}
-      <p className="mt-2 lg:mt-3 text-center font-sans text-[10px] lg:text-xs text-[#f5f2ed]/50">
+      <p className="mt-2 lg:mt-3 text-center font-sans text-[10px] lg:text-xs text-cream/50">
         Kostenlos · 2 Min · Kein Spam
       </p>
     </div>
