@@ -24,7 +24,7 @@ export function HeroTextOverlay() {
             </h1>
             {/* Zeile 2+: Gold Italic, GRÖSSER */}
             <p className="font-serif italic text-[2.25rem] sm:text-[3.25rem] md:text-[4rem] lg:text-[5rem] xl:text-[5.5rem] text-gold leading-[1.02] max-w-none">
-              Und ich weiß nicht mehr, was ich glauben soll.
+              Und ich weiß schon lange nicht mehr, was ich glauben soll.
             </p>
           </div>
         </div>
