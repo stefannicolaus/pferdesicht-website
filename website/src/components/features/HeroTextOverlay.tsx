@@ -32,14 +32,14 @@ export function HeroTextOverlay() {
         {/* UNTERER BEREICH: Subheadline */}
         <div className="border-l-[3px] border-gold/60 pl-5 max-w-lg lg:max-w-xl mb-4 md:mb-6">
           {/* Desktop version */}
-          <p className="hidden sm:block font-sans text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
+          <p className="hidden sm:block font-sans text-sm md:text-base lg:text-lg text-white leading-relaxed">
             Dein Hufschmied sagt A. Der Tierarzt sagt B. Deine Stallkollegin schwört auf C.
             Aber dieses Gefühl in dir sagt:{" "}
             <span className="text-gold font-medium">Da stimmt was nicht.</span>{" "}
             Also googelst du um 2 Uhr nachts.
           </p>
           {/* Mobile version - shorter */}
-          <p className="sm:hidden font-sans text-sm text-white/90 leading-relaxed">
+          <p className="sm:hidden font-sans text-sm text-white leading-relaxed">
             Dein Hufschmied sagt A. Der Tierarzt sagt B. Aber dieses Gefühl in dir sagt:{" "}
             <span className="text-gold font-medium">Da stimmt was nicht.</span>
           </p>
