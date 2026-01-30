@@ -21,33 +21,8 @@ const benefits = [
 export function HeroLeadMagnetBox() {
   return (
     <>
-      {/* MOBILE: Nur CTA Button + Trust Icons */}
-      <div className="lg:hidden p-4 pb-6">
-        {/* CTA Button */}
-        <Link
-          href="/quiz"
-          className="w-full bg-gold hover:bg-gold/90 text-loam font-semibold py-4 px-6 rounded-md flex items-center justify-center gap-2 transition-colors shadow-lg"
-        >
-          Frühlingscheck starten
-          <ArrowRight className="w-5 h-5" />
-        </Link>
-
-        {/* Trust Icons */}
-        <div className="flex items-center justify-center gap-4 mt-3 text-loam/70 text-xs">
-          <span className="flex items-center gap-1">
-            <Check className="w-3 h-3" />
-            Kostenlos
-          </span>
-          <span className="flex items-center gap-1">
-            <Check className="w-3 h-3" />
-            2 Min
-          </span>
-          <span className="flex items-center gap-1">
-            <Check className="w-3 h-3" />
-            Kein Spam
-          </span>
-        </div>
-      </div>
+      {/* MOBILE: Nichts - CTA ist im Sticky Footer */}
+      <div className="lg:hidden" />
 
       {/* DESKTOP: Volle Lead Magnet Box */}
       <div className="hidden lg:flex h-full items-center justify-center p-4 lg:p-6">
