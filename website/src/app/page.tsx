@@ -26,11 +26,9 @@ export default function PferdesichtPage() {
       {/* Texture Overlay - low z-index to stay behind modals/menus */}
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
-      {/* ============================================ */}
-      {/* HERO SECTION - Bild als Hintergrund, Grid darüber */}
-      {/* ============================================ */}
-      <section className="relative h-[85vh] min-h-[600px]">
-        {/* Hintergrundbild - VOLLE BREITE als Background */}
+      {/* HERO SECTION */}
+      <section className="relative min-h-[80vh] lg:h-[85vh] lg:min-h-[600px]">
+        {/* Hintergrundbild - VOLLE BREITE */}
         <Image
           src="/images/heroes/hero-herde-simple.png"
           alt="Pferde im Offenstall"
@@ -42,20 +40,17 @@ export default function PferdesichtPage() {
 
         {/* Content Layer ÜBER dem Bild */}
         <div className="absolute inset-0">
-          {/* Desktop */}
+          {/* Desktop Grid */}
           <div className="hidden lg:grid lg:grid-cols-[3fr_2fr] h-full">
-            {/* Links: Nur Text-Overlay (kein eigenes Bild!) */}
             <div className="relative">
               <HeroTextOverlay />
             </div>
-
-            {/* Rechts: Lead Magnet Box (transparent) */}
             <div className="relative">
               <HeroLeadMagnetBox />
             </div>
           </div>
 
-          {/* Mobile */}
+          {/* Mobile: Gestapelt */}
           <div className="lg:hidden h-full flex flex-col">
             <div className="relative flex-1">
               <HeroTextOverlay />
