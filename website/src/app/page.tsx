@@ -63,20 +63,18 @@ export default function PferdesichtPage() {
               </div>
 
               <h1 className="text-[#F3F0EB] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-[1.15] mb-4 sm:mb-6 font-serif">
-                Alle sagen was anderes.{" "}
-                <span className="hidden sm:inline">Dein Pferd sagt gar nichts. </span>
-                <span className="italic text-[#d4b896] font-medium">Und du googelst um 2 Uhr nachts.</span>
+                Jeder sagt mir was anderes.
               </h1>
 
               <p className="hidden sm:block text-[#EBE6DF] text-base sm:text-lg font-sans font-light leading-relaxed max-w-xl mb-4 border-l-2 border-gold/70 pl-4 md:pl-6">
                 Dein Hufschmied sagt A. Der Tierarzt sagt B. Deine Stallkollegin schwört auf C.
-                Und du stehst dazwischen - mit diesem nagenden Gefühl, dass{" "}
-                <span className="text-gold font-medium">irgendwas nicht stimmt</span>.
+                Aber dieses Gefühl in dir sagt: <span className="text-gold font-medium">Da stimmt was nicht</span>.
+                Also googelst du um 2 Uhr nachts.
               </p>
 
               <p className="sm:hidden text-[#EBE6DF] text-sm font-sans font-light leading-relaxed mb-4 border-l-2 border-gold/70 pl-3">
-                Alle sagen was anderes - und du stehst dazwischen mit diesem{" "}
-                <span className="text-gold font-medium">nagenden Gefühl</span>.
+                Dein Hufschmied sagt A. Der Tierarzt sagt B. Aber dieses Gefühl in dir sagt:{" "}
+                <span className="text-gold font-medium">Da stimmt was nicht</span>.
               </p>
 
               <p className="text-[#EBE6DF]/90 text-xs sm:text-sm md:text-base italic font-sans">
