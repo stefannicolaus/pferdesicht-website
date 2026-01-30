@@ -31,7 +31,7 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       <section className="relative h-[85vh] min-h-[600px]">
         {/* Desktop: 1fr + 380px Grid */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_420px] h-full">
+        <div className="hidden lg:grid lg:grid-cols-[3fr_2fr] h-full">
           {/* Links: Bild mit Text-Overlay */}
           <div className="relative">
             <Image
