@@ -3,43 +3,36 @@
 export function HeroTextOverlay() {
   return (
     <div className="absolute inset-0 z-10">
-      {/* Subtiler Gradient-Overlay für Lesbarkeit - von links nach rechts auslaufend */}
+      {/* Subtiler Gradient-Overlay für Lesbarkeit */}
       <div className="absolute inset-0 bg-gradient-to-r from-loam/60 via-loam/30 to-transparent" />
 
-      {/* Text Container - OBEN ausgerichtet wie in v0.app Vorlage */}
-      <div className="relative h-full flex flex-col justify-between w-full md:w-[65%] lg:w-[62%] xl:w-[58%] p-5 md:p-6 lg:p-8 xl:p-10 pt-6 md:pt-8 lg:pt-10">
+      {/* Text Container - 90% Breite nutzen */}
+      <div className="absolute top-20 lg:top-24 left-0 w-full lg:w-[90%] p-6 lg:p-10 xl:p-12">
 
-        {/* OBERER BEREICH: Badge + Headlines - Breite wie obere rote Box */}
-        <div className="max-w-[720px]">
-          {/* Badge - ganz oben */}
-          <span className="inline-block px-3 py-1.5 bg-sage/90 text-white text-[10px] md:text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4 md:mb-6 shadow-lg">
-            Für Pferdemenschen, die hinschauen
-          </span>
+        {/* Badge */}
+        <span className="inline-block px-4 py-2 bg-sage/80 text-cream text-[11px] font-sans font-semibold uppercase tracking-[0.1em] rounded mb-5 lg:mb-6 shadow-lg">
+          Für Pferdemenschen, die hinschauen
+        </span>
 
-          {/* HEADLINE GROUP */}
-          <div>
-            {/* Zeile 1: Weiß */}
-            <h1 className="font-serif text-[1.75rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] text-white leading-[1.1]">
-              Jeder im Stall sagt mir was anderes.
-            </h1>
-            {/* Zeile 2+: Gold Italic, GRÖSSER */}
-            <p className="font-serif italic text-[2.25rem] sm:text-[3.25rem] md:text-[4rem] lg:text-[5rem] xl:text-[5.5rem] text-gold leading-[1.02]">
-              Und ich weiß schon lange nicht mehr, was ich glauben soll.
-            </p>
-          </div>
-        </div>
+        {/* Headline Cream - KEINE max-width Begrenzung */}
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-normal text-cream leading-[1.08] tracking-tight mb-0 max-w-none [text-shadow:_0_4px_30px_rgba(0,0,0,0.7)]">
+          Jeder im Stall sagt mir was anderes.
+        </h1>
 
-        {/* UNTERER BEREICH: Subheadline - Breite wie untere rote Box */}
-        <div className="border-l-[3px] border-gold/60 pl-5 max-w-[750px] mb-4 md:mb-6">
-          {/* Desktop version */}
-          <p className="hidden sm:block font-sans text-sm md:text-base lg:text-lg text-white leading-relaxed">
+        {/* Headline Gold - GRÖSSER + GROSSER ABSTAND DANACH */}
+        <p className="font-serif italic text-[2.75rem] md:text-[3.25rem] lg:text-[3.75rem] xl:text-[4.25rem] font-normal text-gold leading-[1.08] mb-10 lg:mb-12 max-w-none [text-shadow:_0_4px_30px_rgba(0,0,0,0.8)]">
+          Und ich weiß schon lange nicht mehr, was ich glauben soll.
+        </p>
+
+        {/* Subheadline - KLEINER + DICKERE BORDER */}
+        <div className="border-l-[3px] border-gold/50 pl-5 max-w-lg">
+          <p className="hidden sm:block font-sans text-sm md:text-base lg:text-[17px] font-normal text-cream/85 leading-relaxed [text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
             Dein Hufschmied sagt A. Der Tierarzt sagt B. Deine Stallkollegin schwört auf C.
             Aber dieses Gefühl in dir sagt:{" "}
             <span className="text-gold font-medium">Da stimmt was nicht.</span>{" "}
             Also googelst du um 2 Uhr nachts.
           </p>
-          {/* Mobile version - shorter */}
-          <p className="sm:hidden font-sans text-sm text-white leading-relaxed">
+          <p className="sm:hidden font-sans text-sm font-normal text-cream/85 leading-relaxed [text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
             Dein Hufschmied sagt A. Der Tierarzt sagt B. Aber dieses Gefühl in dir sagt:{" "}
             <span className="text-gold font-medium">Da stimmt was nicht.</span>
           </p>
