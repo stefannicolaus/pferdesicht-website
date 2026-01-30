@@ -927,12 +927,6 @@ export default function PferdEindeckenWinterPage() {
             </ul>
           </div>
 
-          {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Dieser Beitrag basiert auf veterinärmedizinischen Erkenntnissen zur Thermoregulation von Pferden sowie
-            meiner 20-jährigen praktischen Erfahrung in der Pferdehaltung. Er ersetzt keine tierärztliche Beratung bei
-            gesundheitlichen Bedenken.
-          </div>
         </div>
       </article>
 
