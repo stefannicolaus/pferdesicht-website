@@ -348,51 +348,54 @@ export function Header() {
   }, []);
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 w-full",
-        "bg-bg-light/95 backdrop-blur-sm border-b border-gold/20",
-        "transition-all duration-300",
-        isScrolled && "shadow-sm"
-      )}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <Logo />
+    <>
+      <header
+        className={cn(
+          "sticky top-0 z-40 w-full",
+          "bg-bg-light/95 backdrop-blur-sm border-b border-gold/20",
+          "transition-all duration-300",
+          isScrolled && "shadow-sm"
+        )}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <Logo />
 
-          <nav className="hidden lg:flex items-center gap-1">
-            {navigation.map((item) => (
-              <DesktopNavItem key={item.label} item={item} />
-            ))}
-          </nav>
+            <nav className="hidden lg:flex items-center gap-1">
+              {navigation.map((item) => (
+                <DesktopNavItem key={item.label} item={item} />
+              ))}
+            </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
-            <Link
-              href="/guides/fruehling"
-              className="px-4 py-2 bg-gold hover:bg-gold/90 text-white text-sm font-medium tracking-wide rounded-sm transition-colors border border-gold/50"
+            <div className="hidden lg:flex items-center gap-4">
+              <Link
+                href="/guides/fruehling"
+                className="px-4 py-2 bg-gold hover:bg-gold/90 text-white text-sm font-medium tracking-wide rounded-sm transition-colors border border-gold/50"
+              >
+                Frühlings-Guide
+              </Link>
+            </div>
+
+            <button
+              onClick={() => setMobileMenuOpen(true)}
+              className={cn(
+                "lg:hidden p-2 -mr-2 text-loam hover:text-gold",
+                "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md"
+              )}
+              aria-label="Menü öffnen"
             >
-              Frühlings-Guide
-            </Link>
+              <MenuIcon className="w-6 h-6" />
+            </button>
           </div>
-
-          <button
-            onClick={() => setMobileMenuOpen(true)}
-            className={cn(
-              "lg:hidden p-2 -mr-2 text-loam hover:text-gold",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md"
-            )}
-            aria-label="Menü öffnen"
-          >
-            <MenuIcon className="w-6 h-6" />
-          </button>
         </div>
-      </div>
+      </header>
 
+      {/* Mobile Menu - outside header to avoid stacking context issues */}
       <MobileNav
         isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
       />
-    </header>
+    </>
   );
 }
 
