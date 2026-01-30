@@ -5,6 +5,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { ArrowRight, Shield, Brain, Heart, Sparkles, X, CheckCircle2 } from "lucide-react"
+import { HeroTextOverlay } from "@/components/features/HeroTextOverlay"
+import { HeroLeadMagnetBox } from "@/components/features/HeroLeadMagnetBox"
 
 export default function PferdesichtPage() {
   const [isHeroModalOpen, setIsHeroModalOpen] = useState(false)
@@ -25,136 +27,47 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* ============================================ */}
-      {/* HERO SECTION */}
+      {/* HERO SECTION - 2/3 - 1/3 Layout */}
       {/* ============================================ */}
-      <section className="relative w-full min-h-[100svh] md:min-h-[800px] overflow-hidden">
-
-        {/* LAYER 1: Background Images - KEIN Gradient, Bild fuellt komplett */}
-        {/* Desktop: Pferde links/mitte, rechts leer fuer Card */}
-        <Image
-          src="/images/heroes/hero-herde-full.png"
-          alt="Pferdeherde auf deutscher Koppel im goldenen Abendlicht"
-          fill
-          priority
-          className="hidden md:block object-cover object-center warm-film-grain"
-          sizes="100vw"
-        />
-        {/* Mobile: Pferde unten, oben Platz fuer Text */}
-        <Image
-          src="/images/heroes/hero-herde-mobile.png"
-          alt="Pferde auf der Koppel im goldenen Abendlicht"
-          fill
-          priority
-          className="md:hidden object-cover object-top warm-film-grain"
-          sizes="100vw"
-        />
-
-        {/* KEIN Gradient Overlay - Bild hat genug Kontrast */}
-
-        {/* LAYER 2: Content */}
-        <div className="relative z-10 w-full min-h-[100svh] md:min-h-[800px] flex flex-col">
-
-          {/* Text Content - Links oben */}
-          <div className="flex-1 flex items-start md:items-center px-4 sm:px-6 lg:px-8 xl:px-16 pt-16 md:pt-0 md:py-20">
-            {/* Saubere halbtransparente Box fuer Lesbarkeit */}
-            <div className="bg-loam/70 backdrop-blur-[2px] p-6 md:p-8 lg:p-10 rounded-lg max-w-2xl">
-              <div className="inline-flex items-center px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 border border-gold text-[#EBE6DF] text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-4 sm:mb-6">
-                FÜR PFERDEMENSCHEN, DIE HINSCHAUEN
-              </div>
-
-              <h1 className="text-[#F3F0EB] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-[1.15] mb-4 sm:mb-6 font-serif">
-                Jeder sagt mir was anderes.{" "}
-                <span className="block sm:inline italic text-[#d4b896]">Und ich weiß nicht mehr, was ich glauben soll.</span>
-              </h1>
-
-              <p className="hidden sm:block text-[#EBE6DF] text-base sm:text-lg font-sans font-light leading-relaxed max-w-xl mb-4 border-l-2 border-gold/70 pl-4 md:pl-6">
-                Dein Hufschmied sagt A. Der Tierarzt sagt B. Deine Stallkollegin schwört auf C.
-                Aber dieses Gefühl in dir sagt: <span className="text-gold font-medium">Da stimmt was nicht</span>.
-                Also googelst du um 2 Uhr nachts.
-              </p>
-
-              <p className="sm:hidden text-[#EBE6DF] text-sm font-sans font-light leading-relaxed mb-4 border-l-2 border-gold/70 pl-3">
-                Dein Hufschmied sagt A. Der Tierarzt sagt B. Aber dieses Gefühl in dir sagt:{" "}
-                <span className="text-gold font-medium">Da stimmt was nicht</span>.
-              </p>
-
-              <p className="text-[#EBE6DF]/90 text-xs sm:text-sm md:text-base italic font-sans">
-                Vor 16 Jahren war ich genau da, wo du jetzt bist.
-              </p>
-            </div>
+      <section className="relative min-h-screen">
+        {/* Desktop: 2/3 - 1/3 Grid */}
+        <div className="hidden lg:grid lg:grid-cols-3 min-h-screen">
+          {/* Linke 2/3: Bild mit Text-Overlay */}
+          <div className="col-span-2 relative">
+            <Image
+              src="/images/heroes/hero-herde-full.png"
+              alt="Pferde im Offenstall bei Sonnenuntergang"
+              fill
+              priority
+              className="object-cover warm-film-grain"
+              sizes="66vw"
+            />
+            <HeroTextOverlay />
           </div>
 
-          {/* Lead Magnet Card - Desktop: absolute rechts, Mobile: unten gestackt */}
-          <div className="md:absolute md:right-8 xl:right-12 md:top-1/2 md:-translate-y-1/2 px-4 sm:px-6 md:px-0 pb-8 md:pb-0 mt-auto md:mt-0">
-            <div className="bg-sage/85 backdrop-blur-sm rounded-lg shadow-2xl p-5 sm:p-6 md:p-8 w-full md:max-w-md mx-auto md:mx-0">
-              {/* Badge */}
-              <span className="inline-block px-3 py-1.5 bg-loam/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4">
-                Frühling 2026
-              </span>
-
-              {/* Headline */}
-              <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-[#f5f2ed] mb-3 leading-tight">
-                Dein persönlicher Frühlings-Fahrplan
-              </h3>
-
-              {/* Subheadline */}
-              <p className="font-sans text-sm sm:text-base text-[#f5f2ed]/90 font-light leading-relaxed mb-6">
-                Fellwechsel, Anweiden, Parasiten - finde heraus, worauf du bei deinem Pferd achten solltest.
-              </p>
-
-              {/* Quiz Questions Block - Quote-Style */}
-              <div className="border-l-2 border-gold/50 pl-4 ml-2 mb-8">
-                <p className="font-sans text-sm text-[#f5f2ed]/80 font-medium mb-3">
-                  Dieses Quiz ist für dich, wenn du dich fragst:
-                </p>
-                <div className="space-y-2">
-                  {[
-                    "Muss ich jetzt schon ans Anweiden denken?",
-                    "Braucht mein Pferd extra Mineralfutter?",
-                    "Wie unterstütze ich den Fellwechsel richtig?",
-                    "Womit sollte ich jetzt wirklich anfangen?",
-                  ].map((question, i) => (
-                    <p key={i} className="font-sans text-sm sm:text-base text-[#f5f2ed] font-normal leading-relaxed">
-                      „{question}"
-                    </p>
-                  ))}
-                </div>
-              </div>
-
-              {/* Benefits Block */}
-              <div className="mb-6">
-                <p className="font-sans text-xs text-[#f5f2ed]/70 font-semibold uppercase tracking-wide mb-3">
-                  Was du bekommst:
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "Risiko-Check für dein Pferd",
-                    "Die 3 wichtigsten Dinge für deinen Start",
-                    "Wochen-Kalender Feb–Mai",
-                  ].map((benefit, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
-                      <span className="font-sans text-sm text-[#f5f2ed]/90 font-normal">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* CTA Button */}
-              <Link
-                href="/quiz"
-                className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
-              >
-                Frühlingscheck starten
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-
-              {/* Click Triggers */}
-              <p className="mt-4 text-center font-sans text-xs text-[#f5f2ed]/60">
-                Kostenlos · 2 Min · Kein Spam
-              </p>
-            </div>
+          {/* Rechte 1/3: Lead Magnet Box */}
+          <div className="col-span-1">
+            <HeroLeadMagnetBox />
           </div>
+        </div>
+
+        {/* Tablet/Mobile: Gestapelt */}
+        <div className="lg:hidden">
+          {/* Hero Bild mit Overlay */}
+          <div className="relative h-[60vh] md:h-[50vh]">
+            <Image
+              src="/images/heroes/hero-herde-mobile.png"
+              alt="Pferde auf der Koppel im goldenen Abendlicht"
+              fill
+              priority
+              className="object-cover object-top warm-film-grain"
+              sizes="100vw"
+            />
+            <HeroTextOverlay />
+          </div>
+
+          {/* Lead Magnet Box */}
+          <HeroLeadMagnetBox />
         </div>
       </section>
 
@@ -283,75 +196,74 @@ export default function PferdesichtPage() {
       <section className="py-12 sm:py-16 md:py-24 bg-sage relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
-            
+
+            {/* Left: Text Content */}
             <div className="text-center lg:text-left">
-              <span className="inline-block bg-white/20 text-white px-2.5 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-3 sm:mb-4">
-                FRÜHLING 2026
+              <span className="inline-block px-3 py-1.5 bg-loam/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4">
+                Frühling 2026
               </span>
-              
+
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-white mb-4 sm:mb-6 leading-tight">
-                Der Frühling kommt. <span className="italic">Und damit ein paar Fragen.</span>
+                Der Frühling kommt. <span className="italic text-[#d4b896]">Und damit ein paar Fragen.</span>
               </h2>
-              
-              <p className="text-white/85 text-sm sm:text-base md:text-lg font-sans font-light leading-relaxed mb-3 sm:mb-4">
-                Fellwechsel, Anweiden, Parasiten - nicht alles, was du darüber hörst, stimmt.
-              </p>
-              
-              <p className="text-white/85 text-sm sm:text-base md:text-lg font-sans font-light leading-relaxed">
+
+              {/* Questions Block - Quote Style */}
+              <div className="border-l-2 border-gold/50 pl-4 ml-2 mb-6 text-left">
+                <p className="font-sans text-sm text-[#f5f2ed]/80 font-medium mb-3">
+                  Vielleicht fragst du dich gerade:
+                </p>
+                <div className="space-y-2">
+                  {[
+                    "Muss ich jetzt schon ans Anweiden denken?",
+                    "Wie unterstütze ich den Fellwechsel richtig?",
+                    "Was sollte ich bei meinem Pferd wirklich priorisieren?",
+                  ].map((question, i) => (
+                    <p key={i} className="font-sans text-sm sm:text-base text-[#f5f2ed] font-normal leading-relaxed">
+                      „{question}"
+                    </p>
+                  ))}
+                </div>
+              </div>
+
+              <p className="text-[#f5f2ed]/85 text-sm sm:text-base font-sans font-light leading-relaxed">
                 8 Fragen zu deinem Pferd. Dein persönlicher Frühjahrs-Report - abgestimmt auf eure Situation.
               </p>
             </div>
-            
-            <div className="bg-white rounded-sm p-5 sm:p-6 md:p-8 shadow-lg">
-              <h3 className="font-sans font-bold text-xs sm:text-sm tracking-widest uppercase text-loam mb-4 sm:mb-6">
-                Das bekommst du:
-              </h3>
-              
-              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                {[
-                  { icon: "🎯", title: "Risiko-Einschätzung", sub: "Abgestimmt auf Rasse, Alter und Haltung deines Pferdes" },
-                  { icon: "📊", title: "Deine Top-3-Prioritäten", sub: "Was bei EUCH jetzt wirklich zählt" },
-                  { icon: "📅", title: "Persönlicher Wochen-Plan", sub: "Februar bis Mai - für eure Situation" },
-                  { icon: "✨", title: "Ehrliche Einschätzung", sub: "Kein Einhorn-Quatsch, sondern das, was du wissen musst" },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 sm:gap-4 pb-3 sm:pb-4 border-b border-loam/10 last:border-0 last:pb-0">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                      <span className="text-sm sm:text-lg">{item.icon}</span>
-                    </div>
-                    <div>
-                      <h4 className="text-loam font-sans font-semibold text-xs sm:text-sm">{item.title}</h4>
-                      <p className="text-loam/60 text-[10px] sm:text-xs font-sans">{item.sub}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <p className="text-loam/70 text-xs sm:text-sm font-sans italic text-center mb-4">
-                Keine Standard-Tipps. Sondern genau das, was für dein Pferd relevant ist.
+
+            {/* Right: CTA Card */}
+            <div className="bg-loam/90 backdrop-blur-sm rounded-lg p-5 sm:p-6 md:p-8 shadow-lg">
+              {/* Benefits */}
+              <p className="font-sans text-xs text-[#f5f2ed]/70 font-semibold uppercase tracking-wide mb-4">
+                Was du bekommst:
               </p>
 
+              <ul className="space-y-3 mb-6">
+                {[
+                  "Risiko-Check für dein Pferd",
+                  "Die 3 wichtigsten Dinge für deinen Start",
+                  "Wochen-Kalender Feb–Mai",
+                  "Ehrliche Einschätzung ohne Einhorn-Quatsch",
+                ].map((benefit, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="font-sans text-sm text-[#f5f2ed]/90 font-normal">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA Button */}
               <Link
                 href="/quiz"
-                className="w-full min-h-[48px] px-6 sm:px-8 py-3.5 sm:py-4 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm tactile-button inline-flex items-center justify-center gap-2 shadow-lg transition-colors"
+                className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
               >
                 Frühlingscheck starten
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </Link>
 
-              <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4 text-loam/50 text-[10px] sm:text-xs font-sans">
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-                  Kostenlos
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-                  2 Min
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-                  Kein Spam
-                </span>
-              </div>
+              {/* Click Triggers */}
+              <p className="mt-4 text-center font-sans text-xs text-[#f5f2ed]/60">
+                Kostenlos · 2 Min · Kein Spam
+              </p>
             </div>
           </div>
         </div>
@@ -599,40 +511,63 @@ export default function PferdesichtPage() {
       {/* FINAL CTA SECTION */}
       {/* ============================================ */}
       <section className="py-12 sm:py-16 md:py-24 bg-loam">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <span className="inline-block bg-gold text-white px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs font-sans font-bold tracking-widest uppercase mb-4 sm:mb-6">
-            FRÜHLING 2026
-          </span>
-          
-          <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-3 sm:mb-4 leading-tight">
-            Hör auf zu googeln. <span className="italic text-gold">Fang an zu verstehen.</span>
-          </h2>
-          
-          <p className="text-[#EBE6DF]/80 text-sm sm:text-base md:text-lg font-sans font-light leading-relaxed mb-6 sm:mb-8">
-            8 Fragen zu deinem Pferd. 2 Minuten. Dein persönlicher Frühlingsreport - abgestimmt auf eure Situation.
-          </p>
-          
-          <Link 
-            href="/quiz" 
-            className="inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-4 min-h-[48px] bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-xs sm:text-sm tracking-wide uppercase rounded-sm tactile-button shadow-xl transition-colors"
-          >
-            Frühlingscheck starten
-            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-          </Link>
-          
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-4 sm:mt-5 text-[#EBE6DF]/50 text-[10px] sm:text-xs font-sans">
-            <span className="flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-              Kostenlos
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1.5 bg-gold/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4">
+              Frühling 2026
             </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-              Persönlich
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sage" />
-              Kein Spam
-            </span>
+
+            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-4 leading-tight">
+              Hör auf zu googeln. <span className="italic text-gold">Fang an zu verstehen.</span>
+            </h2>
+          </div>
+
+          {/* Centered CTA Card */}
+          <div className="bg-sage/30 backdrop-blur-sm rounded-lg p-5 sm:p-6 md:p-8 max-w-xl mx-auto">
+            {/* Questions Block - Quote Style */}
+            <div className="border-l-2 border-gold/50 pl-4 ml-2 mb-6">
+              <p className="font-sans text-sm text-[#f5f2ed]/80 font-medium mb-3">
+                Noch unsicher? Diese Fragen klären wir gemeinsam:
+              </p>
+              <div className="space-y-2">
+                {[
+                  "Was ist bei meinem Pferd wirklich dran?",
+                  "Womit sollte ich jetzt anfangen?",
+                ].map((question, i) => (
+                  <p key={i} className="font-sans text-sm sm:text-base text-[#f5f2ed] font-normal leading-relaxed">
+                    „{question}"
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            {/* Benefits */}
+            <ul className="space-y-3 mb-6">
+              {[
+                "Dein persönlicher Frühjahrs-Report",
+                "Abgestimmt auf eure Situation",
+                "In nur 2 Minuten",
+              ].map((benefit, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <span className="font-sans text-sm text-[#f5f2ed]/90 font-normal">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA Button */}
+            <Link
+              href="/quiz"
+              className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
+            >
+              Frühlingscheck starten
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+
+            {/* Click Triggers */}
+            <p className="mt-4 text-center font-sans text-xs text-[#f5f2ed]/60">
+              Kostenlos · Persönlich · Kein Spam
+            </p>
           </div>
         </div>
       </section>

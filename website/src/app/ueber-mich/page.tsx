@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Heart, BookOpen, Wrench, ClipboardCheck, FileText, ArrowRight } from "lucide-react"
+import { Heart, BookOpen, Wrench, ClipboardCheck, FileText, ArrowRight, CheckCircle2 } from "lucide-react"
 
 export default function UeberMichPage() {
   return (
@@ -28,17 +28,27 @@ export default function UeberMichPage() {
                 Mit diesem nagenden Gefühl: <em>Da stimmt doch was nicht.</em> Heute gebe ich dir die Worte, das Wissen und den Mut, den ich damals nicht hatte.
               </p>
 
-              {/* CTA */}
-              <div className="pt-2">
+              {/* CTA Card */}
+              <div className="bg-sage/10 rounded-lg p-5 border border-sage/20">
+                {/* Questions Block - Quote Style */}
+                <div className="border-l-2 border-gold/50 pl-4 ml-1 mb-4">
+                  <p className="font-sans text-xs text-loam/60 font-medium mb-2">
+                    Fragst du dich auch:
+                  </p>
+                  <p className="font-sans text-sm text-loam/80 font-normal leading-relaxed">
+                    „Womit sollte ich bei meinem Pferd jetzt anfangen?"
+                  </p>
+                </div>
+
                 <Link
                   href="/quiz"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-base tracking-wide uppercase rounded-sm shadow-lg transition-colors"
+                  className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
                 >
-                  Mach den Frühlingscheck
+                  Frühlingscheck starten
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <p className="text-loam/50 text-sm font-sans mt-3">
-                  ✓ 8 Fragen · ✓ 2 Minuten · ✓ Kostenlos
+                <p className="mt-3 text-center font-sans text-xs text-loam/50">
+                  Kostenlos · 2 Min · Kein Spam
                 </p>
               </div>
             </div>
@@ -526,22 +536,38 @@ export default function UeberMichPage() {
               </div>
 
               {/* Karte 2: Kostenloser Frühlingscheck */}
-              <div className="bg-white p-6 rounded-sm border border-sage/20 shadow-sm flex flex-col">
-                <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-4">
-                  <ClipboardCheck className="w-6 h-6 text-sage" />
+              <div className="bg-sage/90 p-6 rounded-lg shadow-sm flex flex-col">
+                <span className="inline-block px-3 py-1.5 bg-loam/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4 w-fit">
+                  Frühling 2026
+                </span>
+                <h3 className="font-serif text-xl text-[#f5f2ed] mb-4">Dein persönlicher Frühlingscheck</h3>
+
+                {/* Questions Block - Quote Style */}
+                <div className="border-l-2 border-gold/50 pl-4 ml-1 mb-4 flex-grow">
+                  <p className="font-sans text-xs text-[#f5f2ed]/70 font-medium mb-2">
+                    Du fragst dich:
+                  </p>
+                  <div className="space-y-1.5">
+                    {[
+                      "Womit sollte ich anfangen?",
+                      "Was ist bei meinem Pferd dran?",
+                    ].map((q, i) => (
+                      <p key={i} className="font-sans text-sm text-[#f5f2ed]/90 font-normal leading-relaxed">
+                        „{q}"
+                      </p>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="font-serif text-xl text-loam mb-2">Kostenloser Frühlingscheck</h3>
-                <p className="text-loam/70 text-sm leading-relaxed mb-6 flex-grow">
-                  8 Fragen zu deinem Pferd. Dein persönlicher Report – abgestimmt auf eure Situation.
-                </p>
+
                 <Link
                   href="/quiz"
-                  className="inline-flex items-center justify-center gap-2 w-full py-3 bg-sage hover:bg-sage/90 text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm transition-colors"
+                  className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
                 >
                   Quiz starten
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
-                <p className="text-loam/50 text-xs font-sans text-center mt-3">
-                  ✓ Kostenlos · ✓ 2 Minuten
+                <p className="mt-3 text-center font-sans text-xs text-[#f5f2ed]/60">
+                  Kostenlos · 2 Min · Kein Spam
                 </p>
               </div>
 
