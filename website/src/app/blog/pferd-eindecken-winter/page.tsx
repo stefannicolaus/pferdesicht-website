@@ -1,10 +1,9 @@
 "use client"
 
-import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { BookOpen, Menu, X, Thermometer, CheckCircle2, ArrowLeft, Heart } from "lucide-react"
+import { Menu, X, Thermometer, CheckCircle2, ArrowLeft, Heart } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
 
 export default function PferdEindeckenWinterPage() {
@@ -16,6 +15,105 @@ export default function PferdEindeckenWinterPage() {
 
   return (
     <main className="min-h-screen bg-paper">
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Bei welcher Temperatur friert ein Pferd?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Die Wohlfühltemperatur eines gesunden, erwachsenen Pferdes liegt zwischen -5°C und +15°C. Pferde beginnen erst unter -5°C mit aktiver Wärmeproduktion. Wenn Menschen frieren, fühlt sich das Pferd oft gerade wohl."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wann sollte ich mein Pferd eindecken?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Eindecken ist die Ausnahme, nicht die Regel. Legitime Gründe sind: geschorenes Fell, alte oder kranke Pferde (z.B. Cushing), Pferde in der Haltungsumstellung, oder untergewichtige Pferde. Gesunde Pferde mit intaktem Winterfell brauchen in der Regel keine Decke."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wie prüfe ich ob mein Pferd friert?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Der 10-Sekunden-Flanken-Check: Lege deine flache Hand auf die Flanke oder hinter das Schulterblatt, unter das Fell. Warm und trocken bedeutet alles in Ordnung. Ohren und Beine sind keine geeigneten Indikatoren für die Körpertemperatur."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Warum ist Heu wichtig für die Wärmeregulation beim Pferd?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Die Fermentation von Raufutter im Blinddarm erzeugt erhebliche Wärmeenergie. Ein Pferd mit ausreichend Heu produziert seine eigene innere Heizung. Bei Kälte steigt der Energiebedarf um bis zu 20% - dieser wird optimal durch zusätzliches Raufutter gedeckt, nicht durch Decken."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Schadet eine Pferdedecke dem Winterfell?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja, eine Decke drückt die Haare platt und zerstört damit die isolierende Luftschicht - die natürliche Daunenjacke des Pferdes. Ein Pferd mit Decke ist oft schlechter geschützt als eines ohne, weil sein eigenes Thermoregulationssystem nicht mehr funktionieren kann."
+                }
+              }
+            ]
+          })
+        }}
+      />
+      {/* Article Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "0 Grad am Stall: Dein Pferd döst entspannt. Du googlest panisch 'Pferd eindecken'.",
+            "description": "Wann eine Decke wirklich Sinn macht - und wann du deinem Pferd damit mehr schadest als hilfst. Faktenbasiert und aus 20 Jahren Praxiserfahrung.",
+            "image": "https://pferdesicht.com/images/heroes/hero-pferd-winter-schnee-v4.png",
+            "datePublished": "2025-01-15",
+            "dateModified": "2025-01-15",
+            "author": {
+              "@type": "Person",
+              "name": "Diana",
+              "description": "Reittherapeutin mit 30 Jahren Pferdeerfahrung",
+              "url": "https://pferdesicht.com/ueber-mich"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pferdesicht",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://pferdesicht.com/logo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://pferdesicht.com/blog/pferd-eindecken-winter"
+            }
+          })
+        }}
+      />
+      {/* Speakable Schema for Voice Search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".key-takeaway", "h1", ".scientific-fact"]
+            }
+          })
+        }}
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 w-full bg-bg-light/95 backdrop-blur-sm border-b border-gold/20 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
@@ -143,6 +241,15 @@ export default function PferdEindeckenWinterPage() {
               <span>8 min (2100)</span>
             </div>
 
+            {/* Author Box */}
+            <div className="flex items-center gap-4 p-4 bg-sage/10 rounded-lg mb-8">
+              <Image src="/images/Diana_Pferdesicht.jpeg" alt="Diana" width={60} height={60} className="rounded-full object-cover" />
+              <div>
+                <p className="font-semibold text-loam font-sans">Diana</p>
+                <p className="text-sm text-loam/60 font-sans">30 Jahre Pferdeerfahrung · Reittherapeutin · Pferdesicht Gründerin</p>
+              </div>
+            </div>
+
             {/* Table of Contents */}
             <div className="bg-white/50 rounded-sm p-6 backdrop-blur-sm border border-loam/10">
               <h3 className="text-sm font-sans font-semibold uppercase tracking-wider text-loam mb-4">
@@ -214,6 +321,10 @@ export default function PferdEindeckenWinterPage() {
           </p>
 
           <p className="text-base font-sans text-loam/70 leading-relaxed">
+            (Wahrscheinlich von der Person, die bei 10 Grad plus selbst noch Handschuhe und Schal trägt. Aber das nur am Rande.)
+          </p>
+
+          <p className="text-base font-sans text-loam/70 leading-relaxed">
             Lass uns heute gemeinsam aufräumen. Mit Fakten. Mit meinen 20 Jahren Erfahrung. Und mit dem, was ich auf die
             harte Tour lernen musste.
           </p>
@@ -242,9 +353,15 @@ export default function PferdEindeckenWinterPage() {
             <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
               Ja, du hast richtig gelesen. Minus fünf.
             </p>
-            <p className="text-base font-sans text-loam/70 leading-relaxed">
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
               Zum Vergleich: Unsere menschliche Komfortzone liegt bei etwa 18-22°C. Das bedeutet, wenn wir anfangen zu
               frieren, fängt unser Pferd gerade erst an, sich wohlzufühlen.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Das bedeutet: <strong>Wenn wir anfangen zu frieren, fängt unser Pferd gerade erst an, sich wohlzufühlen.</strong> Wir lösen also ein Problem, das gar nicht existiert.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed">
+              Lass das mal sacken: Dein Pferd fühlt sich bei Temperaturen am wohlsten, bei denen du längst die Heizung aufdrehst.
             </p>
           </section>
 
@@ -277,15 +394,13 @@ export default function PferdEindeckenWinterPage() {
               "
             </span>
             <p className="relative text-3xl md:text-4xl font-serif italic text-loam leading-relaxed mb-6 text-balance px-8">
-              Das Pferd ist von Natur aus ein Steppentier, das extreme Temperaturschwankungen zwischen Tag und Nacht
-              gewohnt ist. Sein Thermoregulationssystem ist auf diese Bedingungen optimiert – nicht auf konstante
-              Stallwärme.
+              Der ursprüngliche Lebensraum der Wildvorfahren unserer Hauspferde waren verschiedenartige Steppenlandschaften. Charakteristisch für derartige Landschaften ist, dass es tagsüber sehr heiß wird, in der Nacht stark abkühlt und es so zu großen Temperaturschwankungen innerhalb von 24 Stunden kommt. An derartige Witterungsverhältnisse ist das Pferd über mindestens 25 Millionen Jahre angepasst.
             </p>
             <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-8xl font-serif text-[#C8A476] opacity-30 leading-none">
               "
             </span>
             <footer className="relative text-sm font-sans uppercase tracking-widest text-sage mt-4">
-              — Prof. Dr. Ellen Kienzle, LMU München
+              — Dr. Miriam Baumgartner, TU München (PM-Forum, 2020)
             </footer>
           </blockquote>
 
@@ -309,6 +424,12 @@ export default function PferdEindeckenWinterPage() {
             </h2>
             <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
               Was passiert eigentlich im Winter mit dem Fell deines Pferdes?
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Stell dir einen Wintermantel vor, der sich selbst aufplustern kann. Der dicker wird, wenn es kälter wird. Der Regen abperlen lässt, ohne dass du ihn imprägnieren musst. Und der sich in Echtzeit an die Temperatur anpasst — ganz ohne App.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Das ist das Winterfell deines Pferdes.
             </p>
             <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
               Das Winterfell deines Pferdes ist ein Meisterwerk der Evolution:
@@ -357,8 +478,7 @@ export default function PferdEindeckenWinterPage() {
             </figure>
 
             <p className="text-base font-sans text-loam/70 leading-relaxed">
-              Und jetzt kommt der Punkt, den viele nicht wissen: Wenn du eine Decke auf ein Pferd legst, drückst du die
-              Haare platt. Die isolierende Luftschicht? Weg. Die natürliche Thermoregulation? Gestört.
+              Und jetzt kommt der Punkt, den viele nicht wissen: Wenn du eine Decke auf ein Pferd legst, ist das wie eine Daunenjacke, die jemand mit einem Vakuumierer zusammenpresst. Die Haare werden plattgedrückt. Die isolierende Luftschicht? Weg. Die natürliche Thermoregulation? Gestört.
             </p>
           </section>
 
@@ -389,7 +509,13 @@ export default function PferdEindeckenWinterPage() {
             </p>
             <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
               Die Muskelkontraktionen erzeugen Wärme. Das ist keine Schwäche – das ist das System, das perfekt
-              funktioniert. Solange dein Pferd:
+              funktioniert.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Du zitterst ja auch, wenn du aus dem warmen Bett in den kalten Flur gehst. Und niemand ruft dann den Notarzt. Dein Körper produziert Wärme. Genau wie der deines Pferdes.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Solange dein Pferd:
             </p>
 
             <ul className="space-y-4 mb-6">
@@ -439,6 +565,13 @@ export default function PferdEindeckenWinterPage() {
             </div>
           </aside>
 
+          <p className="text-xl font-serif text-loam/90 leading-relaxed mb-6 text-center italic py-4">
+            Die Heizung deines Pferdes läuft mit Heu. Nicht mit Fleece.
+          </p>
+          <p className="text-base font-sans text-loam/70 leading-relaxed">
+            Wenn du also willst, dass dein Pferd warm bleibt, gib ihm mehr Heu — nicht mehr Decken. Die beste Investition in kalten Nächten ist ein voller Heunetz, kein voller Deckenschrank.
+          </p>
+
           {/* Key Takeaway #3 */}
           <aside className="bg-gold/5 border-l-4 border-gold p-6 my-8">
             <p className="text-xs font-sans uppercase tracking-widest text-gold mb-2 font-semibold">Key Takeaway #3</p>
@@ -487,15 +620,38 @@ export default function PferdEindeckenWinterPage() {
                   bis das Pferd wieder im Normalgewicht ist.
                 </p>
               </div>
+
+              <div>
+                <h3 className="text-xl font-serif text-loam mb-2">5. Anhaltende Nässe + Wind</h3>
+                <p className="text-base font-sans text-loam/70 leading-relaxed">
+                  Mit trockener Kälte kommen Pferde hervorragend klar — selbst bei -15°C. <strong>Die Kombination aus Dauerregen und kaltem Wind ist eine andere Geschichte.</strong> Ist das Fell einmal komplett durchnässt, sind die Regulationsfunktionen außer Kraft gesetzt. Dann hilft eine Regendecke — aber sie ersetzt keinen Unterstand.
+                </p>
+              </div>
             </div>
+          </section>
+
+          <section className="mt-8">
+            <h3 className="text-2xl font-serif italic text-loam mb-6">Wenn du eindeckst: Die wichtigsten Regeln</h3>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-6">
+              Hast du dich fürs Eindecken entschieden, gibt es ein paar Dinge, die du im Blick behalten solltest:
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-4">
+              <strong className="text-loam">Temperaturschwankungen beachten:</strong> Was nachts bei -5°C passt, kann mittags bei +12°C in der Sonne zur Sauna werden. Behalte die Tagestemperaturen im Auge und deck entsprechend um — oder wähle eine dünnere Decke für mildere Tage.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed mb-4">
+              <strong className="text-loam">Deckendicke anpassen:</strong> Eine 300g-Decke ist keine Allzweckwaffe. Bei Temperaturen um den Gefrierpunkt reicht oft eine Regendecke oder leichte Übergangsdecke. Die dicke Winterdecke kommt erst bei echtem Dauerfrost zum Einsatz.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed">
+              <strong className="text-loam">Einmal angefangen, durchziehen:</strong> Hier kommt der Punkt, den viele nicht bedenken: Wenn du früh in der Saison mit dem Eindecken beginnst, baut dein Pferd nicht mehr das volle Winterfell auf. Die Rezeptoren in der Haut bekommen das Signal „Ist ja warm genug" — und das Fellwachstum wird gedrosselt. Das bedeutet: Wer eindeckt, muss diesen Winter durchziehen. Ein Hin und Her schadet mehr als es nützt.
+            </p>
           </section>
 
           {/* Key Takeaway #4 */}
           <aside className="bg-gold/5 border-l-4 border-gold p-6 my-8">
             <p className="text-xs font-sans uppercase tracking-widest text-gold mb-2 font-semibold">Key Takeaway #4</p>
             <p className="text-base font-sans text-loam leading-relaxed">
-              Eindecken ist die Ausnahme, nicht die Regel. Es gibt vier legitime Gründe: geschorenes Fell,
-              Alter/Krankheit, Haltungsumstellung oder Untergewicht. In allen anderen Fällen vertraust du besser dem
+              Eindecken ist die Ausnahme, nicht die Regel. Es gibt fünf legitime Gründe: geschorenes Fell,
+              Alter/Krankheit, Haltungsumstellung, Untergewicht oder anhaltende Nässe mit Wind. In allen anderen Fällen vertraust du besser dem
               System, das die Evolution über Millionen Jahre perfektioniert hat.
             </p>
           </aside>
@@ -507,10 +663,10 @@ export default function PferdEindeckenWinterPage() {
                 DEIN PERSÖNLICHER FRÜHLINGS-FAHRPLAN
               </span>
               <h3 className="text-2xl md:text-3xl font-serif text-white mb-4 leading-tight">
-                Wie fit ist dein Pferd für den Frühling?
+                Unsicher, ob dein Pferd eine Decke braucht?
               </h3>
               <p className="text-white/90 font-sans text-base mb-6">
-                In 2 Minuten bekommst du:
+                8 Fragen. 2 Minuten. Klarheit für den Winter.
               </p>
               <div className="flex flex-col gap-3 mb-8 text-left max-w-sm mx-auto">
                 <div className="flex items-center gap-3">
@@ -603,6 +759,16 @@ export default function PferdEindeckenWinterPage() {
                 Der Temperatur-Check an der Flanke gibt dir in 10 Sekunden Sicherheit
               </figcaption>
             </figure>
+
+            <p className="text-base font-sans text-loam/70 leading-relaxed mt-8 mb-4">
+              Und noch ein Zeichen, das mir damals niemand gesagt hat:
+            </p>
+            <p className="text-xl font-serif text-loam/90 leading-relaxed mb-6 text-center italic py-4">
+              Wenn Schnee auf dem Fell deines Pferdes liegen bleibt — ohne zu schmelzen — dann funktioniert die Pferdeheizung einwandfrei.
+            </p>
+            <p className="text-base font-sans text-loam/70 leading-relaxed">
+              Die Isolation ist so gut, dass keine Körperwärme nach außen dringt. Schmilzt der Schnee sofort? Dann verliert dein Pferd Wärme und du solltest genauer hinschauen.
+            </p>
           </section>
 
           {/* Quote 2 */}
@@ -651,55 +817,75 @@ export default function PferdEindeckenWinterPage() {
 
           {/* Final Summary Box */}
           <aside className="bg-white border-2 border-gold/30 rounded-sm p-8 my-16 shadow-lg">
-            <h3 className="text-2xl font-serif text-loam text-center mb-6">Zusammenfassung: Die 5 Key Takeaways</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-8 h-8 bg-gold/20 rounded-full flex-shrink-0 text-xs font-bold text-loam">
+            <h3 className="text-2xl font-serif text-loam text-center mb-8">Zusammenfassung: Die 5 Key Takeaways</h3>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 bg-gold/20 rounded-full flex-shrink-0 text-sm font-bold text-loam">
                   #1
                 </span>
-                <p className="text-sm font-sans text-loam/80 leading-relaxed pt-1">
-                  <strong>Temperaturwahrnehmung:</strong> Dein Kälteempfinden ≠ das Kälteempfinden deines Pferdes. Die
-                  Wohlfühlzone beginnt bei -5°C.
-                </p>
+                <div>
+                  <p className="font-semibold text-loam mb-1">Temperaturwahrnehmung</p>
+                  <p className="text-sm font-sans text-loam/70 leading-relaxed">
+                    Dein Kälteempfinden ≠ das Kälteempfinden deines Pferdes. Die Wohlfühlzone beginnt bei -5°C.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-8 h-8 bg-gold/20 rounded-full flex-shrink-0 text-xs font-bold text-loam">
+
+              <div className="flex items-start gap-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 bg-gold/20 rounded-full flex-shrink-0 text-sm font-bold text-loam">
                   #2
                 </span>
-                <p className="text-sm font-sans text-loam/80 leading-relaxed pt-1">
-                  <strong>Natürliche Isolation:</strong> Eine Decke ersetzt nicht die natürliche Isolation – sie
-                  zerstört sie durch das Plattdrücken der Haare.
-                </p>
+                <div>
+                  <p className="font-semibold text-loam mb-1">Natürliche Isolation</p>
+                  <p className="text-sm font-sans text-loam/70 leading-relaxed">
+                    Eine Decke ersetzt nicht die natürliche Isolation — sie zerstört sie durch das Plattdrücken der Haare.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-8 h-8 bg-gold/20 rounded-full flex-shrink-0 text-xs font-bold text-loam">
+
+              <div className="flex items-start gap-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 bg-gold/20 rounded-full flex-shrink-0 text-sm font-bold text-loam">
                   #3
                 </span>
-                <p className="text-sm font-sans text-loam/80 leading-relaxed pt-1">
-                  <strong>Innere Wärme:</strong> Heu ist die beste Heizung. Die Verdauung von Raufutter wärmt von innen.
-                </p>
+                <div>
+                  <p className="font-semibold text-loam mb-1">Innere Wärme</p>
+                  <p className="text-sm font-sans text-loam/70 leading-relaxed">
+                    Heu ist die beste Heizung. Die Verdauung von Raufutter wärmt von innen.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-8 h-8 bg-gold/20 rounded-full flex-shrink-0 text-xs font-bold text-loam">
+
+              <div className="flex items-start gap-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 bg-gold/20 rounded-full flex-shrink-0 text-sm font-bold text-loam">
                   #4
                 </span>
-                <p className="text-sm font-sans text-loam/80 leading-relaxed pt-1">
-                  <strong>Ausnahmen:</strong> Eindecken ist die Ausnahme (geschoren, alt/krank, Umstellung,
-                  untergewichtig), nicht die Regel.
-                </p>
+                <div>
+                  <p className="font-semibold text-loam mb-1">Ausnahmen</p>
+                  <p className="text-sm font-sans text-loam/70 leading-relaxed">
+                    Eindecken ist die Ausnahme (geschoren, alt/krank, Umstellung, untergewichtig, Nässe+Wind), nicht die Regel.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-8 h-8 bg-gold/20 rounded-full flex-shrink-0 text-xs font-bold text-loam">
+
+              <div className="flex items-start gap-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 bg-gold/20 rounded-full flex-shrink-0 text-sm font-bold text-loam">
                   #5
                 </span>
-                <p className="text-sm font-sans text-loam/80 leading-relaxed pt-1">
-                  <strong>Sicherheit:</strong> Der Flanken-Check ersetzt das Rätselraten. 10 Sekunden für echte
-                  Gewissheit.
-                </p>
+                <div>
+                  <p className="font-semibold text-loam mb-1">Sicherheit</p>
+                  <p className="text-sm font-sans text-loam/70 leading-relaxed">
+                    Der Flanken-Check ersetzt das Rätselraten. 10 Sekunden für echte Gewissheit.
+                  </p>
+                </div>
               </div>
             </div>
-            <p className="text-center text-sm font-serif italic text-sage mt-6">— Diana, Pferdesicht</p>
           </aside>
+
+          {/* Signatur */}
+          <div className="text-center my-12">
+            <p className="text-lg font-serif italic text-loam mb-2">Vertraue deiner Perspektive.</p>
+            <p className="text-sm font-sans text-sage">— Diana, Pferdesicht</p>
+          </div>
 
           {/* Footer Message */}
           <div className="text-center text-sm font-sans text-loam/60 leading-relaxed space-y-2">
@@ -715,6 +901,30 @@ export default function PferdEindeckenWinterPage() {
                 Alle Beiträge zur artgerechten Haltung
               </Link>
             </p>
+          </div>
+
+          {/* Related Posts */}
+          <section className="mt-12 mb-8">
+            <h3 className="text-xl font-serif text-loam mb-6">Das könnte dich auch interessieren:</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/blog/fellwechsel" className="p-4 bg-sage/10 rounded-lg hover:bg-sage/20 transition-colors">
+                <span className="font-serif text-loam">Fellwechsel verstehen →</span>
+              </Link>
+              <Link href="/blog/winterfuetterung" className="p-4 bg-sage/10 rounded-lg hover:bg-sage/20 transition-colors">
+                <span className="font-serif text-loam">Winterfütterung: Mehr Heu, weniger Sorgen →</span>
+              </Link>
+            </div>
+          </section>
+
+          {/* Quellen */}
+          <div className="text-xs font-sans text-loam/50 leading-relaxed border-t border-loam/10 pt-6 mt-8">
+            <p className="font-semibold text-loam/70 mb-2">Quellen</p>
+            <ul className="space-y-1">
+              <li>Cymbaluk, N. F., & Christison, G. I. (1990): Environmental effects on thermoregulation and nutrition of horses. <em>Veterinary Clinics of North America: Equine Practice</em></li>
+              <li>Morgan, K. (1996): Thermoneutral zone and critical temperatures of horses. <em>Journal of Thermal Biology</em></li>
+              <li>Ousey, J.C. et al. (1992): Thermoregulation and hair coat insulation. <em>Equine Veterinary Journal</em></li>
+              <li>PM-Forum Digital (2020): Thermoregulation beim Pferd — Scheren oder wachsen lassen?</li>
+            </ul>
           </div>
 
           {/* Disclaimer */}
@@ -753,7 +963,7 @@ export default function PferdEindeckenWinterPage() {
               AGB
             </Link>
           </div>
-          <p className="text-center text-xs font-sans text-white-soft/60 mt-8">Made with ❤️ by horses.</p>
+          <p className="text-center text-xs font-sans text-white-soft/60 mt-8">Made with ❤️ for horses.</p>
         </div>
       </footer>
     </main>
