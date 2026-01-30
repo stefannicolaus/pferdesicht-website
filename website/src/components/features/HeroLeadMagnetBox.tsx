@@ -20,53 +20,64 @@ const benefits = [
 
 export function HeroLeadMagnetBox() {
   return (
-    <div className="h-full bg-sage flex flex-col justify-center p-6 lg:p-8 xl:p-10">
+    <div className="h-full flex items-center justify-center p-4 lg:p-6">
+      {/* Floating Box - MEHR transparent mit Backdrop Blur */}
+      <div className="bg-sage/70 backdrop-blur-md rounded-xl p-6 lg:p-8 shadow-2xl max-w-sm">
 
-      {/* Badge */}
-      <span className="inline-block self-start px-3 py-1.5 bg-loam/20 text-cream/90 text-[11px] font-sans font-semibold uppercase tracking-wide rounded mb-4">
-        Frühling 2026
-      </span>
+        {/* Badge */}
+        <span className="inline-block px-3 py-1.5 bg-loam/30 text-white text-[11px] font-sans font-semibold uppercase tracking-wide rounded mb-4">
+          Frühling 2026
+        </span>
 
-      {/* Headline */}
-      <h2 className="font-serif text-2xl lg:text-3xl text-cream leading-tight mb-3">
-        Dein persönlicher Frühlings-Fahrplan
-      </h2>
+        {/* Headline */}
+        <h2 className="font-serif text-2xl lg:text-3xl text-white leading-tight mb-3">
+          Dein persönlicher Frühlings-Fahrplan
+        </h2>
 
-      {/* Subheadline */}
-      <p className="text-cream/80 text-sm lg:text-base mb-6">
-        8 Fragen zu deinem Pferd. 2 Minuten.
-        <br />Dein Plan für die nächsten Wochen.
-      </p>
+        {/* Subheadline */}
+        <p className="text-white text-sm lg:text-base mb-6">
+          8 Fragen zu deinem Pferd. 2 Minuten.<br />
+          Dein Plan für die nächsten Wochen.
+        </p>
 
-      {/* Divider */}
-      <div className="w-full h-px bg-cream/20 mb-6" />
-
-      {/* Benefits - simplified */}
-      <div className="space-y-4 mb-8">
-        {benefits.map((benefit, index) => (
-          <div key={index} className="flex items-start gap-3">
-            <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-            <div>
-              <span className="text-cream font-medium">{benefit.title}</span>
-              <p className="text-cream/70 text-sm">{benefit.description}</p>
+        {/* Benefits */}
+        <div className="space-y-3 mb-6">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex items-start gap-3">
+              <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+              <div>
+                <span className="text-white font-medium">{benefit.title}</span>
+                <p className="text-white/80 text-sm">{benefit.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* CTA Button */}
+        <Link
+          href="/quiz"
+          className="w-full bg-gold hover:bg-gold/90 text-loam font-semibold py-4 px-6 rounded-md flex items-center justify-center gap-2 transition-colors shadow-lg"
+        >
+          Frühlingscheck starten
+          <ArrowRight className="w-5 h-5" />
+        </Link>
+
+        {/* Click Triggers - mit Checkmarks */}
+        <div className="flex items-center justify-center gap-4 mt-4 text-white/70 text-xs">
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            Kostenlos
+          </span>
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            2 Min
+          </span>
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            Kein Spam
+          </span>
+        </div>
       </div>
-
-      {/* CTA Button */}
-      <Link
-        href="/quiz"
-        className="w-full bg-gold hover:bg-gold/90 text-loam font-semibold py-4 px-6 rounded-md flex items-center justify-center gap-2 transition-colors shadow-lg"
-      >
-        Frühlingscheck starten
-        <ArrowRight className="w-5 h-5" />
-      </Link>
-
-      {/* Click Triggers */}
-      <p className="text-center text-cream/50 text-xs mt-4">
-        Kostenlos · 2 Min · Kein Spam
-      </p>
     </div>
   )
 }

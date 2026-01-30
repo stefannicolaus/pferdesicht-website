@@ -27,47 +27,41 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* ============================================ */}
-      {/* HERO SECTION - Flexibles Grid mit fixer Box-Breite */}
+      {/* HERO SECTION - Bild als Hintergrund, Grid darüber */}
       {/* ============================================ */}
       <section className="relative h-[85vh] min-h-[600px]">
-        {/* Desktop: 1fr + 380px Grid */}
-        <div className="hidden lg:grid lg:grid-cols-[3fr_2fr] h-full">
-          {/* Links: Bild mit Text-Overlay */}
-          <div className="relative">
-            <Image
-              src="/images/heroes/hero-herde-realistic.png"
-              alt="Pferde im Offenstall bei Sonnenuntergang"
-              fill
-              priority
-              className="object-cover warm-film-grain"
-              sizes="calc(100vw - 380px)"
-            />
-            <HeroTextOverlay />
+        {/* Hintergrundbild - VOLLE BREITE als Background */}
+        <Image
+          src="/images/heroes/hero-herde-photo.png"
+          alt="Pferde im Offenstall"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+
+        {/* Content Layer ÜBER dem Bild */}
+        <div className="absolute inset-0">
+          {/* Desktop */}
+          <div className="hidden lg:grid lg:grid-cols-[3fr_2fr] h-full">
+            {/* Links: Nur Text-Overlay (kein eigenes Bild!) */}
+            <div className="relative">
+              <HeroTextOverlay />
+            </div>
+
+            {/* Rechts: Lead Magnet Box (transparent) */}
+            <div className="relative">
+              <HeroLeadMagnetBox />
+            </div>
           </div>
 
-          {/* Rechts: Lead Magnet Box (380px fix) */}
-          <div>
+          {/* Mobile */}
+          <div className="lg:hidden h-full flex flex-col">
+            <div className="relative flex-1">
+              <HeroTextOverlay />
+            </div>
             <HeroLeadMagnetBox />
           </div>
-        </div>
-
-        {/* Tablet/Mobile: Gestapelt */}
-        <div className="lg:hidden">
-          {/* Hero Bild mit Overlay - MEHR HÖHE für Text oben */}
-          <div className="relative min-h-[70vh] md:min-h-[60vh]">
-            <Image
-              src="/images/heroes/hero-herde-mobile.png"
-              alt="Pferde auf der Koppel im goldenen Abendlicht"
-              fill
-              priority
-              className="object-cover object-top warm-film-grain"
-              sizes="100vw"
-            />
-            <HeroTextOverlay />
-          </div>
-
-          {/* Lead Magnet Box */}
-          <HeroLeadMagnetBox />
         </div>
       </section>
 
