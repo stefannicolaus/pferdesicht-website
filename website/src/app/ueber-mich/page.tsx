@@ -409,25 +409,30 @@ export default function UeberMichPage() {
         {/* ============================================
             SECTION 12: VIDEO (NEU)
             ============================================ */}
-        <section className="w-full bg-white py-12 md:py-16">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl sm:text-3xl text-loam text-center mb-8">Echte Partnerschaft</h2>
+        <section className="w-full bg-white py-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-2xl sm:text-3xl text-loam text-center mb-4">Echte Partnerschaft</h2>
 
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+            <p className="text-gray-600 text-center mb-8">
+              Ein Moment zwischen Ramses und mir – nach 15 Jahren zusammen.
+            </p>
+
+            <div className="aspect-video rounded-xl overflow-hidden shadow-xl">
               <iframe
-                width="100%"
-                height="100%"
+                className="w-full h-full"
                 src="https://www.youtube.com/embed/RCNm0M_bUS0"
-                title="Diana und Ramses"
+                title="Diana und Ramses - Echte Partnerschaft"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
 
-            <p className="text-loam/60 text-lg text-center mt-6">
-              Echte Partnerschaft entsteht nicht durch Druck – sondern wenn das Pferd wählt zu bleiben.
-            </p>
+            <div className="max-w-2xl mx-auto mt-8">
+              <blockquote className="border-l-4 border-[#c8a476] pl-6 italic text-lg text-gray-700">
+                "Echte Partnerschaft entsteht nicht durch Druck – sondern wenn das Pferd wählt zu bleiben."
+              </blockquote>
+            </div>
           </div>
         </section>
 
