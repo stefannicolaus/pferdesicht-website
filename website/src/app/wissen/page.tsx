@@ -33,9 +33,9 @@ interface PostMeta {
 
 const categories = [
   { slug: "alle", label: "ALLE" },
-  { slug: "training", label: "TRAINING" },
-  { slug: "gesundheit", label: "GESUNDHEIT" },
-  { slug: "mindset", label: "MINDSET" },
+  { slug: "training", label: "BEWEGUNG & TRAINING" },
+  { slug: "gesundheit", label: "GESUNDHEIT & HALTUNG" },
+  { slug: "mindset", label: "MENSCH & PFERD" },
 ];
 
 // ============================================
@@ -76,16 +76,17 @@ function ArticleCard({ post }: { post: PostMeta }) {
             </svg>
           </div>
         )}
-        {/* Reading Time Badge */}
-        <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium text-loam-700 rounded-full">
-            {frontmatter.readingTime || "5 Min."}
-          </span>
-        </div>
       </div>
 
       {/* Content */}
       <div className="p-6">
+        {/* Badge */}
+        <div className="mb-3">
+          <span className="inline-flex items-center px-3 py-1.5 bg-white border border-gold text-loam-700 text-xs font-medium tracking-wide rounded-full">
+            {frontmatter.readingTime || "5 Min."} · {frontmatter.category}
+          </span>
+        </div>
+
         <h3 className="font-serif text-xl text-loam-900 mb-3 group-hover:text-sage-700 transition-colors line-clamp-2">
           {frontmatter.title}
         </h3>
@@ -93,7 +94,7 @@ function ArticleCard({ post }: { post: PostMeta }) {
           {frontmatter.description}
         </p>
         <span className="text-sage-600 text-sm font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-          Lesen
+          Weiterlesen
           <svg
             className="w-4 h-4"
             fill="none"
@@ -171,13 +172,44 @@ export default function WissenPage() {
       <section className="bg-bg-light py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-loam-900 leading-tight mb-6">
-            Entdecke unsere{" "}
-            <span className="italic">Themenwelten</span>
+            Sortiertes Wissen.{" "}
+            <span className="italic text-sage-600">Kein Rauschen.</span>
           </h1>
-          <p className="text-xl text-loam-600 leading-relaxed mb-10">
-            Für Pferdemenschen, die hinschauen. Praxiswissen zu Training,
-            Gesundheit & Haltung, Mindset & Beziehung.
+          <p className="text-xl text-loam-600 leading-relaxed mb-8">
+            Das Wissen, das ich gerne früher gehabt hätte. Sortiert, geprüft,
+            auf den Punkt.
           </p>
+
+          {/* Quiz Teaser */}
+          <Link
+            href="/quiz"
+            className="inline-flex items-center gap-3 rounded-full px-6 py-4 mb-8 group transition-all hover:shadow-md"
+            style={{ backgroundColor: "rgba(120, 134, 107, 0.15)" }}
+          >
+            <span className="text-2xl">🎯</span>
+            <div className="text-left">
+              <p className="text-sm font-medium" style={{ color: "#5a6b4d" }}>
+                Neu hier? Starte mit dem Frühlings-Check
+              </p>
+              <p className="text-xs" style={{ color: "#78866b" }}>
+                8 Fragen → Dein persönlicher Report
+              </p>
+            </div>
+            <svg
+              className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              style={{ color: "#78866b" }}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </Link>
 
           {/* Search Field */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8">
@@ -260,11 +292,86 @@ export default function WissenPage() {
               ))}
             </div>
           ) : filteredPosts.length > 0 ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPosts.map((post) => (
-                <ArticleCard key={post.slug} post={post} />
-              ))}
-            </div>
+            <>
+              {/* Featured Article (First/Newest) */}
+              <Link
+                href={`/blog/${filteredPosts[0].slug}`}
+                className="group block bg-paper rounded-2xl border border-loam-100 shadow-soft overflow-hidden hover:shadow-soft-lg transition-shadow mb-8"
+              >
+                <div className="grid md:grid-cols-2 gap-0">
+                  {/* Image */}
+                  <div className="aspect-[16/10] md:aspect-auto md:min-h-[320px] relative overflow-hidden bg-sage-50">
+                    {filteredPosts[0].frontmatter.image ? (
+                      <Image
+                        src={filteredPosts[0].frontmatter.image}
+                        alt={
+                          filteredPosts[0].frontmatter.imageAlt ||
+                          filteredPosts[0].frontmatter.title
+                        }
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <svg
+                          className="w-16 h-16 text-sage-300"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1}
+                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                  {/* Content */}
+                  <div className="p-8 md:p-10 flex flex-col justify-center">
+                    <div className="mb-4">
+                      <span className="inline-flex items-center px-3 py-1.5 bg-white border border-gold text-loam-700 text-xs font-medium tracking-wide rounded-full">
+                        {filteredPosts[0].frontmatter.readingTime || "5 Min."} ·{" "}
+                        {filteredPosts[0].frontmatter.category}
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-2xl md:text-3xl text-loam-900 mb-4 group-hover:text-sage-700 transition-colors">
+                      {filteredPosts[0].frontmatter.title}
+                    </h3>
+                    <p className="text-loam-600 leading-relaxed mb-6">
+                      {filteredPosts[0].frontmatter.description}
+                    </p>
+                    <span className="text-sage-600 font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                      Weiterlesen
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Remaining Articles Grid */}
+              {filteredPosts.length > 1 && (
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {filteredPosts.slice(1).map((post) => (
+                    <ArticleCard key={post.slug} post={post} />
+                  ))}
+                </div>
+              )}
+            </>
           ) : (
             <div className="text-center py-16">
               <div className="w-16 h-16 bg-loam-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -283,12 +390,11 @@ export default function WissenPage() {
                 </svg>
               </div>
               <h3 className="font-serif text-xl text-loam-900 mb-2">
-                Keine Artikel gefunden
+                Da ist noch nichts – aber das ändert sich bald.
               </h3>
               <p className="text-loam-600 mb-6">
-                {searchQuery
-                  ? `Keine Ergebnisse für "${searchQuery}".`
-                  : "In dieser Kategorie gibt es noch keine Artikel."}
+                Ich schreibe gerade an neuen Artikeln zu diesem Thema. Schau
+                bald wieder vorbei!
               </p>
               <button
                 onClick={() => {
@@ -324,21 +430,28 @@ export default function WissenPage() {
             {/* Text Content */}
             <div className="text-center md:text-left">
               <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-4">
-                Wissen als Rüstung
+                Warum ich das hier schreibe
               </h2>
               <div className="space-y-4 text-loam-600 leading-relaxed">
                 <p>
-                  Ich filtere für dich die Wahrheit im Meinungs-Dschungel. Nicht,
-                  weil du es nicht selbst könntest – sondern damit du schneller
-                  ans Ziel kommst.
+                  Ich habe jahrelang nach Antworten gesucht – in Büchern, auf
+                  Seminaren, in Foren. Und dabei festgestellt: Die besten
+                  Informationen sind verstreut, widersprechen sich, oder
+                  verstecken sich hinter Fachsprache.
                 </p>
                 <p>
-                  Mein Wissen ist über 30 Jahre gewachsen: aus tausenden
-                  Expertengesprächen, aktueller Veterinärmedizin und dem, was ich
-                  auf die harte Tour lernen musste.
+                  Hier sammle ich das, was ich gerne früher gewusst hätte.
+                  Gefiltert durch 30 Jahre Praxis, geprüft an echten Pferden,
+                  übersetzt in Sprache, die du verstehst.
+                </p>
+                <p className="text-sm text-loam-500 mt-2">
+                  30 Jahre Pferdeerfahrung · 16 Jahre Reittherapie · 15 Jahre
+                  Austausch mit Tierärzten, Therapeuten und Trainern · 5 Jahre
+                  an der Seite einer der bekanntesten Freiheitsdressur-Trainerinnen Europas
                 </p>
                 <p className="font-medium text-loam-900">
-                  Du bist nicht „zu pingelig". Du schaust hin.
+                  Kein Meinungs-Dschungel. Kein Fachchinesisch. Nur das, was
+                  wirklich hilft.
                 </p>
               </div>
             </div>
@@ -347,23 +460,26 @@ export default function WissenPage() {
       </section>
 
       {/* Quiz CTA */}
-      <section className="py-16 lg:py-24 bg-sage-600">
+      <section
+        className="py-16 lg:py-24"
+        style={{ backgroundColor: "#78866b" }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white/80 text-sm font-medium uppercase tracking-wide mb-4">
-            Dein persönlicher Frühlings-Fahrplan
-          </p>
+          <span className="inline-block px-4 py-1 bg-white/20 text-white/90 text-xs font-bold tracking-wider uppercase rounded-full mb-4">
+            FRÜHLING 2026
+          </span>
           <h2 className="font-serif text-3xl sm:text-4xl text-white mb-6">
-            Wie fit ist dein Pferd für den Frühling?
+            Dein Pferd. Deine Situation. Dein Fahrplan.
           </h2>
           <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-            Mach den kostenlosen 2-Minuten-Check und erhalte deinen persönlichen
-            Fahrplan per E-Mail.
+            8 Fragen zu deinem Pferd. Dein persönlicher Report – abgestimmt auf
+            eure Situation.
           </p>
           <Link
             href="/quiz"
             className="inline-flex items-center gap-2 bg-white text-sage-700 font-semibold px-8 py-4 rounded-full hover:bg-gold-50 transition-colors text-lg"
           >
-            Jetzt Quiz starten
+            Frühlings-Check starten
             <svg
               className="w-5 h-5"
               fill="none"
@@ -378,8 +494,21 @@ export default function WissenPage() {
               />
             </svg>
           </Link>
+          <p className="text-white/70 text-sm mt-4">
+            ✓ Kostenlos · ✓ Persönlich · ✓ Kein Spam
+          </p>
         </div>
       </section>
+
+      {/* Mobile Sticky CTA */}
+      <div className="fixed bottom-0 left-0 right-0 bg-sage-600 p-4 md:hidden z-50">
+        <Link
+          href="/quiz"
+          className="block text-center text-white font-semibold"
+        >
+          Frühlings-Check starten →
+        </Link>
+      </div>
     </>
   );
 }
