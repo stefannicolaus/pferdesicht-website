@@ -32,7 +32,7 @@ export default function PferdesichtPage() {
       <section className="relative h-[85vh] min-h-[600px]">
         {/* Hintergrundbild - VOLLE BREITE als Background */}
         <Image
-          src="/images/heroes/hero-herde-photo.png"
+          src="/images/heroes/hero-herde-photo-v2.png"
           alt="Pferde im Offenstall"
           fill
           priority
