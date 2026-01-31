@@ -4,7 +4,7 @@ import type React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { ArrowRight, Shield, Brain, Heart, Sparkles, X, CheckCircle2 } from "lucide-react"
+import { ArrowRight, Shield, Brain, Heart, Sparkles, X, CheckCircle2, Check } from "lucide-react"
 import { HeroTextOverlay } from "@/components/features/HeroTextOverlay"
 import { HeroLeadMagnetBox } from "@/components/features/HeroLeadMagnetBox"
 
@@ -28,13 +28,22 @@ export default function PferdesichtPage() {
 
       {/* HERO SECTION */}
       <section className="relative min-h-[80vh] lg:h-[85vh] lg:min-h-[600px]">
-        {/* Hintergrundbild - VOLLE BREITE */}
+        {/* Hintergrundbild - Desktop */}
         <Image
           src="/images/heroes/hero-herde-simple.png"
           alt="Pferde im Offenstall"
           fill
           priority
-          className="object-cover object-[center_70%] lg:object-center"
+          className="hidden md:block object-cover object-[center_70%]"
+          sizes="100vw"
+        />
+        {/* Hintergrundbild - Mobile */}
+        <Image
+          src="/images/heroes/hero-mobile.png"
+          alt="Pferde im Offenstall"
+          fill
+          priority
+          className="md:hidden object-cover object-[center_90%]"
           sizes="100vw"
         />
 
@@ -564,14 +573,28 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       {/* STICKY MOBILE CTA */}
       {/* ============================================ */}
-      <div className="fixed bottom-0 left-0 right-0 bg-loam/95 backdrop-blur-sm border-t border-white/10 p-3 z-50 md:hidden safe-area-bottom">
-        <Link 
-          href="/quiz" 
-          className="flex items-center justify-center gap-2 w-full min-h-[48px] py-3.5 bg-gold text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm tactile-button"
+      <div className="fixed bottom-0 left-0 right-0 bg-loam/95 backdrop-blur-sm border-t border-white/10 pt-3 pb-5 px-4 z-50 md:hidden safe-area-bottom">
+        <Link
+          href="/quiz"
+          className="flex items-center justify-center gap-2 w-full min-h-[48px] py-3 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm tactile-button"
         >
           Frühlingscheck starten
-          <ArrowRight className="w-4 h-4" />
+          <ArrowRight className="w-5 h-5" />
         </Link>
+        <div className="flex items-center justify-center gap-4 mt-2 text-white/70 text-xs">
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            Kostenlos
+          </span>
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            2 Min
+          </span>
+          <span className="flex items-center gap-1">
+            <Check className="w-3 h-3" />
+            Kein Spam
+          </span>
+        </div>
       </div>
 
       <div className="h-20 md:hidden" />
