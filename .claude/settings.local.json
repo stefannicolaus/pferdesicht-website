@@ -15,7 +15,21 @@
       "WebFetch(domain:v0-pferdesicht-com-9i.vercel.app)",
       "Bash(git push)",
       "mcp__ide__getDiagnostics",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm run dev:*)",
+      "Bash(open:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)",
+      "mcp__94c9eb76-3ce6-4f9f-bec0-b8a4e6b31053__list_projects",
+      "mcp__94c9eb76-3ce6-4f9f-bec0-b8a4e6b31053__list_teams",
+      "mcp__94c9eb76-3ce6-4f9f-bec0-b8a4e6b31053__get_project",
+      "Bash(gh pr create --title \"Hero: Mobile + Desktop Design Update, Lead Magnet Box v0 Style\" --body \"$\\(cat <<''EOF''\n## Summary\n- Neues Mobile Hero Bild \\(Einzelpferd, golden hour, AI-generiert\\)\n- Mobile Badge mit bg-sage statt transparent\n- Verstärkter Text-Schatten für bessere Lesbarkeit auf Mobile\n- Gradient von oben nach unten für Mobile\n- Lead Magnet Box mit solid bg-sage, weiße Checkmarks\n- Trust Icons: \"Kein Spam\" → \"Personalisiert\"\n- Kompletter Subtext auf allen Viewports\n\n## Test plan\n- [x] Preview Deployment erfolgreich\n- [ ] Desktop Hero sieht korrekt aus\n- [ ] Mobile Hero zeigt Pferd komplett\n- [ ] Lead Magnet Box v0 Style\n- [ ] Trust Icons zeigen \"Personalisiert\"\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\nEOF\n\\)\")",
+      "Bash(brew list:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "mcp__94c9eb76-3ce6-4f9f-bec0-b8a4e6b31053__list_deployments",
+      "mcp__94c9eb76-3ce6-4f9f-bec0-b8a4e6b31053__get_deployment",
+      "Bash(curl:*)"
     ]
   }
 }
