@@ -54,10 +54,10 @@ export function HeroLeadMagnetBox() {
           ))}
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button - v0 Original */}
         <Link
           href="/quiz"
-          className="w-full bg-gold hover:bg-gold/90 text-loam font-semibold py-4 px-6 rounded-md flex items-center justify-center gap-2 transition-colors shadow-lg"
+          className="w-full bg-gold hover:bg-[#b8956a] text-white font-bold tracking-wide py-4 px-8 rounded-sm uppercase flex items-center justify-center gap-2 transition-colors shadow-lg"
         >
           Frühlingscheck starten
           <ArrowRight className="w-5 h-5" />
