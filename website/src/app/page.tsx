@@ -27,7 +27,7 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[80vh] lg:h-[85vh] lg:min-h-[600px]">
+      <section className="relative min-h-[90vh] lg:h-[85vh] lg:min-h-[600px]">
         {/* Hintergrundbild - Desktop */}
         <Image
           src="/images/heroes/hero-herde-simple.png"
@@ -39,11 +39,11 @@ export default function PferdesichtPage() {
         />
         {/* Hintergrundbild - Mobile */}
         <Image
-          src="/images/heroes/hero-mobile.png"
+          src="/images/heroes/hero-mobile.jpg"
           alt="Pferde im Offenstall"
           fill
           priority
-          className="md:hidden object-cover object-[center_90%]"
+          className="md:hidden object-cover object-bottom"
           sizes="100vw"
         />
 
@@ -592,7 +592,7 @@ export default function PferdesichtPage() {
           </span>
           <span className="flex items-center gap-1">
             <Check className="w-3 h-3" />
-            Kein Spam
+            Personalisiert
           </span>
         </div>
       </div>

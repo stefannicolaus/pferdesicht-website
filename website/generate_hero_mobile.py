@@ -68,21 +68,23 @@ def main():
 
     output_dir = Path(__file__).parent / "public" / "images" / "heroes"
 
-    prompt = """A photo of two horses in a German Offenstall summer pasture, vertical portrait composition, shot with 50mm lens, f/2.8 aperture, golden hour lighting, soft natural light.
+    prompt = """A photo of a single horse in a German Offenstall summer pasture at golden hour, vertical portrait composition, shot with 50mm lens, f/2.8 aperture, warm golden sunset lighting.
 
-Subject: Two horses - one bay and one dark brown/black - in natural relaxed poses. One horse grazing, one standing alert looking toward camera. CRITICAL: Entire horses visible from ears to hooves, full body shot, no cropping. Horses positioned in lower 60% of frame.
+Subject: One bay/chestnut horse grazing peacefully, head down eating grass. CRITICAL: Entire horse visible from ears to hooves, full body shot, no cropping. Horse positioned in MIDDLE of frame (not bottom), leaving generous space below the horse.
 
-Upper 40%: Soft blue summer sky with gentle white clouds, warm golden hour tones. This area must be clear for text overlay - no trees or objects blocking.
+Upper 40%: Soft golden hour sky with warm tones, trees silhouetted on horizon. This area for text overlay.
 
-Environment: Tall summer meadow grass (20-25cm) reaching mid-leg of horses. Traditional wooden pasture fence visible in middle distance. German countryside setting with gentle rolling hills. Simple wooden shelter/Offenstall structure visible in far background.
+Middle: Horse in natural grazing pose, surrounded by tall summer meadow grass (30-40cm) reaching above the horse's hooves.
 
-Composition: Horses occupy lower portion of frame. Generous sky space above. Rule of thirds - horses slightly off-center. Vertical portrait orientation.
+Lower 20%: Extra grass/ground visible below the horse - generous bottom margin.
 
-Style: Professional equine photography, Organic Luxury aesthetic, warm earthy tones, authentic pastoral mood. High resolution, photorealistic, editorial quality.
+Environment: Tall lush summer meadow grass, wooden pasture fence in soft focus background, German countryside, golden hour sunset glow.
 
-Mood: Peaceful, serene, trustworthy, natural horsemanship.
+Composition: Horse centered vertically with MORE SPACE BELOW than above. Vertical portrait orientation. Rule of thirds - horse slightly off-center.
 
-Technical: Aspect ratio 9:16 portrait (1080x1920 pixels). No text, no watermarks, no logos. No cropped body parts."""
+Style: Professional equine photography, Organic Luxury aesthetic, warm earthy golden tones, peaceful pastoral mood. High resolution, photorealistic.
+
+Technical: Aspect ratio 9:16 portrait (1080x1920 pixels). No text, no watermarks. No cropped body parts."""
 
     success = generate_image(
         prompt=prompt,

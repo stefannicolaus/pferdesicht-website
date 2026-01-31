@@ -21,7 +21,7 @@ const benefits = [
 export function HeroLeadMagnetBox() {
   return (
     <div className="hidden lg:flex h-full items-center justify-center p-4 lg:p-6">
-      <div className="bg-sage/70 backdrop-blur-md rounded-xl p-6 lg:p-8 shadow-2xl max-w-sm">
+      <div className="bg-sage rounded-xl p-6 lg:p-8 shadow-2xl max-w-sm">
 
         {/* Badge */}
         <span className="inline-block px-3 py-1.5 bg-loam/30 text-white text-[11px] font-sans font-semibold uppercase tracking-wide rounded mb-4">
@@ -39,22 +39,24 @@ export function HeroLeadMagnetBox() {
           Dein Plan für die nächsten Wochen.
         </p>
 
-        {/* Benefits */}
-        <div className="space-y-3 mb-6">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5 [filter:_drop-shadow(0_1px_2px_rgba(0,0,0,0.5))]" />
-              <div>
-                <span className="text-gold font-semibold [text-shadow:_0_1px_3px_rgba(0,0,0,0.5)]">
-                  {benefit.title}
-                </span>
-                <p className="text-white font-semibold text-sm">{benefit.description}</p>
+        {/* Inner Box with Benefits */}
+        <div className="bg-white/10 rounded-lg p-5 mb-6">
+          <div className="space-y-3">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-white font-semibold">
+                    {benefit.title}
+                  </span>
+                  <p className="text-white/80 text-sm">{benefit.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* CTA Button - v0 Original */}
+        {/* CTA Button */}
         <Link
           href="/quiz"
           className="w-full bg-gold hover:bg-[#b8956a] text-white font-bold tracking-wide py-4 px-8 rounded-sm uppercase flex items-center justify-center gap-2 transition-colors shadow-lg"
@@ -75,7 +77,7 @@ export function HeroLeadMagnetBox() {
           </span>
           <span className="flex items-center gap-1">
             <Check className="w-3 h-3" />
-            Kein Spam
+            Personalisiert
           </span>
         </div>
       </div>
