@@ -291,21 +291,7 @@ export default function PferdesichtPage() {
                   className="object-cover object-top"
                 />
               </div>
-              
-              <div className="space-y-3 max-w-[320px] mx-auto lg:mx-0">
-                {[
-                  { num: "30", text: "Jahre mit Pferden. Die Fehler, die Tierarztrechnungen, die schlaflosen Nächte - und die Momente, in denen alles stimmt." },
-                  { num: "16", text: "Jahre Reittherapie. Über 200 Menschen begleitet. Gelernt, was Pferde uns zeigen, wenn wir hinschauen." },
-                  { num: "15", text: "Jahre Gespräche mit Experten. Tierärzte, Therapeuten, Hufschmiede, Trainer. Tausende Fragen. Tausende Antworten." },
-                  { num: "5", text: "Jahre hinter den Kulissen. Bei einer der bekanntesten Freiheitsdressur-Trainerinnen Europas. Gelernt, wie echte Verbindung entsteht - wenn das Pferd wählt zu bleiben." },
-                ].map((item, i) => (
-                  <div key={i} className="bg-white rounded-sm p-4 shadow-sm border-l-4 border-gold/50 flex gap-4 items-start">
-                    <div className="text-3xl sm:text-4xl font-light text-gold flex-shrink-0 leading-none">{item.num}</div>
-                    <div className="text-xs sm:text-sm text-loam/75 font-sans leading-relaxed">{item.text}</div>
-                  </div>
-                ))}
-              </div>
-              
+
               <Link 
                 href="/ueber-mich" 
                 className="inline-flex items-center gap-2 mt-5 sm:mt-6 text-gold font-sans font-bold text-xs sm:text-sm tracking-widest uppercase hover:text-[#b8956a] transition-colors min-h-[44px]"
@@ -318,25 +304,37 @@ export default function PferdesichtPage() {
             <div className="lg:col-span-3">
               <div className="bg-white rounded-sm p-5 sm:p-6 md:p-8 border-l-4 border-gold mb-5 sm:mb-6 shadow-sm">
                 <p className="font-serif text-loam text-base sm:text-lg md:text-xl italic leading-relaxed">
-                  Ich weiß, wie es sich anfühlt, wenn alle was anderes sagen - und du nachts wach liegst 
-                  und googelst.
+                  Ich weiß, wie es sich anfühlt, wenn alle was anderes sagen – und du dich allein gelassen fühlst mit deinen Fragen.
                 </p>
               </div>
               
               <div className="space-y-3 sm:space-y-4 text-loam/85 font-sans font-light leading-relaxed text-sm sm:text-base">
                 <p>
-                  Ich hab das jahrelang gemacht. Und dabei richtig viel Geld für Tierärzte, Zusätze 
-                  und Behandlungen ausgegeben, die nicht geholfen haben.
+                  Mein erstes eigenes Pferd – Ramses. Der Hufschmied, den alle empfohlen haben. Nach einem Jahr: Hufprobleme, die es vorher nicht gab. Drei Hufschmiede später wusste ich: Der erste hatte keine Ahnung – aber ich hatte keinen Vergleich.
                 </p>
                 
                 <p>
-                  Bei Hempura habe ich tausende Gespräche mit Pferdebesitzern geführt - 
-                  und mit den Experten, die wirklich Ahnung haben.
+                  Mein Mann Stefan und ich haben 15 Jahre lang Hempura betrieben – ein natürliches Zusatzfutter aus Nutzhanf für Pferde. In dieser Zeit habe ich mit ca. 2.500 unterschiedlichen Experten (unsere Kooperationspartner) gesprochen: Tierärzte, Therapeuten, Hufschmiede, Trainer. Alle mit anderen Ansätzen, anderen Überzeugungen. Manche widersprachen sich komplett. Das hat mich gezwungen, selbst zu denken. Mir eine eigene Meinung zu bilden. Heute weiß ich: Diese Perspektive ist mein wertvollstes Werkzeug.
                 </p>
                 
                 <p className="text-loam font-medium text-sm sm:text-base md:text-lg">
-                  Heute teile ich das, was ich gelernt habe - damit du nicht dieselben Fehler machst.
+                  Dabei hab ich eins gelernt: Je mehr ich lerne und verstehe, umso weniger muss ich auf das Prinzip Hoffnung vertrauen.
                 </p>
+              </div>
+
+              {/* Stats 2x2 Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                {[
+                  { num: "30", text: "Jahre mit Pferden. Ich zeige dir die Abkürzung." },
+                  { num: "16", text: "Jahre Reittherapie. Ich durfte lernen, was Pferde zeigen, wenn wir wirklich hinschauen." },
+                  { num: "2.500", text: "Experten-Gespräche. Ich weiß inzwischen, wer wirklich hilft – und wer nur gut klingt. Diesen Blick gebe ich an dich weiter." },
+                  { num: "5", text: "Jahre Zusammenarbeit mit einer der bekanntesten Freiheitsdressur-Trainerinnen Europas. Wenn zwischen Pferd & Mensch echtes Vertrauen da ist, wird alles leichter. Am Boden. Im Sattel. Im ganzen Miteinander." },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-sm p-4 shadow-sm border-l-4 border-gold/50 flex gap-4 items-start">
+                    <div className="text-3xl sm:text-4xl font-light text-gold flex-shrink-0 leading-none">{item.num}</div>
+                    <div className="text-xs sm:text-sm text-loam/75 font-sans leading-relaxed">{item.text}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
