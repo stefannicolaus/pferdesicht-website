@@ -176,7 +176,7 @@ export default function PferdesichtPage() {
       <section className="py-12 sm:py-16 md:py-24 relative overflow-hidden">
         {/* Parallax Background */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 bg-cover bg-[center_30%] md:bg-[center_15%] bg-scroll md:bg-fixed"
           style={{ backgroundImage: "url('/horse-standing-peaceful-at-sunset-golden-hour-medi.jpg')" }}
         />
         {/* Cream Overlay */}
@@ -377,8 +377,16 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       {/* TESTIMONIALS SECTION */}
       {/* ============================================ */}
-      <section className="py-12 sm:py-16 md:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-24 relative overflow-hidden">
+        {/* Parallax Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-[center_30%] md:bg-[center_15%] bg-scroll md:bg-fixed"
+          style={{ backgroundImage: "url('/horse-standing-peaceful-at-sunset-golden-hour-medi.jpg')" }}
+        />
+        {/* Cream Overlay */}
+        <div className="absolute inset-0 bg-[#faf8f5]/70" />
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           
           <div className="text-center mb-8 sm:mb-12">
             <span className="text-sage font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 sm:mb-4 block">
@@ -422,7 +430,7 @@ export default function PferdesichtPage() {
                 author: "Anja, Brandenburg",
               },
             ].map((t, i) => (
-              <div key={i} className="bg-[#faf8f5] rounded-sm p-5 sm:p-6 flex flex-col border border-loam/5">
+              <div key={i} className="bg-white/90 rounded-sm p-5 sm:p-6 flex flex-col border border-loam/5">
                 <span className="text-sage font-sans text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3">
                   {t.transformation}
                 </span>
