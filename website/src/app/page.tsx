@@ -99,19 +99,35 @@ export default function PferdesichtPage() {
               </h2>
               
               <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Vielleicht kennst du diese Sätze. Im Stall. Von Trainern. Manchmal sogar von Tierärzten.
+                Vielleicht kommen dir diese Sätze bekannt vor.
               </p>
               
+              <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+                Ich hab sie alle gehört. Z.B. bei einer Tierärztin, die sagte: &apos;Dicke Beine sind normal bei dem.&apos;
+              </p>
+
+              <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+                Spoiler: Waren sie nicht.
+              </p>
+
+              <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+                Und das ist nur eines von unzähligen Beispielen aus meinen 30 Jahren die ich mit Pferden verbringe.
+              </p>
+
               <p className="text-loam/75 font-sans font-light leading-relaxed mb-5 sm:mb-6 text-sm sm:text-base">
-                Ich hab sie alle gehört. Und weißt du was? Meistens lag ich trotzdem richtig.
+                Aber weißt du was? Auch wenn alle anderen mir was anderes erzählt haben – meistens war mein Bauchgefühl trotzdem richtig.
               </p>
               
               <div className="bg-loam rounded-sm p-5 sm:p-6 md:p-8">
                 <p className="font-serif text-white text-base sm:text-lg md:text-xl leading-relaxed">
-                  Wenn du hinschaust und fragst, machst du nichts falsch.{" "}
+                  Wenn du hinschaust und hinterfragst, machst du nichts falsch.{" "}
                   <span className="text-gold font-medium">Du machst genau das Richtige.</span>
                 </p>
               </div>
+
+              <p className="text-loam/75 font-sans font-light leading-relaxed mt-5 sm:mt-6 text-sm sm:text-base italic">
+                Das nagende Gefühl, vielleicht doch etwas zu übersehen? Es ist der beste Schutz für dein Pferd.
+              </p>
             </div>
           </div>
         </div>
@@ -122,9 +138,12 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       <section className="py-8 sm:py-12 bg-[#faf8f5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h3 className="text-xl md:text-2xl font-serif text-loam text-center mb-6">
+          <h3 className="text-xl md:text-2xl font-serif text-loam text-center mb-2">
             Die Sätze, bei denen du innerlich die Augen verdrehst.
           </h3>
+          <p className="text-sm md:text-base font-sans text-loam/60 text-center mb-6">
+            (Und bei denen du dich vielleicht manchmal fragst, ob du die Einzige bist die so tickt.)
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {[
               "Das ist halt so.",
@@ -136,6 +155,17 @@ export default function PferdesichtPage() {
                 <p className="font-serif text-loam/70 text-sm italic">&quot;{quote}&quot;</p>
               </div>
             ))}
+          </div>
+
+          {/* Hidden Pain Point */}
+          <p className="text-center text-loam/75 font-sans text-sm mt-8 mb-4">
+            Und unter all diesen Sätzen liegt einer, den niemand ausspricht – aber den du trotzdem zwischen den Zeilen raushörst:
+          </p>
+
+          <div className="bg-loam rounded-sm p-5 sm:p-6 max-w-md mx-auto">
+            <p className="font-serif text-gold text-base sm:text-lg italic text-center">
+              „Wenn du anders denkst, bist DU das Problem."
+            </p>
           </div>
         </div>
       </section>
@@ -151,42 +181,60 @@ export default function PferdesichtPage() {
               WAS DU HIER FINDEST
             </span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-loam mb-3 sm:mb-4">
-              Sortiertes Wissen. Kein Meinungs-Chaos.
+              Sortiertes Wissen. Schluss mit dem Meinungs-Chaos.
             </h2>
             <p className="text-loam/70 font-sans font-light text-sm sm:text-base">
-              Keine Wundermittel. Keine 5 Tipps. Sondern das, was ich in 16 Jahren gelernt habe.
+              Kein Hype &apos;5 Tipps die dein Leben verändern werden&apos; – sondern das, was ich im Laufe der Zeit gelernt habe. Und was mich vermutlich inzwischen mehrere Zehntausende Euro Lehrgeld gekostet hat. (Das darf mein Mann nicht wissen 😅)
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {[
-              {
-                icon: <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-sage" />,
-                iconBg: "bg-sage/10",
-                title: "Orientierung im Chaos",
-                description: "Was ist Fakt? Was ist Mythos? Ich sag dir, was stimmt - und wenn ich nicht sicher bin, sag ich das auch.",
-              },
-              {
-                icon: <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />,
-                iconBg: "bg-gold/10",
-                title: "Antworten, die halten",
-                description: "Wenn die Stallkollegin fragt: Warum machst du das so? - hast du eine fundierte Antwort.",
-              },
-              {
-                icon: <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-sage" />,
-                iconBg: "bg-sage/10",
-                title: "Hilfe, wenns kompliziert wird",
-                description: "Dein Pferd zeigt Symptome und alle sagen was anderes? Ich zeig dir, wie ich vorgehe.",
-              },
-            ].map((benefit, i) => (
-              <div key={i} className="bg-[#faf8f5] rounded-sm p-5 sm:p-6 md:p-8 border border-loam/5 text-center">
-                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full ${benefit.iconBg} flex items-center justify-center mx-auto mb-4 sm:mb-6 border border-loam/10`}>
-                  {benefit.icon}
+          <div className="space-y-4 max-w-3xl mx-auto">
+            {/* Benefit 1 */}
+            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center border border-loam/10">
+                  <Shield className="w-5 h-5 text-sage" />
                 </div>
-                <h3 className="font-serif text-lg sm:text-xl text-loam mb-2 sm:mb-3">{benefit.title}</h3>
-                <p className="text-loam/70 font-sans font-light leading-relaxed text-xs sm:text-sm">{benefit.description}</p>
+                <h3 className="font-serif text-lg sm:text-xl text-loam">Orientierung im Chaos</h3>
               </div>
-            ))}
+              <p className="text-loam/70 font-sans font-light leading-relaxed text-sm sm:text-base">
+                &apos;4x im Jahr entwurmen&apos; – Mythos.<br/>
+                &apos;Das Gras hat jetzt alles, Mineralfutter kann weg&apos; – wenn&apos;s so einfach wäre.<br/>
+                Ich sag dir, was stimmt. Und wenn ich nicht sicher bin, sag ich das auch.
+              </p>
+              <p className="text-sage font-sans font-medium italic text-sm mt-3">→ Die Ruhe, nicht mehr raten zu müssen.</p>
+            </div>
+
+            {/* Benefit 2 */}
+            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center border border-loam/10">
+                  <Heart className="w-5 h-5 text-gold" />
+                </div>
+                <h3 className="font-serif text-lg sm:text-xl text-loam">Antworten, die dir helfen</h3>
+              </div>
+              <p className="text-loam/70 font-sans font-light leading-relaxed text-sm sm:text-base">
+                &apos;Warum weidest du über 7 Wochen an?&apos; – Weil Darmbakterien Zeit brauchen, sich umzustellen.<br/>
+                &apos;Warum steht der ohne Decke draußen?&apos; – Weil ein Pferd mit intaktem Fell normalerweise locker bis -5°C ohne klarkommt.<br/>
+                Fundierte Antworten. Für deinen nächsten Stall-Smalltalk.
+              </p>
+              <p className="text-sage font-sans font-medium italic text-sm mt-3">→ Ruhig und sachlich erklären können.</p>
+            </div>
+
+            {/* Benefit 3 */}
+            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center border border-loam/10">
+                  <Brain className="w-5 h-5 text-sage" />
+                </div>
+                <h3 className="font-serif text-lg sm:text-xl text-loam">Hilfe, wenns mal komplizierter wird</h3>
+              </div>
+              <p className="text-loam/70 font-sans font-light leading-relaxed text-sm sm:text-base">
+                Der Tierarzt sagt A. Die Therapeutin sagt B. Google sagt: Panik.<br/><br/>
+                Ich zeig dir, wie ich vorgehe, wie ich entscheide und wem ich vertraue.
+              </p>
+              <p className="text-sage font-sans font-medium italic text-sm mt-3">→ Handlungsfähig, auch wenn es brennt.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -200,71 +248,48 @@ export default function PferdesichtPage() {
 
             {/* Left: Text Content */}
             <div className="text-center lg:text-left">
-              <span className="inline-block px-3 py-1.5 bg-loam/20 text-[#f5f2ed] text-xs font-sans font-semibold uppercase tracking-widest rounded mb-4">
-                Frühling 2026
+              <span className="text-gold font-sans text-xs font-semibold uppercase tracking-widest mb-4 block">
+                Dein persönlicher Frühlings-Fahrplan
               </span>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-white mb-4 sm:mb-6 leading-tight">
-                Der Frühling kommt. <span className="italic text-[#d4b896]">Und damit ein paar Fragen.</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-white mb-6 sm:mb-8 leading-tight">
+                Fellwechsel, Anweiden, Parasiten – was ist jetzt wichtig für <span className="italic">DEIN</span> Pferd?
               </h2>
-
-              {/* Questions Block - Quote Style */}
-              <div className="border-l-2 border-gold/50 pl-4 ml-2 mb-6 text-left">
-                <p className="font-sans text-sm text-[#f5f2ed]/80 font-medium mb-3">
-                  Vielleicht fragst du dich gerade:
-                </p>
-                <div className="space-y-2">
-                  {[
-                    "Muss ich jetzt schon ans Anweiden denken?",
-                    "Wie unterstütze ich den Fellwechsel richtig?",
-                    "Was sollte ich bei meinem Pferd wirklich priorisieren?",
-                  ].map((question, i) => (
-                    <p key={i} className="font-sans text-sm sm:text-base text-[#f5f2ed] font-normal leading-relaxed">
-                      „{question}"
-                    </p>
-                  ))}
-                </div>
-              </div>
-
-              <p className="text-[#f5f2ed]/85 text-sm sm:text-base font-sans font-light leading-relaxed">
-                8 Fragen zu deinem Pferd. Dein persönlicher Frühjahrs-Report - abgestimmt auf eure Situation.
-              </p>
-            </div>
-
-            {/* Right: CTA Card */}
-            <div className="bg-loam/90 backdrop-blur-sm rounded-lg p-5 sm:p-6 md:p-8 shadow-lg">
-              {/* Benefits */}
-              <p className="font-sans text-xs text-[#f5f2ed]/70 font-semibold uppercase tracking-wide mb-4">
-                Was du bekommst:
-              </p>
-
-              <ul className="space-y-3 mb-6">
-                {[
-                  "Risiko-Check für dein Pferd",
-                  "Die 3 wichtigsten Dinge für deinen Start",
-                  "Wochen-Kalender Feb–Mai",
-                  "Ehrliche Einschätzung ohne Einhorn-Quatsch",
-                ].map((benefit, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="font-sans text-sm text-[#f5f2ed]/90 font-normal">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
 
               {/* CTA Button */}
               <Link
                 href="/quiz"
-                className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
+                className="min-h-[48px] py-4 px-8 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-sm uppercase tracking-wide rounded transition-colors inline-flex items-center justify-center gap-2"
               >
-                Frühlingscheck starten
+                Quiz starten
                 <ArrowRight className="w-5 h-5" />
               </Link>
 
               {/* Click Triggers */}
-              <p className="mt-4 text-center font-sans text-xs text-[#f5f2ed]/60">
-                Kostenlos · 2 Min · Kein Spam
+              <p className="mt-4 font-sans text-sm text-[#f5f2ed]/70">
+                Kostenlos · 2 Minuten · Report per E-Mail
               </p>
+            </div>
+
+            {/* Right: Benefits Box */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 sm:p-8">
+              {/* Benefits Header */}
+              <p className="font-sans text-sm text-[#f5f2ed] font-semibold uppercase tracking-wide mb-6">
+                Was du bekommst:
+              </p>
+
+              <ul className="space-y-4">
+                {[
+                  "8 kurze Fragen zu deinem Pferd",
+                  "Persönliche Risiko-Ampel: Grün, Gelb oder Rot",
+                  "Wochen-Kalender Februar bis Mai",
+                ].map((benefit, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="font-sans text-base text-[#f5f2ed] font-normal">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -342,24 +367,6 @@ export default function PferdesichtPage() {
       </section>
 
       {/* ============================================ */}
-      {/* PHILOSOPHY SECTION */}
-      {/* ============================================ */}
-      <section className="py-14 sm:py-20 md:py-28 bg-loam relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <div className="flex justify-center mb-5 sm:mb-8">
-            <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-gold" />
-          </div>
-          <blockquote className="font-serif text-gold text-xl sm:text-2xl md:text-3xl lg:text-4xl italic leading-relaxed mb-4 sm:mb-6">
-            &quot;Wer nur nach Schema F sucht, überhört oft die leisen Signale.&quot;
-          </blockquote>
-          <p className="text-[#EBE6DF]/80 text-sm sm:text-base md:text-lg font-sans font-light leading-relaxed max-w-2xl mx-auto">
-            Dein Pferd ist kein Lehrbuch-Pferd. Was für andere funktioniert, 
-            kann für deines der falsche Weg sein.
-          </p>
-        </div>
-      </section>
-
-      {/* ============================================ */}
       {/* TESTIMONIALS SECTION */}
       {/* ============================================ */}
       <section className="py-12 sm:py-16 md:py-24 bg-white">
@@ -378,22 +385,22 @@ export default function PferdesichtPage() {
             {[
               {
                 transformation: "Chaos zu Klarheit",
-                quote: "Bei dir hab ich endlich verstanden, wer wann Recht hat.",
+                quote: "Ich bin mit drei verschiedenen Diagnosen zu Diana gekommen. Sie hat mir nicht gesagt, wer Recht hat – sondern wie ich das selbst herausfinde. Das war mehr wert als die ganzen Behandlungen zusammen.",
                 author: "Martina, Niedersachsen",
               },
               {
                 transformation: "Nächte zu Ruhe",
-                quote: "Ich hab aufgehört, nachts zu googeln. Das allein war es wert.",
+                quote: "Ich schlaf wieder durch. Klingt banal, ist es aber nicht.",
                 author: "Julia, Österreich",
               },
               {
                 transformation: "Hilflos zu Handlungsfähig",
-                quote: "Alle sagten: Das ist halt so. War es nicht.",
+                quote: "Drei Jahre hab ich mir anhören müssen: 'Dicke Beine sind bei dem halt normal.' Waren sie nicht. Ich brauchte nur jemanden, der mir zeigt, worauf ich achten muss.",
                 author: "Sandra, Bayern",
               },
               {
                 transformation: "Unsicher zu Selbstbewusst",
-                quote: "Ich stell jetzt Fragen beim Tierarzt. Und versteh die Antworten.",
+                quote: "Letzte Woche hat mein Tierarzt ein Medikament empfohlen. Ich hab nachgefragt, warum genau das. Er war überrascht – aber hat's erklärt. Früher hätt ich einfach ja gesagt.",
                 author: "Birgit, Schweiz",
               },
               {
@@ -403,7 +410,7 @@ export default function PferdesichtPage() {
               },
               {
                 transformation: "Außenseiter zu Ansprechpartner",
-                quote: "Meine Stallkolleginnen fragen jetzt mich.",
+                quote: "Neulich kam eine Stallkollegin zu mir: 'Du kennst dich doch aus – was würdest du bei Kotwasser machen?' Das wär vor einem Jahr undenkbar gewesen.",
                 author: "Anja, Brandenburg",
               },
             ].map((t, i) => (
@@ -517,7 +524,7 @@ export default function PferdesichtPage() {
             </span>
 
             <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white mb-4 leading-tight">
-              Hör auf zu googeln. <span className="italic text-gold">Fang an zu verstehen.</span>
+              Vertrau nicht dem Zufall. <span className="italic text-gold">Vertrau deinem Wissen.</span>
             </h2>
           </div>
 
