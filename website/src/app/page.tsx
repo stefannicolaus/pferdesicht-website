@@ -47,10 +47,13 @@ export default function PferdesichtPage() {
           sizes="100vw"
         />
 
+        {/* Gradient-Overlay für bessere Lesbarkeit - volle Breite */}
+        <div className="absolute inset-0 bg-gradient-to-b from-loam/90 via-loam/60 to-transparent md:bg-gradient-to-r md:from-loam/80 md:via-loam/40 md:to-loam/10 z-[1]" />
+
         {/* Content Layer ÜBER dem Bild */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-[2]">
           {/* Desktop Grid */}
-          <div className="hidden lg:grid lg:grid-cols-[3fr_2fr] h-full">
+          <div className="hidden lg:grid lg:grid-cols-[70fr_30fr] h-full">
             <div className="relative">
               <HeroTextOverlay />
             </div>
