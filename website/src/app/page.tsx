@@ -173,8 +173,16 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       {/* BENEFITS SECTION */}
       {/* ============================================ */}
-      <section className="py-12 sm:py-16 md:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-24 relative overflow-hidden">
+        {/* Parallax Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: "url('/horse-standing-peaceful-at-sunset-golden-hour-medi.jpg')" }}
+        />
+        {/* Cream Overlay */}
+        <div className="absolute inset-0 bg-[#faf8f5]/70" />
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16">
             <span className="text-sage font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 sm:mb-4 block">
@@ -190,7 +198,7 @@ export default function PferdesichtPage() {
           
           <div className="space-y-4 max-w-3xl mx-auto">
             {/* Benefit 1 */}
-            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+            <div className="bg-white/90 rounded-sm p-6 border border-loam/5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center border border-loam/10">
                   <Shield className="w-5 h-5 text-sage" />
@@ -206,7 +214,7 @@ export default function PferdesichtPage() {
             </div>
 
             {/* Benefit 2 */}
-            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+            <div className="bg-white/90 rounded-sm p-6 border border-loam/5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center border border-loam/10">
                   <Heart className="w-5 h-5 text-gold" />
@@ -222,7 +230,7 @@ export default function PferdesichtPage() {
             </div>
 
             {/* Benefit 3 */}
-            <div className="bg-[#faf8f5] rounded-sm p-6 border border-loam/5">
+            <div className="bg-white/90 rounded-sm p-6 border border-loam/5">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center border border-loam/10">
                   <Brain className="w-5 h-5 text-sage" />
