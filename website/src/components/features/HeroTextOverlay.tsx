@@ -21,7 +21,7 @@ export function HeroTextOverlay() {
           className="font-serif font-medium text-white leading-[1.1] tracking-tight mb-4 md:mb-1 lg:mb-0 max-w-none [text-shadow:_0_2px_4px_rgba(0,0,0,0.9),_0_4px_20px_rgba(0,0,0,0.8)] md:[text-shadow:_0_4px_30px_rgba(0,0,0,0.7)]"
           style={{ fontSize: 'clamp(48px, 8vw, 90px)' }}
         >
-          Jeder im Stall sagt mir was<br />anderes.
+          <span className="whitespace-nowrap">Jeder im Stall sagt mir was</span><br />anderes.
         </h1>
 
         {/* Subheadline Gold Italic - große Schrift mit clamp */}
@@ -29,7 +29,7 @@ export function HeroTextOverlay() {
           className="font-serif italic font-normal text-gold leading-[1.15] mb-6 md:mb-3 lg:mb-4 max-w-none [text-shadow:_0_2px_4px_rgba(0,0,0,0.9),_0_4px_20px_rgba(0,0,0,0.8)] md:[text-shadow:_0_4px_30px_rgba(0,0,0,0.8)]"
           style={{ fontSize: 'clamp(32px, 5vw, 60px)' }}
         >
-          Und ich weiß schon lange nicht mehr,<br /><span className="whitespace-nowrap">was ich glauben soll.</span>
+          <span className="whitespace-nowrap">Und ich weiß schon lange nicht mehr,</span><br /><span className="whitespace-nowrap">was ich glauben soll.</span>
         </p>
 
         {/* Subheadline mit Border */}
