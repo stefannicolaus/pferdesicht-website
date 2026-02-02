@@ -29,7 +29,7 @@ export function HeroTextOverlay() {
           className="font-serif italic font-normal text-gold leading-[1.15] mb-6 md:mb-3 lg:mb-4 max-w-none [text-shadow:_0_2px_4px_rgba(0,0,0,0.9),_0_4px_20px_rgba(0,0,0,0.8)] md:[text-shadow:_0_4px_30px_rgba(0,0,0,0.8)]"
           style={{ fontSize: 'clamp(32px, 5vw, 60px)' }}
         >
-          Und ich weiß schon lange nicht mehr,<br />was ich glauben soll.
+          Und ich weiß schon lange nicht mehr,<br /><span className="whitespace-nowrap">was ich glauben soll.</span>
         </p>
 
         {/* Subheadline mit Border */}
