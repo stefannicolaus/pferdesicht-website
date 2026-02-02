@@ -27,7 +27,7 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] lg:h-[85vh] lg:min-h-[600px]">
+      <section className="relative min-h-[90vh] lg:h-[85vh] lg:min-h-[600px] bg-[#faf8f5]">
         {/* Hintergrundbild - Desktop */}
         <Image
           src="/images/heroes/hero-herde-simple.png"
@@ -37,16 +37,7 @@ export default function PferdesichtPage() {
           className="hidden md:block object-cover object-[center_70%]"
           sizes="100vw"
         />
-        {/* Hintergrundbild - Mobile */}
-        <Image
-          src="/images/heroes/hero-mobile.jpg"
-          alt="Pferde im Offenstall"
-          fill
-          priority
-          className="md:hidden object-cover object-bottom"
-          sizes="100vw"
-        />
-
+        
         {/* Gradient-Overlay für bessere Lesbarkeit - volle Breite */}
         <div className="absolute inset-0 bg-gradient-to-b from-loam/90 via-loam/60 to-transparent md:bg-gradient-to-r md:from-loam/80 md:via-loam/40 md:to-loam/10" />
 
