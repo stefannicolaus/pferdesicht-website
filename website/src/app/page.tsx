@@ -382,13 +382,17 @@ export default function PferdesichtPage() {
       {/* TESTIMONIALS SECTION */}
       {/* ============================================ */}
       <section className="py-12 sm:py-16 md:py-24 relative overflow-hidden">
-        {/* Parallax Background */}
+        {/* Background - MOBILE: nur Farbe */}
+        <div className="absolute inset-0 bg-[#faf8f5] md:hidden" />
+
+        {/* Background - DESKTOP: Bild mit Parallax */}
         <div
-          className="absolute inset-0 bg-cover bg-[center_30%] md:bg-[center_15%] bg-scroll md:bg-fixed"
+          className="hidden md:block absolute inset-0 bg-cover bg-[center_15%] bg-fixed"
           style={{ backgroundImage: "url('/horse-standing-peaceful-at-sunset-golden-hour-medi.jpg')" }}
         />
-        {/* Cream Overlay */}
-        <div className="absolute inset-0 bg-[#faf8f5]/70" />
+
+        {/* Cream Overlay - nur Desktop */}
+        <div className="hidden md:block absolute inset-0 bg-[#faf8f5]/70" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           
