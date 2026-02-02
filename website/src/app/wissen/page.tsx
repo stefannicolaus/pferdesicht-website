@@ -169,104 +169,68 @@ export default function WissenPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-bg-light py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-loam-900 leading-tight mb-6">
-            Sortiertes Wissen.{" "}
-            <span className="italic text-sage-600">Kein Rauschen.</span>
+            Alle sagen was anderes.{" "}
+            <span className="italic text-sage-600">Ich helfe dir dabei, Klarheit zu finden.</span>
           </h1>
-          <p className="text-xl text-loam-600 leading-relaxed mb-8">
-            Das Wissen, das ich gerne früher gehabt hätte. Sortiert, geprüft,
-            auf den Punkt.
+          <p className="text-xl text-loam-600 leading-relaxed">
+            Das Wissen, das ich gerne früher gehabt hätte. Gefiltert durch 30 Jahre Praxis – damit du nicht mehr raten musst.
           </p>
+        </div>
+      </section>
 
-          {/* Quiz Teaser */}
-          <Link
-            href="/quiz"
-            className="inline-flex items-center gap-3 rounded-full px-6 py-4 mb-8 group transition-all hover:shadow-md"
-            style={{ backgroundColor: "rgba(120, 134, 107, 0.15)" }}
-          >
-            <span className="text-2xl">🎯</span>
-            <div className="text-left">
-              <p className="text-sm font-medium" style={{ color: "#5a6b4d" }}>
-                Neu hier? Starte mit dem Frühlings-Check
-              </p>
-              <p className="text-xs" style={{ color: "#78866b" }}>
-                8 Fragen → Dein persönlicher Report
-              </p>
-            </div>
-            <svg
-              className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-              style={{ color: "#78866b" }}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
+      {/* Diana Section */}
+      <section className="py-12 lg:py-16 bg-bg-light">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+          {/* Bild + Intro */}
+          <div className="flex flex-col items-center mb-8">
+            <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4">
+              <Image
+                src="/images/Diana_Pferdesicht.jpeg"
+                alt="Diana von Pferdesicht"
+                width={96}
+                height={96}
+                className="object-cover w-full h-full"
               />
-            </svg>
-          </Link>
-
-          {/* Search Field */}
-          <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8">
-            <div className="flex gap-3">
-              <div className="flex-1 relative">
-                <svg
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-loam-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-                <input
-                  type="text"
-                  placeholder="Suchen..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className={cn(
-                    "w-full pl-12 pr-4 py-4 rounded-full",
-                    "bg-white border border-loam-200",
-                    "text-loam-900 placeholder:text-loam-400",
-                    "focus:outline-none focus:ring-2 focus:ring-sage-500 focus:border-transparent"
-                  )}
-                />
-              </div>
-              <button
-                type="submit"
-                className="px-8 py-4 bg-loam-900 text-white font-medium rounded-full hover:bg-loam-800 transition-colors"
-              >
-                SUCHEN
-              </button>
             </div>
-          </form>
+            <p className="text-sage-600 font-medium">Hallo, ich bin Diana von Pferdesicht</p>
+          </div>
 
-          {/* Category Buttons */}
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <button
-                key={category.slug}
-                onClick={() => setActiveCategory(category.slug)}
-                className={cn(
-                  "px-6 py-2.5 rounded-full text-sm font-medium transition-colors",
-                  "focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500",
-                  activeCategory === category.slug
-                    ? "bg-loam-900 text-white"
-                    : "bg-white text-loam-700 hover:bg-loam-100 border border-loam-200"
-                )}
-              >
-                {category.label}
-              </button>
-            ))}
+          {/* Überschrift */}
+          <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-6">
+            Warum ich das hier für dich sammle
+          </h2>
+
+          {/* Text - linksbündig aber zentrierter Container */}
+          <div className="space-y-4 text-loam-600 leading-relaxed text-left">
+            <p>
+              Ich habe jahrelang nach Antworten gesucht – in Büchern, auf Seminaren, in Foren. Und dabei festgestellt: Die besten Informationen sind verstreut, widersprechen sich, oder verstecken sich hinter Fachsprache.
+            </p>
+            <p>
+              Hier teile ich mit dir das, was ich gerne früher gewusst hätte.
+            </p>
+            <p>
+              Gefiltert durch <strong>30 Jahre als Pferdebesitzerin</strong> – mit schlaflosen Nächten, teuren Fehlern und der Erkenntnis, dass Pferde uns mehr zeigen, als wir oft sehen wollen.
+            </p>
+            <p>
+              Und durch <strong>15 Jahre als Unternehmerin</strong>, gemeinsam mit meinem Mann Stefan, in der Pferdebranche – im Austausch mit Tierärzten, Therapeuten und Trainern. Genug, um zu erkennen, <strong>wer wirklich hilft</strong> – und wer nur so klingt.
+            </p>
+            <p>
+              Geprüft an echten Pferden, übersetzt in Sprache, die du verstehst.
+            </p>
+            <p className="font-medium text-loam-900">
+              Kein Meinungs-Dschungel. Kein Fachchinesisch. Nur das, was einen Unterschied macht.
+            </p>
+            <Link
+              href="/ueber-mich"
+              className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-sage-600 text-white rounded-full hover:bg-sage-700 transition-colors font-medium"
+            >
+              Mein Weg – und warum er für dich relevant ist
+              <span>→</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -410,104 +374,68 @@ export default function WissenPage() {
         </div>
       </section>
 
-      {/* Diana Section */}
-      <section className="py-16 lg:py-24 bg-bg-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Diana Portrait */}
-            <div className="flex-shrink-0">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                <Image
-                  src="/images/Diana_Pferdesicht.jpeg"
-                  alt="Diana von Pferdesicht"
-                  width={160}
-                  height={160}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+      {/* Quiz CTA */}
+      <section className="py-16 lg:py-24 bg-[#5f6b54]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+
+            {/* LINKS */}
+            <div>
+              <p className="text-[#c8a476] text-sm font-semibold uppercase tracking-wider mb-4">
+                Dein persönlicher Frühlings-Fahrplan
+              </p>
+              <h2 className="font-serif text-3xl sm:text-4xl text-white leading-tight mb-6">
+                Du fragst dich, wie du dich am besten auf den Frühling vorbereiten kannst?
+              </h2>
+              <Link
+                href="/quiz"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#c8a476] text-white rounded-full hover:bg-[#b8946a] transition-colors font-semibold text-lg"
+              >
+                Zeig mir, worauf ich achten sollte
+                <span>→</span>
+              </Link>
+              <p className="text-white/60 text-sm mt-4">
+                Kostenlos · 2 Minuten · Report per E-Mail
+              </p>
             </div>
 
-            {/* Text Content */}
-            <div className="text-center md:text-left">
-              <h2 className="font-serif text-2xl sm:text-3xl text-loam-900 mb-4">
-                Warum ich das hier schreibe
-              </h2>
-              <div className="space-y-4 text-loam-600 leading-relaxed">
-                <p>
-                  Ich habe jahrelang nach Antworten gesucht – in Büchern, auf
-                  Seminaren, in Foren. Und dabei festgestellt: Die besten
-                  Informationen sind verstreut, widersprechen sich, oder
-                  verstecken sich hinter Fachsprache.
-                </p>
-                <p>
-                  Hier sammle ich das, was ich gerne früher gewusst hätte.
-                  Gefiltert durch 30 Jahre Praxis, geprüft an echten Pferden,
-                  übersetzt in Sprache, die du verstehst.
-                </p>
-                <p className="text-sm text-loam-500 mt-2">
-                  30 Jahre Pferdeerfahrung · 16 Jahre Reittherapie · 15 Jahre
-                  Austausch mit Tierärzten, Therapeuten und Trainern · 5 Jahre
-                  an der Seite einer der bekanntesten Freiheitsdressur-Trainerinnen Europas
-                </p>
-                <p className="font-medium text-loam-900">
-                  Kein Meinungs-Dschungel. Kein Fachchinesisch. Nur das, was
-                  wirklich hilft.
-                </p>
-              </div>
+            {/* RECHTS */}
+            <div className="bg-white/10 rounded-2xl p-8">
+              <p className="text-white font-semibold uppercase tracking-wider text-sm mb-4">
+                Was du bekommst:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-white">
+                  <span className="text-[#c8a476]">✓</span>
+                  <span><strong className="font-semibold">8 kurze Fragen</strong> zu Fellwechsel, Anweiden, Hufrehe-Prävention</span>
+                </li>
+                <li className="flex items-start gap-3 text-white">
+                  <span className="text-[#c8a476]">✓</span>
+                  <span>Dein <strong className="font-semibold">individueller Report</strong></span>
+                </li>
+                <li className="flex items-start gap-3 text-white">
+                  <span className="text-[#c8a476]">✓</span>
+                  <span>Abgestimmt auf <strong className="font-semibold">eure Situation</strong></span>
+                </li>
+              </ul>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Quiz CTA */}
-      <section
-        className="py-16 lg:py-24"
-        style={{ backgroundColor: "#78866b" }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1 bg-white/20 text-white/90 text-xs font-bold tracking-wider uppercase rounded-full mb-4">
-            FRÜHLING 2026
-          </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-white mb-6">
-            Dein Pferd. Deine Situation. Dein Fahrplan.
-          </h2>
-          <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-            8 Fragen zu deinem Pferd. Dein persönlicher Report – abgestimmt auf
-            eure Situation.
-          </p>
-          <Link
-            href="/quiz"
-            className="inline-flex items-center gap-2 bg-white text-sage-700 font-semibold px-8 py-4 rounded-full hover:bg-gold-50 transition-colors text-lg"
-          >
-            Frühlings-Check starten
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Link>
-          <p className="text-white/70 text-sm mt-4">
-            ✓ Kostenlos · ✓ Persönlich · ✓ Kein Spam
-          </p>
-        </div>
-      </section>
-
       {/* Mobile Sticky CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-sage-600 p-4 md:hidden z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-[#5f6b54] p-4 md:hidden z-50">
         <Link
           href="/quiz"
-          className="block text-center text-white font-semibold"
+          className="block text-center"
         >
-          Frühlings-Check starten →
+          <span className="block text-[#c8a476] text-xs mb-1">Meine Frühlingsvorbereitung</span>
+          <span className="block text-white font-semibold">Zeig mir, worauf ich achten sollte →</span>
         </Link>
+        <p className="text-white/60 text-xs text-center mt-2">
+          Kostenlos · 2 Minuten · Report per E-Mail
+        </p>
       </div>
     </>
   );
