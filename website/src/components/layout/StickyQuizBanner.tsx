@@ -21,10 +21,10 @@ export function StickyQuizBanner() {
       </div>
 
       {/* Desktop Sticky CTA */}
-      <div className="hidden md:block fixed bottom-0 left-0 right-0 bg-[#5f6b54] z-50">
+      <div className="hidden md:block fixed bottom-0 left-0 right-0 bg-loam z-50">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <span className="text-[#c8a476] text-sm font-medium">
+            <span className="text-gold text-sm font-medium">
               Dein persönlicher Frühlings-Fahrplan
             </span>
             <span className="text-white/60 text-sm">
@@ -33,7 +33,7 @@ export function StickyQuizBanner() {
           </div>
           <Link
             href="/quiz"
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#c8a476] text-white rounded-full hover:bg-[#b8946a] transition-colors font-medium text-sm"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-loam rounded-full hover:bg-[#b8946a] hover:text-white transition-colors font-medium text-sm"
           >
             Zeig mir, worauf ich achten sollte
             <span>→</span>
