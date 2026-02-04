@@ -128,19 +128,6 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    label: "Guides",
-    href: "/guides",
-    description: "Umfassende Wissens-Guides",
-    children: [
-      {
-        label: "Frühlings-Guide",
-        href: "/guides/fruehling",
-        description: "Anweiden, Fellwechsel, Parasiten",
-        badge: "NEU",
-      },
-    ],
-  },
-  {
     label: "Über mich",
     href: "/ueber-mich",
     description: "Lerne Diana kennen",
@@ -158,9 +145,6 @@ export const footerNavigation = {
     { label: "Thermoregulation", href: "/wissen/thermoregulation" },
     { label: "Bewegung", href: "/wissen/bewegung" },
     { label: "Haltung", href: "/wissen/haltung" },
-  ],
-  guides: [
-    { label: "Frühlings-Guide", href: "/guides/fruehling" },
   ],
   rechtliches: [
     { label: "Impressum", href: "/impressum" },

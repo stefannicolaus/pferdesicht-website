@@ -4,7 +4,6 @@ import { Poppins, EB_Garamond } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-import { StickyQuizBanner } from "@/components/layout/StickyQuizBanner"
 import "./globals.css"
 
 const poppins = Poppins({
@@ -45,7 +44,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <StickyQuizBanner />
         <Analytics />
       </body>
     </html>

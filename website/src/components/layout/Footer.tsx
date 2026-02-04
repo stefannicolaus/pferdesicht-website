@@ -181,7 +181,6 @@ function FooterLinkSection({ title, links }: FooterLinkSectionProps) {
 function FooterAccordion() {
   const sections = [
     { title: "Wissen", links: footerNavigation.wissen },
-    { title: "Guides", links: footerNavigation.guides },
     { title: "Rechtliches", links: footerNavigation.rechtliches },
   ];
 
@@ -263,9 +262,8 @@ export function Footer() {
           </div>
 
           {/* Navigation - Desktop Columns */}
-          <div className="hidden md:grid lg:col-span-5 grid-cols-3 gap-8">
+          <div className="hidden md:grid lg:col-span-5 grid-cols-2 gap-8">
             <FooterLinkSection title="Wissen" links={footerNavigation.wissen} />
-            <FooterLinkSection title="Guides" links={footerNavigation.guides} />
             <FooterLinkSection
               title="Rechtliches"
               links={footerNavigation.rechtliches}

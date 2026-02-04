@@ -375,56 +375,6 @@ export default function WissenPage() {
         </div>
       </section>
 
-      {/* Quiz CTA */}
-      <section className="py-16 lg:py-24 bg-[#5f6b54]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-
-            {/* LINKS */}
-            <div>
-              <p className="text-[#c8a476] text-sm font-semibold uppercase tracking-wider mb-4">
-                Dein persönlicher Frühlings-Fahrplan
-              </p>
-              <h2 className="font-serif text-3xl sm:text-4xl text-white leading-tight mb-6">
-                Du fragst dich, wie du dich am besten auf den Frühling vorbereiten kannst?
-              </h2>
-              <Link
-                href="/quiz"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#c8a476] text-white rounded-full hover:bg-[#b8946a] transition-colors font-semibold text-lg"
-              >
-                Zeig mir, worauf ich achten sollte
-                <span>→</span>
-              </Link>
-              <p className="text-white/60 text-sm mt-4">
-                Kostenlos · 2 Minuten · Report per E-Mail
-              </p>
-            </div>
-
-            {/* RECHTS */}
-            <div className="bg-white/10 rounded-2xl p-8">
-              <p className="text-white font-semibold uppercase tracking-wider text-sm mb-4">
-                Was du bekommst:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-[#c8a476]">✓</span>
-                  <span><strong className="font-semibold">8 kurze Fragen</strong> zu Fellwechsel, Anweiden, Hufrehe-Prävention</span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-[#c8a476]">✓</span>
-                  <span>Dein <strong className="font-semibold">individueller Report</strong></span>
-                </li>
-                <li className="flex items-start gap-3 text-white">
-                  <span className="text-[#c8a476]">✓</span>
-                  <span>Abgestimmt auf <strong className="font-semibold">eure Situation</strong></span>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
     </>
   );
 }
