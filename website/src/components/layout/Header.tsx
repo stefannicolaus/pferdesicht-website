@@ -360,15 +360,6 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="hidden lg:flex items-center gap-4">
-              <Link
-                href="/guides/fruehling"
-                className="px-4 py-2 bg-gold hover:bg-gold/90 text-white text-sm font-medium tracking-wide rounded-sm transition-colors border border-gold/50"
-              >
-                Frühlings-Guide
-              </Link>
-            </div>
-
             <button
               onClick={() => setMobileMenuOpen(true)}
               className={cn(
