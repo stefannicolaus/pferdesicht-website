@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { footerNavigation, branding } from "@/lib/design-system";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
 // ============================================
 // Social Icons
@@ -116,6 +122,46 @@ interface FooterLinkSectionProps {
   }>;
 }
 
+function FooterLink({ link }: { link: FooterLinkSectionProps["links"][0] }) {
+  if (link.isExternal) {
+    return (
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cn(
+          "text-sm text-loam-600 hover:text-sage-600 transition-colors",
+          "inline-flex items-center gap-1"
+        )}
+      >
+        {link.label}
+        <svg
+          className="w-3 h-3"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          />
+        </svg>
+      </a>
+    );
+  }
+  return (
+    <Link
+      href={link.href}
+      className="text-sm text-loam-600 hover:text-sage-600 transition-colors"
+    >
+      {link.label}
+    </Link>
+  );
+}
+
+// Desktop version - static list
 function FooterLinkSection({ title, links }: FooterLinkSectionProps) {
   return (
     <div>
@@ -123,43 +169,45 @@ function FooterLinkSection({ title, links }: FooterLinkSectionProps) {
       <ul className="space-y-3">
         {links.map((link) => (
           <li key={link.href}>
-            {link.isExternal ? (
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  "text-sm text-loam-600 hover:text-sage-600 transition-colors",
-                  "inline-flex items-center gap-1"
-                )}
-              >
-                {link.label}
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            ) : (
-              <Link
-                href={link.href}
-                className="text-sm text-loam-600 hover:text-sage-600 transition-colors"
-              >
-                {link.label}
-              </Link>
-            )}
+            <FooterLink link={link} />
           </li>
         ))}
       </ul>
     </div>
+  );
+}
+
+// Mobile version - accordion
+function FooterAccordion() {
+  const sections = [
+    { title: "Wissen", links: footerNavigation.wissen },
+    { title: "Guides", links: footerNavigation.guides },
+    { title: "Rechtliches", links: footerNavigation.rechtliches },
+  ];
+
+  return (
+    <Accordion type="single" collapsible className="w-full">
+      {sections.map((section) => (
+        <AccordionItem
+          key={section.title}
+          value={section.title}
+          className="border-loam-200"
+        >
+          <AccordionTrigger className="py-3 text-loam-900 font-medium hover:no-underline">
+            {section.title}
+          </AccordionTrigger>
+          <AccordionContent>
+            <ul className="space-y-2 pb-2">
+              {section.links.map((link) => (
+                <li key={link.href}>
+                  <FooterLink link={link} />
+                </li>
+              ))}
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
   );
 }
 
@@ -168,13 +216,13 @@ function FooterLinkSection({ title, links }: FooterLinkSectionProps) {
 // ============================================
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2025;
 
   return (
     <footer className="bg-loam/5 border-t border-loam/10">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-4">
             <FooterLogo />
@@ -183,7 +231,7 @@ export function Footer() {
             </p>
 
             {/* Social Links */}
-            <div className="mt-6 flex items-center gap-4">
+            <div className="mt-4 md:mt-6 flex items-center gap-4">
               {footerNavigation.social.map((social) => (
                 <a
                   key={social.label}
@@ -209,8 +257,13 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Navigation Columns */}
-          <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-8">
+          {/* Navigation - Mobile Accordion */}
+          <div className="md:hidden lg:col-span-5">
+            <FooterAccordion />
+          </div>
+
+          {/* Navigation - Desktop Columns */}
+          <div className="hidden md:grid lg:col-span-5 grid-cols-3 gap-8">
             <FooterLinkSection title="Wissen" links={footerNavigation.wissen} />
             <FooterLinkSection title="Guides" links={footerNavigation.guides} />
             <FooterLinkSection
@@ -228,7 +281,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-loam-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <p className="text-sm text-loam-500">

@@ -183,7 +183,7 @@ export default function WissenPage() {
 
       {/* Diana Section */}
       <section className="py-12 lg:py-16 bg-bg-light">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl md:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           {/* Bild + Intro */}
           <div className="flex flex-col items-center mb-8">
@@ -226,10 +226,11 @@ export default function WissenPage() {
             </p>
             <Link
               href="/ueber-mich"
-              className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-sage-600 text-white rounded-full hover:bg-sage-700 transition-colors font-medium"
+              className="group block mx-auto max-w-md mt-6 px-6 py-4 bg-[#c8a476] text-white rounded-lg hover:bg-[#b8946a] transition-colors shadow-soft text-center"
             >
-              Mein Weg – und warum er für dich relevant ist
-              <span>→</span>
+              <span className="block font-medium">Mein Weg</span>
+              <span className="block text-sm text-white/70 mt-1">...und warum er für dich relevant ist</span>
+              <span className="block text-xs text-white/50 mt-2 group-hover:text-white/70 transition-colors">Weiterlesen →</span>
             </Link>
           </div>
         </div>
@@ -424,19 +425,6 @@ export default function WissenPage() {
         </div>
       </section>
 
-      {/* Mobile Sticky CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-[#5f6b54] p-4 md:hidden z-50">
-        <Link
-          href="/quiz"
-          className="block text-center"
-        >
-          <span className="block text-[#c8a476] text-xs mb-1">Meine Frühlingsvorbereitung</span>
-          <span className="block text-white font-semibold">Zeig mir, worauf ich achten sollte →</span>
-        </Link>
-        <p className="text-white/60 text-xs text-center mt-2">
-          Kostenlos · 2 Minuten · Report per E-Mail
-        </p>
-      </div>
     </>
   );
 }

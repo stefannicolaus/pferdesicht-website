@@ -75,7 +75,7 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       {/* GASLIGHTING SECTION */}
       {/* ============================================ */}
-      <section className="py-12 sm:py-16 md:py-24 bg-white">
+      <section id="weiter" className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             
@@ -90,32 +90,32 @@ export default function PferdesichtPage() {
             
             <div className="order-2 lg:order-1">
               <span className="text-sage font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 sm:mb-4 block">
-                DAS KENNST DU VIELLEICHT
+                DAS KENNST DU VIELLEICHT?
               </span>
-              
+
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-loam leading-tight mb-4 sm:mb-6">
                 &quot;Du denkst zu viel.&quot; Mein Lieblingssatz.{" "}
                 <span className="block sm:inline italic text-sage">Gleich nach &quot;Das haben wir schon immer so gemacht.&quot;</span>
               </h2>
-              
-              <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Vielleicht kommen dir diese Sätze bekannt vor.
-              </p>
-              
-              <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Ich hab sie alle gehört. Z.B. bei einer Tierärztin, die sagte: &apos;Dicke Beine sind normal bei dem.&apos;
+
+              <p className="text-loam/75 font-sans font-light leading-relaxed mb-2 text-sm sm:text-base">
+                🙋‍♀️ Willkommen im Club.
               </p>
 
               <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Spoiler: Waren sie nicht.
+                Dann hast du das sicher auch schon gehört:
+              </p>
+
+              <p className="text-loam font-serif text-lg sm:text-xl md:text-2xl leading-tight mb-3 sm:mb-4">
+                „So macht man das eben."
               </p>
 
               <p className="text-loam/75 font-sans font-light leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-                Und das ist nur eines von unzähligen Beispielen aus meinen 30 Jahren die ich mit Pferden verbringe.
+                Fünf Worte, die vermutlich mehr Pferde krank gemacht haben als jede Krankheit.
               </p>
 
-              <p className="text-loam/75 font-sans font-light leading-relaxed mb-5 sm:mb-6 text-sm sm:text-base">
-                Aber weißt du was? Auch wenn alle anderen mir was anderes erzählt haben – meistens war mein Bauchgefühl trotzdem richtig.
+              <p className="text-loam/75 font-sans font-light leading-relaxed mb-5 sm:mb-6 text-sm sm:text-base italic">
+                Und unter all dem liegt diese leise Unsicherheit: Mache ich vielleicht doch etwas falsch?
               </p>
               
               <div className="bg-loam rounded-sm p-5 sm:p-6 md:p-8">
@@ -313,13 +313,13 @@ export default function PferdesichtPage() {
       <section className="py-12 sm:py-16 md:py-24 bg-[#faf8f5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-16">
-            
+
             <div className="lg:col-span-2 text-center lg:text-left">
               <span className="text-sage font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 sm:mb-4 block">
                 ÜBER MICH
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-loam mb-4 sm:mb-6">Ich bin Diana.</h2>
-              
+
               <div className="relative w-48 sm:w-64 md:w-72 lg:w-full max-w-[280px] aspect-[3/4] rounded-sm overflow-hidden shadow-lg ring-4 ring-sage/20 mb-5 sm:mb-6 mx-auto lg:mx-0">
                 <Image
                   src="/images/Diana_Pferdesicht.jpeg"
@@ -329,50 +329,74 @@ export default function PferdesichtPage() {
                 />
               </div>
 
-              <Link 
-                href="/ueber-mich" 
+            </div>
+
+            <div className="lg:col-span-3">
+              {/* Pain-fokussiertes Intro */}
+              <div className="bg-white rounded-sm p-5 sm:p-6 md:p-8 border-l-4 border-gold mb-5 sm:mb-6 shadow-sm">
+                <p className="font-serif text-loam text-base sm:text-lg md:text-xl italic leading-relaxed">
+                  Ich weiß, wie es sich anfühlt, wenn alle was anderes sagen – und du dich fragst, ob DU das Problem bist.
+                </p>
+              </div>
+
+              {/* Story + Identifikation */}
+              <div className="space-y-3 sm:space-y-4 text-loam/85 font-sans font-light leading-relaxed text-sm sm:text-base">
+                <p>
+                  Schon mit 12, als ich anfing zu reiten, fühlte sich irgendetwas falsch an. Alle sagten: „Stell dich nicht so an." Ich hab's trotzdem gespürt.
+                </p>
+
+                <p>
+                  In <strong className="text-loam font-medium">15 Jahren Hempura</strong>, ein Unternehmen im Bereich Pferdegesundheit und -ernährung, dass ich mit meinem Mann Stefan ab 2009 aufgebaut habe, habe ich mit tausenden Experten gesprochen — Tierärzte, Therapeuten, Trainer — die sich manchmal komplett widersprachen.
+                </p>
+
+                <p>
+                  Das hat mich gezwungen, selbst zu denken und zu recherchieren. Um wirklich zu verstehen. Um meinen eigenen Weg zu finden.
+                </p>
+
+                <p className="text-loam font-medium text-sm sm:text-base md:text-lg">
+                  Wenn du auch dieses Gefühl kennst – dass irgendetwas nicht stimmt, aber niemand dich ernst nimmt – dann bist du hier richtig.
+                </p>
+              </div>
+
+              {/* Stats als klickbare Links mit Benefits */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                {[
+                  { num: "30+", label: "Jahre mit Pferden", benefit: "Die Fehler, die du nicht machen musst", link: "/ueber-mich#perspektive" },
+                  { num: "16", label: "Jahre Reittherapie", benefit: "Warum dein Pferd dich spiegelt", link: "/ueber-mich#reittherapie" },
+                  { num: "15", label: "Jahre Hempura", benefit: "Tausende Gespräche mit Pferdeexperten — für dich gefiltert", link: "/ueber-mich#hempura" },
+                  { num: "5", label: "Jahre Freiheitsdressur", benefit: "Echte Partnerschaft statt Kontrolle", link: "/ueber-mich#freiheitsdressur" },
+                ].map((item, i) => (
+                  <Link
+                    key={i}
+                    href={item.link}
+                    className="bg-white rounded-sm p-4 shadow-sm border-l-4 border-gold/50 hover:border-gold hover:shadow-md transition-all group"
+                  >
+                    <div className="flex gap-4 items-start">
+                      <div className="text-3xl sm:text-4xl font-light text-gold flex-shrink-0 leading-none">{item.num}</div>
+                      <div>
+                        <div className="text-xs text-loam/60 font-sans uppercase tracking-wide">{item.label}</div>
+                        <div className="text-sm sm:text-base text-loam font-medium font-sans leading-snug mt-1 group-hover:text-gold transition-colors">
+                          {item.benefit}
+                          <ArrowRight className="w-3 h-3 inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+              {/* Abschluss-Satz */}
+              <p className="mt-6 text-loam font-serif text-base sm:text-lg md:text-xl text-center lg:text-left">
+                Ich schaue nicht nur auf das Pferd — ich schaue auf das, <strong>was zwischen Mensch und Pferd passiert</strong>.
+              </p>
+
+              <Link
+                href="/ueber-mich"
                 className="inline-flex items-center gap-2 mt-5 sm:mt-6 text-gold font-sans font-bold text-xs sm:text-sm tracking-widest uppercase hover:text-[#b8956a] transition-colors min-h-[44px]"
               >
                 Meine ganze Geschichte
                 <ArrowRight className="w-4 h-4" />
               </Link>
-            </div>
-            
-            <div className="lg:col-span-3">
-              <div className="bg-white rounded-sm p-5 sm:p-6 md:p-8 border-l-4 border-gold mb-5 sm:mb-6 shadow-sm">
-                <p className="font-serif text-loam text-base sm:text-lg md:text-xl italic leading-relaxed">
-                  Ich weiß, wie es sich anfühlt, wenn alle was anderes sagen – und du dich allein gelassen fühlst mit deinen Fragen.
-                </p>
-              </div>
-              
-              <div className="space-y-3 sm:space-y-4 text-loam/85 font-sans font-light leading-relaxed text-sm sm:text-base">
-                <p>
-                  Mein erstes eigenes Pferd – Ramses. Der Hufschmied, den alle empfohlen haben. Nach einem Jahr: Hufprobleme, die es vorher nicht gab. Drei Hufschmiede später wusste ich: Der erste hatte keine Ahnung – aber ich hatte keinen Vergleich.
-                </p>
-                
-                <p>
-                  Mein Mann Stefan und ich haben 15 Jahre lang Hempura betrieben – ein natürliches Zusatzfutter aus Nutzhanf für Pferde. In dieser Zeit habe ich mit ca. 2.500 unterschiedlichen Experten (unsere Kooperationspartner) gesprochen: Tierärzte, Therapeuten, Hufschmiede, Trainer. Alle mit anderen Ansätzen, anderen Überzeugungen. Manche widersprachen sich komplett. Das hat mich gezwungen, selbst zu denken. Mir eine eigene Meinung zu bilden. Heute weiß ich: Diese Perspektive ist mein wertvollstes Werkzeug.
-                </p>
-                
-                <p className="text-loam font-medium text-sm sm:text-base md:text-lg">
-                  Dabei hab ich eins gelernt: Je mehr ich lerne und verstehe, umso weniger muss ich auf das Prinzip Hoffnung vertrauen.
-                </p>
-              </div>
-
-              {/* Stats 2x2 Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                {[
-                  { num: "30", text: "Jahre mit Pferden. Ich zeige dir die Abkürzung." },
-                  { num: "16", text: "Jahre Reittherapie. Ich durfte lernen, was Pferde zeigen, wenn wir wirklich hinschauen." },
-                  { num: "2.500", text: "Experten-Gespräche. Ich weiß inzwischen, wer wirklich hilft – und wer nur gut klingt. Diesen Blick gebe ich an dich weiter." },
-                  { num: "5", text: "Jahre Zusammenarbeit mit einer der bekanntesten Freiheitsdressur-Trainerinnen Europas. Wenn zwischen Pferd & Mensch echtes Vertrauen da ist, wird alles leichter. Am Boden. Im Sattel. Im ganzen Miteinander." },
-                ].map((item, i) => (
-                  <div key={i} className="bg-white rounded-sm p-4 shadow-sm border-l-4 border-gold/50 flex gap-4 items-start">
-                    <div className="text-3xl sm:text-4xl font-light text-gold flex-shrink-0 leading-none">{item.num}</div>
-                    <div className="text-xs sm:text-sm text-loam/75 font-sans leading-relaxed">{item.text}</div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
@@ -585,13 +609,18 @@ export default function PferdesichtPage() {
               ))}
             </ul>
 
-            {/* CTA Button */}
+            {/* CTA Button with Subtext */}
             <Link
               href="/quiz"
-              className="w-full min-h-[48px] py-4 px-6 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-base rounded transition-colors inline-flex items-center justify-center gap-2"
+              className="w-full py-4 px-6 bg-gold hover:bg-gold/90 text-loam rounded transition-colors inline-flex flex-col items-center justify-center"
             >
-              Frühlingscheck starten
-              <ArrowRight className="w-5 h-5" />
+              <span className="font-sans font-semibold text-base flex items-center gap-2">
+                Frühlingscheck starten
+                <ArrowRight className="w-5 h-5" />
+              </span>
+              <span className="font-serif italic text-sm text-loam/80 mt-1">
+                Dein individueller Report
+              </span>
             </Link>
 
             {/* Click Triggers */}

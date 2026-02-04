@@ -57,10 +57,19 @@ export function HeroTextOverlay() {
           </p>
         </div>
 
-        {/* CTA Text */}
-        <p className="text-gold italic font-serif mt-6 text-base md:text-xl lg:text-2xl leading-relaxed bg-loam/40 px-4 md:px-6 py-2 md:py-3 rounded inline-block [text-shadow:_0_1px_3px_rgba(0,0,0,0.9),_0_2px_10px_rgba(0,0,0,0.7)] md:[text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
-          Kommt dir das bekannt vor? Dann bist du hier genau richtig.
-        </p>
+        {/* CTA Text mit Pfeil */}
+        <div className="mt-6 bg-loam/40 px-4 md:px-6 py-3 md:py-4 rounded inline-flex flex-col items-center">
+          <p className="text-gold italic font-serif text-base md:text-xl lg:text-2xl leading-relaxed text-center [text-shadow:_0_1px_3px_rgba(0,0,0,0.9),_0_2px_10px_rgba(0,0,0,0.7)] md:[text-shadow:_0_2px_15px_rgba(0,0,0,0.6)]">
+            Kommt dir das bekannt vor? Dann bist du hier genau richtig.
+          </p>
+          <a href="#weiter" className="group inline-flex items-center justify-center mt-3">
+            <span className="w-10 h-10 rounded-full bg-[#C5A065] flex items-center justify-center group-hover:bg-[#d4b896] transition-colors">
+              <svg className="w-5 h-5 text-loam animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   )
