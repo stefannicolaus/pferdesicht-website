@@ -3,10 +3,11 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { Loader2, ArrowRight, Download } from 'lucide-react'
+import { Loader2, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { BucketResult } from '@/components/quiz/BucketResult'
+import { PersonalReport } from '@/components/quiz/PersonalReport'
 import type { QuizResult } from '@/lib/quiz/schema'
 
 interface QuizSubmissionResponse {
@@ -86,10 +87,10 @@ export default function QuizErgebnisPage() {
     )
   }
 
-  const { submission, risikoScore, bucket, bucketLabel } = result.data
+  const { submission, risikoScore, bucket } = result.data
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-sage-50 to-white">
+    <main className="min-h-screen bg-gradient-to-b from-sage-50 to-white pb-20">
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -97,7 +98,7 @@ export default function QuizErgebnisPage() {
             Dein Frühlings-Check ist fertig!
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-loam-600">
-            Hier ist das Ergebnis für {submission.pferdename}
+            Hier ist dein persönlicher Report für {submission.pferdename}
           </p>
         </div>
 
@@ -124,82 +125,41 @@ export default function QuizErgebnisPage() {
           </div>
         )}
 
-        {/* Nächste Schritte */}
-        <div className="mx-auto mt-12 max-w-2xl">
-          <Card className="border-sage-200">
-            <CardHeader>
-              <CardTitle className="text-xl text-loam-800">
-                Was jetzt passiert
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold-100 text-gold-700">
-                  1
-                </div>
-                <div>
-                  <h3 className="font-semibold text-loam-700">
-                    E-Mail prüfen
-                  </h3>
-                  <p className="text-loam-600">
-                    Dein persönlicher Frühlings-Fahrplan ist bereits unterwegs
-                    an {submission.email}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold-100 text-gold-700">
-                  2
-                </div>
-                <div>
-                  <h3 className="font-semibold text-loam-700">
-                    Report lesen
-                  </h3>
-                  <p className="text-loam-600">
-                    Im Report findest du konkrete Tipps, was du für{' '}
-                    {submission.pferdename} tun kannst
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold-100 text-gold-700">
-                  3
-                </div>
-                <div>
-                  <h3 className="font-semibold text-loam-700">
-                    Umsetzen
-                  </h3>
-                  <p className="text-loam-600">
-                    Mit dem Kalender im Report weißt du genau, was wann zu tun
-                    ist
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* CTA */}
-          <div className="mt-8 text-center">
-            <p className="mb-4 text-loam-600">
-              Möchtest du noch tiefer einsteigen?
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="gap-2 bg-gold-500 text-loam-900 hover:bg-gold-600"
-            >
-              <Link href="/produkte/g18-fruehlingsguide">
-                Zum G18 Frühlings-Guide
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
+        {/* PERSONAL REPORT */}
+        <div className="mx-auto mt-12 max-w-3xl">
+          <PersonalReport
+            submission={submission}
+            bucket={bucket}
+            risikoScore={risikoScore}
+          />
         </div>
 
-        {/* Risikofaktoren-Übersicht (optional, später ausbauen) */}
-        {/* TODO: Hier könnte eine detaillierte Auflistung der Risikofaktoren kommen */}
+        {/* CTA zum G18 */}
+        <div className="mx-auto mt-16 max-w-2xl">
+          <Card className="border-gold-200 bg-gradient-to-br from-gold-50 to-cream">
+            <CardHeader>
+              <CardTitle className="text-center text-xl text-loam-800">
+                Möchtest du noch tiefer einsteigen?
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="mb-6 text-loam-600">
+                Im G18 Frühlings-Guide erfährst du alles im Detail: die Wissenschaft hinter dem Fruktan,
+                woran du PPID früh erkennst, und wie du {submission.pferdename} optimal durch den Frühling begleitest.
+              </p>
+              <Button
+                asChild
+                size="lg"
+                className="gap-2 bg-gold-500 text-loam-900 hover:bg-gold-600"
+              >
+                <Link href="/produkte/g18-fruehlingsguide">
+                  Zum G18 Frühlings-Guide
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </main>
   )

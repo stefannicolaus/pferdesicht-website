@@ -639,28 +639,29 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="datenschutz"
                   render={({ field }) => (
-                    <FormItem className="flex flex-row items-start gap-3 rounded-md border border-sage-200 p-4">
-                      <FormControl>
-                        <Checkbox
-                          checked={field.value}
-                          onCheckedChange={field.onChange}
-                          className="mt-0.5"
-                        />
-                      </FormControl>
-                      <div className="flex-1">
+                    <FormItem className="rounded-md border border-sage-200 p-4">
+                      <div className="flex items-start gap-3">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            className="mt-1"
+                          />
+                        </FormControl>
                         <FormLabel className="text-sm font-normal leading-relaxed cursor-pointer">
                           Ich stimme der{' '}
                           <a
                             href="/datenschutz"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sage underline hover:text-sage/80"
                           >
                             Datenschutzerklärung
                           </a>{' '}
                           zu und möchte den kostenlosen Frühlings-Fahrplan sowie wertvolle Tipps von Diana erhalten.
                         </FormLabel>
-                        <FormMessage />
                       </div>
+                      <FormMessage className="mt-2 ml-7" />
                     </FormItem>
                   )}
                 />

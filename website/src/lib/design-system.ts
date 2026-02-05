@@ -128,6 +128,10 @@ export const navigation: NavItem[] = [
     ],
   },
   {
+    label: "Frühlingscheck",
+    href: "/quiz",
+  },
+  {
     label: "Über mich",
     href: "/ueber-mich",
     description: "Lerne Diana kennen",
