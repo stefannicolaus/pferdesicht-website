@@ -1,21 +1,21 @@
 # DIANA-BIBEL v3.0 (KOMPLETT)
-## Aktualisiert mit Reittherapie-Perspektive & Dreifach-AutoritÃ¤t
+## Aktualisiert mit Reittherapie-Perspektive & Dreifach-Autorität
 
 ---
 
 **Version:** 3.0
 **Datum:** 30.12.2024
 **Aktualisiert nach:** Anna Empowerment Framework v2.5, Golden Circle v2.2, Reittherapie-Framework v1.0
-**Anzahl dokumentierter BeitrÃ¤ge:** 5 (Pilot 1, 2, 3, 4, 5)
+**Anzahl dokumentierter Beiträge:** 5 (Pilot 1, 2, 3, 4, 5)
 
 ---
 
 # NEU IN VERSION 3.0
 
-| Element | Was sich geÃ¤ndert hat |
+| Element | Was sich geändert hat |
 |---------|----------------------|
-| **Neue Kategorie** | "Diana's Dreifach-AutoritÃ¤t" â€” Praxis + Reittherapie + Hinter den Kulissen |
-| **Neue Signature Phrases** | Reittherapie-Perspektive ("Pferde lÃ¼gen nicht â€” sie spiegeln") |
+| **Neue Kategorie** | "Diana's Dreifach-Autorität" — Praxis + Reittherapie + Hinter den Kulissen |
+| **Neue Signature Phrases** | Reittherapie-Perspektive ("Pferde lügen nicht — sie spiegeln") |
 | **Neue Position** | "Das Pferd als Spiegel des Menschen" |
 | **Neue Position** | "Eigener Weg gefunden" (Freiheitsdressur) |
 | **Aktualisierte Verweise** | Alle Dokument-Verweise auf aktuelle Versionen |
@@ -24,63 +24,63 @@
 
 # INHALTSVERZEICHNIS
 
-1. [Diana's Dreifach-AutoritÃ¤t](#teil-0) â­ NEU
+1. [Diana's Dreifach-Autorität](#teil-0) â­ NEU
 2. [Dianas Positionen](#teil-1)
 3. [Verifizierte Fakten](#teil-2)
 4. [Dianas Geschichten](#teil-3)
 5. [Vergleiche & Metaphern](#teil-4)
 6. [Aha-Momente](#teil-5)
 7. [Signature Phrases](#teil-6) â­ ERWEITERT
-8. [Gaslighting-SÃ¤tze](#teil-7)
+8. [Gaslighting-Sätze](#teil-7)
 9. [Themen-Tracker](#teil-8)
 10. [Interne Verlinkungen](#teil-9)
 11. [Varianten-Tracker](#teil-10)
 12. [Kreative Elemente Bibliothek](#teil-11)
-13. [TonalitÃ¤ts-Regeln](#teil-12)
-14. [Kosten-TonalitÃ¤t](#teil-13)
+13. [Tonalitäts-Regeln](#teil-12)
+14. [Kosten-Tonalität](#teil-13)
 15. [Geschichten-Sammlung](#teil-14)
-16. [Ã„nderungs-Log](#teil-15)
+16. [Änderungs-Log](#teil-15)
 
 ---
 
-# NEU TEIL 0: DIANA'S DREIFACH-AUTORITÃ„T {#teil-0}
+# NEU TEIL 0: DIANA'S DREIFACH-AUTORITÄT {#teil-0}
 
 ## Die drei Ebenen von Diana's Expertise
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   ðŸ† DIANA'S EINZIGARTIGE POSITION                                        â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 1: PRAXIS-AUTORITÃ„T (30+ Jahre)                                   â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                   â•‘
-â•‘   "Ich habe es selbst gemacht"                                            â•‘
-â•‘   â†’ Offenstall, FÃ¼tterung, Gesundheit, Haltung                            â•‘
-â•‘   â†’ 20 Jahre eigener Offenstall bei Hempura                               â•‘
-â•‘   â†’ Die Fehler. Die Tierarztrechnungen. Die schlaflosen NÃ¤chte.           â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 2: BEZIEHUNGS-AUTORITÃ„T (16 Jahre Reittherapie)                   â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                   â•‘
-â•‘   "Ich sehe, was andere nicht sehen"                                      â•‘
-â•‘   â†’ Das Pferd als Spiegel des Menschen                                    â•‘
-â•‘   â†’ Mensch-Pferd-Dynamik, Kommunikation, Emotionen                        â•‘
-â•‘   â†’ Was normale Trainer NICHT sehen                                       â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 3: TRAININGS-AUTORITÃ„T (5 Jahre hinter den Kulissen)              â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€              â•‘
-â•‘   "Ich habe viel gelernt â€” und meinen eigenen Weg gefunden"               â•‘
-â•‘   â†’ 5 Jahre bei bekannter Freiheitsdressur-Trainerin                      â•‘
-â•‘   â†’ Dankbar fÃ¼r die Erfahrung und das Lernen                              â•‘
-â•‘   â†’ Diana's EIGENER Weg: Echte Partnerschaft                              â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ ZUSAMMEN: Eine Perspektive, die kein normaler Trainer hat             â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   ðŸ† DIANA'S EINZIGARTIGE POSITION                                        ║
+║                                                                            ║
+║   EBENE 1: PRAXIS-AUTORITÄT (30+ Jahre)                                   ║
+║   ─────────────────────────────────────                                   ║
+║   "Ich habe es selbst gemacht"                                            ║
+║   → Offenstall, Fütterung, Gesundheit, Haltung                            ║
+║   → 20 Jahre eigener Offenstall bei Hempura                               ║
+║   → Die Fehler. Die Tierarztrechnungen. Die schlaflosen Nächte.           ║
+║                                                                            ║
+║   EBENE 2: BEZIEHUNGS-AUTORITÄT (16 Jahre Reittherapie)                   ║
+║   ─────────────────────────────────────────────────────                   ║
+║   "Ich sehe, was andere nicht sehen"                                      ║
+║   → Das Pferd als Spiegel des Menschen                                    ║
+║   → Mensch-Pferd-Dynamik, Kommunikation, Emotionen                        ║
+║   → Was normale Trainer NICHT sehen                                       ║
+║                                                                            ║
+║   EBENE 3: TRAININGS-AUTORITÄT (5 Jahre hinter den Kulissen)              ║
+║   ──────────────────────────────────────────────────────────              ║
+║   "Ich habe viel gelernt — und meinen eigenen Weg gefunden"               ║
+║   → 5 Jahre bei bekannter Freiheitsdressur-Trainerin                      ║
+║   → Dankbar für die Erfahrung und das Lernen                              ║
+║   → Diana's EIGENER Weg: Echte Partnerschaft                              ║
+║                                                                            ║
+║   → ZUSAMMEN: Eine Perspektive, die kein normaler Trainer hat             ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ## Was Diana ANDERS sieht als normale Experten
 
-| Normaler Experte sagt... | Diana sieht zusÃ¤tzlich... |
+| Normaler Experte sagt... | Diana sieht zusätzlich... |
 |--------------------------|---------------------------|
 | "Das Pferd ist dominant" | "Das Pferd spiegelt die Unsicherheit des Menschen" |
 | "Das Pferd testet dich" | "Das Pferd sucht Sicherheit" |
@@ -92,12 +92,12 @@
 
 | Guide/Thema | Reittherapie-Perspektive |
 |-------------|-------------------------|
-| G10 Verhaltens-Decoder | âœ… Immer |
-| G11 Beziehungs-Aufbau | âœ… Immer |
-| G35 Mentaltraining | âœ… Kern-USP |
-| G38 Problemverhalten | âœ… Immer |
-| G5 Stress-Analyse | âœ… Oft |
-| G39 Bodenarbeit | âœ… Oft |
+| G10 Verhaltens-Decoder | ✅ Immer |
+| G11 Beziehungs-Aufbau | ✅ Immer |
+| G35 Mentaltraining | ✅ Kern-USP |
+| G38 Problemverhalten | ✅ Immer |
+| G5 Stress-Analyse | ✅ Oft |
+| G39 Bodenarbeit | ✅ Oft |
 | G1 Herdenharmonie | Bei Sozialstress |
 | G28 Senior-Pferd | Bei Abschied, Loslassen |
 | Krisen-Guides | Bei "Wie gehe ich emotional damit um?" |
@@ -110,80 +110,80 @@
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| Thermoneutrale Zone | -5Â°C bis +25Â°C fÃ¼r adulte Pferde | Bei Fohlen, alten/kranken Pferden anders | Pilot 1 | âœ… Aktiv |
-| Eindecken | Ausnahme, nicht Regel | 5 legitime GrÃ¼nde | Pilot 1 | âœ… Aktiv |
-| Winterfell | Meisterwerk der Evolution | Decke zerstÃ¶rt natÃ¼rliche Isolation | Pilot 1 | âœ… Aktiv |
-| Zittern | Aktiver WÃ¤rmeproduktionsmechanismus | Kein Grund zur Panik | Pilot 1 | âœ… Aktiv |
-| Heu als Heizung | Fermentation erzeugt WÃ¤rme | Mehr Heu statt mehr Decken | Pilot 1 | âœ… Aktiv |
+| Thermoneutrale Zone | -5°C bis +25°C für adulte Pferde | Bei Fohlen, alten/kranken Pferden anders | Pilot 1 | ✅ Aktiv |
+| Eindecken | Ausnahme, nicht Regel | 5 legitime Gründe | Pilot 1 | ✅ Aktiv |
+| Winterfell | Meisterwerk der Evolution | Decke zerstört natürliche Isolation | Pilot 1 | ✅ Aktiv |
+| Zittern | Aktiver Wärmeproduktionsmechanismus | Kein Grund zur Panik | Pilot 1 | ✅ Aktiv |
+| Heu als Heizung | Fermentation erzeugt Wärme | Mehr Heu statt mehr Decken | Pilot 1 | ✅ Aktiv |
 
-## Kategorie: FÃœTTERUNG
+## Kategorie: FÜTTERUNG
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| Fresspausen | Max. 4 Stunden | Manche sagen 3 Stunden | Pilot 2 | âœ… Aktiv |
-| MagensÃ¤ure | 24/7 Produktion | Anders als beim Menschen | Pilot 2 | âœ… Aktiv |
-| Heunetze | Verdoppeln Fressdauer | 40 â†’ 86 Min/kg | Pilot 2 | âœ… Aktiv |
-| Kraftfutter | Seltener nÃ¶tig als gedacht | Nur bei intensiver Arbeit etc. | Pilot 2 | âœ… Aktiv |
-| Wassermangel Winter | GefÃ¤hrlicher als im Sommer | Gras 80% Wasser, Heu 10-15% | Pilot 2 | âœ… Aktiv |
+| Fresspausen | Max. 4 Stunden | Manche sagen 3 Stunden | Pilot 2 | ✅ Aktiv |
+| Magensäure | 24/7 Produktion | Anders als beim Menschen | Pilot 2 | ✅ Aktiv |
+| Heunetze | Verdoppeln Fressdauer | 40 → 86 Min/kg | Pilot 2 | ✅ Aktiv |
+| Kraftfutter | Seltener nötig als gedacht | Nur bei intensiver Arbeit etc. | Pilot 2 | ✅ Aktiv |
+| Wassermangel Winter | Gefährlicher als im Sommer | Gras 80% Wasser, Heu 10-15% | Pilot 2 | ✅ Aktiv |
 
 ## Kategorie: BEWEGUNG & TRAINING
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| AufwÃ¤rmen Winter | LÃ¤nger als im Sommer nÃ¶tig | Box: 20-30 Min, Offenstall: 15-20 Min | Pilot 3 | âœ… Aktiv |
-| Gefrorener Boden | Unebenheit ist das Problem | Vor Frost glattziehen | Pilot 3 | âœ… Aktiv |
-| Abschwitzdecke | Pflicht nach Training im Winter | Hand-Check | Pilot 3 | âœ… Aktiv |
-| Spazierengehen | UnterschÃ¤tzte Alternative | Mit Ãœbungen = echtes Training | Pilot 3 | âœ… Aktiv |
+| Aufwärmen Winter | Länger als im Sommer nötig | Box: 20-30 Min, Offenstall: 15-20 Min | Pilot 3 | ✅ Aktiv |
+| Gefrorener Boden | Unebenheit ist das Problem | Vor Frost glattziehen | Pilot 3 | ✅ Aktiv |
+| Abschwitzdecke | Pflicht nach Training im Winter | Hand-Check | Pilot 3 | ✅ Aktiv |
+| Spazierengehen | Unterschätzte Alternative | Mit Übungen = echtes Training | Pilot 3 | ✅ Aktiv |
 
 ## Kategorie: VERHALTEN & PSYCHOLOGIE
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| Winterverhalten | TrÃ¤ges Verhalten ist biologisch sinnvoll | Energiesparmodus = Evolution | Pilot 5 | âœ… Aktiv |
-| Melatonin-Einfluss | HÃ¶herer Spiegel macht trÃ¤ger | Gesteuert durch Licht | Pilot 5 | âœ… Aktiv |
-| Fellwechsel-Steuerung | Licht steuert, nicht Temperatur | Beginnt im Juni | Pilot 5 | âœ… Aktiv |
-| Aufgestaute Energie | Umgeleitet, nicht verschwunden | Kontrast Paddock/Reiten | Pilot 5 | âœ… Aktiv |
-| Kopfarbeit statt Auspowern | Energie nicht "weglongieren" | Konzentration hilft | Pilot 5 | âœ… Aktiv |
+| Winterverhalten | Träges Verhalten ist biologisch sinnvoll | Energiesparmodus = Evolution | Pilot 5 | ✅ Aktiv |
+| Melatonin-Einfluss | Höherer Spiegel macht träger | Gesteuert durch Licht | Pilot 5 | ✅ Aktiv |
+| Fellwechsel-Steuerung | Licht steuert, nicht Temperatur | Beginnt im Juni | Pilot 5 | ✅ Aktiv |
+| Aufgestaute Energie | Umgeleitet, nicht verschwunden | Kontrast Paddock/Reiten | Pilot 5 | ✅ Aktiv |
+| Kopfarbeit statt Auspowern | Energie nicht "weglongieren" | Konzentration hilft | Pilot 5 | ✅ Aktiv |
 
 ## Kategorie: FELL- UND HUFPFLEGE
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| Winterfell-Pflege | Schutzsystem nicht sabotieren | Talgschicht schÃ¼tzt | Pilot 4 | âœ… Aktiv |
-| Intensives BÃ¼rsten | Kann mehr schaden als nÃ¼tzen | Entfernt Schutzschicht | Pilot 4 | âœ… Aktiv |
-| Huffett | Bei gesunden Hufen meist unnÃ¶tig | Ausnahmen definiert | Pilot 4 | âœ… Aktiv |
-| StrahlfÃ¤ule | Hygiene-Problem, nicht Matsch | Kombination mehrerer Faktoren | Pilot 4 | âœ… Aktiv |
-| Mauke/Nasse Beine | Fehlende Trockenphasen | TÃ¤gliches Abspritzen oft kontraproduktiv | Pilot 4 | âœ… Aktiv |
+| Winterfell-Pflege | Schutzsystem nicht sabotieren | Talgschicht schützt | Pilot 4 | ✅ Aktiv |
+| Intensives Bürsten | Kann mehr schaden als nützen | Entfernt Schutzschicht | Pilot 4 | ✅ Aktiv |
+| Huffett | Bei gesunden Hufen meist unnötig | Ausnahmen definiert | Pilot 4 | ✅ Aktiv |
+| Strahlfäule | Hygiene-Problem, nicht Matsch | Kombination mehrerer Faktoren | Pilot 4 | ✅ Aktiv |
+| Mauke/Nasse Beine | Fehlende Trockenphasen | Tägliches Abspritzen oft kontraproduktiv | Pilot 4 | ✅ Aktiv |
 
 ## Kategorie: STALLGEMEINSCHAFT & SICH BEHAUPTEN
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| Sich behaupten | Kommunikation statt Konfrontation | "Klar sein, nicht laut werden" | Framework v2.3 | âœ… Aktiv |
-| Nicht jeden Ã¼berzeugen | Nicht jeder Kampf lohnt sich | "Manche sind nicht bereit hinzusehen" | Framework v2.3 | âœ… Aktiv |
-| Stehenlassen kÃ¶nnen | Andere Meinungen akzeptieren | Energie sparen | Ãœber mich v4.2 | âœ… Aktiv |
-| Gebisslos reiten | Valide Entscheidung | Diana's Erfahrung mit Ramses | Ãœber mich v4.2 | âœ… Aktiv |
+| Sich behaupten | Kommunikation statt Konfrontation | "Klar sein, nicht laut werden" | Framework v2.3 | ✅ Aktiv |
+| Nicht jeden überzeugen | Nicht jeder Kampf lohnt sich | "Manche sind nicht bereit hinzusehen" | Framework v2.3 | ✅ Aktiv |
+| Stehenlassen können | Andere Meinungen akzeptieren | Energie sparen | Über mich v4.2 | ✅ Aktiv |
+| Gebisslos reiten | Valide Entscheidung | Diana's Erfahrung mit Ramses | Über mich v4.2 | ✅ Aktiv |
 
 ## Kategorie: KRISEN-BEGLEITUNG
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| **Diana's Rolle in Krise** | **Orientierung geben, nicht Diagnose** | "Ich bin keine TierÃ¤rztin" | Framework v2.5 | âœ… Aktiv |
-| **Fragen vorbereiten** | **Anna fit machen FÃœR Profis** | Nicht Ersatz fÃ¼r Profis | Framework v2.5 | âœ… Aktiv |
-| **ZusammenhÃ¤nge erklÃ¤ren** | **Muster zeigen, nicht diagnostizieren** | "Das tritt oft zusammen auf" | Framework v2.5 | âœ… Aktiv |
-| **System-Navigation** | **Wer ist wann zustÃ¤ndig** | Reihenfolge der Profis | Framework v2.5 | âœ… Aktiv |
-| **Begleitung** | **Was Anna NEBEN Behandlung tun kann** | Haltung, FÃ¼tterung, Stress | Framework v2.5 | âœ… Aktiv |
-| **Kosten-Fakten** | **Information, nicht Angst** | Diana's Weg statt Push | Framework v2.5 | âœ… Aktiv |
+| **Diana's Rolle in Krise** | **Orientierung geben, nicht Diagnose** | "Ich bin keine Tierärztin" | Framework v2.5 | ✅ Aktiv |
+| **Fragen vorbereiten** | **Anna fit machen FÜR Profis** | Nicht Ersatz für Profis | Framework v2.5 | ✅ Aktiv |
+| **Zusammenhänge erklären** | **Muster zeigen, nicht diagnostizieren** | "Das tritt oft zusammen auf" | Framework v2.5 | ✅ Aktiv |
+| **System-Navigation** | **Wer ist wann zuständig** | Reihenfolge der Profis | Framework v2.5 | ✅ Aktiv |
+| **Begleitung** | **Was Anna NEBEN Behandlung tun kann** | Haltung, Fütterung, Stress | Framework v2.5 | ✅ Aktiv |
+| **Kosten-Fakten** | **Information, nicht Angst** | Diana's Weg statt Push | Framework v2.5 | ✅ Aktiv |
 
 ## NEU v3.0: Kategorie: MENSCH-PFERD-BEZIEHUNG (Reittherapie-Perspektive)
 
 | Thema | Position | Nuance/Ausnahmen | Etabliert in | Status |
 |-------|----------|------------------|--------------|--------|
-| **Pferd als Spiegel** | **Das Pferd zeigt, was der Mensch (noch) nicht sieht** | Keine Schuldzuweisung | Reittherapie-Framework v1.0 | âœ… Aktiv |
-| **Verstehen vor Korrigieren** | **Erst die Ursache, dann die LÃ¶sung** | Nicht "Symptom bekÃ¤mpfen" | Reittherapie-Framework v1.0 | âœ… Aktiv |
-| **Der Mensch ist Teil der Gleichung** | **Verhalten = Kommunikation** | Beides betrachten | Reittherapie-Framework v1.0 | âœ… Aktiv |
-| **Echte Partnerschaft** | **Das Pferd wÃ¤hlt zu bleiben** | Diana's eigener Weg | Reittherapie-Framework v1.0 | âœ… Aktiv |
-| **Beziehung vor Technik** | **Die feinste Technik ersetzt keine echte Beziehung** | Grundlage fÃ¼r alles | Reittherapie-Framework v1.0 | âœ… Aktiv |
+| **Pferd als Spiegel** | **Das Pferd zeigt, was der Mensch (noch) nicht sieht** | Keine Schuldzuweisung | Reittherapie-Framework v1.0 | ✅ Aktiv |
+| **Verstehen vor Korrigieren** | **Erst die Ursache, dann die Lösung** | Nicht "Symptom bekämpfen" | Reittherapie-Framework v1.0 | ✅ Aktiv |
+| **Der Mensch ist Teil der Gleichung** | **Verhalten = Kommunikation** | Beides betrachten | Reittherapie-Framework v1.0 | ✅ Aktiv |
+| **Echte Partnerschaft** | **Das Pferd wählt zu bleiben** | Diana's eigener Weg | Reittherapie-Framework v1.0 | ✅ Aktiv |
+| **Beziehung vor Technik** | **Die feinste Technik ersetzt keine echte Beziehung** | Grundlage für alles | Reittherapie-Framework v1.0 | ✅ Aktiv |
 
 ---
 
@@ -193,51 +193,51 @@
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| Thermoneutrale Zone Pferd | -5Â°C bis +25Â°C | Morgan 1996, Cymbaluk & Christison 1990 | âœ… Ja |
-| Piloerektion Effekt | ErhÃ¶ht Felldichte um 10-30% | Ousey et al. 1992 | âœ… Ja |
-| Energiebedarf bei KÃ¤lte | Steigt um 10-25% | Hoeveler, GfE | âœ… Ja |
-| EvolutionÃ¤re Anpassung | 25 Millionen Jahre | Dr. Miriam Baumgartner, TU MÃ¼nchen | âœ… Ja |
+| Thermoneutrale Zone Pferd | -5°C bis +25°C | Morgan 1996, Cymbaluk & Christison 1990 | ✅ Ja |
+| Piloerektion Effekt | Erhöht Felldichte um 10-30% | Ousey et al. 1992 | ✅ Ja |
+| Energiebedarf bei Kälte | Steigt um 10-25% | Hoeveler, GfE | ✅ Ja |
+| Evolutionäre Anpassung | 25 Millionen Jahre | Dr. Miriam Baumgartner, TU München | ✅ Ja |
 
-## FÃ¼tterung (Pilot 2)
+## Fütterung (Pilot 2)
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| Magenprobleme Freizeitpferde | 40-50% | Tierspital ZÃ¼rich, diverse Studien | âœ… Ja |
-| Heunetze Fressdauer | 40 â†’ 86 Min/kg | TU MÃ¼nchen (Dr. Zeitler-Feicht) | âœ… Ja |
-| Dickdarm FassungsvermÃ¶gen | ~130 Liter | Dr. Susanne Weyrauch, iWest | âœ… Ja |
-| Wassergehalt Gras vs. Heu | 80% vs. 10-15% | Equidocs, Go4vet | âœ… Ja |
-| Kolikrisiko bei Wassermangel | 2,5-fach erhÃ¶ht | Ingolf Bender 2015 | âœ… Ja |
+| Magenprobleme Freizeitpferde | 40-50% | Tierspital Zürich, diverse Studien | ✅ Ja |
+| Heunetze Fressdauer | 40 → 86 Min/kg | TU München (Dr. Zeitler-Feicht) | ✅ Ja |
+| Dickdarm Fassungsvermögen | ~130 Liter | Dr. Susanne Weyrauch, iWest | ✅ Ja |
+| Wassergehalt Gras vs. Heu | 80% vs. 10-15% | Equidocs, Go4vet | ✅ Ja |
+| Kolikrisiko bei Wassermangel | 2,5-fach erhöht | Ingolf Bender 2015 | ✅ Ja |
 
 ## Bewegung (Pilot 3)
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| GelenkflÃ¼ssigkeit Verteilung | ~20 Minuten | Sportphysiologie | âœ… Ja |
-| Sehnen ElastizitÃ¤t | 3-5% Dehnung | Fachliteratur | âœ… Ja |
-| AufwÃ¤rmphase Winter | 15-20 Minuten Schritt | Cavallo | âœ… Ja |
+| Gelenkflüssigkeit Verteilung | ~20 Minuten | Sportphysiologie | ✅ Ja |
+| Sehnen Elastizität | 3-5% Dehnung | Fachliteratur | ✅ Ja |
+| Aufwärmphase Winter | 15-20 Minuten Schritt | Cavallo | ✅ Ja |
 
 ## Winterverhalten (Pilot 5)
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| Fellwechsel-Start | Beginnt 21. Juni | 360gradpferd.de, VTG | âœ… Ja |
-| Melatonin-Wirkung | HÃ¶here Werte im Winter | Dr. med. vet. Gabriele Volker | âœ… Ja |
-| Przewalski-Energiesparmodus | Herzfrequenz sinkt 89 â†’ 44 | Arnold, Ruf & Kuntz, 2006 | âœ… Ja |
+| Fellwechsel-Start | Beginnt 21. Juni | 360gradpferd.de, VTG | ✅ Ja |
+| Melatonin-Wirkung | Höhere Werte im Winter | Dr. med. vet. Gabriele Volker | ✅ Ja |
+| Przewalski-Energiesparmodus | Herzfrequenz sinkt 89 → 44 | Arnold, Ruf & Kuntz, 2006 | ✅ Ja |
 
 ## Fell- und Hufpflege (Pilot 4)
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| Talgschicht (Sebum) | Macht Winterfell wasserabweisend | Diana's Praxiserfahrung | âœ… Ja |
-| Talgschicht Regeneration | Mehrere Tage bis Wochen | Diana's Praxiserfahrung | âœ… Ja |
-| Ammoniak-Wirkung | Bildet Lauge, greift Hufhorn an | Diana's Praxiserfahrung | âœ… Ja |
+| Talgschicht (Sebum) | Macht Winterfell wasserabweisend | Diana's Praxiserfahrung | ✅ Ja |
+| Talgschicht Regeneration | Mehrere Tage bis Wochen | Diana's Praxiserfahrung | ✅ Ja |
+| Ammoniak-Wirkung | Bildet Lauge, greift Hufhorn an | Diana's Praxiserfahrung | ✅ Ja |
 
 ## NEU v3.0: Reittherapie (Referenz)
 
 | Fakt | Wert/Aussage | Quelle | Wiederholbar? |
 |------|--------------|--------|---------------|
-| Diana's Reittherapie-Erfahrung | 16 Jahre, Ã¼ber 200 Menschen begleitet | Diana's Biografie | âœ… Ja |
-| Diana's Freiheitsdressur | 5 Jahre bei bekannter Trainerin | Diana's Biografie | âœ… Ja |
+| Diana's Reittherapie-Erfahrung | 16 Jahre, über 200 Menschen begleitet | Diana's Biografie | ✅ Ja |
+| Diana's Freiheitsdressur | 5 Jahre bei bekannter Trainerin | Diana's Biografie | ✅ Ja |
 
 ---
 
@@ -247,33 +247,33 @@
 
 | Geschichte | Kern-Details | Emotion | Etabliert in | Erweiterbar? |
 |------------|--------------|---------|--------------|--------------|
-| Benny-Geschichte | Pflegepferd mit 12-14, verkauft, Brief mit Fotos | Schmerz â†’ Erkenntnis | Golden Circle | âš ï¸ Nur referenzieren |
-| Kaffee am Paddock | 6:30 Uhr, -2Â°C, Raureif, Diana friert | Aha-Moment: Projektion | Pilot 1 | âœ… Ja |
-| StallgesprÃ¤ch FÃ¼tterung | "Bei uns gibt's 3x Heu" | Innerer Konflikt | Pilot 2 | âœ… Ja |
-| Beobachtung AufwÃ¤rmen | 20 Jahre her, steife Pferde | Fragen stellen | Pilot 3 | âœ… Ja |
-| Wallach wird "Hengst" | Mitte zwanzig, ab Dezember anders | Verwirrung â†’ Verstehen | Pilot 5 | âœ… Ja |
-| Huffett-Erfahrung | "FrÃ¼her viel hilft viel" â€” heute nicht mehr | Lernprozess | Pilot 4 | âœ… Ja |
-| Friese-Mauke-Geschichte | Alter vs. neuer Stall: AbÃ¤ppeln | Einfache LÃ¶sung | Pilot 4 | âœ… Ja |
-| Gebisslos-Geschichte | Im GelÃ¤nde mit Ramses | Sich behaupten | Ãœber mich v4.2 | âœ… Ja |
-| Kosten-Geschichte | Zehntausende Euro | Lernerfahrung | Ãœber mich v4.2 | âœ… Ja |
+| Benny-Geschichte | Pflegepferd mit 12-14, verkauft, Brief mit Fotos | Schmerz → Erkenntnis | Golden Circle | ⚠ï¸ Nur referenzieren |
+| Kaffee am Paddock | 6:30 Uhr, -2°C, Raureif, Diana friert | Aha-Moment: Projektion | Pilot 1 | ✅ Ja |
+| Stallgespräch Fütterung | "Bei uns gibt's 3x Heu" | Innerer Konflikt | Pilot 2 | ✅ Ja |
+| Beobachtung Aufwärmen | 20 Jahre her, steife Pferde | Fragen stellen | Pilot 3 | ✅ Ja |
+| Wallach wird "Hengst" | Mitte zwanzig, ab Dezember anders | Verwirrung → Verstehen | Pilot 5 | ✅ Ja |
+| Huffett-Erfahrung | "Früher viel hilft viel" — heute nicht mehr | Lernprozess | Pilot 4 | ✅ Ja |
+| Friese-Mauke-Geschichte | Alter vs. neuer Stall: Abäppeln | Einfache Lösung | Pilot 4 | ✅ Ja |
+| Gebisslos-Geschichte | Im Gelände mit Ramses | Sich behaupten | Über mich v4.2 | ✅ Ja |
+| Kosten-Geschichte | Zehntausende Euro | Lernerfahrung | Über mich v4.2 | ✅ Ja |
 
 ## NEU v3.0: Reittherapie-Geschichten (Sammlung)
 
 | Geschichte | Kern-Details | Emotion | Einsatz | Status |
 |------------|--------------|---------|---------|--------|
-| Kind, das nicht sprach | Kind kommunizierte nur mit Pferd | BerÃ¼hrend | Beziehung, Kommunikation | ðŸ“ Zum ErzÃ¤hlen |
-| Traumatisierter Erwachsener | Fand durch Pferd wieder Vertrauen | Hoffnung | Vertrauen, Heilung | ðŸ“ Zum ErzÃ¤hlen |
-| Pferd zeigt Unruhe | Pferd reagiert, bevor Mensch es weiÃŸ | Aha-Moment | Spiegelung | ðŸ“ Zum ErzÃ¤hlen |
-| Kinder vs. Erwachsene | Kinder spÃ¼ren instinktiv, Erwachsene mÃ¼ssen neu lernen | Einsicht | Intuition | ðŸ“ Zum ErzÃ¤hlen |
+| Kind, das nicht sprach | Kind kommunizierte nur mit Pferd | Berührend | Beziehung, Kommunikation | ðŸ“ Zum Erzählen |
+| Traumatisierter Erwachsener | Fand durch Pferd wieder Vertrauen | Hoffnung | Vertrauen, Heilung | ðŸ“ Zum Erzählen |
+| Pferd zeigt Unruhe | Pferd reagiert, bevor Mensch es weiß | Aha-Moment | Spiegelung | ðŸ“ Zum Erzählen |
+| Kinder vs. Erwachsene | Kinder spüren instinktiv, Erwachsene müssen neu lernen | Einsicht | Intuition | ðŸ“ Zum Erzählen |
 
 ## NEU v3.0: Freiheitsdressur-Geschichten (Sammlung)
 
 | Geschichte | Kern-Details | Emotion | Einsatz | Status |
 |------------|--------------|---------|---------|--------|
-| 5 Jahre hinter den Kulissen | Dankbar fÃ¼r das Lernen, eigener Weg | Dankbarkeit + EigenstÃ¤ndigkeit | Positionierung | ðŸ“ Zum ErzÃ¤hlen |
-| Eigener Weg gefunden | Echte Partnerschaft = Pferd wÃ¤hlt zu bleiben | Klarheit | Training, Philosophie | ðŸ“ Zum ErzÃ¤hlen |
+| 5 Jahre hinter den Kulissen | Dankbar für das Lernen, eigener Weg | Dankbarkeit + Eigenständigkeit | Positionierung | ðŸ“ Zum Erzählen |
+| Eigener Weg gefunden | Echte Partnerschaft = Pferd wählt zu bleiben | Klarheit | Training, Philosophie | ðŸ“ Zum Erzählen |
 
-**âš ï¸ WICHTIG:** Keine Namen nennen. Immer positiv und dankbar formulieren.
+**⚠ï¸ WICHTIG:** Keine Namen nennen. Immer positiv und dankbar formulieren.
 
 ---
 
@@ -284,22 +284,22 @@
 | Vergleich | Verwendet in | Wirkung |
 |-----------|--------------|---------|
 | Winterfell = Daunenjacke + Heizung | Pilot 1 | Sehr effektiv |
-| Piloerektion = Dauneneffekt | Pilot 1 | EingÃ¤ngig |
+| Piloerektion = Dauneneffekt | Pilot 1 | Eingängig |
 | Heu = innere Heizung | Pilot 1 | Sehr effektiv |
-| MagensÃ¤ure-Brunnen | Pilot 2 | Bild bleibt |
+| Magensäure-Brunnen | Pilot 2 | Bild bleibt |
 | Wasser-Rechnung (Wiese vs. Heu) | Pilot 2 | Konkret |
-| Rohrbruch/Auto ohne Ã–l | Pilot 3 | Stark |
+| Rohrbruch/Auto ohne Öl | Pilot 3 | Stark |
 | Pferd = Kaltstarter | Pilot 3 | Treffend |
-| Winterfell = Funktionsjacke | Pilot 4 | ErgÃ¤nzt Pilot 1 |
-| Pferd = BÃ¤r im Wintermodus | Pilot 5 | Humorvoll |
+| Winterfell = Funktionsjacke | Pilot 4 | Ergänzt Pilot 1 |
+| Pferd = Bär im Wintermodus | Pilot 5 | Humorvoll |
 
 ## NEU v3.0: Reittherapie-Vergleiche
 
 | Vergleich | Wirkung | Einsatz |
 |-----------|---------|---------|
 | Pferd = Spiegel | Sehr stark | Verhalten, Beziehung |
-| Beziehung = EinbahnstraÃŸe (NICHT) | Klarstellend | Kommunikation |
-| WÃ¤hlen zu bleiben = echte Partnerschaft | Philosophisch | Training |
+| Beziehung = Einbahnstraße (NICHT) | Klarstellend | Kommunikation |
+| Wählen zu bleiben = echte Partnerschaft | Philosophisch | Training |
 
 ---
 
@@ -331,40 +331,40 @@
 
 | Phrase | Kategorie | Status |
 |--------|-----------|--------|
-| "Vertraue deiner Perspektive" | Abschluss | âœ… Aktiv |
-| "Du bist nicht zu pingelig" | Validierung | âœ… Aktiv |
-| "Du schaust hin â€” und genau das macht den Unterschied" | Validierung | âœ… Aktiv |
-| "Wissen als RÃ¼stung" | Mission | âœ… Aktiv |
-| "Was ich damals gerne gewusst hÃ¤tte" | Erfahrung | âœ… Aktiv |
-| "Klar sein, nicht laut werden" | Sich behaupten | âœ… Aktiv |
-| "Nicht jeder Kampf lohnt sich" | Sich behaupten | âœ… Aktiv |
+| "Vertraue deiner Perspektive" | Abschluss | ✅ Aktiv |
+| "Du bist nicht zu pingelig" | Validierung | ✅ Aktiv |
+| "Du schaust hin — und genau das macht den Unterschied" | Validierung | ✅ Aktiv |
+| "Wissen als Rüstung" | Mission | ✅ Aktiv |
+| "Was ich damals gerne gewusst hätte" | Erfahrung | ✅ Aktiv |
+| "Klar sein, nicht laut werden" | Sich behaupten | ✅ Aktiv |
+| "Nicht jeder Kampf lohnt sich" | Sich behaupten | ✅ Aktiv |
 
 ## NEU v3.0: Reittherapie-Signature Phrases
 
 | Phrase | Kategorie | Status |
 |--------|-----------|--------|
-| **"Pferde lÃ¼gen nicht â€” sie spiegeln"** | Reittherapie | âœ… Aktiv |
-| **"Das Pferd zeigt dir, was du noch nicht siehst"** | Reittherapie | âœ… Aktiv |
-| **"Verstehen kommt vor Korrigieren"** | Reittherapie | âœ… Aktiv |
-| **"Der Mensch ist immer Teil der Gleichung"** | Reittherapie | âœ… Aktiv |
-| **"Dein Pferd reagiert nie grundlos"** | Reittherapie | âœ… Aktiv |
-| **"Wenn das Pferd wÃ¤hlt zu bleiben, hast du echte Verbindung"** | Training | âœ… Aktiv |
-| **"Die feinste Technik ersetzt keine echte Beziehung"** | Training | âœ… Aktiv |
-| **"Echte Partnerschaft â€” das ist mein Weg"** | Positionierung | âœ… Aktiv |
+| **"Pferde lügen nicht — sie spiegeln"** | Reittherapie | ✅ Aktiv |
+| **"Das Pferd zeigt dir, was du noch nicht siehst"** | Reittherapie | ✅ Aktiv |
+| **"Verstehen kommt vor Korrigieren"** | Reittherapie | ✅ Aktiv |
+| **"Der Mensch ist immer Teil der Gleichung"** | Reittherapie | ✅ Aktiv |
+| **"Dein Pferd reagiert nie grundlos"** | Reittherapie | ✅ Aktiv |
+| **"Wenn das Pferd wählt zu bleiben, hast du echte Verbindung"** | Training | ✅ Aktiv |
+| **"Die feinste Technik ersetzt keine echte Beziehung"** | Training | ✅ Aktiv |
+| **"Echte Partnerschaft — das ist mein Weg"** | Positionierung | ✅ Aktiv |
 
 ## Verwendungs-Regeln
 
-| Phrase | Max. HÃ¤ufigkeit | Kontext |
+| Phrase | Max. Häufigkeit | Kontext |
 |--------|-----------------|---------|
 | "Vertraue deiner Perspektive" | 1x pro Beitrag (Ende) | Immer zum Abschluss |
 | Reittherapie-Phrases | 1-2x pro Beitrag | Nur bei passenden Themen |
-| "Wissen als RÃ¼stung" | Sparsam | Einleitungen, Positionierung |
+| "Wissen als Rüstung" | Sparsam | Einleitungen, Positionierung |
 
 ---
 
-# TEIL 7: GASLIGHTING-SÃ„TZE {#teil-7}
+# TEIL 7: GASLIGHTING-SÄTZE {#teil-7}
 
-## Die Sammlung (fÃ¼r Content verwenden)
+## Die Sammlung (für Content verwenden)
 
 | Kategorie | Satz | Wirkung auf Anna |
 |-----------|------|------------------|
@@ -372,31 +372,31 @@
 | Normalisierung | "Das ist halt so" | Resignation |
 | Dominanz | "Dann hau da mal drauf" | Innerer Konflikt |
 | Verharmlosung | "Dicke Beine sind normal bei dem" | Unsicherheit |
-| AutoritÃ¤t | "Das haben wir schon immer so gemacht" | Mundtot |
+| Autorität | "Das haben wir schon immer so gemacht" | Mundtot |
 | Manipulation | "Der verarscht dich nur" | Misstrauen zum Pferd |
 | Leistung | "Das Pferd soll einfach funktionieren" | Schlechtes Gewissen |
 
 ## Diana's Antwort auf Gaslighting
 
-â†’ Nicht konfrontieren, sondern: **Wissen als RÃ¼stung** geben
-â†’ Anna befÃ¤higen, selbst zu unterscheiden
+→ Nicht konfrontieren, sondern: **Wissen als Rüstung** geben
+→ Anna befähigen, selbst zu unterscheiden
 
 ---
 
 # TEIL 8: THEMEN-TRACKER {#teil-8}
 
-| Thema | Anzahl BeitrÃ¤ge | BeitrÃ¤ge | Geplant |
+| Thema | Anzahl Beiträge | Beiträge | Geplant |
 |-------|-----------------|----------|---------|
-| Thermoregulation/Eindecken | 1 | Pilot 1 | â€” |
-| FÃ¼tterung | 1 | Pilot 2 | â€” |
-| Bewegung/Training | 1 | Pilot 3 | â€” |
-| Fell- und Hufpflege | 1 | Pilot 4 | â€” |
-| Verhalten & Psychologie | 1 | Pilot 5 | â€” |
-| Stallgemeinschaft/Behaupten | 0 | â€” | TBD |
-| Krisen-Begleitung | 0 | â€” | TBD |
-| **Mensch-Pferd-Beziehung** | **0** | **â€”** | **G35, G37, G38** |
-| Zahngesundheit | 0 | â€” | TBD |
-| Erste Hilfe | 0 | â€” | TBD |
+| Thermoregulation/Eindecken | 1 | Pilot 1 | — |
+| Fütterung | 1 | Pilot 2 | — |
+| Bewegung/Training | 1 | Pilot 3 | — |
+| Fell- und Hufpflege | 1 | Pilot 4 | — |
+| Verhalten & Psychologie | 1 | Pilot 5 | — |
+| Stallgemeinschaft/Behaupten | 0 | — | TBD |
+| Krisen-Begleitung | 0 | — | TBD |
+| **Mensch-Pferd-Beziehung** | **0** | **—** | **G35, G37, G38** |
+| Zahngesundheit | 0 | — | TBD |
+| Erste Hilfe | 0 | — | TBD |
 
 ---
 
@@ -406,9 +406,9 @@
 
 | Von | Zu | Ankertext |
 |-----|-----|-----------|
-| Pilot 2 | Pilot 1 | "Im letzten Beitrag Ã¼ber das Eindecken" |
-| Pilot 3 | Pilot 1 | "Beitrag Ã¼ber das Eindecken" |
-| Pilot 3 | Pilot 2 | "Beitrag Ã¼ber die FÃ¼tterung" |
+| Pilot 2 | Pilot 1 | "Im letzten Beitrag über das Eindecken" |
+| Pilot 3 | Pilot 1 | "Beitrag über das Eindecken" |
+| Pilot 3 | Pilot 2 | "Beitrag über die Fütterung" |
 | Pilot 5 | Pilot 1, 2, 3 | Verschiedene |
 | Pilot 4 | Pilot 1, 2, 3 | Verschiedene |
 
@@ -416,110 +416,110 @@
 
 # TEIL 10: VARIANTEN-TRACKER {#teil-10}
 
-| Beitrag | Einstieg | BrÃ¼cke | Fazit |
+| Beitrag | Einstieg | Brücke | Fazit |
 |---------|----------|--------|-------|
-| Pilot 1 | A (Szene) | Implizit | Validierung + RÃ¼ckbezug |
-| Pilot 2 | B (Beobachtung) | Implizit | RÃ¼ckbezug |
+| Pilot 1 | A (Szene) | Implizit | Validierung + Rückbezug |
+| Pilot 2 | B (Beobachtung) | Implizit | Rückbezug |
 | Pilot 3 | A (Szene) | Explizit | Prozess |
 | Pilot 4 | F (Jahreszeit) | Implizit | Ermutigung |
 | Pilot 5 | A (Szene) | Implizit | Validierung + Prozess |
 
-**âš ï¸ Hinweis:** Pilot 6 sollte Kategorie B, C, D, E oder G sein (A ist Ã¼berreprÃ¤sentiert).
+**⚠ï¸ Hinweis:** Pilot 6 sollte Kategorie B, C, D, E oder G sein (A ist überrepräsentiert).
 
 ---
 
 # TEIL 11: KREATIVE ELEMENTE BIBLIOTHEK {#teil-11}
 
-â†’ Siehe Master-Prompt v3.12 fÃ¼r vollstÃ¤ndige Kategorien und Regeln.
+→ Siehe Master-Prompt v3.12 für vollständige Kategorien und Regeln.
 
 **Regel:** 3-5 kreative Elemente pro Beitrag, Mix aus Kategorien.
 
 ---
 
-# TEIL 12: TONALITÃ„TS-REGELN {#teil-12}
+# TEIL 12: TONALITÄTS-REGELN {#teil-12}
 
 ## "Durfte lernen" statt "Musste lernen"
 
-| âŒ Alt | âœ… Neu |
+| âŒ Alt | ✅ Neu |
 |--------|--------|
 | "Ich musste lernen, mich durchzusetzen" | "Ich durfte lernen, mich zu behaupten" |
 
 ## "Behaupten" statt "Durchsetzen"
 
-| âŒ Alt | âœ… Neu |
+| âŒ Alt | ✅ Neu |
 |--------|--------|
 | "Sich am Stall durchsetzen" | "Sich im Stall behaupten" |
 
-## "Nicht jeden Ã¼berzeugen wollen"
+## "Nicht jeden überzeugen wollen"
 
-- "Du musst nicht jeden Ã¼berzeugen"
-- "Manche Menschen sind nicht bereit hinzusehen â€” das ist okay"
+- "Du musst nicht jeden überzeugen"
+- "Manche Menschen sind nicht bereit hinzusehen — das ist okay"
 - "Nicht jeder Kampf lohnt sich"
 
-## NEU v3.0: Freiheitsdressur-TonalitÃ¤t
+## NEU v3.0: Freiheitsdressur-Tonalität
 
-| âŒ Nicht | âœ… Stattdessen |
+| âŒ Nicht | ✅ Stattdessen |
 |----------|----------------|
 | Kritik an anderen Trainern | "Ich habe meinen eigenen Weg gefunden" |
 | Namen nennen | "Bei einer bekannten Trainerin" |
-| "Was ich dort gesehen habe..." | "Ich bin dankbar fÃ¼r diese Zeit" |
+| "Was ich dort gesehen habe..." | "Ich bin dankbar für diese Zeit" |
 | Negative Andeutungen | Positive Abgrenzung durch eigenen Weg |
 
 ---
 
-# TEIL 13: KOSTEN-TONALITÃ„T {#teil-13}
+# TEIL 13: KOSTEN-TONALITÄT {#teil-13}
 
 ## Diana's Weg vs. Push-Marketing
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   âŒ PUSH-MARKETING                     âœ… DIANA'S WEG                     â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                     â•‘
-â•‘                                                                            â•‘
-â•‘   "Das kostet dich 15.000â‚¬!"            "Eine Kolik-OP liegt zwischen     â•‘
-â•‘                                          5.000-15.000â‚¬ â€” das war fÃ¼r      â•‘
-â•‘                                          mich ein AugenÃ¶ffner."           â•‘
-â•‘                                                                            â•‘
-â•‘   "10 teure Fehler vermeiden!"          "Was ich gelernt habe â€” und was   â•‘
-â•‘                                          es mich gekostet hat."            â•‘
-â•‘                                                                            â•‘
-â•‘   "Dein Pferd leidet!"                  "Ich wÃ¼nschte, ich hÃ¤tte das      â•‘
-â•‘                                          frÃ¼her gewusst."                  â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   âŒ PUSH-MARKETING                     ✅ DIANA'S WEG                     ║
+║   ─────────────────                     ──────────────                     ║
+║                                                                            ║
+║   "Das kostet dich 15.000€!"            "Eine Kolik-OP liegt zwischen     ║
+║                                          5.000-15.000€ — das war für      ║
+║                                          mich ein Augenöffner."           ║
+║                                                                            ║
+║   "10 teure Fehler vermeiden!"          "Was ich gelernt habe — und was   ║
+║                                          es mich gekostet hat."            ║
+║                                                                            ║
+║   "Dein Pferd leidet!"                  "Ich wünschte, ich hätte das      ║
+║                                          früher gewusst."                  ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ## Die 4 Prinzipien
 
-1. **FAKTEN ANBIETEN** â€” Zahlen als Information
-2. **EIGENE ERFAHRUNG TEILEN** â€” Diana's Geschichte, nicht Anna's Schuld
-3. **ZUSAMMENHÃ„NGE ERKLÃ„REN** â€” Wissen als LÃ¶sung, nicht Angst als Antrieb
-4. **ENTSCHEIDUNG BEI ANNA LASSEN** â€” Respekt, keine Bevormundung
+1. **FAKTEN ANBIETEN** — Zahlen als Information
+2. **EIGENE ERFAHRUNG TEILEN** — Diana's Geschichte, nicht Anna's Schuld
+3. **ZUSAMMENHÄNGE ERKLÄREN** — Wissen als Lösung, nicht Angst als Antrieb
+4. **ENTSCHEIDUNG BEI ANNA LASSEN** — Respekt, keine Bevormundung
 
 ## Verbotene Formulierungen
 
 | âŒ Nicht verwenden |
 |-------------------|
-| "Das kann dich X â‚¬ kosten!" |
+| "Das kann dich X € kosten!" |
 | "VERMEIDE diese teuren Fehler!" |
 | "Unwissen macht arm!" |
-| "SchÃ¼tze dein Pferd VOR..." |
+| "Schütze dein Pferd VOR..." |
 | "Du MUSST das wissen!" |
 
 ## Erlaubte Formulierungen
 
-| âœ… So stattdessen |
+| ✅ So stattdessen |
 |------------------|
-| "Eine [Behandlung] kostet zwischen X und Y â‚¬." |
-| "Diese ZusammenhÃ¤nge zu verstehen hat mir viel Geld gespart." |
-| "Wissen ist die gÃ¼nstigste Investition." |
-| "Was ich gerne frÃ¼her gewusst hÃ¤tte." |
-| "Das hÃ¤tte ich gerne gewusst, bevor..." |
+| "Eine [Behandlung] kostet zwischen X und Y €." |
+| "Diese Zusammenhänge zu verstehen hat mir viel Geld gespart." |
+| "Wissen ist die günstigste Investition." |
+| "Was ich gerne früher gewusst hätte." |
+| "Das hätte ich gerne gewusst, bevor..." |
 
 ## Kosten-Referenz
 
-â†’ FÃ¼r konkrete Kosten-Zahlen pro Cluster: Siehe **12-Cluster-Analyse v1.1**
+→ Für konkrete Kosten-Zahlen pro Cluster: Siehe **12-Cluster-Analyse v1.1**
 
 ---
 
@@ -529,16 +529,16 @@
 
 | Thema | Geschichte | Status |
 |-------|------------|--------|
-| Eindecken | Kaffee am Paddock | âœ… Teil 3 |
-| FÃ¼tterung | StallgesprÃ¤ch "3x Heu" | âœ… Teil 3 |
-| AufwÃ¤rmen | Beobachtung steife Pferde | âœ… Teil 3 |
-| Hufpflege | Huffett-Erkenntnis | âœ… Teil 3 |
-| Hygiene | Friese-Mauke | âœ… Teil 3 |
-| Sich behaupten | Gebisslos im GelÃ¤nde | âœ… Teil 3 |
-| Kosten | Zehntausende Euro | âœ… Teil 3 |
-| **Reittherapie** | **Kind, das nicht sprach** | âœ… Teil 3 (NEU) |
-| **Reittherapie** | **Traumatisierter Erwachsener** | âœ… Teil 3 (NEU) |
-| **Freiheitsdressur** | **5 Jahre â€” dankbar, eigener Weg** | âœ… Teil 3 (NEU) |
+| Eindecken | Kaffee am Paddock | ✅ Teil 3 |
+| Fütterung | Stallgespräch "3x Heu" | ✅ Teil 3 |
+| Aufwärmen | Beobachtung steife Pferde | ✅ Teil 3 |
+| Hufpflege | Huffett-Erkenntnis | ✅ Teil 3 |
+| Hygiene | Friese-Mauke | ✅ Teil 3 |
+| Sich behaupten | Gebisslos im Gelände | ✅ Teil 3 |
+| Kosten | Zehntausende Euro | ✅ Teil 3 |
+| **Reittherapie** | **Kind, das nicht sprach** | ✅ Teil 3 (NEU) |
+| **Reittherapie** | **Traumatisierter Erwachsener** | ✅ Teil 3 (NEU) |
+| **Freiheitsdressur** | **5 Jahre — dankbar, eigener Weg** | ✅ Teil 3 (NEU) |
 
 ## Noch zu sammeln (Platzhalter)
 
@@ -547,21 +547,21 @@
 | Stallwechsel | Wann und warum? | ðŸ“ |
 | Tierarzt-Zweitmeinung | Konkrete Situation | ðŸ“ |
 | Therapeuten-Fehler | Details zu den Fehlern | ðŸ“ |
-| Equipment-FehlkÃ¤ufe | Was verstaubt? | ðŸ“ |
+| Equipment-Fehlkäufe | Was verstaubt? | ðŸ“ |
 | Senior-Pferd | Ramses' Altern | ðŸ“ |
 
 ---
 
-# TEIL 15: Ã„NDERUNGS-LOG {#teil-15}
+# TEIL 15: ÄNDERUNGS-LOG {#teil-15}
 
-| Datum | Version | Ã„nderung |
+| Datum | Version | Änderung |
 |-------|---------|----------|
-| 26.12.2024 | 2.3-2.5 | Pilot 1-3 EintrÃ¤ge |
+| 26.12.2024 | 2.3-2.5 | Pilot 1-3 Einträge |
 | 27.12.2024 | 2.6 | Pilot 5 + Kreative Elemente |
-| 28.12.2024 | 2.7 | Pilot 4 EintrÃ¤ge |
-| 29.12.2024 | 2.8 | Framework v2.3 Integration, TonalitÃ¤t |
-| 29.12.2024 | 2.9 | Krisen-Begleitung Kategorie, Kosten-TonalitÃ¤t |
-| **30.12.2024** | **3.0** | **Reittherapie-Perspektive, Dreifach-AutoritÃ¤t, neue Signature Phrases, Freiheitsdressur-TonalitÃ¤t** |
+| 28.12.2024 | 2.7 | Pilot 4 Einträge |
+| 29.12.2024 | 2.8 | Framework v2.3 Integration, Tonalität |
+| 29.12.2024 | 2.9 | Krisen-Begleitung Kategorie, Kosten-Tonalität |
+| **30.12.2024** | **3.0** | **Reittherapie-Perspektive, Dreifach-Autorität, neue Signature Phrases, Freiheitsdressur-Tonalität** |
 
 ---
 
@@ -569,16 +569,16 @@
 
 | Dokument | Version | Inhalt |
 |----------|---------|--------|
-| **Anna Empowerment Framework** | v2.5 | VollstÃ¤ndige Anna-Analyse, Zwei Welten, UrÃ¤ngste |
-| **Golden Circle** | v2.2 | WHY/HOW/WHAT mit Dreifach-AutoritÃ¤t |
+| **Anna Empowerment Framework** | v2.5 | Vollständige Anna-Analyse, Zwei Welten, Urängste |
+| **Golden Circle** | v2.2 | WHY/HOW/WHAT mit Dreifach-Autorität |
 | **Master-Prompt** | v3.12 | Workflow, Krisen-Content, Kosten-Kommunikation |
 | **12-Cluster-Analyse** | v1.1 | Detail-Kosten pro Cluster |
 | **Produktstrategie** | v1.2 | Guide-Bibliothek mit USP-Guides |
-| **Ãœber mich** | v4.2 | Website-Text mit Reittherapie-Abschnitt |
-| **Reittherapie-Framework** | v1.0 | Diana's Dreifach-AutoritÃ¤t im Detail |
+| **Über mich** | v4.2 | Website-Text mit Reittherapie-Abschnitt |
+| **Reittherapie-Framework** | v1.0 | Diana's Dreifach-Autorität im Detail |
 
 ---
 
 *Diana-Bibel v3.0 (KOMPLETT)*
-*Mit Reittherapie-Perspektive und Dreifach-AutoritÃ¤t*
+*Mit Reittherapie-Perspektive und Dreifach-Autorität*
 *Erstellt: 30.12.2024*

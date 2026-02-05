@@ -1,5 +1,5 @@
-# PFERDESICHT: VollstÃ¤ndige Slide-Bibliothek (34 Slides)
-## Canva-Vorlage Referenz fÃ¼r Videokurs-Produktion
+# PFERDESICHT: Vollständige Slide-Bibliothek (34 Slides)
+## Canva-Vorlage Referenz für Videokurs-Produktion
 
 **Version:** 3.0  
 **Erstellt:** 19.01.2026  
@@ -7,66 +7,66 @@
 
 ---
 
-# SCHNELL-ÃœBERSICHT: Slide-Auswahl nach Zweck
+# SCHNELL-ÜBERSICHT: Slide-Auswahl nach Zweck
 
-## FÃ¼r Kurs-Start & Struktur
+## Für Kurs-Start & Struktur
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Kurs-Titel | #1 | `[COVER]` |
 | Inhaltsverzeichnis | #2 | `[TOC]` |
 | Willkommen | #3 | `[WELCOME]` |
 | Was du lernst | #4 | `[LERNZIELE]` |
-| Modul-Ãœbersicht | #5 | `[OUTLINE]` |
+| Modul-Übersicht | #5 | `[OUTLINE]` |
 
-## FÃ¼r Diana & Vertrauen
+## Für Diana & Vertrauen
 | Zweck | Slide | Code |
 |-------|-------|------|
-| Ãœber mich | #6 | `[DIANA]` |
+| Über mich | #6 | `[DIANA]` |
 | Meine Geschichte | #7 | `[STORY]` |
 
-## FÃ¼r Modul-Starts
+## Für Modul-Starts
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Modul-Header (Vollbild) | #8 | `[MODUL-HEADER]` |
 
-## FÃ¼r Standard-Content
+## Für Standard-Content
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Bild links + Text | #9 | `[VISUAL-L]` |
 | 2 Bilder + Text | #10 | `[2-BILDER]` |
 | Text + 3 Bilder | #13 | `[CONTENT-3IMG]` |
 
-## FÃ¼r Emotionen & Pausen
+## Für Emotionen & Pausen
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Zitat/Gedanke | #11 | `[ZITAT]` |
 
-## FÃ¼r Mythen & Vergleiche
+## Für Mythen & Vergleiche
 | Zweck | Slide | Code |
 |-------|-------|------|
-| Mythos vs. RealitÃ¤t | #12 | `[SPLIT]` â­ NEU |
+| Mythos vs. Realität | #12 | `[SPLIT]` â­ NEU |
 
-## FÃ¼r Prozesse & Schritte
+## Für Prozesse & Schritte
 | Zweck | Slide | Code |
 |-------|-------|------|
-| 3 Schritte Ãœbersicht | #19 | `[STEPS-3]` |
+| 3 Schritte Übersicht | #19 | `[STEPS-3]` |
 | Step 1 Detail | #14 | `[STEP-1]` |
 | Step 2 Detail | #15 | `[STEP-2]` |
 | Step 3 Detail | #16, #18 | `[STEP-3]` |
 | Prozess 6er-Grid | #21 | `[PROZESS-6]` |
 | Prozess 7er-Timeline | #22 | `[PROZESS-7]` |
 
-## FÃ¼r Warnungen & Wichtiges
+## Für Warnungen & Wichtiges
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Dark Mode Warnung | #20 | `[DARK]` â­ NEU |
 
-## FÃ¼r Anna's EinwÃ¤nde
+## Für Anna's Einwände
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Sprechblasen | #34 | `[CHAT]` â­ NEU |
 
-## FÃ¼r Statistik & Daten
+## Für Statistik & Daten
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Timeline mit Bildern | #23 | `[TIMELINE]` |
@@ -74,26 +74,26 @@
 | Statistik-Grid (dunkel) | #25 | `[STATS-DARK]` |
 | Statistik + Text | #26 | `[STATS-TEXT]` |
 
-## FÃ¼r Testimonials
+## Für Testimonials
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Kundenstimme | #27 | `[TESTIMONIAL]` |
 
-## FÃ¼r Diagramme
+## Für Diagramme
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Flow Chart (3 Kreise) | #28 | `[FLOWCHART]` |
 | Pie Chart | #29 | `[PIE]` |
 | Venn Diagram | #30 | `[VENN]` |
 
-## FÃ¼r Produkt-Vorschau
+## Für Produkt-Vorschau
 | Zweck | Slide | Code |
 |-------|-------|------|
 | Laptop + Tablet | #31 | `[MOCKUP-2]` |
 | Phone | #32 | `[MOCKUP-PHONE]` |
 | 2 Bilder | #33 | `[MOCKUP-IMG]` |
 
-## FÃ¼r Abschluss
+## Für Abschluss
 | Zweck | Slide | Code |
 |-------|-------|------|
 | CTA + Bild | #34 | `[CTA]` |
@@ -104,22 +104,22 @@
 
 ---
 
-## SLIDE 1: `[COVER]` â€“ Kurs-Titel
+## SLIDE 1: `[COVER]` – Kurs-Titel
 
 **Layout:**
 - Links: Badge "MODUL X" (Sage) + Headline + "ONLINE KURS"
-- Rechts: 1 groÃŸes Bild (vertikal)
+- Rechts: 1 großes Bild (vertikal)
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
 |---------|----------|---------------|
-| Badge | Links oben | Sage `#78866b` BG, weiÃŸ Text |
+| Badge | Links oben | Sage `#78866b` BG, weiß Text |
 | Headline Wort 1 | Links | Gold `#c8a476`, EB Garamond Italic |
 | Headline Rest | Links | Loam `#2c2a25`, EB Garamond |
 | "ONLINE KURS" | Links unten | Loam, Poppins |
 | Bild | Rechts | 1 Bild, ca. 50% Breite |
 
-**Bilder benÃ¶tigt:** 1 (vertikal, emotional)
+**Bilder benötigt:** 1 (vertikal, emotional)
 
 **Wann verwenden:**
 - Kurs-Start
@@ -130,7 +130,7 @@
 
 ---
 
-## SLIDE 2: `[TOC]` â€“ Inhaltsverzeichnis
+## SLIDE 2: `[TOC]` – Inhaltsverzeichnis
 
 **Layout:**
 - 2-spaltige nummerierte Liste (01-22)
@@ -144,17 +144,17 @@
 | Items | Neben Nummern | Loam, Poppins |
 | Trennlinie | Mitte | Sage |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- Kurs-Ãœbersicht
-- Modul-Ãœbersicht
+- Kurs-Übersicht
+- Modul-Übersicht
 
 **Animation:** Fade
 
 ---
 
-## SLIDE 3: `[WELCOME]` â€“ Willkommen
+## SLIDE 3: `[WELCOME]` – Willkommen
 
 **Layout:**
 - Links: "Welcome to our Course" + Text
@@ -167,7 +167,7 @@
 | Body | Links | Poppins |
 | Bild | Rechts | Auf Loam-Hintergrund |
 
-**Bilder benÃ¶tigt:** 1 (Portrait, vertikal)
+**Bilder benötigt:** 1 (Portrait, vertikal)
 
 **Wann verwenden:**
 - Kurs-Intro
@@ -177,13 +177,13 @@
 
 ---
 
-## SLIDE 4: `[LERNZIELE]` â€“ Was du lernst
+## SLIDE 4: `[LERNZIELE]` – Was du lernst
 
 **Layout:**
 - Links oben: Headline + Text
 - Links unten: 1 Bild
 - Rechts oben: 1 Bild + Notizbuch
-- Rechts unten: Checkliste mit âœ“
+- Rechts unten: Checkliste mit ✓
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -192,18 +192,18 @@
 | Checkmarks | Rechts | Sage `#78866b` |
 | "THE KEY TAKEAWAYS" | Rechts | Poppins Uppercase |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Nach Willkommen
 - Lernziele vorstellen
 - Modul-Intro
 
-**Animation:** Fade, Pop fÃ¼r Checkmarks
+**Animation:** Fade, Pop für Checkmarks
 
 ---
 
-## SLIDE 5: `[OUTLINE]` â€“ Course Outline
+## SLIDE 5: `[OUTLINE]` – Course Outline
 
 **Layout:**
 - "Course Outline" Headline
@@ -217,17 +217,17 @@
 | Modulnamen | Grid | Loam, EB Garamond |
 | Beschreibung | Grid | Poppins |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - Kursstruktur zeigen
-- Modul-Ãœbersicht
+- Modul-Übersicht
 
-**Animation:** Fade, Pop fÃ¼r Nummern
+**Animation:** Fade, Pop für Nummern
 
 ---
 
-## SLIDE 6: `[DIANA]` â€“ Ãœber mich
+## SLIDE 6: `[DIANA]` – Über mich
 
 **Layout:**
 - Links: Rundes Portrait mit Gold-Rahmen (Bogen-Form)
@@ -237,14 +237,14 @@
 | Element | Position | Farbe/Schrift |
 |---------|----------|---------------|
 | Portrait | Links | Runder Rahmen, Gold |
-| "Diana" | Rechts | EB Garamond, groÃŸ |
+| "Diana" | Rechts | EB Garamond, groß |
 | Zitat | Rechts | EB Garamond |
 | Bio | Rechts | Poppins |
 
-**Bilder benÃ¶tigt:** 1 (Diana Portrait)
+**Bilder benötigt:** 1 (Diana Portrait)
 
 **Wann verwenden:**
-- Ãœber mich
+- Über mich
 - Vertrauensaufbau
 - Kurs-Intro
 
@@ -252,11 +252,11 @@
 
 ---
 
-## SLIDE 7: `[STORY]` â€“ Meine Geschichte
+## SLIDE 7: `[STORY]` – Meine Geschichte
 
 **Layout:**
 - Links: "My Story" + Subtitle + langer Text
-- Rechts: 1 groÃŸes Bild (Person mit Pferden)
+- Rechts: 1 großes Bild (Person mit Pferden)
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -266,10 +266,10 @@
 | Body | Links | Poppins |
 | Bild | Rechts | Mit Sage-Rahmen |
 
-**Bilder benÃ¶tigt:** 1 (emotional, von hinten)
+**Bilder benötigt:** 1 (emotional, von hinten)
 
 **Wann verwenden:**
-- PersÃ¶nliche Geschichte
+- Persönliche Geschichte
 - Warum dieser Kurs
 - Vertrauensaufbau
 
@@ -277,11 +277,11 @@
 
 ---
 
-## SLIDE 8: `[MODUL-HEADER]` â€“ Modul-Start
+## SLIDE 8: `[MODUL-HEADER]` – Modul-Start
 
 **Layout:**
 - Vollbild-Hintergrund (blur/soft)
-- Zentrale weiÃŸe Box mit "01" + Headline + Subtitle
+- Zentrale weiße Box mit "01" + Headline + Subtitle
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -292,7 +292,7 @@
 | Headline | In Box | EB Garamond |
 | Subtitle | In Box | Poppins Uppercase |
 
-**Bilder benÃ¶tigt:** 1 (Vollbild, kann geblurrt werden)
+**Bilder benötigt:** 1 (Vollbild, kann geblurrt werden)
 
 **Wann verwenden:**
 - Modul-Start
@@ -303,10 +303,10 @@
 
 ---
 
-## SLIDE 9: `[VISUAL-L]` â€“ Bild links groÃŸ
+## SLIDE 9: `[VISUAL-L]` – Bild links groß
 
 **Layout:**
-- Links: GroÃŸes Bild mit Bogen-Rahmen (Sage)
+- Links: Großes Bild mit Bogen-Rahmen (Sage)
 - Rechts: Headline + Body-Text
 
 **Elemente:**
@@ -316,10 +316,10 @@
 | Headline | Rechts | EB Garamond |
 | Body | Rechts | Poppins |
 
-**Bilder benÃ¶tigt:** 1 (vertikal, Detail)
+**Bilder benötigt:** 1 (vertikal, Detail)
 
 **Wann verwenden:**
-- Visuell betonte ErklÃ¤rung
+- Visuell betonte Erklärung
 - Anatomie/Detail zeigen
 - Wenn Bild wichtiger als Text
 
@@ -327,11 +327,11 @@
 
 ---
 
-## SLIDE 10: `[2-BILDER]` â€“ Zwei Bilder + Text
+## SLIDE 10: `[2-BILDER]` – Zwei Bilder + Text
 
 **Layout:**
 - Links oben: Headline + "01."
-- Links unten: 1 Bild (groÃŸ)
+- Links unten: 1 Bild (groß)
 - Rechts oben: 1 Bild
 - Rechts unten: "02." + Text auf dunklem BG
 
@@ -340,11 +340,11 @@
 |---------|----------|---------------|
 | Headline | Links oben | EB Garamond |
 | "01." / "02." | Bei Bildern | Gold `#c8a476` |
-| Bild 1 | Links unten | GroÃŸ |
+| Bild 1 | Links unten | Groß |
 | Bild 2 | Rechts oben | Kleiner |
-| Text-Box | Rechts unten | Loam BG, weiÃŸ Text |
+| Text-Box | Rechts unten | Loam BG, weiß Text |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Zwei Aspekte zeigen
@@ -355,7 +355,7 @@
 
 ---
 
-## SLIDE 11: `[ZITAT]` â€“ Gedanke/Inspiration
+## SLIDE 11: `[ZITAT]` – Gedanke/Inspiration
 
 **Layout:**
 - Vollbild-Hintergrund (Scheune/Stall)
@@ -367,10 +367,10 @@
 | Hintergrund | Vollbild | Stimmungsbild |
 | Box | Zentral | Sage `#78866b` |
 | "GEDANKE" | In Box | Loam, Uppercase |
-| Zitat | In Box | WeiÃŸ, EB Garamond |
+| Zitat | In Box | Weiß, EB Garamond |
 | "Diana" | In Box | Handschrift-Stil |
 
-**Bilder benÃ¶tigt:** 1 (Vollbild, stimmungsvoll)
+**Bilder benötigt:** 1 (Vollbild, stimmungsvoll)
 
 **Wann verwenden:**
 - Key Takeaway
@@ -382,29 +382,29 @@
 
 ---
 
-## SLIDE 12: `[SPLIT]` â€“ Mythos vs. RealitÃ¤t â­ NEU
+## SLIDE 12: `[SPLIT]` – Mythos vs. Realität â­ NEU
 
 **Layout:**
-- Links: âœ— + "Was viele denken..." + Mythos
-- Rechts: âœ“ + "Was wirklich stimmt:" + Fakt + Highlight-Box
+- Links: ✗ + "Was viele denken..." + Mythos
+- Rechts: ✓ + "Was wirklich stimmt:" + Fakt + Highlight-Box
 - Trennlinie in der Mitte
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
 |---------|----------|---------------|
-| âœ— Icon | Links oben | Grau `#a89f94` |
+| ✗ Icon | Links oben | Grau `#a89f94` |
 | "Was viele denken..." | Links | EB Garamond |
 | Mythos-Text | Links | Poppins |
-| âœ“ Icon | Rechts oben | Sage `#78866b` |
+| ✓ Icon | Rechts oben | Sage `#78866b` |
 | "Was wirklich stimmt:" | Rechts | EB Garamond |
 | Fakt-Text | Rechts | Poppins Bold |
 | Highlight-Box | Rechts unten | Sage BG 15%, Sage Strich links |
 | Trennlinie | Mitte | Sage |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- Mythen aufklÃ¤ren
+- Mythen aufklären
 - Falsche Annahmen korrigieren
 - "Das stimmt nicht"-Momente
 - Richtig vs. Falsch
@@ -413,7 +413,7 @@
 
 ---
 
-## SLIDE 13: `[CONTENT-3IMG]` â€“ Text + 3 Bilder
+## SLIDE 13: `[CONTENT-3IMG]` – Text + 3 Bilder
 
 **Layout:**
 - Links: "MAIN CONTENT" Label + Headline + Body
@@ -425,9 +425,9 @@
 | Label | Links oben | Poppins Uppercase |
 | Headline | Links | EB Garamond |
 | Body | Links | Poppins |
-| 3 Bilder | Rechts | Versetzt, unterschiedliche GrÃ¶ÃŸen |
+| 3 Bilder | Rechts | Versetzt, unterschiedliche Größen |
 
-**Bilder benÃ¶tigt:** 3
+**Bilder benötigt:** 3
 
 **Wann verwenden:**
 - Viel visueller Content
@@ -438,7 +438,7 @@
 
 ---
 
-## SLIDE 14: `[STEP-1]` â€“ Schritt 1 Detail
+## SLIDE 14: `[STEP-1]` – Schritt 1 Detail
 
 **Layout:**
 - Links: Body-Text + Liste + 1 Bild
@@ -452,17 +452,17 @@
 | Listen | Beidseitig | Poppins Uppercase |
 | Bilder | Beidseitig unten | 2 Bilder |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Erster Schritt einer Anleitung
-- Detaillierte ErklÃ¤rung
+- Detaillierte Erklärung
 
 **Animation:** Fade
 
 ---
 
-## SLIDE 15: `[STEP-2]` â€“ Schritt 2 Detail
+## SLIDE 15: `[STEP-2]` – Schritt 2 Detail
 
 **Layout:**
 - Links: "Step Two" + Liste + 1 Bild unten
@@ -475,9 +475,9 @@
 | "Step Two" | Links oben | EB Garamond |
 | "02/03" | Rechts oben | Gold |
 | Listen | Links | Poppins Uppercase |
-| Bilder | 2 StÃ¼ck | Unterschiedliche Positionen |
+| Bilder | 2 Stück | Unterschiedliche Positionen |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Zweiter Schritt
@@ -487,7 +487,7 @@
 
 ---
 
-## SLIDE 16: `[STEP-3]` â€“ Schritt 3 Detail (Variante A)
+## SLIDE 16: `[STEP-3]` – Schritt 3 Detail (Variante A)
 
 **Layout:**
 - Links: "Step Three" + Liste + viel Text
@@ -502,7 +502,7 @@
 | Body | Links | Poppins |
 | Bilder | Rechts | 2 nebeneinander |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Dritter Schritt
@@ -516,13 +516,13 @@
 
 ---
 
-## SLIDE 18: `[STEP-3-ALT]` â€“ Schritt 3 Detail (Variante B)
+## SLIDE 18: `[STEP-3-ALT]` – Schritt 3 Detail (Variante B)
 
 **Layout:** Wie #16, aber mit anderem Bild-Arrangement
 
 ---
 
-## SLIDE 19: `[STEPS-3]` â€“ 3 Schritte Ãœbersicht
+## SLIDE 19: `[STEPS-3]` – 3 Schritte Übersicht
 
 **Layout:**
 - "Our Process" Headline
@@ -538,23 +538,23 @@
 | "STEP ONE/TWO/THREE" | Je Spalte | Poppins Uppercase |
 | Mitte-BG | Spalte 2 | Sage |
 
-**Bilder benÃ¶tigt:** 3
+**Bilder benötigt:** 3
 
 **Wann verwenden:**
-- Prozess-Ãœbersicht
+- Prozess-Übersicht
 - 3-Schritte-Anleitung
 - Workflow zeigen
 
-**Animation:** Fade, Pop fÃ¼r Nummern
+**Animation:** Fade, Pop für Nummern
 
 ---
 
-## SLIDE 20: `[DARK]` â€“ Warnung/Wichtig â­ NEU
+## SLIDE 20: `[DARK]` – Warnung/Wichtig â­ NEU
 
 **Layout:**
-- VollstÃ¤ndig dunkler Hintergrund (Loam)
-- âš ï¸ Icon + "WICHTIG ZU WISSEN"
-- GroÃŸe Headline
+- Vollständig dunkler Hintergrund (Loam)
+- ⚠ï¸ Icon + "WICHTIG ZU WISSEN"
+- Große Headline
 - Subtext
 - Highlight-Box mit Gold-Akzent
 
@@ -565,23 +565,23 @@
 | Warning Icon | Links oben | Gold `#c8a476` |
 | "WICHTIG ZU WISSEN" | Neben Icon | Gold, Uppercase |
 | Headline | Zentral | White Soft, EB Garamond |
-| Subtext | Unter Headline | WeiÃŸ 80% |
+| Subtext | Unter Headline | Weiß 80% |
 | Highlight-Box | Unten | Gold BG 15%, Gold Strich |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- âš ï¸ Warnungen
+- ⚠ï¸ Warnungen
 - "Merke dir unbedingt"
 - Sicherheitshinweise
-- HÃ¤ufige Fehler
+- Häufige Fehler
 - Wichtige Fakten
 
 **Animation:** Rise
 
 ---
 
-## SLIDE 21: `[PROZESS-6]` â€“ 6er-Prozess-Grid
+## SLIDE 21: `[PROZESS-6]` – 6er-Prozess-Grid
 
 **Layout:**
 - "Our Process" Headline
@@ -594,18 +594,18 @@
 | Nummern 01.-06. | In Boxen | Gold |
 | Box-Text | In Boxen | EB Garamond |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - 6-Schritte-Prozess
 - Checkliste
-- Ãœbersicht ohne Bilder
+- Übersicht ohne Bilder
 
 **Animation:** Fade, Pop
 
 ---
 
-## SLIDE 22: `[PROZESS-7]` â€“ 7er-Timeline
+## SLIDE 22: `[PROZESS-7]` – 7er-Timeline
 
 **Layout:**
 - "Our Process" vertikal links
@@ -620,10 +620,10 @@
 | Headlines | Bei Kreisen | EB Garamond |
 | Linie | Horizontal | Sage |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- LÃ¤ngerer Prozess (7 Schritte)
+- Längerer Prozess (7 Schritte)
 - Zeitlicher Ablauf
 - Wochenplan
 
@@ -631,7 +631,7 @@
 
 ---
 
-## SLIDE 23: `[TIMELINE]` â€“ Timeline mit Bildern
+## SLIDE 23: `[TIMELINE]` – Timeline mit Bildern
 
 **Layout:**
 - "Timeline" Headline
@@ -647,7 +647,7 @@
 | Checklisten | Je Spalte | Sage Checkmarks |
 | Trennlinie | Horizontal | Sage |
 
-**Bilder benÃ¶tigt:** 4 (rund)
+**Bilder benötigt:** 4 (rund)
 
 **Wann verwenden:**
 - Zeitliche Entwicklung
@@ -658,7 +658,7 @@
 
 ---
 
-## SLIDE 24: `[PRICING]` â€“ Preisvergleich
+## SLIDE 24: `[PRICING]` – Preisvergleich
 
 **Layout:**
 - 2 Spalten: "Starter Package" vs. "Elite Package"
@@ -672,7 +672,7 @@
 | Checklisten | Je Spalte | Sage Checkmarks |
 | Preis-Buttons | Je Spalte unten | Sage BG |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - Produkt-Vergleich
@@ -683,7 +683,7 @@
 
 ---
 
-## SLIDE 25: `[STATS-DARK]` â€“ Statistik Grid (dunkel)
+## SLIDE 25: `[STATS-DARK]` – Statistik Grid (dunkel)
 
 **Layout:**
 - "Statistics" Headline
@@ -694,21 +694,21 @@
 |---------|----------|---------------|
 | "Statistics" | Oben | EB Garamond |
 | Grid | Zentral | Loam BG |
-| Zahlen | In Zellen | Gold, EB Garamond groÃŸ |
-| Labels | Unter Zahlen | WeiÃŸ, Poppins |
+| Zahlen | In Zellen | Gold, EB Garamond groß |
+| Labels | Unter Zahlen | Weiß, Poppins |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - Viele Statistiken
 - Beeindruckende Zahlen
-- Daten-Ãœbersicht
+- Daten-Übersicht
 
-**Animation:** Rise, Typewriter fÃ¼r Zahlen
+**Animation:** Rise, Typewriter für Zahlen
 
 ---
 
-## SLIDE 26: `[STATS-TEXT]` â€“ Statistik + Text
+## SLIDE 26: `[STATS-TEXT]` – Statistik + Text
 
 **Layout:**
 - Links: "Statistics" + 6 Zahlen (2x3)
@@ -718,26 +718,26 @@
 | Element | Position | Farbe/Schrift |
 |---------|----------|---------------|
 | "Statistics" | Links oben | EB Garamond |
-| Zahlen | Links | Gold, groÃŸ |
+| Zahlen | Links | Gold, groß |
 | Labels | Links | Loam, Poppins |
 | Headline | Rechts | EB Garamond |
 | Body | Rechts | Poppins |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- Statistiken mit ErklÃ¤rung
+- Statistiken mit Erklärung
 - Zahlen + Kontext
 
 **Animation:** Rise, Typewriter
 
 ---
 
-## SLIDE 27: `[TESTIMONIAL]` â€“ Kundenstimme
+## SLIDE 27: `[TESTIMONIAL]` – Kundenstimme
 
 **Layout:**
 - Links: Bild + Name + Titel auf hellem BG
-- Rechts: "TESTIMONIAL" + AnfÃ¼hrungszeichen + Zitat + Text
+- Rechts: "TESTIMONIAL" + Anführungszeichen + Zitat + Text
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -746,10 +746,10 @@
 | Name | Links unten | EB Garamond |
 | Titel | Links unten | Poppins |
 | "TESTIMONIAL" | Rechts oben | Poppins Uppercase |
-| AnfÃ¼hrungszeichen | Rechts | Sage, groÃŸ |
+| Anführungszeichen | Rechts | Sage, groß |
 | Zitat | Rechts | EB Garamond |
 
-**Bilder benÃ¶tigt:** 1 (Person mit Pferd)
+**Bilder benötigt:** 1 (Person mit Pferd)
 
 **Wann verwenden:**
 - Kundenstimme
@@ -760,7 +760,7 @@
 
 ---
 
-## SLIDE 28: `[FLOWCHART]` â€“ Entscheidungs-Flow
+## SLIDE 28: `[FLOWCHART]` – Entscheidungs-Flow
 
 **Layout:**
 - Links: "Flow Chart" + Headline + Body
@@ -776,7 +776,7 @@
 | Kreis 03 | Rechts unten | Sage BG |
 | Pfeile | Zwischen Kreisen | Sage |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - Entscheidungsbaum
@@ -788,7 +788,7 @@
 
 ---
 
-## SLIDE 29: `[PIE]` â€“ Kreisdiagramm
+## SLIDE 29: `[PIE]` – Kreisdiagramm
 
 **Layout:**
 - Links: "Pie Chart" + Headline + Body
@@ -800,10 +800,10 @@
 | "Pie Chart" | Links oben | EB Garamond |
 | Headline | Links | EB Garamond |
 | Body | Links | Poppins |
-| Pie Chart | Rechts | Grau-TÃ¶ne |
+| Pie Chart | Rechts | Grau-Töne |
 | Labels | Um Pie | Item + % |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
 - Verteilungen zeigen
@@ -814,11 +814,11 @@
 
 ---
 
-## SLIDE 30: `[VENN]` â€“ Venn-Diagramm
+## SLIDE 30: `[VENN]` – Venn-Diagramm
 
 **Layout:**
 - Links: "Venn Diagram" + Headline + Body
-- Rechts: 3 Ã¼berlappende Kreise
+- Rechts: 3 überlappende Kreise
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -829,20 +829,20 @@
 | Kreis 1 | Rechts oben | BG Light |
 | Kreis 2 | Mitte | Sage hell |
 | Kreis 3 | Unten | Sage |
-| Text in Kreisen | Zentral | WeiÃŸ/Loam |
+| Text in Kreisen | Zentral | Weiß/Loam |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- ZusammenhÃ¤nge zeigen
-- Ãœberschneidungen
+- Zusammenhänge zeigen
+- Überschneidungen
 - 3 Faktoren die zusammenwirken
 
 **Animation:** Fade
 
 ---
 
-## SLIDE 31: `[MOCKUP-2]` â€“ Laptop + Tablet
+## SLIDE 31: `[MOCKUP-2]` – Laptop + Tablet
 
 **Layout:**
 - Links: "Mockups" + Headline + Checkliste
@@ -858,7 +858,7 @@
 | Laptop | Rechts unten | Mit Screenshot |
 | Tablet | Rechts oben | Mit Screenshot |
 
-**Bilder benÃ¶tigt:** 2 (Screenshots fÃ¼r Mockups)
+**Bilder benötigt:** 2 (Screenshots für Mockups)
 
 **Wann verwenden:**
 - Kurs-Vorschau
@@ -869,11 +869,11 @@
 
 ---
 
-## SLIDE 32: `[MOCKUP-PHONE]` â€“ Phone Mockup
+## SLIDE 32: `[MOCKUP-PHONE]` – Phone Mockup
 
 **Layout:**
 - Links: "Mockups" + Headline + Checkliste
-- Rechts: GroÃŸes Phone Mockup
+- Rechts: Großes Phone Mockup
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -884,17 +884,17 @@
 | "03" | Bei Phone | Gold |
 | Phone | Rechts | Mit Bild |
 
-**Bilder benÃ¶tigt:** 1 (vertikal fÃ¼r Phone)
+**Bilder benötigt:** 1 (vertikal für Phone)
 
 **Wann verwenden:**
 - Mobile-Vorschau
-- App-Ã¤hnlicher Content
+- App-ähnlicher Content
 
 **Animation:** Fade
 
 ---
 
-## SLIDE 33: `[MOCKUP-IMG]` â€“ 2 Bilder Mockup
+## SLIDE 33: `[MOCKUP-IMG]` – 2 Bilder Mockup
 
 **Layout:**
 - Links: "Mockups" + Headline + Checkliste
@@ -909,7 +909,7 @@
 | "04" | Bei Bildern | Gold |
 | 2 Bilder | Rechts | Versetzt |
 
-**Bilder benÃ¶tigt:** 2
+**Bilder benötigt:** 2
 
 **Wann verwenden:**
 - Ergebnis-Vorschau
@@ -919,11 +919,11 @@
 
 ---
 
-## SLIDE 34: `[CTA]` â€“ Call-to-Action â­ (+ CHAT)
+## SLIDE 34: `[CTA]` – Call-to-Action â­ (+ CHAT)
 
 **Layout:**
 - Links: Headline + Body + "Diana" Signatur + CTA-Button
-- Rechts: 1 groÃŸes Bild (emotional)
+- Rechts: 1 großes Bild (emotional)
 
 **Elemente:**
 | Element | Position | Farbe/Schrift |
@@ -931,21 +931,21 @@
 | Headline | Links | EB Garamond |
 | Body | Links | Poppins |
 | "Diana" | Links | Handschrift |
-| CTA-Button | Links unten | Sage BG, weiÃŸ Text |
+| CTA-Button | Links unten | Sage BG, weiß Text |
 | Bild | Rechts | Emotional, Silhouette |
 
-**Bilder benÃ¶tigt:** 1 (emotional, Silhouette)
+**Bilder benötigt:** 1 (emotional, Silhouette)
 
 **Wann verwenden:**
 - Modul-Abschluss
-- NÃ¤chster Schritt
+- Nächster Schritt
 - Call-to-Action
 
-**Animation:** Rise, Pop fÃ¼r Button
+**Animation:** Rise, Pop für Button
 
 ---
 
-## SLIDE 34-ALT: `[CHAT]` â€“ Sprechblasen â­ NEU
+## SLIDE 34-ALT: `[CHAT]` – Sprechblasen â­ NEU
 
 **Layout:**
 - "WAS ANNA SICH FRAGT..." Label
@@ -962,15 +962,15 @@
 | Blase 4 | Rechts | Sage BG 15% |
 | Text in Blasen | Zentral | Poppins |
 
-**Bilder benÃ¶tigt:** 0
+**Bilder benötigt:** 0
 
 **Wann verwenden:**
-- Anna's innere EinwÃ¤nde
+- Anna's innere Einwände
 - Typische Gedanken adressieren
 - "Kennst du das?"-Momente
 - Empathie zeigen
 
-**Animation:** Pop fÃ¼r jede Blase
+**Animation:** Pop für jede Blase
 
 ---
 
@@ -988,7 +988,7 @@
 4.  [MODUL-HEADER] #8 - Modul-Start
 5.  [VISUAL-L] #9     - Content
 6.  [CHAT] #34        - Anna's Gedanken
-7.  [SPLIT] #12       - Mythos vs. RealitÃ¤t
+7.  [SPLIT] #12       - Mythos vs. Realität
 8.  [ZITAT] #11       - Key Takeaway
 9.  [STEPS-3] #19     - Prozess
 10. [DARK] #20        - Warnung
@@ -996,7 +996,7 @@
 12. [FLOWCHART] #28   - Entscheidung
 13. [TESTIMONIAL] #27 - Social Proof
 14. [ZITAT] #11       - Abschluss-Gedanke
-15. [CTA] #34         - NÃ¤chstes Modul
+15. [CTA] #34         - Nächstes Modul
 ```
 
 ---
@@ -1007,7 +1007,7 @@
 | Name | Hex | Verwendung |
 |------|-----|------------|
 | Loam | `#2c2a25` | Text, Dark Mode |
-| BG Light | `#f3f0eb` | HintergrÃ¼nde |
+| BG Light | `#f3f0eb` | Hintergründe |
 | White Soft | `#faf9f6` | Karten, Boxen |
 | Sage | `#78866b` | Akzente, Checks, Buttons |
 | Gold | `#c8a476` | Nummern, Premium, CTAs |
@@ -1024,5 +1024,5 @@
 ---
 
 **Dokument-Version:** 3.0  
-**Alle 34 Slides dokumentiert:** âœ…  
-**Bereit fÃ¼r Modul-1-Produktion**
+**Alle 34 Slides dokumentiert:** ✅  
+**Bereit für Modul-1-Produktion**

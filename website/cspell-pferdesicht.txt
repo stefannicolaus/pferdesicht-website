@@ -1,0 +1,75 @@
+# Pferdesicht Glossar für cspell
+# Projekt-spezifische Begriffe
+
+# Brand & Personen
+Pferdesicht
+Diana
+Stefan
+Anna
+Ramses
+Hempura
+
+# Pferde-Fachbegriffe
+Offenstall
+Fruktan
+Anweiden
+Fellwechsel
+Thermoregulation
+Eindecken
+Reittherapeutin
+Freiheitsdressur
+Kolik
+Hufrehe
+Entwurmung
+Parasiten
+Kotwasser
+Stoffwechsel
+Fütterung
+Haltungsformen
+Boxenhaltung
+Paddock
+Weidegang
+Mineral
+Mineralfutter
+Spurenelemente
+
+# Marketing & Produkte
+Leadmagnet
+Leadmagnets
+Webinar
+Funnel
+DACH
+DOI
+G18
+
+# Technische Begriffe
+Vercel
+Tailwind
+tsx
+mdx
+CLAUDE
+Frontend
+Backend
+localhost
+
+# Deutsche Begriffe die oft als Fehler markiert werden
+Pferdebesitzer
+Pferdebesitzerin
+Pferdebesitzerinnen
+Offenstallmanagement
+Stallgerede
+Gruppendruck
+Küchentisch
+Warmherzig
+Fachchinesisch
+Absolutismen
+überbesorgt
+hysterisch
+pingelig
+Tierarztrechnungen
+Stallführung
+Erfahrungsbasiert
+ÜBERINFORMIERT
+Stallgemeinschaft
+Masterprompt
+Canva

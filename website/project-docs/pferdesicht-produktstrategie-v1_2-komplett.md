@@ -1,4 +1,4 @@
-# PFERDESICHT â€” PRODUKTSTRATEGIE & EINKOMMENSARCHITEKTUR
+# PFERDESICHT — PRODUKTSTRATEGIE & EINKOMMENSARCHITEKTUR
 ## Das Dach auf dem Fundament v1.2 (erweitert)
 
 ---
@@ -7,54 +7,54 @@
 **Erstellt:** 30.12.2024
 **Basis:** Framework v2.5, 12-Cluster-Analyse v1.1, Diana-Bibel v2.9, Themen-Analyse v1.0
 **Status:** Strategisches Gesamtdokument
-**Ã„nderungen v1.1â†’v1.2:** 
+**Änderungen v1.1→v1.2:** 
 - Guide-Bibliothek erweitert von 22 auf 38 Guides
 - Fokus-Kurse erweitert von 15 auf 19 Kurse
-- Reittherapie-AutoritÃ¤ts-Framework integriert
+- Reittherapie-Autoritäts-Framework integriert
 - Alternative Therapien als eigene Guides
-- Lead-Magnet-Priorisierung fÃ¼r FrÃ¼hling angepasst
+- Lead-Magnet-Priorisierung für Frühling angepasst
 
 ---
 
 # TEIL 1: DIE PRODUKTPYRAMIDE
 
-## Ãœbersicht: Anna's Journey durch Pferdesicht
+## Übersicht: Anna's Journey durch Pferdesicht
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘                        ðŸ† DIANA'S GESAMTWELT                               â•‘
-â•‘                     Premium-Jahresprogramm/Membership                      â•‘
-â•‘                           (â‚¬997/Jahr)                                      â•‘
-â•‘                                                                            â•‘
-â•‘              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”               â•‘
-â•‘              â”‚         SIGNATURE ONLINE-KURSE              â”‚               â•‘
-â•‘              â”‚     Komplette Transformationen              â”‚               â•‘
-â•‘              â”‚           (â‚¬297-697)                        â”‚               â•‘
-â•‘              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜               â•‘
-â•‘                                                                            â•‘
-â•‘         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”          â•‘
-â•‘         â”‚              FOKUS-KURSE & WORKSHOPS                  â”‚          â•‘
-â•‘         â”‚           Einzelne Cluster, tiefe LÃ¶sung              â”‚          â•‘
-â•‘         â”‚                   (â‚¬97-197)                           â”‚          â•‘
-â•‘         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜          â•‘
-â•‘                                                                            â•‘
-â•‘    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â•‘
-â•‘    â”‚                   GUIDES & BLUEPRINTS                           â”‚     â•‘
-â•‘    â”‚              Konkrete Anleitungen, Checklisten                  â”‚     â•‘
-â•‘    â”‚                       (â‚¬27-67)                                  â”‚     â•‘
-â•‘    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â•‘
-â•‘                                                                            â•‘
-â•‘ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â•‘
-â•‘ â”‚                        LEAD-MAGNETEN                                    â”‚â•‘
-â•‘ â”‚              Kostenlos gegen E-Mail â€” Erster Kontakt                    â”‚â•‘
-â•‘ â”‚                         (â‚¬0)                                            â”‚â•‘
-â•‘ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â•‘
-â•‘                                                                            â•‘
-â•‘ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•‘
-â•‘                     SOCIAL MEDIA REICHWEITE                                â•‘
-â•‘              Instagram | Facebook | TikTok | Blog                          â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║                        ðŸ† DIANA'S GESAMTWELT                               ║
+║                     Premium-Jahresprogramm/Membership                      ║
+║                           (€997/Jahr)                                      ║
+║                                                                            ║
+║              ┌─────────────────────────────────────────────â”               ║
+║              │         SIGNATURE ONLINE-KURSE              │               ║
+║              │     Komplette Transformationen              │               ║
+║              │           (€297-697)                        │               ║
+║              └─────────────────────────────────────────────┘               ║
+║                                                                            ║
+║         ┌───────────────────────────────────────────────────────â”          ║
+║         │              FOKUS-KURSE & WORKSHOPS                  │          ║
+║         │           Einzelne Cluster, tiefe Lösung              │          ║
+║         │                   (€97-197)                           │          ║
+║         └───────────────────────────────────────────────────────┘          ║
+║                                                                            ║
+║    ┌─────────────────────────────────────────────────────────────────â”     ║
+║    │                   GUIDES & BLUEPRINTS                           │     ║
+║    │              Konkrete Anleitungen, Checklisten                  │     ║
+║    │                       (€27-67)                                  │     ║
+║    └─────────────────────────────────────────────────────────────────┘     ║
+║                                                                            ║
+║ ┌─────────────────────────────────────────────────────────────────────────â”║
+║ │                        LEAD-MAGNETEN                                    │║
+║ │              Kostenlos gegen E-Mail — Erster Kontakt                    │║
+║ │                         (€0)                                            │║
+║ └─────────────────────────────────────────────────────────────────────────┘║
+║                                                                            ║
+║ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•║
+║                     SOCIAL MEDIA REICHWEITE                                ║
+║              Instagram | Facebook | TikTok | Blog                          ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ---
@@ -64,135 +64,135 @@
 ## Basierend auf Framework v2.5
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   WELT 1: PRÃ„VENTION                    WELT 2: ORIENTIERUNG              â•‘
-â•‘   "Damit es gar nicht erst passiert"    "Wenn es passiert ist"            â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€            â•‘
-â•‘                                                                            â•‘
-â•‘   Anna kommt BEVOR...                   Anna kommt WEIL...                â•‘
-â•‘   ...es Probleme gibt                   ...es schon Probleme gibt         â•‘
-â•‘                                                                            â•‘
-â•‘   PRODUKT-FOKUS:                        PRODUKT-FOKUS:                    â•‘
-â•‘   â€¢ Wissen aufbauen                     â€¢ Orientierung geben              â•‘
-â•‘   â€¢ Fehler vermeiden                    â€¢ Durch Krise begleiten           â•‘
-â•‘   â€¢ Profis beurteilen lernen            â€¢ System navigieren               â•‘
-â•‘   â€¢ Kosten sparen                       â€¢ Fragen vorbereiten              â•‘
-â•‘                                                                            â•‘
-â•‘   EMOTIONALER TRIGGER:                  EMOTIONALER TRIGGER:              â•‘
-â•‘   "Ich will es richtig machen"          "Ich brauche JETZT Hilfe"         â•‘
-â•‘                                                                            â•‘
-â•‘   KAUFVERHALTEN:                        KAUFVERHALTEN:                    â•‘
-â•‘   Recherchiert, vergleicht,             Schnelle Entscheidung,            â•‘
-â•‘   braucht Vertrauen                     braucht sofortige LÃ¶sung          â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   WELT 1: PRÄVENTION                    WELT 2: ORIENTIERUNG              ║
+║   "Damit es gar nicht erst passiert"    "Wenn es passiert ist"            ║
+║   ────────────────────────────────      ──────────────────────            ║
+║                                                                            ║
+║   Anna kommt BEVOR...                   Anna kommt WEIL...                ║
+║   ...es Probleme gibt                   ...es schon Probleme gibt         ║
+║                                                                            ║
+║   PRODUKT-FOKUS:                        PRODUKT-FOKUS:                    ║
+║   • Wissen aufbauen                     • Orientierung geben              ║
+║   • Fehler vermeiden                    • Durch Krise begleiten           ║
+║   • Profis beurteilen lernen            • System navigieren               ║
+║   • Kosten sparen                       • Fragen vorbereiten              ║
+║                                                                            ║
+║   EMOTIONALER TRIGGER:                  EMOTIONALER TRIGGER:              ║
+║   "Ich will es richtig machen"          "Ich brauche JETZT Hilfe"         ║
+║                                                                            ║
+║   KAUFVERHALTEN:                        KAUFVERHALTEN:                    ║
+║   Recherchiert, vergleicht,             Schnelle Entscheidung,            ║
+║   braucht Vertrauen                     braucht sofortige Lösung          ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ---
 
-# TEIL 3: DIANA'S DREIFACH-AUTORITÃ„T
+# TEIL 3: DIANA'S DREIFACH-AUTORITÄT
 
 ## Der unsichtbare Unterschied
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   ðŸ† DIANA'S EINZIGARTIGE POSITION                                        â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 1: PRAXIS-AUTORITÃ„T (30+ Jahre)                                   â•‘
-â•‘   â†’ "Ich habe es selbst gemacht"                                          â•‘
-â•‘   â†’ Offenstall, FÃ¼tterung, Gesundheit, Haltung                            â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 2: BEZIEHUNGS-AUTORITÃ„T (16 Jahre Reittherapie)                   â•‘
-â•‘   â†’ "Ich sehe, was andere nicht sehen"                                    â•‘
-â•‘   â†’ Mensch-Pferd-Dynamik, Spiegelung, Kommunikation                       â•‘
-â•‘   â†’ Das Pferd als Spiegel des Menschen                                    â•‘
-â•‘                                                                            â•‘
-â•‘   EBENE 3: TRAININGS-AUTORITÃ„T (5 Jahre Freiheitsdressur)                 â•‘
-â•‘   â†’ "Ich kenne den sanften Weg"                                           â•‘
-â•‘   â†’ 5 Jahre hinter den Kulissen bei bekannter Trainerin                   â•‘
-â•‘   â†’ Dankbar fÃ¼r die Erfahrung und das Lernen                              â•‘
-â•‘   â†’ Diana's EIGENER Weg: Echte Partnerschaft                              â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ ZUSAMMEN: Eine Perspektive, die kein normaler Trainer hat             â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   ðŸ† DIANA'S EINZIGARTIGE POSITION                                        ║
+║                                                                            ║
+║   EBENE 1: PRAXIS-AUTORITÄT (30+ Jahre)                                   ║
+║   → "Ich habe es selbst gemacht"                                          ║
+║   → Offenstall, Fütterung, Gesundheit, Haltung                            ║
+║                                                                            ║
+║   EBENE 2: BEZIEHUNGS-AUTORITÄT (16 Jahre Reittherapie)                   ║
+║   → "Ich sehe, was andere nicht sehen"                                    ║
+║   → Mensch-Pferd-Dynamik, Spiegelung, Kommunikation                       ║
+║   → Das Pferd als Spiegel des Menschen                                    ║
+║                                                                            ║
+║   EBENE 3: TRAININGS-AUTORITÄT (5 Jahre Freiheitsdressur)                 ║
+║   → "Ich kenne den sanften Weg"                                           ║
+║   → 5 Jahre hinter den Kulissen bei bekannter Trainerin                   ║
+║   → Dankbar für die Erfahrung und das Lernen                              ║
+║   → Diana's EIGENER Weg: Echte Partnerschaft                              ║
+║                                                                            ║
+║   → ZUSAMMEN: Eine Perspektive, die kein normaler Trainer hat             ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ### Wo die Reittherapie-Perspektive besonders wirkt
 
-| Guides/Themen | Diana's zusÃ¤tzlicher Blick |
+| Guides/Themen | Diana's zusätzlicher Blick |
 |---------------|---------------------------|
 | **Verhalten & Beziehung** | "Das Pferd zeigt dir, was du noch nicht siehst" |
 | **Training & Ausbildung** | "Echte Partnerschaft entsteht durch Wahl, nicht durch Zwang" |
 | **Stress & Probleme** | "Der Mensch ist immer Teil der Gleichung" |
-| **Mentaltraining** | "Pferde lÃ¼gen nicht â€” sie spiegeln" |
+| **Mentaltraining** | "Pferde lügen nicht — sie spiegeln" |
 | **Krisen** | "Wie du reagierst, beeinflusst dein Pferd" |
 
 ---
 
-# TEIL 4: LEAD-MAGNETEN (â‚¬0)
+# TEIL 4: LEAD-MAGNETEN (€0)
 
-## Die Lead-Magnet-Strategie (aktualisiert fÃ¼r Q1 2025)
+## Die Lead-Magnet-Strategie (aktualisiert für Q1 2025)
 
 | Cluster | Lead-Magnet | Seiten | Folge-Produkt |
 |---------|-------------|--------|---------------|
-| 2 | "Die 7 hÃ¤ufigsten FÃ¼tterungsfehler" | 12-15 | Guide "FÃ¼tterungsplan" |
+| 2 | "Die 7 häufigsten Fütterungsfehler" | 12-15 | Guide "Fütterungsplan" |
 | 4 | "Eindecken: Wann ja, wann nein" | 8-10 | Signature "Pferde-Fundament" |
-| 5 | "12 Stress-Signale die du Ã¼bersehen kÃ¶nntest" | 10-12 | Fokus-Kurs "Stress erkennen" |
+| 5 | "12 Stress-Signale die du übersehen könntest" | 10-12 | Fokus-Kurs "Stress erkennen" |
 | 6 | "Huf-Warnsignale Checkliste" | 6-8 | Guide "Hufpflege-Kalender" |
 | 12 | "Notfall-Checkliste" | 4-6 | Signature "Krisen-Navigator" |
-| SÃ¤ule 3 | "10 Fragen an den neuen Tierarzt" | 6-8 | Guide "Profi-Finder" |
-| **NEU** | "Fellwechsel & Anweide: Dein FrÃ¼hlings-Fahrplan" | 10-12 | Guide "FrÃ¼hlings-Guide" |
+| Säule 3 | "10 Fragen an den neuen Tierarzt" | 6-8 | Guide "Profi-Finder" |
+| **NEU** | "Fellwechsel & Anweide: Dein Frühlings-Fahrplan" | 10-12 | Guide "Frühlings-Guide" |
 | **NEU** | "Pferd als Spiegel: Was dein Pferd dir zeigt" | 8-10 | Guide "Mentaltraining" |
 
-## Lead-Magnet-Priorisierung (angepasst: FrÃ¼hling 2025)
+## Lead-Magnet-Priorisierung (angepasst: Frühling 2025)
 
-| PrioritÃ¤t | Lead-Magnet | Warum jetzt |
+| Priorität | Lead-Magnet | Warum jetzt |
 |-----------|-------------|-------------|
-| **1** | "Die 7 hÃ¤ufigsten FÃ¼tterungsfehler" | Evergreen, hÃ¶chste Kosten-Relevanz |
-| **2** | "Fellwechsel & Anweide" | **Saisonal! FrÃ¼hling kommt** |
+| **1** | "Die 7 häufigsten Fütterungsfehler" | Evergreen, höchste Kosten-Relevanz |
+| **2** | "Fellwechsel & Anweide" | **Saisonal! Frühling kommt** |
 | **3** | "12 Stress-Signale" | Evergreen, hohe Identifikation |
 | **4** | "Pferd als Spiegel" | Diana's USP (Reittherapie) |
 | **5** | "Notfall-Checkliste" | Krisen-Welt Einstieg |
 | **6** | "Huf-Warnsignale" | Spezifisch, hoher Wert |
-| *spÃ¤ter* | "Eindecken" | â†’ Herbst 2025 (Oktober) |
+| *später* | "Eindecken" | → Herbst 2025 (Oktober) |
 
 ---
 
-# TEIL 5: DIE GUIDE-BIBLIOTHEK (â‚¬27-67)
+# TEIL 5: DIE GUIDE-BIBLIOTHEK (€27-67)
 
-## Ãœbersicht: 38 geplante Guides
+## Übersicht: 38 geplante Guides
 
-### A. CLUSTER-GUIDES (12 Guides) â€” Basis
+### A. CLUSTER-GUIDES (12 Guides) — Basis
 
 | # | Cluster | Guide-Titel | Seiten | Preis | Prio |
 |---|---------|-------------|--------|-------|------|
-| G1 | Herdenleben | "Herdenharmonie-Blueprint: Dein Pferd in der Gruppe" (inkl. Einzel vs. Gruppe) | 30-35 | â‚¬47 | ðŸŸ¡ |
-| G2 | FÃ¼tterung | "Jahreszeiten-FÃ¼tterungsplan: Was, wann, wie viel" | 35-40 | â‚¬47 | ðŸ”´ |
-| G3 | Bewegung | "Bewegungskonzept: Mehr als nur Reiten" | 25-30 | â‚¬37 | ðŸŸ¡ |
-| G4 | Wetter | "Wetterfestes Pferd: Der Jahresplan" | 30-35 | â‚¬37 | ðŸ”´ |
-| G5 | Stress | "Stress-Analyse & LÃ¶sungen: Wenn dein Pferd nicht zur Ruhe kommt" | 30-35 | â‚¬47 | ðŸ”´ |
-| G6 | Hufe | "Hufpflege-Jahreskalender: Monat fÃ¼r Monat" | 25-30 | â‚¬37 | ðŸŸ¡ |
-| G7 | Fell/Haut | "Fell & Haut verstehen: Probleme erkennen & lÃ¶sen" | 25-30 | â‚¬37 | ðŸŸ¡ |
-| G8 | ZÃ¤hne | "Zahnpflege-Fahrplan: Was du wissen musst" | 20-25 | â‚¬27 | ðŸŸ¢ |
-| G9 | Parasiten | "Parasiten-Management: Der neue Weg (ZSE)" | 25-30 | â‚¬37 | ðŸŸ¡ |
-| G10 | Verhalten | "Verhaltens-Decoder: Was sagt dein Pferd wirklich?" â˜… | 35-40 | â‚¬47 | ðŸ”´ |
-| G11 | Mensch-Pferd | "Beziehungs-Aufbau: Von Vertrauen zu Verbindung" â˜… | 30-35 | â‚¬47 | ðŸ”´ |
-| G12 | Notfall | "Erste Hilfe am Pferd: Vorbereitet sein" | 25-30 | â‚¬37 | ðŸ”´ |
+| G1 | Herdenleben | "Herdenharmonie-Blueprint: Dein Pferd in der Gruppe" (inkl. Einzel vs. Gruppe) | 30-35 | €47 | 🟡 |
+| G2 | Fütterung | "Jahreszeiten-Fütterungsplan: Was, wann, wie viel" | 35-40 | €47 | 🔴 |
+| G3 | Bewegung | "Bewegungskonzept: Mehr als nur Reiten" | 25-30 | €37 | 🟡 |
+| G4 | Wetter | "Wetterfestes Pferd: Der Jahresplan" | 30-35 | €37 | 🔴 |
+| G5 | Stress | "Stress-Analyse & Lösungen: Wenn dein Pferd nicht zur Ruhe kommt" | 30-35 | €47 | 🔴 |
+| G6 | Hufe | "Hufpflege-Jahreskalender: Monat für Monat" | 25-30 | €37 | 🟡 |
+| G7 | Fell/Haut | "Fell & Haut verstehen: Probleme erkennen & lösen" | 25-30 | €37 | 🟡 |
+| G8 | Zähne | "Zahnpflege-Fahrplan: Was du wissen musst" | 20-25 | €27 | 🟢 |
+| G9 | Parasiten | "Parasiten-Management: Der neue Weg (ZSE)" | 25-30 | €37 | 🟡 |
+| G10 | Verhalten | "Verhaltens-Decoder: Was sagt dein Pferd wirklich?" ★ | 35-40 | €47 | 🔴 |
+| G11 | Mensch-Pferd | "Beziehungs-Aufbau: Von Vertrauen zu Verbindung" ★ | 30-35 | €47 | 🔴 |
+| G12 | Notfall | "Erste Hilfe am Pferd: Vorbereitet sein" | 25-30 | €37 | 🔴 |
 
-â˜… = Guides mit starker Reittherapie-Perspektive
+★ = Guides mit starker Reittherapie-Perspektive
 
 ---
 
-### B. SÃ„ULEN-GUIDES (3 Guides)
+### B. SÄULEN-GUIDES (3 Guides)
 
-| # | SÃ¤ule | Guide-Titel | Seiten | Preis | Prio |
+| # | Säule | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| G13 | Sich behaupten | "Stallpolitik-Navigator: Durchsetzen ohne Drama" | 30-35 | â‚¬47 | ðŸŸ¡ |
-| G14 | Profis beurteilen | "Profi-Finder: So erkennst du die Guten" | 35-40 | â‚¬47 | ðŸ”´ |
-| G15 | Profis beurteilen | "10 GesprÃ¤che mit Profis: Fragen-Kataloge fÃ¼r TA, Hufpfleger, Trainer" | 25-30 | â‚¬37 | ðŸ”´ |
+| G13 | Sich behaupten | "Stallpolitik-Navigator: Durchsetzen ohne Drama" | 30-35 | €47 | 🟡 |
+| G14 | Profis beurteilen | "Profi-Finder: So erkennst du die Guten" | 35-40 | €47 | 🔴 |
+| G15 | Profis beurteilen | "10 Gespräche mit Profis: Fragen-Kataloge für TA, Hufpfleger, Trainer" | 25-30 | €37 | 🔴 |
 
 ---
 
@@ -200,10 +200,10 @@
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| G16 | Winter | "Winter-Komplett: Alles fÃ¼r die kalte Jahreszeit" | 40-50 | â‚¬57 | ðŸŸ¡ |
-| G17 | Sommer | "Sommer-Komplett: Hitze, Weide, Insekten" | 35-40 | â‚¬47 | ðŸŸ¡ |
-| **G18** | **FrÃ¼hling** | **"FrÃ¼hlings-Guide: Fellwechsel, Anweide, Parasiten"** | 35-40 | â‚¬47 | ðŸ”´ |
-| **G19** | **Herbst** | **"Herbst-Guide: Vorbereitung auf den Winter"** | 30-35 | â‚¬37 | ðŸŸ¡ |
+| G16 | Winter | "Winter-Komplett: Alles für die kalte Jahreszeit" | 40-50 | €57 | 🟡 |
+| G17 | Sommer | "Sommer-Komplett: Hitze, Weide, Insekten" | 35-40 | €47 | 🟡 |
+| **G18** | **Frühling** | **"Frühlings-Guide: Fellwechsel, Anweide, Parasiten"** | 35-40 | €47 | 🔴 |
+| **G19** | **Herbst** | **"Herbst-Guide: Vorbereitung auf den Winter"** | 30-35 | €37 | 🟡 |
 
 ---
 
@@ -211,9 +211,9 @@
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| G20 | Neues Pferd | "Die ersten 100 Tage: EingewÃ¶hnung richtig gemacht" | 35-40 | â‚¬47 | ðŸŸ¡ |
-| **G21** | **Senior** | **"Das Senior-Pferd: WÃ¼rdevoll altern mit deinem Partner"** (30% der Annas!) | 40-50 | â‚¬57 | ðŸ”´ |
-| **G22** | **Jungpferd** | **"Jungpferd-Begleitung: Von der Aufzucht bis zum Anreiten"** | 35-40 | â‚¬47 | ðŸŸ¡ |
+| G20 | Neues Pferd | "Die ersten 100 Tage: Eingewöhnung richtig gemacht" | 35-40 | €47 | 🟡 |
+| **G21** | **Senior** | **"Das Senior-Pferd: Würdevoll altern mit deinem Partner"** (30% der Annas!) | 40-50 | €57 | 🔴 |
+| **G22** | **Jungpferd** | **"Jungpferd-Begleitung: Von der Aufzucht bis zum Anreiten"** | 35-40 | €47 | 🟡 |
 
 ---
 
@@ -221,47 +221,47 @@
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| G23 | Offenstall | "Offenstall-Checkliste: Den richtigen Stall finden" | 25-30 | â‚¬37 | ðŸŸ¡ |
-| **G24** | **Stallwechsel** | **"Stallwechsel meistern: Vorbereitung, Umzug, EingewÃ¶hnung"** | 25-30 | â‚¬37 | ðŸŸ¡ |
-| **G25** | **Reitbeteiligung** | **"Reitbeteiligung organisieren: VertrÃ¤ge, Regeln, Kommunikation"** | 20-25 | â‚¬27 | ðŸŸ¢ |
+| G23 | Offenstall | "Offenstall-Checkliste: Den richtigen Stall finden" | 25-30 | €37 | 🟡 |
+| **G24** | **Stallwechsel** | **"Stallwechsel meistern: Vorbereitung, Umzug, Eingewöhnung"** | 25-30 | €37 | 🟡 |
+| **G25** | **Reitbeteiligung** | **"Reitbeteiligung organisieren: Verträge, Regeln, Kommunikation"** | 20-25 | €27 | 🟢 |
 
 ---
 
-### F. KRISEN-GUIDES (8 Guides) â€” Erweitert
+### F. KRISEN-GUIDES (8 Guides) — Erweitert
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| G26 | Kolik | "Kolik-Navigator: Vorbereitet sein & richtig handeln" | 25-30 | â‚¬37 | ðŸ”´ |
-| G27 | Hufrehe & EMS | "Hufrehe & Stoffwechsel: Verstehen, verhindern, handeln" | 35-40 | â‚¬47 | ðŸ”´ |
-| G28 | MagengeschwÃ¼r | "MagengeschwÃ¼r-Kompass: Erkennen, verstehen, vorbeugen" | 30-35 | â‚¬47 | ðŸŸ¡ |
-| **G29** | **Lahmheit** | **"Lahmheit verstehen: Diagnose, Ursachen, Handeln"** | 30-35 | â‚¬47 | ðŸ”´ |
-| **G30** | **Atemwege** | **"Atemwege & Husten: Staub, Allergie, RAO"** | 25-30 | â‚¬37 | ðŸ”´ |
-| **G31** | **Sommerekzem** | **"Sommerekzem-Kompendium: Leben mit dem Juckreiz"** | 30-35 | â‚¬47 | ðŸ”´ |
-| **G32** | **Cushing/PPID** | **"Cushing verstehen: Der Hormon-Guide fÃ¼r Seniors"** | 25-30 | â‚¬37 | ðŸŸ¡ |
-| **G33** | **Giftpflanzen** | **"Giftpflanzen-Atlas: Erkennen, vermeiden, handeln"** | 25-30 | â‚¬37 | ðŸŸ¡ |
+| G26 | Kolik | "Kolik-Navigator: Vorbereitet sein & richtig handeln" | 25-30 | €37 | 🔴 |
+| G27 | Hufrehe & EMS | "Hufrehe & Stoffwechsel: Verstehen, verhindern, handeln" | 35-40 | €47 | 🔴 |
+| G28 | Magengeschwür | "Magengeschwür-Kompass: Erkennen, verstehen, vorbeugen" | 30-35 | €47 | 🟡 |
+| **G29** | **Lahmheit** | **"Lahmheit verstehen: Diagnose, Ursachen, Handeln"** | 30-35 | €47 | 🔴 |
+| **G30** | **Atemwege** | **"Atemwege & Husten: Staub, Allergie, RAO"** | 25-30 | €37 | 🔴 |
+| **G31** | **Sommerekzem** | **"Sommerekzem-Kompendium: Leben mit dem Juckreiz"** | 30-35 | €47 | 🔴 |
+| **G32** | **Cushing/PPID** | **"Cushing verstehen: Der Hormon-Guide für Seniors"** | 25-30 | €37 | 🟡 |
+| **G33** | **Giftpflanzen** | **"Giftpflanzen-Atlas: Erkennen, vermeiden, handeln"** | 25-30 | €37 | 🟡 |
 
 ---
 
-### G. FÃœTTERUNGS-VERTIEFUNG (3 Guides)
+### G. FÜTTERUNGS-VERTIEFUNG (3 Guides)
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| **G34** | **Heu & Grundfutter** | **"Heu verstehen: Schnitte, QualitÃ¤t, Analyse"** | 30-35 | â‚¬47 | ðŸ”´ |
-| **G35** | **Kraftfutter** | **"Kraftfutter & Supplemente: Was dein Pferd wirklich braucht"** | 25-30 | â‚¬37 | ðŸŸ¡ |
-| **G36** | **Weide** | **"Weide-Management: Anweide, Pflege, Umweiden"** | 30-35 | â‚¬47 | ðŸ”´ |
+| **G34** | **Heu & Grundfutter** | **"Heu verstehen: Schnitte, Qualität, Analyse"** | 30-35 | €47 | 🔴 |
+| **G35** | **Kraftfutter** | **"Kraftfutter & Supplemente: Was dein Pferd wirklich braucht"** | 25-30 | €37 | 🟡 |
+| **G36** | **Weide** | **"Weide-Management: Anweide, Pflege, Umweiden"** | 30-35 | €47 | 🔴 |
 
 ---
 
-### H. MENSCH-PFERD & TRAINING (4 Guides) â˜… Diana's USP
+### H. MENSCH-PFERD & TRAINING (4 Guides) ★ Diana's USP
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| **G37** | **Mentaltraining** | **"Mentaltraining fÃ¼r Reiter: Das Pferd als Spiegel"** â˜…â˜… | 35-40 | â‚¬57 | ðŸ”´ |
-| **G38** | **Problemverhalten** | **"Problemverhalten verstehen: Die Botschaft hinter dem Verhalten"** â˜… | 30-35 | â‚¬47 | ðŸŸ¡ |
-| **G39** | **Bodenarbeit** | **"Bodenarbeit-Basics: Gymnastizierung, Kommunikation, Vertrauen"** â˜… | 30-35 | â‚¬47 | ðŸŸ¡ |
-| **G40** | **Pferdefreundlich ausbilden** | **"Pferdefreundlich ausbilden: Der sanfte Weg"** â˜… | 35-40 | â‚¬57 | ðŸŸ¡ |
+| **G37** | **Mentaltraining** | **"Mentaltraining für Reiter: Das Pferd als Spiegel"** ★★ | 35-40 | €57 | 🔴 |
+| **G38** | **Problemverhalten** | **"Problemverhalten verstehen: Die Botschaft hinter dem Verhalten"** ★ | 30-35 | €47 | 🟡 |
+| **G39** | **Bodenarbeit** | **"Bodenarbeit-Basics: Gymnastizierung, Kommunikation, Vertrauen"** ★ | 30-35 | €47 | 🟡 |
+| **G40** | **Pferdefreundlich ausbilden** | **"Pferdefreundlich ausbilden: Der sanfte Weg"** ★ | 35-40 | €57 | 🟡 |
 
-â˜…â˜… = Kern-USP Guide mit voller Reittherapie-Perspektive
+★★ = Kern-USP Guide mit voller Reittherapie-Perspektive
 
 ---
 
@@ -269,63 +269,63 @@
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| **G41** | **Therapeuten-Guide** | **"Osteopath, Physio, Akupunktur: Wer hilft wann?"** | 25-30 | â‚¬37 | ðŸŸ¡ |
-| **G42** | **Naturheilkunde** | **"KrÃ¤uter, Ã–le, Vitalpilze: NatÃ¼rliche UnterstÃ¼tzung"** | 30-35 | â‚¬47 | ðŸŸ¡ |
+| **G41** | **Therapeuten-Guide** | **"Osteopath, Physio, Akupunktur: Wer hilft wann?"** | 25-30 | €37 | 🟡 |
+| **G42** | **Naturheilkunde** | **"Kräuter, Öle, Vitalpilze: Natürliche Unterstützung"** | 30-35 | €47 | 🟡 |
 
 ---
 
-### J. AUSRÃœSTUNG (2 Guides)
+### J. AUSRÜSTUNG (2 Guides)
 
 | # | Thema | Guide-Titel | Seiten | Preis | Prio |
 |---|-------|-------------|--------|-------|------|
-| **G43** | **Sattel & Trense** | **"Sattel & Trense verstehen: Passform, Anatomie, Alternativen"** | 30-35 | â‚¬47 | ðŸŸ¡ |
-| **G44** | **Decken & ZubehÃ¶r** | **"Decken, Gamaschen & Co.: Wann was, worauf achten"** | 20-25 | â‚¬27 | ðŸŸ¢ |
+| **G43** | **Sattel & Trense** | **"Sattel & Trense verstehen: Passform, Anatomie, Alternativen"** | 30-35 | €47 | 🟡 |
+| **G44** | **Decken & Zubehör** | **"Decken, Gamaschen & Co.: Wann was, worauf achten"** | 20-25 | €27 | 🟢 |
 
 ---
 
-## Guide-Ãœbersicht kompakt
+## Guide-Übersicht kompakt
 
 | Kategorie | Anzahl | Preis-Range |
 |-----------|--------|-------------|
-| A. Cluster-Guides | 12 | â‚¬27-47 |
-| B. SÃ¤ulen-Guides | 3 | â‚¬37-47 |
-| C. Jahreszeiten | 4 | â‚¬37-57 |
-| D. Lebensphasen | 3 | â‚¬47-57 |
-| E. Situationen | 3 | â‚¬27-37 |
-| F. Krisen | 8 | â‚¬37-47 |
-| G. FÃ¼tterung-Tiefe | 3 | â‚¬37-47 |
-| H. Mensch-Pferd â˜… | 4 | â‚¬47-57 |
-| I. Alt. Therapien | 2 | â‚¬37-47 |
-| J. AusrÃ¼stung | 2 | â‚¬27-47 |
-| **GESAMT** | **44** | **â‚¬27-57** |
+| A. Cluster-Guides | 12 | €27-47 |
+| B. Säulen-Guides | 3 | €37-47 |
+| C. Jahreszeiten | 4 | €37-57 |
+| D. Lebensphasen | 3 | €47-57 |
+| E. Situationen | 3 | €27-37 |
+| F. Krisen | 8 | €37-47 |
+| G. Fütterung-Tiefe | 3 | €37-47 |
+| H. Mensch-Pferd ★ | 4 | €47-57 |
+| I. Alt. Therapien | 2 | €37-47 |
+| J. Ausrüstung | 2 | €27-47 |
+| **GESAMT** | **44** | **€27-57** |
 
-**Gesamtwert einzeln:** ~â‚¬1.700
+**Gesamtwert einzeln:** ~€1.700
 
 ---
 
 ## Guide-Erstellungs-Reihenfolge (2025-2026)
 
-### Welle 1: Q1 2025 (FrÃ¼hling + Basis + USP)
+### Welle 1: Q1 2025 (Frühling + Basis + USP)
 
-| # | Guide | BegrÃ¼ndung |
+| # | Guide | Begründung |
 |---|-------|------------|
-| G18 | FrÃ¼hlings-Guide | **Saisonal! Jetzt vorbereiten fÃ¼r Feb/MÃ¤rz** |
+| G18 | Frühlings-Guide | **Saisonal! Jetzt vorbereiten für Feb/März** |
 | G36 | Weide-Management | Saisonal (Anweide) |
-| G34 | Heu & Grundfutter | Evergreen, hÃ¶chste Relevanz |
-| G37 | Mentaltraining â˜… | **Diana's USP â€” sofort positionieren** |
+| G34 | Heu & Grundfutter | Evergreen, höchste Relevanz |
+| G37 | Mentaltraining ★ | **Diana's USP — sofort positionieren** |
 
 ### Welle 2: Q2 2025 (Gesundheit + Krisen)
 
-| # | Guide | BegrÃ¼ndung |
+| # | Guide | Begründung |
 |---|-------|------------|
 | G21 | Senior-Pferd | 30% der Annas! |
-| G29 | Lahmheit | HÃ¤ufigste Krise |
+| G29 | Lahmheit | Häufigste Krise |
 | G30 | Atemwege | Offenstall-relevant |
-| G14 | Profi-Finder | SÃ¤ule 3, hohe Nachfrage |
+| G14 | Profi-Finder | Säule 3, hohe Nachfrage |
 
 ### Welle 3: Q3 2025 (Verhalten + Training)
 
-| # | Guide | BegrÃ¼ndung |
+| # | Guide | Begründung |
 |---|-------|------------|
 | G10 | Verhaltens-Decoder | Mit Reittherapie-Perspektive |
 | G11 | Beziehungs-Aufbau | Mit Reittherapie-Perspektive |
@@ -334,61 +334,61 @@
 
 ### Welle 4: Q4 2025 (Abrundung)
 
-| # | Guide | BegrÃ¼ndung |
+| # | Guide | Begründung |
 |---|-------|------------|
 | G16 | Winter-Komplett | Saisonal |
 | G4 | Wetterfestes Pferd | Winter-Thema |
 | G26 | Kolik-Navigator | Krisen-Basis |
 | G27 | Hufrehe & EMS | Krisen-Basis |
 
-### Welle 5: 2026 (VollstÃ¤ndigkeit)
+### Welle 5: 2026 (Vollständigkeit)
 
 Alle verbleibenden Guides nach Bedarf und Nachfrage
 
 ---
 
-# TEIL 6: DIE FOKUS-KURS-BIBLIOTHEK (â‚¬97-197)
+# TEIL 6: DIE FOKUS-KURS-BIBLIOTHEK (€97-197)
 
-## Ãœbersicht: 19 geplante Fokus-Kurse
+## Übersicht: 19 geplante Fokus-Kurse
 
 ### A. CLUSTER-KURSE (8 Kurse)
 
 | # | Cluster | Kurs-Titel | Module | Preis | Prio |
 |---|---------|------------|--------|-------|------|
-| K1 | Herdenleben | "Herdendynamik verstehen & steuern" | 5 | â‚¬147 | ðŸŸ¡ |
-| K2 | FÃ¼tterung | "FÃ¼tterung meistern" | 6 | â‚¬167 | ðŸ”´ |
-| K3 | Bewegung | "Bewegung ohne Reitplatz" | 5 | â‚¬127 | ðŸŸ¡ |
-| K4 | Stress | "Stress erkennen & lÃ¶sen" | 6 | â‚¬167 | ðŸ”´ |
-| K5 | Hufe | "Hufe verstehen: Mehr als nur der Schmied" | 5 | â‚¬147 | ðŸŸ¡ |
-| K6 | Parasiten | "Selektive Entwurmung: Der moderne Weg" | 4 | â‚¬97 | ðŸŸ¢ |
-| K7 | Verhalten | "Verhalten verstehen: Was dein Pferd dir sagt" â˜… | 6 | â‚¬167 | ðŸ”´ |
-| K8 | Notfall | "Notfall-Vorbereitung: Wenn es drauf ankommt" | 4 | â‚¬127 | ðŸ”´ |
+| K1 | Herdenleben | "Herdendynamik verstehen & steuern" | 5 | €147 | 🟡 |
+| K2 | Fütterung | "Fütterung meistern" | 6 | €167 | 🔴 |
+| K3 | Bewegung | "Bewegung ohne Reitplatz" | 5 | €127 | 🟡 |
+| K4 | Stress | "Stress erkennen & lösen" | 6 | €167 | 🔴 |
+| K5 | Hufe | "Hufe verstehen: Mehr als nur der Schmied" | 5 | €147 | 🟡 |
+| K6 | Parasiten | "Selektive Entwurmung: Der moderne Weg" | 4 | €97 | 🟢 |
+| K7 | Verhalten | "Verhalten verstehen: Was dein Pferd dir sagt" ★ | 6 | €167 | 🔴 |
+| K8 | Notfall | "Notfall-Vorbereitung: Wenn es drauf ankommt" | 4 | €127 | 🔴 |
 
-### B. SÃ„ULEN-KURSE (3 Kurse)
+### B. SÄULEN-KURSE (3 Kurse)
 
-| # | SÃ¤ule | Kurs-Titel | Module | Preis | Prio |
+| # | Säule | Kurs-Titel | Module | Preis | Prio |
 |---|-------|------------|--------|-------|------|
-| K9 | Sich behaupten | "Sich durchsetzen am Stall" | 5 | â‚¬147 | ðŸŸ¡ |
-| K10 | Profis beurteilen | "Die richtigen Profis finden" | 5 | â‚¬147 | ðŸ”´ |
-| K11 | Kommunikation | "GesprÃ¤che mit Profis fÃ¼hren" | 4 | â‚¬97 | ðŸŸ¢ |
+| K9 | Sich behaupten | "Sich durchsetzen am Stall" | 5 | €147 | 🟡 |
+| K10 | Profis beurteilen | "Die richtigen Profis finden" | 5 | €147 | 🔴 |
+| K11 | Kommunikation | "Gespräche mit Profis führen" | 4 | €97 | 🟢 |
 
-### C. MENSCH-PFERD & TRAINING KURSE (4 Kurse) â˜… Diana's USP
+### C. MENSCH-PFERD & TRAINING KURSE (4 Kurse) ★ Diana's USP
 
 | # | Thema | Kurs-Titel | Module | Preis | Prio |
 |---|-------|------------|--------|-------|------|
-| **K12** | **Mentaltraining** | **"Das Pferd als Spiegel: Mentaltraining fÃ¼r Reiter"** â˜…â˜… | 6 | â‚¬197 | ðŸ”´ |
-| **K13** | **Bodenarbeit** | **"Bodenarbeit intensiv: Vom FÃ¼hren zur Freiarbeit"** â˜… | 6 | â‚¬167 | ðŸŸ¡ |
-| K14 | Bindung | "Bindung vertiefen: Von Pflege zu Partnerschaft" â˜… | 5 | â‚¬147 | ðŸŸ¡ |
-| **K15** | **Problemverhalten** | **"Problemverhalten lÃ¶sen: Die Botschaft verstehen"** â˜… | 5 | â‚¬147 | ðŸŸ¡ |
+| **K12** | **Mentaltraining** | **"Das Pferd als Spiegel: Mentaltraining für Reiter"** ★★ | 6 | €197 | 🔴 |
+| **K13** | **Bodenarbeit** | **"Bodenarbeit intensiv: Vom Führen zur Freiarbeit"** ★ | 6 | €167 | 🟡 |
+| K14 | Bindung | "Bindung vertiefen: Von Pflege zu Partnerschaft" ★ | 5 | €147 | 🟡 |
+| **K15** | **Problemverhalten** | **"Problemverhalten lösen: Die Botschaft verstehen"** ★ | 5 | €147 | 🟡 |
 
 ### D. SPEZIAL-KURSE (4 Kurse)
 
 | # | Thema | Kurs-Titel | Module | Preis | Prio |
 |---|-------|------------|--------|-------|------|
-| K16 | Senior | "Das Ã¤ltere Pferd: WÃ¼rdevoll altern" | 5 | â‚¬147 | ðŸ”´ |
-| K17 | Jungpferd | "Jungpferd begleiten: Die ersten Jahre" | 6 | â‚¬167 | ðŸŸ¡ |
-| K18 | Einsteiger | "Dein erstes Pferd: Die Grundlagen" | 8 | â‚¬197 | ðŸŸ¢ |
-| K19 | Rehabilitation | "Nach der Krise: Wieder aufbauen" | 5 | â‚¬147 | ðŸŸ¢ |
+| K16 | Senior | "Das ältere Pferd: Würdevoll altern" | 5 | €147 | 🔴 |
+| K17 | Jungpferd | "Jungpferd begleiten: Die ersten Jahre" | 6 | €167 | 🟡 |
+| K18 | Einsteiger | "Dein erstes Pferd: Die Grundlagen" | 8 | €197 | 🟢 |
+| K19 | Rehabilitation | "Nach der Krise: Wieder aufbauen" | 5 | €147 | 🟢 |
 
 ---
 
@@ -396,20 +396,20 @@ Alle verbleibenden Guides nach Bedarf und Nachfrage
 
 ### Phase 1: Q2 2025 (Erste Kurse + USP)
 
-| # | Kurs | BegrÃ¼ndung |
+| # | Kurs | Begründung |
 |---|------|------------|
-| K2 | FÃ¼tterung meistern | HÃ¶chste Relevanz |
+| K2 | Fütterung meistern | Höchste Relevanz |
 | K4 | Stress erkennen | Hohe Identifikation |
 | **K12** | **Mentaltraining** | **Diana's USP sofort positionieren** |
 
 ### Phase 2: Q3-Q4 2025 (Nach Signature-Launch)
 
-| # | Kurs | BegrÃ¼ndung |
+| # | Kurs | Begründung |
 |---|------|------------|
-| K10 | Profis finden | SÃ¤ule 3, hohe Nachfrage |
+| K10 | Profis finden | Säule 3, hohe Nachfrage |
 | K8 | Notfall-Vorbereitung | Krisen-Welt |
 | K7 | Verhalten verstehen | Mit Reittherapie-Perspektive |
-| K16 | Das Ã¤ltere Pferd | 30% der Annas |
+| K16 | Das ältere Pferd | 30% der Annas |
 
 ### Phase 3: 2026 (Bibliothek aufbauen)
 
@@ -417,63 +417,63 @@ Alle verbleibenden Kurse nach Bedarf
 
 ---
 
-# TEIL 7: DIE SIGNATURE-KURSE (â‚¬297-697)
+# TEIL 7: DIE SIGNATURE-KURSE (€297-697)
 
-## Kurs 1: "Diana's Pferde-Fundament" (Signature PrÃ¤vention)
+## Kurs 1: "Diana's Pferde-Fundament" (Signature Prävention)
 
-**Preis:** â‚¬397-497
+**Preis:** €397-497
 **Format:** Async Video + Text + Workbooks
 **Dauer:** 8-12 Wochen Selbstlern
 
-**Inhalt â€” Die komplette PrÃ¤vention:**
+**Inhalt — Die komplette Prävention:**
 
 | Modul | Thema | Cluster |
 |-------|-------|---------|
 | 1 | Das Fundament: Wie Pferde wirklich ticken | Grundlagen |
 | 2 | Herde & Soziales: Dein Pferd in der Gruppe | 1 |
-| 3 | FÃ¼tterung: Was, wann, wie viel | 2 |
+| 3 | Fütterung: Was, wann, wie viel | 2 |
 | 4 | Bewegung: Mehr als Reiten | 3 |
 | 5 | Wetter & Jahreszeiten: Eindecken, Weide, Anpassung | 4, 7 |
 | 6 | Hufe: Das Fundament unter dem Fundament | 6 |
-| 7 | ZÃ¤hne, Parasiten, Gesundheits-Basics | 8, 9 |
-| 8 | Stress erkennen & lÃ¶sen â˜… | 5 |
-| 9 | Verhalten verstehen & deuten â˜… | 10 |
-| 10 | Deine Beziehung zum Pferd â˜… | 11 |
-| 11 | Die richtigen Profis finden | SÃ¤ule 3 |
-| 12 | Sich am Stall behaupten | SÃ¤ule 2 |
+| 7 | Zähne, Parasiten, Gesundheits-Basics | 8, 9 |
+| 8 | Stress erkennen & lösen ★ | 5 |
+| 9 | Verhalten verstehen & deuten ★ | 10 |
+| 10 | Deine Beziehung zum Pferd ★ | 11 |
+| 11 | Die richtigen Profis finden | Säule 3 |
+| 12 | Sich am Stall behaupten | Säule 2 |
 
-â˜… = Module mit starker Reittherapie-Perspektive
+★ = Module mit starker Reittherapie-Perspektive
 
 **Versprechen:** 
-> "Nach diesem Kurs weiÃŸt du, was dein Pferd wirklich braucht â€” und wie du es am Stall auch durchsetzt."
+> "Nach diesem Kurs weißt du, was dein Pferd wirklich braucht — und wie du es am Stall auch durchsetzt."
 
 ---
 
 ## Kurs 2: "Diana's Krisen-Navigator" (Signature Orientierung)
 
-**Preis:** â‚¬297-397
+**Preis:** €297-397
 **Format:** Async Video + Text + Workbooks + Vorlagen
 **Dauer:** 4-6 Wochen Selbstlern
 
-**Inhalt â€” Die 5 Phasen der Krisenbegleitung:**
+**Inhalt — Die 5 Phasen der Krisenbegleitung:**
 
 | Modul | Phase | Inhalt |
 |-------|-------|--------|
-| 1 | VERSTEHEN | Symptome deuten, Muster erkennen, ZusammenhÃ¤nge sehen |
-| 2 | SORTIEREN | Wer ist wann zustÃ¤ndig? Navigation durch das System |
-| 3 | FRAGEN | Fragen-Kataloge fÃ¼r TA, Therapeut, Hufpfleger, Klinik |
-| 4 | EINORDNEN | Diagnosen verstehen, Optionen abwÃ¤gen |
-| 5 | BEGLEITEN â˜… | Was du NEBEN der Behandlung tun kannst |
+| 1 | VERSTEHEN | Symptome deuten, Muster erkennen, Zusammenhänge sehen |
+| 2 | SORTIEREN | Wer ist wann zuständig? Navigation durch das System |
+| 3 | FRAGEN | Fragen-Kataloge für TA, Therapeut, Hufpfleger, Klinik |
+| 4 | EINORDNEN | Diagnosen verstehen, Optionen abwägen |
+| 5 | BEGLEITEN ★ | Was du NEBEN der Behandlung tun kannst |
 
-â˜… = Mit Reittherapie-Perspektive: Wie deine Energie dein Pferd beeinflusst
+★ = Mit Reittherapie-Perspektive: Wie deine Energie dein Pferd beeinflusst
 
 **Bonus-Module:**
 
 | Bonus | Inhalt |
 |-------|--------|
-| A | Die hÃ¤ufigsten Krisen: Kolik, Hufrehe, MagengeschwÃ¼r, Lahmheit |
+| A | Die häufigsten Krisen: Kolik, Hufrehe, Magengeschwür, Lahmheit |
 | B | Klinik-Aufenthalt: Vorbereitung & Begleitung |
-| C | Nach der Krise: Rehabilitation & PrÃ¤vention |
+| C | Nach der Krise: Rehabilitation & Prävention |
 
 **Versprechen:**
 > "Du bist nie wieder hilflos, wenn dein Pferd krank ist."
@@ -482,7 +482,7 @@ Alle verbleibenden Kurse nach Bedarf
 
 ## Kurs 3: "Offenstall-Transformation" (Spezial-Signature)
 
-**Preis:** â‚¬497-697
+**Preis:** €497-697
 **Format:** Async Video + Text + Workbooks + Community-Zugang (3 Monate)
 **Dauer:** 8 Wochen + 3 Monate Begleitung
 
@@ -494,15 +494,15 @@ Alle verbleibenden Kurse nach Bedarf
 |-------|-------|
 | 1 | Die Entscheidung: Ist Offenstall das Richtige? |
 | 2 | Den richtigen Stall finden (Checkliste) |
-| 3 | Die Umstellung: Schritt fÃ¼r Schritt |
-| 4 | Herde, Integration, erste Wochen â˜… |
-| 5 | FÃ¼tterung im Offenstall |
+| 3 | Die Umstellung: Schritt für Schritt |
+| 4 | Herde, Integration, erste Wochen ★ |
+| 5 | Fütterung im Offenstall |
 | 6 | Wetter, Jahreszeiten, Anpassung |
-| 7 | Typische Probleme & LÃ¶sungen |
+| 7 | Typische Probleme & Lösungen |
 | 8 | Langfristig: Optimierung & Feintuning |
 
 **Versprechen:**
-> "Von der Box zum Offenstall â€” ohne Angst, ohne Drama, mit Plan."
+> "Von der Box zum Offenstall — ohne Angst, ohne Drama, mit Plan."
 
 ---
 
@@ -511,77 +511,77 @@ Alle verbleibenden Kurse nach Bedarf
 ## Das Membership-Modell
 
 **Name:** Diana's Gesamtwelt / Pferdesicht Community
-**Preis:** â‚¬97/Monat oder â‚¬997/Jahr (spart 2 Monate)
-**Lifetime:** â‚¬2.997 (amortisiert nach 2,5 Jahren)
+**Preis:** €97/Monat oder €997/Jahr (spart 2 Monate)
+**Lifetime:** €2.997 (amortisiert nach 2,5 Jahren)
 
 ### Was Mitglieder bekommen:
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   ðŸ“š KURS-BIBLIOTHEK (Wert: â‚¬2.800+)                                      â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                      â•‘
-â•‘   â€¢ Alle 19 Fokus-Kurse inklusive                                         â•‘
-â•‘   â€¢ Neue Kurse automatisch freigeschaltet                                 â•‘
-â•‘   â€¢ Signature-Kurse: 50% Rabatt fÃ¼r Mitglieder                           â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   ðŸ“– GUIDE-BIBLIOTHEK (Wert: â‚¬1.700+)                                     â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                       â•‘
-â•‘   â€¢ Alle 44 Guides inklusive                                              â•‘
-â•‘   â€¢ Neue Guides automatisch freigeschaltet                                â•‘
-â•‘   â€¢ Druckbare Versionen                                                   â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   ðŸ“‹ RESSOURCEN-BIBLIOTHEK                                                â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                â•‘
-â•‘   â€¢ Alle Checklisten (50+)                                                â•‘
-â•‘   â€¢ Alle Vorlagen                                                         â•‘
-â•‘   â€¢ Fragen-Kataloge fÃ¼r Profis                                            â•‘
-â•‘   â€¢ Entscheidungshilfen                                                   â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   ðŸŽ¥ LIVE-BEREICH                                                         â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                         â•‘
-â•‘   â€¢ 2x monatlich Live-Q&A mit Diana                                       â•‘
-â•‘   â€¢ Themen-Workshops (monatlich wechselnd)                                â•‘
-â•‘   â€¢ Alle Aufzeichnungen im Archiv                                         â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   ðŸ‘¥ COMMUNITY                                                            â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                             â•‘
-â•‘   â€¢ GeschÃ¼tzter Raum (keine ToxizitÃ¤t)                                    â•‘
-â•‘   â€¢ Gleichgesinnte Pferdemenschen                                         â•‘
-â•‘   â€¢ Diana antwortet persÃ¶nlich                                            â•‘
-â•‘   â€¢ Themen-Bereiche nach Clustern                                         â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   ðŸŽ MEMBER-VORTEILE                                                      â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                      â•‘
-â•‘   â€¢ 50% Rabatt auf alle Signature-Kurse                                   â•‘
-â•‘   â€¢ FrÃ¼her Zugang zu neuen Inhalten                                       â•‘
-â•‘   â€¢ Exklusive Inhalte nur fÃ¼r Mitglieder                                  â•‘
-â•‘   â€¢ Affiliate-Empfehlungen mit Member-Rabatt                              â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   📚 KURS-BIBLIOTHEK (Wert: €2.800+)                                      ║
+║   ──────────────────────────────────                                      ║
+║   • Alle 19 Fokus-Kurse inklusive                                         ║
+║   • Neue Kurse automatisch freigeschaltet                                 ║
+║   • Signature-Kurse: 50% Rabatt für Mitglieder                           ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   📖 GUIDE-BIBLIOTHEK (Wert: €1.700+)                                     ║
+║   ─────────────────────────────────                                       ║
+║   • Alle 44 Guides inklusive                                              ║
+║   • Neue Guides automatisch freigeschaltet                                ║
+║   • Druckbare Versionen                                                   ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   📋 RESSOURCEN-BIBLIOTHEK                                                ║
+║   ────────────────────────                                                ║
+║   • Alle Checklisten (50+)                                                ║
+║   • Alle Vorlagen                                                         ║
+║   • Fragen-Kataloge für Profis                                            ║
+║   • Entscheidungshilfen                                                   ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   🎥 LIVE-BEREICH                                                         ║
+║   ───────────────                                                         ║
+║   • 2x monatlich Live-Q&A mit Diana                                       ║
+║   • Themen-Workshops (monatlich wechselnd)                                ║
+║   • Alle Aufzeichnungen im Archiv                                         ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   👥 COMMUNITY                                                            ║
+║   ───────────                                                             ║
+║   • Geschützter Raum (keine Toxizität)                                    ║
+║   • Gleichgesinnte Pferdemenschen                                         ║
+║   • Diana antwortet persönlich                                            ║
+║   • Themen-Bereiche nach Clustern                                         ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   ðŸŽ MEMBER-VORTEILE                                                      ║
+║   ──────────────────                                                      ║
+║   • 50% Rabatt auf alle Signature-Kurse                                   ║
+║   • Früher Zugang zu neuen Inhalten                                       ║
+║   • Exklusive Inhalte nur für Mitglieder                                  ║
+║   • Affiliate-Empfehlungen mit Member-Rabatt                              ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
-### Membership-Wert-Rechnung (fÃ¼r Sales Page)
+### Membership-Wert-Rechnung (für Sales Page)
 
 | Was du bekommst | Einzelwert |
 |-----------------|------------|
-| 19 Fokus-Kurse | â‚¬2.800 |
-| 44 Guides | â‚¬1.700 |
-| 50+ Checklisten & Vorlagen | â‚¬300 |
-| 24 Live-Q&As/Jahr | â‚¬480 |
+| 19 Fokus-Kurse | €2.800 |
+| 44 Guides | €1.700 |
+| 50+ Checklisten & Vorlagen | €300 |
+| 24 Live-Q&As/Jahr | €480 |
 | Community-Zugang | Unbezahlbar |
-| **GESAMTWERT** | **â‚¬5.280+** |
-| **Dein Preis** | **â‚¬997/Jahr** |
+| **GESAMTWERT** | **€5.280+** |
+| **Dein Preis** | **€997/Jahr** |
 
 ---
 
@@ -590,43 +590,43 @@ Alle verbleibenden Kurse nach Bedarf
 ## Der Haupt-Funnel
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                         SOCIAL MEDIA                                    â”‚
-â”‚              (Instagram, Facebook, TikTok, Blog)                        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                     â”‚
-                                     â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                      LEAD-MAGNET (â‚¬0)                                   â”‚
-â”‚         "Die 7 hÃ¤ufigsten FÃ¼tterungsfehler" (Evergreen)                 â”‚
-â”‚         "Fellwechsel & Anweide" (Saisonal FrÃ¼hling)                     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                     â”‚
-                                     â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    WELCOME-SEQUENZ (5-7 E-Mails)                        â”‚
-â”‚                                                                         â”‚
-â”‚  E1: Willkommen + Lead-Magnet-Zustellung                               â”‚
-â”‚  E2: Diana's Story (Reittherapie-Perspektive!)                         â”‚
-â”‚  E3: Das grÃ¶ÃŸte Problem (Identifikation)                               â”‚
-â”‚  E4: Der Weg (Wie Diana es lÃ¶st â€” anders als andere)                   â”‚
-â”‚  E5: Social Proof (Testimonials, wenn vorhanden)                       â”‚
-â”‚  E6: Soft-Pitch: Guide (â‚¬27-47)                                        â”‚
-â”‚  E7: Last Chance + Hauptliste                                          â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                     â”‚
-                                     â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                      HAUPT-NEWSLETTER                                   â”‚
-â”‚              (WÃ¶chentlich: Wert + gelegentliche Angebote)               â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                     â”‚
-              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-              â–¼                                             â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚    LAUNCH-SEQUENZ       â”‚                â”‚    EVERGREEN-FUNNEL     â”‚
-â”‚   (Bei Kurs-Launch)     â”‚                â”‚  (Automatisiert)        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────────────────â”
+│                         SOCIAL MEDIA                                    │
+│              (Instagram, Facebook, TikTok, Blog)                        │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────â”
+│                      LEAD-MAGNET (€0)                                   │
+│         "Die 7 häufigsten Fütterungsfehler" (Evergreen)                 │
+│         "Fellwechsel & Anweide" (Saisonal Frühling)                     │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────â”
+│                    WELCOME-SEQUENZ (5-7 E-Mails)                        │
+│                                                                         │
+│  E1: Willkommen + Lead-Magnet-Zustellung                               │
+│  E2: Diana's Story (Reittherapie-Perspektive!)                         │
+│  E3: Das größte Problem (Identifikation)                               │
+│  E4: Der Weg (Wie Diana es löst — anders als andere)                   │
+│  E5: Social Proof (Testimonials, wenn vorhanden)                       │
+│  E6: Soft-Pitch: Guide (€27-47)                                        │
+│  E7: Last Chance + Hauptliste                                          │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+┌─────────────────────────────────────────────────────────────────────────â”
+│                      HAUPT-NEWSLETTER                                   │
+│              (Wöchentlich: Wert + gelegentliche Angebote)               │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+              ┌──────────────────────┴──────────────────────â”
+              ▼                                             ▼
+┌─────────────────────────â”                ┌─────────────────────────â”
+│    LAUNCH-SEQUENZ       │                │    EVERGREEN-FUNNEL     │
+│   (Bei Kurs-Launch)     │                │  (Automatisiert)        │
+└─────────────────────────┘                └─────────────────────────┘
 ```
 
 ---
@@ -636,56 +636,56 @@ Alle verbleibenden Kurse nach Bedarf
 ## 2025: Der Aufbau-Plan (aktualisiert)
 
 ```
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘                                                                            â•‘
-â•‘   Q1 2025: FUNDAMENT + FRÃœHLING                                           â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                           â•‘
-â•‘                                                                            â•‘
-â•‘   Lead-Magnete:  LM1 FÃ¼tterungsfehler, LM2 Fellwechsel/Anweide           â•‘
-â•‘   Guides:        G18 FrÃ¼hling, G34 Heu, G36 Weide, G37 Mentaltraining â˜…  â•‘
-â•‘   Fokus-Kurse:   â€” (noch nicht)                                           â•‘
-â•‘   E-Mail:        Welcome-Sequenz + Automation                             â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ 4 Guides fertig (inkl. Diana's USP), 2 Lead-Magnete                  â•‘
-â•‘   â†’ Ziel: 500+ E-Mail-Kontakte                                            â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   Q2 2025: ERSTE KURSE + KRISEN                                           â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                           â•‘
-â•‘                                                                            â•‘
-â•‘   Lead-Magnete:  LM3 Stress-Signale, LM4 Pferd als Spiegel               â•‘
-â•‘   Guides:        G21 Senior, G29 Lahmheit, G30 Atemwege, G14 Profi-Finderâ•‘
-â•‘   Fokus-Kurse:   K2 FÃ¼tterung, K4 Stress, K12 Mentaltraining â˜…           â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ 8 Guides, 3 Fokus-Kurse, 4 Lead-Magnete                               â•‘
-â•‘   â†’ Ziel: 1.500+ E-Mail-Kontakte, â‚¬3.000-5.000/Monat                      â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   Q3 2025: SIGNATURE-LAUNCH                                               â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                               â•‘
-â•‘                                                                            â•‘
-â•‘   Guides:        G10 Verhalten, G11 Beziehung, G39 Bodenarbeit, G31 Ekzemâ•‘
-â•‘   Fokus-Kurse:   K10 Profis, K8 Notfall, K7 Verhalten                    â•‘
-â•‘   Signature:     "Diana's Pferde-Fundament" LAUNCH                        â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ 12 Guides, 6 Fokus-Kurse, 1 Signature                                 â•‘
-â•‘   â†’ Ziel: 3.000+ Kontakte, â‚¬20.000+ Launch-Monat                          â•‘
-â•‘                                                                            â•‘
-â• â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
-â•‘                                                                            â•‘
-â•‘   Q4 2025: ZWEITER SIGNATURE + WINTER                                     â•‘
-â•‘   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                     â•‘
-â•‘                                                                            â•‘
-â•‘   Guides:        G16 Winter, G4 Wetterfest, G26 Kolik, G27 Hufrehe       â•‘
-â•‘   Fokus-Kurse:   K16 Senior                                              â•‘
-â•‘   Signature:     "Diana's Krisen-Navigator" LAUNCH                        â•‘
-â•‘                                                                            â•‘
-â•‘   â†’ 16 Guides, 7 Fokus-Kurse, 2 Signatures                                â•‘
-â•‘   â†’ Ziel: 5.000+ Kontakte, System steht fÃ¼r 2026                          â•‘
-â•‘                                                                            â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╗
+║                                                                            ║
+║   Q1 2025: FUNDAMENT + FRÜHLING                                           ║
+║   ─────────────────────────────                                           ║
+║                                                                            ║
+║   Lead-Magnete:  LM1 Fütterungsfehler, LM2 Fellwechsel/Anweide           ║
+║   Guides:        G18 Frühling, G34 Heu, G36 Weide, G37 Mentaltraining ★  ║
+║   Fokus-Kurse:   — (noch nicht)                                           ║
+║   E-Mail:        Welcome-Sequenz + Automation                             ║
+║                                                                            ║
+║   → 4 Guides fertig (inkl. Diana's USP), 2 Lead-Magnete                  ║
+║   → Ziel: 500+ E-Mail-Kontakte                                            ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   Q2 2025: ERSTE KURSE + KRISEN                                           ║
+║   ─────────────────────────────                                           ║
+║                                                                            ║
+║   Lead-Magnete:  LM3 Stress-Signale, LM4 Pferd als Spiegel               ║
+║   Guides:        G21 Senior, G29 Lahmheit, G30 Atemwege, G14 Profi-Finder║
+║   Fokus-Kurse:   K2 Fütterung, K4 Stress, K12 Mentaltraining ★           ║
+║                                                                            ║
+║   → 8 Guides, 3 Fokus-Kurse, 4 Lead-Magnete                               ║
+║   → Ziel: 1.500+ E-Mail-Kontakte, €3.000-5.000/Monat                      ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   Q3 2025: SIGNATURE-LAUNCH                                               ║
+║   ─────────────────────────                                               ║
+║                                                                            ║
+║   Guides:        G10 Verhalten, G11 Beziehung, G39 Bodenarbeit, G31 Ekzem║
+║   Fokus-Kurse:   K10 Profis, K8 Notfall, K7 Verhalten                    ║
+║   Signature:     "Diana's Pferde-Fundament" LAUNCH                        ║
+║                                                                            ║
+║   → 12 Guides, 6 Fokus-Kurse, 1 Signature                                 ║
+║   → Ziel: 3.000+ Kontakte, €20.000+ Launch-Monat                          ║
+║                                                                            ║
+╠â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•╣
+║                                                                            ║
+║   Q4 2025: ZWEITER SIGNATURE + WINTER                                     ║
+║   ───────────────────────────────────                                     ║
+║                                                                            ║
+║   Guides:        G16 Winter, G4 Wetterfest, G26 Kolik, G27 Hufrehe       ║
+║   Fokus-Kurse:   K16 Senior                                              ║
+║   Signature:     "Diana's Krisen-Navigator" LAUNCH                        ║
+║                                                                            ║
+║   → 16 Guides, 7 Fokus-Kurse, 2 Signatures                                ║
+║   → Ziel: 5.000+ Kontakte, System steht für 2026                          ║
+║                                                                            ║
+╚â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ---
@@ -700,17 +700,17 @@ Alle verbleibenden Kurse nach Bedarf
 
 # TEIL 11: SOFORT-AKTIONEN
 
-## Die nÃ¤chsten 30 Tage (angepasst fÃ¼r FrÃ¼hling)
+## Die nächsten 30 Tage (angepasst für Frühling)
 
 | Tag | Aktion |
 |-----|--------|
-| 1-3 | Lead-Magnet #1 "FÃ¼tterungsfehler" finalisieren |
+| 1-3 | Lead-Magnet #1 "Fütterungsfehler" finalisieren |
 | 4-7 | Landing Page erstellen |
 | 8-10 | Welcome-Sequenz schreiben (E1-E5) |
 | 11-14 | Lead-Magnet #2 "Fellwechsel/Anweide" erstellen |
-| 15-20 | Erste Social-Media-Posts fÃ¼r beide Lead-Magnete |
+| 15-20 | Erste Social-Media-Posts für beide Lead-Magnete |
 | 21-25 | E-Mail-Automation testen |
-| 26-30 | Guide #1 "FrÃ¼hlings-Guide" Outline erstellen |
+| 26-30 | Guide #1 "Frühlings-Guide" Outline erstellen |
 
 ---
 
@@ -720,36 +720,36 @@ Alle verbleibenden Kurse nach Bedarf
 
 | Kategorie | Anzahl | Preis einzeln | Gesamt-Wert |
 |-----------|--------|---------------|-------------|
-| Lead-Magnete | 8+ | â‚¬0 | â€” |
-| Guides | 44 | â‚¬27-57 | â‚¬1.700 |
-| Fokus-Kurse | 19 | â‚¬97-197 | â‚¬2.800 |
-| Signature-Kurse | 3 | â‚¬297-697 | ~â‚¬1.400 |
-| Checklisten/Vorlagen | 50+ | â€” | â‚¬300 |
-| **GESAMT** | | | **â‚¬6.200** |
+| Lead-Magnete | 8+ | €0 | — |
+| Guides | 44 | €27-57 | €1.700 |
+| Fokus-Kurse | 19 | €97-197 | €2.800 |
+| Signature-Kurse | 3 | €297-697 | ~€1.400 |
+| Checklisten/Vorlagen | 50+ | — | €300 |
+| **GESAMT** | | | **€6.200** |
 
 ## Diana's USP-Guides (Reittherapie-Perspektive)
 
-| Guide/Kurs | USP-StÃ¤rke |
+| Guide/Kurs | USP-Stärke |
 |------------|------------|
-| G37 Mentaltraining | â˜…â˜…â˜… Kern-USP |
-| G10 Verhaltens-Decoder | â˜…â˜… |
-| G11 Beziehungs-Aufbau | â˜…â˜… |
-| G38 Problemverhalten | â˜…â˜… |
-| G39 Bodenarbeit | â˜… |
-| G40 Pferdefreundlich ausbilden | â˜… |
-| K12 Mentaltraining-Kurs | â˜…â˜…â˜… Kern-USP |
+| G37 Mentaltraining | ★★★ Kern-USP |
+| G10 Verhaltens-Decoder | ★★ |
+| G11 Beziehungs-Aufbau | ★★ |
+| G38 Problemverhalten | ★★ |
+| G39 Bodenarbeit | ★ |
+| G40 Pferdefreundlich ausbilden | ★ |
+| K12 Mentaltraining-Kurs | ★★★ Kern-USP |
 
 ---
 
-# Ã„NDERUNGSLOG
+# ÄNDERUNGSLOG
 
-| Version | Datum | Ã„nderungen |
+| Version | Datum | Änderungen |
 |---------|-------|------------|
 | 1.0 | 29.12.2024 | Initiale Version (2 separate Dokumente) |
-| 1.1 | 29.12.2024 | Produktstrategie + Produkt-Bibliothek zusammengefÃ¼hrt |
-| **1.2** | **30.12.2024** | **Guide-Bibliothek: 22â†’44 Guides, Fokus-Kurse: 15â†’19, Reittherapie-USP integriert, Lead-Magnete fÃ¼r FrÃ¼hling angepasst, Alternative Therapien als eigene Guides** |
+| 1.1 | 29.12.2024 | Produktstrategie + Produkt-Bibliothek zusammengeführt |
+| **1.2** | **30.12.2024** | **Guide-Bibliothek: 22→44 Guides, Fokus-Kurse: 15→19, Reittherapie-USP integriert, Lead-Magnete für Frühling angepasst, Alternative Therapien als eigene Guides** |
 
 ---
 
-*Produktstrategie v1.2 (erweitert) â€” Erstellt: 30.12.2024*
+*Produktstrategie v1.2 (erweitert) — Erstellt: 30.12.2024*
 *Basierend auf Framework v2.5, 12-Cluster-Analyse v1.1, Themen-Analyse v1.0*

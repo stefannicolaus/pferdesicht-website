@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "de-DE,en",
+  "import": ["@cspell/dict-de-de/cspell-ext.json"],
+  "dictionaries": ["de-de", "en_US", "typescript", "node", "html", "css", "pferdesicht"],
+  "dictionaryDefinitions": [
+    {
+      "name": "pferdesicht",
+      "path": "./cspell-pferdesicht.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".next",
+    "public",
+    "*.lock",
+    "*.json",
+    "*.config.js",
+    "*.config.ts"
+  ],
+  "files": [
+    "**/*.md",
+    "**/*.mdx",
+    "**/*.tsx",
+    "**/*.ts"
+  ],
+  "ignoreRegExpList": [
+    "/#[0-9a-fA-F]{3,8}/",
+    "/className=\"[^\"]*\"/",
+    "/https?://[^\\s]*/",
+    "/@[a-zA-Z_-]+/"
+  ]
+}
