@@ -20,7 +20,7 @@ const benefits = [
 
 export function HeroLeadMagnetBox() {
   return (
-    <div className="hidden lg:flex h-full items-center justify-center p-4 lg:p-6">
+    <div className="hidden md:flex h-full items-center justify-center p-4 lg:p-6">
       <div className="bg-sage rounded-xl p-6 lg:p-8 shadow-2xl max-w-sm">
 
         {/* Badge */}

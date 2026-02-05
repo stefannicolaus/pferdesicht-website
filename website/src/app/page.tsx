@@ -27,7 +27,7 @@ export default function PferdesichtPage() {
       <div className="fixed inset-0 pointer-events-none z-[1] opacity-[0.05] bg-paper-grain" />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] lg:h-[85vh] lg:min-h-[600px]">
+      <section className="relative min-h-[100vh] md:min-h-[95vh] lg:h-[85vh] lg:min-h-[600px]">
         {/* Hintergrundbild - Desktop */}
         <Image
           src="/images/heroes/hero-herde-simple.png"
@@ -52,8 +52,8 @@ export default function PferdesichtPage() {
 
         {/* Content Layer ÜBER dem Bild */}
         <div className="absolute inset-0">
-          {/* Desktop Grid */}
-          <div className="hidden lg:grid lg:grid-cols-[65fr_35fr] h-full">
+          {/* Tablet & Desktop Grid - ab md (768px) */}
+          <div className="hidden md:grid md:grid-cols-[55fr_45fr] lg:grid-cols-[65fr_35fr] h-full">
             <div className="relative">
               <HeroTextOverlay />
             </div>
@@ -62,8 +62,8 @@ export default function PferdesichtPage() {
             </div>
           </div>
 
-          {/* Mobile: Gestapelt */}
-          <div className="lg:hidden h-full flex flex-col">
+          {/* Mobile: Gestapelt - nur unter 768px */}
+          <div className="md:hidden h-full flex flex-col">
             <div className="relative flex-1">
               <HeroTextOverlay />
             </div>

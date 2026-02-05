@@ -4,7 +4,7 @@ export function HeroTextOverlay() {
   return (
     <div className="absolute inset-0 z-10">
       {/* Text Container - Desktop: vertikal zentriert, Mobile: oben */}
-      <div className="absolute top-6 md:top-[3%] left-0 w-full lg:w-[90%] px-5 md:pl-[100px] pt-8 md:pt-0 lg:pr-10 lg:pt-10">
+      <div className="absolute top-3 md:top-[2.5%] left-0 w-full md:w-[95%] lg:w-[90%] px-5 md:pl-[5%] lg:pl-[6%] pt-8 md:pt-4 lg:pr-10 lg:pt-10">
 
         {/* Badge - Mobile Version */}
         <span className="inline-flex md:hidden items-center px-4 py-1.5 rounded-full bg-sage text-white text-[10px] font-sans font-bold tracking-widest uppercase mb-6">

@@ -1,18 +1,26 @@
-// app/ueber-mich/page.tsx
+// app/preview/ueber-mich-v6/page.tsx
+// Preview: Farboptimierung - mehr helle Sektionen (7 hell, 3 dunkel)
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Check } from 'lucide-react'
 
 export const metadata = {
-  title: 'Über Diana | Pferdesicht',
-  description: 'Für Pferdemenschen, die hinschauen. 30+ Jahre Pferdeerfahrung, 16 Jahre Reittherapie, 15 Jahre in der Pferdebranche. Ich gebe dir das Wissen, das dein Pferd verdient.',
+  title: 'Preview: Über Diana v6 | Pferdesicht',
+  description: 'Preview-Version mit optimierter Farbverteilung',
+  robots: 'noindex, nofollow',
 }
 
-export default function UeberMichPage() {
+export default function UeberMichV6Preview() {
   return (
     <main className="bg-[#faf8f5]">
+      {/* Preview Banner */}
+      <div className="fixed top-0 left-0 right-0 z-[100] bg-purple-600 text-white text-center py-2 text-sm font-medium">
+        🎨 Preview v6: Farboptimierung (7 hell, 3 dunkel) — <a href="/ueber-mich" className="underline">Vergleiche mit Live</a>
+      </div>
+      <div className="h-10" /> {/* Spacer for fixed banner */}
+
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 1: Hero + Einstieg
+          SECTION 1: Hero + Einstieg (DUNKEL - bleibt)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-start bg-loam overflow-hidden md:[clip-path:inset(0)]">
         {/* Background Image - Mobile: static, Desktop: fixed (parallax) */}
@@ -29,7 +37,7 @@ export default function UeberMichPage() {
         </div>
 
         {/* Content */}
-        <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 pb-8 md:pb-16">
+        <div className="relative w-full max-w-6xl mx-auto px-6 pt-8 md:pt-14 pb-8 md:pb-16">
           <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Über Diana
           </span>
@@ -77,10 +85,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 2: Die Sätze, die niemand laut hinterfragt
+          SECTION 2: Die Sätze, die niemand laut hinterfragt (HELL - bleibt)
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="meine-geschichte" className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Die Sätze, die niemand laut hinterfragt
           </h2>
@@ -135,10 +143,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 3: Benny + Wendepunkt
+          SECTION 3: Benny + Wendepunkt (HELL - bleibt)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Der Moment, der alles verändert hat
           </h2>
@@ -182,10 +190,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 4: Ramses + Stall-Realität
+          SECTION 4: Ramses + Stall-Realität (HELL - bleibt)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-4">
             Dann kam Ramses – mein eigenes Pferd.
           </h2>
@@ -231,10 +239,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 5a: SÄULE 1 — Hempura (15 Jahre)
+          SECTION 5a: SÄULE 1 — Hempura (DUNKEL - bleibt bg-sage)
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="hempura" className="py-20 md:py-28 bg-sage">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
 
           <span className="inline-block text-white/50 font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 1
@@ -346,10 +354,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 5b: SÄULE 2 — Reittherapie (16 Jahre)
+          SECTION 5b: SÄULE 2 — Reittherapie (NEU: HELL - bg-white)
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="reittherapie" className="py-20 md:py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
 
           <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 2
@@ -440,10 +448,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 5c: SÄULE 3 — Freiheitsdressur (5 Jahre)
+          SECTION 5c: SÄULE 3 — Freiheitsdressur (NEU: HELL - bg-[#faf8f5])
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="freiheitsdressur" className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
 
           <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 3
@@ -483,10 +491,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 5d: Meine Perspektive und warum ich anders schaue
+          SECTION 5d: Meine Perspektive (DUNKEL - bg-loam)
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="perspektive" className="py-20 md:py-28 bg-loam">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#F3F0EB] leading-tight mb-4">
             Meine Perspektive, warum ich anders schaue...
@@ -560,10 +568,10 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 6: Was ich glaube
+          SECTION 6: Was ich glaube (HELL - bleibt)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Was ich glaube
           </h2>
@@ -623,9 +631,9 @@ export default function UeberMichPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section (HELL - bleibt) */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl text-loam leading-tight mb-4">
               Bereit für den ersten Schritt?

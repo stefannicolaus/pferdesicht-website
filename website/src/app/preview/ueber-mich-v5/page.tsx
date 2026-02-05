@@ -1,18 +1,31 @@
-// app/ueber-mich/page.tsx
+// app/preview/ueber-mich-v5/page.tsx
+// ─────────────────────────────────────────────────────────────────────────────
+// PFERDESICHT — Über-mich v5.0 Preview
+// Route: /preview/ueber-mich-v5
+// NICHT für Produktion — vor Merge in main entfernen
+// ─────────────────────────────────────────────────────────────────────────────
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Check } from 'lucide-react'
 
 export const metadata = {
-  title: 'Über Diana | Pferdesicht',
-  description: 'Für Pferdemenschen, die hinschauen. 30+ Jahre Pferdeerfahrung, 16 Jahre Reittherapie, 15 Jahre in der Pferdebranche. Ich gebe dir das Wissen, das dein Pferd verdient.',
+  title: 'Über Diana v5.0 Preview | Pferdesicht',
+  description: 'Preview der optimierten Über-mich-Seite (9 Sections)',
+  robots: 'noindex, nofollow',
 }
 
-export default function UeberMichPage() {
+export default function UeberMichV5Preview() {
   return (
     <main className="bg-[#faf8f5]">
+      {/* ─── PREVIEW BANNER ─── */}
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-gold text-white text-center py-2 text-xs font-sans font-bold tracking-[0.2em] uppercase shadow-lg">
+        ⚠ PREVIEW v5.0 — NICHT LIVE ⚠
+      </div>
+
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 1: Hero + Einstieg
+          (absorbiert "So macht man das eben")
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-start bg-loam overflow-hidden md:[clip-path:inset(0)]">
         {/* Background Image - Mobile: static, Desktop: fixed (parallax) */}
@@ -29,7 +42,7 @@ export default function UeberMichPage() {
         </div>
 
         {/* Content */}
-        <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 pb-8 md:pb-16">
+        <div className="relative w-full max-w-6xl mx-auto px-6 pt-16 md:pt-14 pb-8 md:pb-16">
           <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Über Diana
           </span>
@@ -78,9 +91,10 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 2: Die Sätze, die niemand laut hinterfragt
+          (v4.2: "Gaslighting-Sätze" — Headline geschärft)
           ═══════════════════════════════════════════════════════════════════ */}
       <section id="meine-geschichte" className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Die Sätze, die niemand laut hinterfragt
           </h2>
@@ -123,6 +137,7 @@ export default function UeberMichPage() {
             </p>
           </div>
 
+          {/* v5.0: "So macht man das eben" als Punch absorbiert */}
           <div className="mt-12 text-center">
             <p className="font-serif text-2xl md:text-3xl text-loam leading-tight">
               „So macht man das eben."
@@ -136,9 +151,10 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 3: Benny + Wendepunkt
+          (v4.2: "Der Moment" + "Wendepunkt" + "Benny war nur der Anfang" → 1)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Der Moment, der alles verändert hat
           </h2>
@@ -170,6 +186,7 @@ export default function UeberMichPage() {
             </p>
           </div>
 
+          {/* Wendepunkt — absorbiert */}
           <div className="mt-12 bg-loam rounded-xl p-8 md:p-10">
             <p className="font-serif text-2xl md:text-3xl text-[#F3F0EB] leading-tight mb-4">
               Nicht mein Denken war falsch. Die Umgebung war falsch für mein Denken.
@@ -182,10 +199,11 @@ export default function UeberMichPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          SECTION 4: Ramses + Stall-Realität
+          SECTION 4: Ramses + Stall-Realität + Hempura
+          (v4.2: "Ramses" + "Glückliche Umstände/Hempura" → 1)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-4">
             Dann kam Ramses – mein eigenes Pferd.
           </h2>
@@ -232,53 +250,27 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 5a: SÄULE 1 — Hempura (15 Jahre)
+          Diana's Praxis-Autorität — Live-Text + Unterscheidungs-Ergänzung
+          Reihenfolge: Hempura → Reittherapie → Freiheitsdressur
           ═══════════════════════════════════════════════════════════════════ */}
-      <section id="hempura" className="py-20 md:py-28 bg-sage">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-sage">
+        <div className="max-w-4xl mx-auto px-6">
 
           <span className="inline-block text-white/50 font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 1
           </span>
 
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-8">
-            Und plötzlich waren Pferde nicht mehr nur mein Hobby...
+            Dann kamen glückliche Umstände — und plötzlich waren Pferde nicht mehr nur mein Hobby
           </h2>
 
           <div className="space-y-6 text-white/80 font-sans text-lg font-light leading-relaxed">
             <p>
-              2009 begannen mein Mann Stefan und ich, gemeinsam ein Unternehmen aufzubauen — im Bereich Pferdegesundheit und -ernährung.
+              2009 begannen Stefan und ich, gemeinsam ein Unternehmen aufzubauen — im Bereich Pferdegesundheit und -ernährung.
             </p>
             <p>
               Was als unternehmerische Idee begann, wurde schnell zu etwas viel Größerem.
             </p>
-          </div>
-
-          {/* Team-Bild Diana & Stefan */}
-          <div className="my-10">
-            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto mb-4">
-              <div className="relative aspect-square rounded-xl overflow-hidden">
-                <Image
-                  src="/images/diana-pferdesicht.jpeg"
-                  alt="Diana – Pferdesicht"
-                  fill
-                  className="object-cover -scale-x-100"
-                />
-              </div>
-              <div className="relative aspect-square rounded-xl overflow-hidden">
-                <Image
-                  src="/images/stefan-pferdesicht.jpeg"
-                  alt="Stefan – Pferdesicht"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <p className="text-white/70 font-sans text-sm text-center italic">
-              Das Team hinter Pferdesicht: Stefan kümmert sich um alles im Hintergrund — damit Diana sich voll ihrer Leidenschaft widmen kann.
-            </p>
-          </div>
-
-          <div className="space-y-6 text-white/80 font-sans text-lg font-light leading-relaxed">
             <p>
               <strong className="text-white font-medium">15 Jahre Hempura.</strong> Tausende Gespräche mit unseren Kooperationspartnern.
             </p>
@@ -331,6 +323,7 @@ export default function UeberMichPage() {
             </p>
           </div>
 
+          {/* Kern-Ergebnis — Brücke zur Kuratorin-USP */}
           <div className="my-10 bg-white/15 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-white/20 text-center">
             <p className="text-white/90 font-sans text-lg font-light leading-relaxed">
               Diese Kombination — unermüdliche Recherche, tausende Experten-Gespräche, und das tägliche Umsetzen mit meinem eigenen Pferd — hat mir etwas gegeben, das kein Kurs der Welt vermitteln kann:
@@ -347,30 +340,32 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 5b: SÄULE 2 — Reittherapie (16 Jahre)
+          Diana's Beziehungs-Autorität — Live-Text
           ═══════════════════════════════════════════════════════════════════ */}
-      <section id="reittherapie" className="py-20 md:py-28 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-loam">
+        <div className="max-w-4xl mx-auto px-6">
 
-          <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
+          <span className="inline-block text-[#C5A065]/70 font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 2
           </span>
 
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#F3F0EB] leading-tight mb-8">
             16 Jahre Reittherapeutin — Was passiert, wenn man Pferden wirklich zuhört
           </h2>
 
-          <div className="space-y-6 text-loam/80 font-sans text-lg font-light leading-relaxed">
+          <div className="space-y-6 text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed">
             <p>
               Neben unserem Unternehmen Hempura und meinem eigenen Weg im Offenstall mit Ramses, war da noch etwas:
             </p>
             <p>
-              Ich habe <strong className="text-loam font-medium">16 Jahre lang als Reittherapeutin</strong> gearbeitet. Diese Arbeit hat mein Verständnis von Pferden grundlegend verändert.
+              Ich habe <strong className="text-[#F3F0EB] font-medium">16 Jahre lang als Reittherapeutin</strong> gearbeitet. Diese Arbeit hat mein Verständnis von Pferden grundlegend verändert.
             </p>
             <p>
-              Ich habe <strong className="text-loam font-medium">über 200 Menschen begleitet</strong> — Kinder und Erwachsene mit körperlichen und geistigen Behinderungen, Down-Syndrom, ADHS, psychischen Störungen, Lernschwächen. Menschen, die von anderen Menschen verletzt wurden und bei Pferden zum ersten Mal wieder Vertrauen fassen konnten.
+              Ich habe <strong className="text-[#F3F0EB] font-medium">über 200 Menschen begleitet</strong> — Kinder und Erwachsene mit körperlichen und geistigen Behinderungen, Down-Syndrom, ADHS, psychischen Störungen, Lernschwächen. Menschen, die von anderen Menschen verletzt wurden und bei Pferden zum ersten Mal wieder Vertrauen fassen konnten.
             </p>
           </div>
 
+          {/* Reittherapie-Bild */}
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-xl my-10">
             <Image
               src="/images/reittherapie.png"
@@ -380,26 +375,28 @@ export default function UeberMichPage() {
             />
           </div>
 
-          <div className="space-y-6 text-loam/80 font-sans text-lg font-light leading-relaxed">
+          <div className="space-y-6 text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed">
             <p>
-              Ich habe gesehen, wie Kinder, die kein Wort sprachen, <strong className="text-loam font-medium">mit Pferden kommunizierten</strong>. Wie traumatisierte Erwachsene durch ein Pferd wieder Vertrauen fanden. Wie Pferde sofort zeigten, wenn ein Mensch innerlich unruhig war — meist schon <strong className="text-loam font-medium">bevor der Mensch es überhaupt selbst wusste</strong>.
+              Ich habe gesehen, wie Kinder, die kein Wort sprachen, <strong className="text-[#F3F0EB] font-medium">mit Pferden kommunizierten</strong>. Wie traumatisierte Erwachsene durch ein Pferd wieder Vertrauen fanden. Wie Pferde sofort zeigten, wenn ein Mensch innerlich unruhig war — meist schon <strong className="text-[#F3F0EB] font-medium">bevor der Mensch es überhaupt selbst wusste</strong>.
             </p>
           </div>
 
-          <div className="my-10 bg-sage/10 rounded-xl p-8 md:p-10 border border-sage/20 text-center">
-            <p className="font-serif text-2xl md:text-3xl text-loam leading-tight mb-4">
+          {/* Signature Phrase */}
+          <div className="my-10 bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/30 text-center">
+            <p className="font-serif text-2xl md:text-3xl text-[#F3F0EB] leading-tight mb-4">
               Pferde lügen nicht. Sie spiegeln.
             </p>
-            <p className="text-loam/70 font-sans text-base font-light leading-relaxed">
+            <p className="text-[#EBE6DF]/70 font-sans text-base font-light leading-relaxed">
               Und wenn du verstehst, was sie dir zeigen, verstehst du nicht nur dein Pferd — sondern lernst auch dich selbst besser kennen.
             </p>
           </div>
 
-          <p className="text-loam/80 font-sans text-lg font-light leading-relaxed mb-10">
-            <strong className="text-loam font-medium">Der Mensch ist immer Teil der Gleichung.</strong> Das habe ich in der Reittherapie gelernt. Und das verändert alles zwischen dir und deinem Pferd.
+          <p className="text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed mb-10">
+            <strong className="text-[#F3F0EB] font-medium">Der Mensch ist immer Teil der Gleichung.</strong> Das habe ich in der Reittherapie gelernt. Und das verändert alles zwischen dir und deinem Pferd.
           </p>
 
-          <h3 className="font-serif text-2xl text-loam leading-tight mb-6">
+          {/* Trainer-Vergleich */}
+          <h3 className="font-serif text-2xl text-[#F3F0EB] leading-tight mb-6">
             Diese Perspektive, geprägt durch meine Reittherapie, unterscheidet mich von normalen Pferdetrainern:
           </h3>
 
@@ -411,19 +408,19 @@ export default function UeberMichPage() {
               ['"Mehr Druck!"', 'Mehr Klarheit — in dir selbst'],
             ].map(([left, right], index) => (
               <div key={index} className="contents">
-                <div className="bg-loam/5 rounded-lg p-5 border border-loam/10">
-                  <p className="text-loam/50 font-sans text-sm font-bold tracking-wide uppercase mb-2">
+                <div className="bg-white/10 rounded-lg p-5 border border-white/10">
+                  <p className="text-[#EBE6DF]/50 font-sans text-sm font-bold tracking-wide uppercase mb-2">
                     Was normale Trainer sagen...
                   </p>
-                  <p className="font-serif text-lg text-loam">
+                  <p className="font-serif text-lg text-[#F3F0EB]">
                     {left}
                   </p>
                 </div>
-                <div className="bg-sage/10 rounded-lg p-5 border border-sage/30">
-                  <p className="text-sage font-sans text-sm font-bold tracking-wide uppercase mb-2">
+                <div className="bg-white/15 rounded-lg p-5 border border-[#C5A065]/30">
+                  <p className="text-[#C5A065] font-sans text-sm font-bold tracking-wide uppercase mb-2">
                     Was ich zusätzlich sehe...
                   </p>
-                  <p className="font-serif text-lg text-loam">
+                  <p className="font-serif text-lg text-[#F3F0EB]">
                     {right}
                   </p>
                 </div>
@@ -431,7 +428,8 @@ export default function UeberMichPage() {
             ))}
           </div>
 
-          <div className="bg-loam rounded-xl p-8 md:p-10 text-center">
+          {/* Closing Zitat */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/30 text-center">
             <p className="font-serif text-xl md:text-2xl text-[#C5A065] italic leading-tight">
               „Das Pferd als Spiegel deiner Seele auf dem Weg zu dir selbst."
             </p>
@@ -441,21 +439,22 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 5c: SÄULE 3 — Freiheitsdressur (5 Jahre)
+          Diana's Trainings-Autorität — Live-Text
           ═══════════════════════════════════════════════════════════════════ */}
-      <section id="freiheitsdressur" className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-sage">
+        <div className="max-w-4xl mx-auto px-6">
 
-          <span className="inline-block text-sage font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
+          <span className="inline-block text-white/50 font-sans text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Was mich geprägt hat · Teil 3
           </span>
 
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-8">
             Die Freiheitsdressur — 5 Jahre hinter den Kulissen
           </h2>
 
-          <div className="space-y-6 text-loam/80 font-sans text-lg font-light leading-relaxed">
+          <div className="space-y-6 text-white/80 font-sans text-lg font-light leading-relaxed">
             <p>
-              5 Jahre lang haben Stefan und ich ein Unternehmen mit <strong className="text-loam font-medium">einer der bekanntesten Freiheitsdressur-Trainerinnen Europas</strong> aufgebaut.
+              5 Jahre lang haben Stefan und ich ein Unternehmen mit <strong className="text-white font-medium">einer der bekanntesten Freiheitsdressur-Trainerinnen Europas</strong> aufgebaut.
             </p>
             <p>
               Sie stand vor der Kamera und wir haben ihr komplettes Online-Kurs-Business, ihre Positionierung als Trainerin und das gesamte Projektmanagement aufgebaut und betrieben.
@@ -464,17 +463,18 @@ export default function UeberMichPage() {
               Im Kern ging es dabei immer um dieselben Themen: Vertrauen, Freundschaft und feine Kommunikation zwischen Mensch und Pferd — Prinzipien, die auch meinen eigenen Weg mit Ramses tief geprägt haben.
             </p>
             <p>
-              Durch diese Kooperation bekam ich auch noch zusätzlich Einblicke in <strong className="text-loam font-medium">internationale Pferde-Shows</strong> — und natürlich auch in das, was dort hinter dem Vorhang passiert...
+              Durch diese Kooperation bekam ich auch noch zusätzlich Einblicke in <strong className="text-white font-medium">internationale Pferde-Shows</strong> — und natürlich auch in das, was dort hinter dem Vorhang passiert...
             </p>
             <p>
               All diese Einblicke und neuen Perspektiven haben mein Verständnis von Pferden erweitert — auf eine Weise, die ich vorher nicht für möglich gehalten hätte.
             </p>
             <p>
-              Und gleichzeitig habe ich in diesen Jahren <strong className="text-loam font-medium">meinen ganz eigenen Weg gefunden</strong>.
+              Und gleichzeitig habe ich in diesen Jahren <strong className="text-white font-medium">meinen ganz eigenen Weg gefunden</strong>.
             </p>
           </div>
 
-          <div className="my-10 bg-loam rounded-xl p-8 md:p-10 text-center">
+          {/* Kern-Zitat */}
+          <div className="my-10 bg-loam/80 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/30 text-center">
             <p className="font-serif text-2xl md:text-3xl text-[#F3F0EB] italic leading-tight">
               „Echte Partnerschaft entsteht, wenn das Pferd <span className="text-[#C5A065]">WÄHLT</span> zu bleiben — nicht weil es muss, sondern weil es will."
             </p>
@@ -484,21 +484,21 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 5d: Meine Perspektive und warum ich anders schaue
+          Zusammenführung: Dreifach-Autorität als visuelles Statement
           ═══════════════════════════════════════════════════════════════════ */}
-      <section id="perspektive" className="py-20 md:py-28 bg-loam">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-loam">
+        <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#F3F0EB] leading-tight mb-4">
-            Meine Perspektive, warum ich anders schaue...
+            Meine Perspektive und warum ich anders schaue
           </h2>
-          <p className="font-serif text-2xl md:text-3xl text-[#C5A065] mb-10">
-            ...und was das für dich bedeutet
-          </p>
           <p className="text-[#EBE6DF]/70 font-sans text-lg font-light leading-relaxed mb-12">
             Wenn ich heute über Pferdehaltung, Training oder Verhalten spreche, bringe ich immer diese vierfache Perspektive mit:
           </p>
 
+          {/* Vierfach-Säulen als 4 Karten (2x2 Grid) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {/* Säule 1: Praxis */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/10">
               <span className="inline-block text-[#C5A065] font-sans text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 Praxis
@@ -511,6 +511,7 @@ export default function UeberMichPage() {
               </p>
             </div>
 
+            {/* Säule 2: Wissen/Hempura */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/10">
               <span className="inline-block text-[#C5A065] font-sans text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 Wissen
@@ -523,6 +524,7 @@ export default function UeberMichPage() {
               </p>
             </div>
 
+            {/* Säule 3: Reittherapie */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-[#C5A065]/40">
               <span className="inline-block text-[#C5A065] font-sans text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 Beziehung
@@ -535,6 +537,7 @@ export default function UeberMichPage() {
               </p>
             </div>
 
+            {/* Säule 4: Freiheitsdressur */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/10">
               <span className="inline-block text-[#C5A065] font-sans text-xs font-bold tracking-[0.2em] uppercase mb-3">
                 Training
@@ -548,6 +551,7 @@ export default function UeberMichPage() {
             </div>
           </div>
 
+          {/* Punch */}
           <div className="text-center">
             <p className="text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed mb-4">
               Das macht mich nicht besser als andere Experten. Aber <strong className="text-[#F3F0EB] font-medium">anders</strong>.
@@ -561,9 +565,10 @@ export default function UeberMichPage() {
 
       {/* ═══════════════════════════════════════════════════════════════════
           SECTION 6: Was ich glaube
+          (Herzstück — leicht gestrafft)
           ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-loam leading-tight mb-8">
             Was ich glaube
           </h2>
@@ -607,9 +612,65 @@ export default function UeberMichPage() {
               <strong className="text-loam font-medium">Du schaust hin. Und genau das macht den Unterschied.</strong>
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* Closing Statement */}
-          <div className="mt-12 bg-loam rounded-xl p-8 md:p-10 text-center">
+      {/* ═══════════════════════════════════════════════════════════════════
+          SECTION 7: Was ich dir geben will + Kuratorin-USP
+          (★ KRITISCH: Kuratorin-USP fehlte in v4.2 komplett!)
+          ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 md:py-28 bg-loam">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#F3F0EB] leading-tight mb-4">
+            Was ich dir geben will
+          </h2>
+
+          <p className="font-serif text-2xl md:text-3xl text-[#C5A065] mb-10">
+            Wissen als Rüstung.
+          </p>
+
+          <div className="space-y-6 text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed">
+            <p>
+              Die <strong className="text-[#EBE6DF] font-medium">Abkürzungen</strong>, die mir niemand gezeigt hat. Die <strong className="text-[#EBE6DF] font-medium">Warnsignale</strong>, die ich zu spät erkannt habe.
+            </p>
+          </div>
+
+          {/* ★ KURATORIN-USP — NEU in v5.0 */}
+          <div className="my-10 bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/30">
+            <p className="text-[#F3F0EB] font-sans text-lg leading-relaxed">
+              Du musst nicht mehr stundenlang googeln und am Ende verwirrter sein als vorher. <strong className="text-[#C5A065] font-semibold">Ich habe das für dich sortiert.</strong> Was stimmt, was Mythos ist – verständlich erklärt, ohne Tiermedizin-Studium.
+            </p>
+          </div>
+
+          <div className="space-y-6 text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed">
+            <p>
+              Wie du erkennst, welchen Experten du vertrauen kannst. Wie du dich am Stall <strong className="text-[#EBE6DF] font-medium">behauptest</strong>. Wie du mit Stallpolitik umgehst.
+            </p>
+            <p>
+              Und dazu meine besondere Perspektive: Was dein Pferd dir zeigt. Warum <strong className="text-[#EBE6DF] font-medium">Verstehen vor Korrigieren</strong> kommt.
+            </p>
+            <p>
+              Damit du nicht um <strong className="text-[#EBE6DF] font-medium">3 Uhr nachts</strong> googelst, ob das normal ist. Damit du nicht hilflos neben deinem Pferd stehst. Damit du <strong className="text-[#EBE6DF] font-medium">selbst entscheiden</strong> kannst.
+            </p>
+          </div>
+
+          <h4 className="font-serif text-xl md:text-2xl text-[#F3F0EB] leading-tight mt-10 mb-4">
+            Und wenn es doch passiert?
+          </h4>
+
+          <div className="space-y-6 text-[#EBE6DF]/80 font-sans text-lg font-light leading-relaxed">
+            <p>
+              Wenn dein Pferd krank wird – dann <strong className="text-[#EBE6DF] font-medium">lass ich dich nicht allein</strong>. Diagnosen stellen ist nicht meine Aufgabe. Aber <strong className="text-[#EBE6DF] font-medium">Orientierung geben</strong>, wenn sich alles überwältigend anfühlt – das kann ich.
+            </p>
+          </div>
+
+          <blockquote className="my-10 border-l-4 border-[#C5A065] pl-6 md:pl-8">
+            <p className="font-serif text-xl md:text-2xl text-[#F3F0EB] italic leading-relaxed">
+              „Diesen Weg musst du nicht alleine gehen. Und du brauchst keine 30 Jahre."
+            </p>
+          </blockquote>
+
+          <div className="text-center mt-16">
             <p className="font-serif text-2xl md:text-3xl text-[#F3F0EB] leading-tight mb-4">
               Das hier ist mein Weg. Vielleicht auch deiner.
             </p>
@@ -625,7 +686,7 @@ export default function UeberMichPage() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-[#faf8f5]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl text-loam leading-tight mb-4">
               Bereit für den ersten Schritt?
