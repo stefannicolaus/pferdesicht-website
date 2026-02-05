@@ -1,8 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function StickyQuizBanner() {
+  const pathname = usePathname();
+
+  // Banner auf Quiz-Seiten ausblenden (User ist bereits im Quiz)
+  if (pathname?.startsWith("/quiz")) {
+    return null;
+  }
+
   return (
     <>
       {/* Mobile Sticky CTA */}

@@ -67,7 +67,7 @@ export default function QuizLandingPage() {
         {/* Additional radial gradient for center focus */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(44,42,37,0.3)_0%,rgba(44,42,37,0.6)_100%)]" />
 
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Eyebrow Label */}
           <p className="text-gold font-sans text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-3 [text-shadow:0_2px_8px_rgba(0,0,0,0.5)]">
             Dein persönlicher Frühjahrs-Fahrplan
@@ -105,7 +105,7 @@ export default function QuizLandingPage() {
           Framework: Attention Grabber + Validierung
           ============================================ */}
       <section className="py-16 md:py-20 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header - Gaslighting Entlarvung */}
           <h2 className="text-2xl md:text-3xl font-serif text-loam text-center mb-10">
             Im Stall hörst du:
@@ -145,7 +145,7 @@ export default function QuizLandingPage() {
           Framework: Benefits + CTA #2
           ============================================ */}
       <section className="py-16 md:py-20 bg-sage">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-serif text-white text-center mb-12">
             Was du nach dem Quiz bekommst:
           </h2>
@@ -209,7 +209,7 @@ export default function QuizLandingPage() {
           SECTION 4: SO FUNKTIONIERT'S
           ============================================ */}
       <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-serif text-loam text-center mb-12">
             So funktioniert's:
           </h2>
@@ -241,7 +241,7 @@ export default function QuizLandingPage() {
           SECTION 5: FÜR WEN / NICHT FÜR WEN
           ============================================ */}
       <section className="py-16 md:py-20 bg-[#faf8f5]">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* Für wen */}
             <div className="bg-white p-6 md:p-8 rounded-sm border border-sage/20 shadow-sm">
@@ -301,7 +301,7 @@ export default function QuizLandingPage() {
           Framework: Wärme + "Ich auch"-Moment
           ============================================ */}
       <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-sage/20 flex-shrink-0">
               <img
@@ -332,7 +332,7 @@ export default function QuizLandingPage() {
           Framework: Wiederholter CTA #3 + Click Triggers
           ============================================ */}
       <section className="py-16 md:py-24 bg-loam">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-white mb-4 leading-tight">
             Du fragst nicht zu viel.<br />
             <span className="text-gold italic">Finde heraus, was DEIN Pferd jetzt braucht.</span>
