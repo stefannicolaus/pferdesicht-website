@@ -139,10 +139,10 @@ export default function PferdesichtPage() {
       <section className="py-8 sm:py-12 bg-[#faf8f5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h3 className="text-xl md:text-2xl font-serif text-loam text-center mb-2">
-            Die Sätze, bei denen du innerlich die Augen verdrehst.
+            Die Sätze, bei denen du dich fragst, ob DU vielleicht die Einzige bist, die so tickt.
           </h3>
           <p className="text-sm md:text-base font-sans text-loam/60 text-center mb-6">
-            (Und bei denen du dich vielleicht manchmal fragst, ob du die Einzige bist die so tickt.)
+            (Spoiler: Bist du nicht.)
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {[
@@ -438,7 +438,7 @@ export default function PferdesichtPage() {
               },
               {
                 transformation: "Nächte zu Ruhe",
-                quote: "Ich schlaf wieder durch. Klingt banal, ist es aber nicht.",
+                quote: "Ich schlaf wieder durch. Weil ich nachts nicht mehr grübel, ob ich was übersehe. Klingt banal, ist es aber nicht.",
                 author: "Julia, Österreich",
               },
               {
