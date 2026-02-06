@@ -127,11 +127,11 @@ export function DianaRamsesVideo({ variant = "ueber-mich" }: DianaRamsesVideoPro
                 {/* Dark Overlay on Hover */}
                 <div className="absolute inset-0 bg-black/20 group-hover/btn:bg-black/30 transition-colors" />
 
-                {/* Play Button */}
+                {/* Play Button - minimiert */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gold/90 group-hover/btn:bg-gold group-hover/btn:scale-105 transition-all flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gold/90 group-hover/btn:bg-gold group-hover/btn:scale-105 transition-all flex items-center justify-center shadow-lg">
                     <svg
-                      className="w-6 h-6 sm:w-8 sm:h-8 text-loam ml-1"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-loam ml-0.5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -150,15 +150,22 @@ export function DianaRamsesVideo({ variant = "ueber-mich" }: DianaRamsesVideoPro
               preload="none"
               playsInline
               muted={false}
-              onEnded={() => setIsPaused(true)}
+              onEnded={() => {
+                setIsPlaying(false)
+                setIsPaused(false)
+                setCurrentTime(0)
+                if (videoRef.current) {
+                  videoRef.current.currentTime = 0
+                }
+              }}
             >
               <source src="/videos/diana-ramses-web.mp4" type="video/mp4" />
               Dein Browser unterstützt das Video-Format nicht.
             </video>
 
-            {/* Custom Controls - only visible when playing */}
+            {/* Custom Controls - mobile: immer sichtbar, desktop: hover */}
             {isPlaying && (
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent pt-8 pb-3 px-3 sm:px-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent pt-8 pb-3 px-3 sm:px-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
 
                 {/* Progress Bar */}
                 <div className="relative w-full h-1 mb-3 group/progress">

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { ArrowLeft, ArrowRight, Loader2 } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Loader2, Sparkles } from 'lucide-react'
 import { toast } from '@/hooks/use-toast'
 
 import { Button } from '@/components/ui/button'
@@ -269,18 +269,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="haltungKontext"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Möchtest du etwas ergänzen? (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Dein Bonus für einen persönlicheren Report:</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. besondere Umstände, Stallwechsel geplant..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={2}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        Je mehr ich weiß, desto genauer kann ich dir helfen.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -320,18 +324,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="stoffwechselKontext"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Gibt es etwas, das dich beunruhigt? (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Gibt es etwas, das dich beunruhigt?</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. nimmt schnell zu, Speckpolster..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={2}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        Das hilft mir, mögliche Risiken besser einzuschätzen.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -371,18 +379,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="weideKontext"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Wie wird bei euch angeweidet? (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Wie wird bei euch angeweidet?</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. langsam steigern, erst ab Mai..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={2}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        So kann ich dir gezielte Tipps für eure Situation geben.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -442,18 +454,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="vorgeschichteStory"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Erzähl uns mehr über die Geschichte (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Erzähl mir mehr über eure Geschichte</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. wann war der letzte Reheschub, welche Behandlung..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={3}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        Vorgeschichte ist wichtig — so kann ich echte Zusammenhänge erkennen.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -493,18 +509,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="entwurmungKontext"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Gibt es etwas Besonderes? (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Gibt es etwas Besonderes zu beachten?</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. letzte Kotprobe, Stallvorgaben..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={2}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        Jedes Detail hilft mir, den Report auf euch zuzuschneiden.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -544,18 +564,22 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                   control={form.control}
                   name="hauptsorgeDetail"
                   render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm text-muted-foreground">
-                        Was genau macht dir Sorgen? (optional)
+                    <FormItem className="mt-4 p-4 rounded-lg bg-gold/5 border border-gold/20">
+                      <FormLabel className="text-sm text-loam/80 flex items-center gap-2">
+                        <Sparkles className="h-3.5 w-3.5 text-gold" />
+                        <span>Was genau macht dir Sorgen?</span>
                       </FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="z.B. letztes Jahr hatte ich Panik beim Anweiden..."
-                          className="resize-none"
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
                           rows={2}
                           {...field}
                         />
                       </FormControl>
+                      <p className="text-xs text-loam/50 mt-1">
+                        Wenn ich deine Sorge verstehe, kann ich gezielt darauf eingehen.
+                      </p>
                     </FormItem>
                   )}
                 />
@@ -569,26 +593,35 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
               title="Gibt es noch etwas, das ich wissen sollte?"
               description="Hier ist Platz für alles, was du mir mitteilen möchtest."
             >
-              <FormField
-                control={form.control}
-                name="freitext"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Textarea
-                        placeholder="z.B. besondere Umstände, Fragen, Wünsche für den Report..."
-                        className="resize-none"
-                        rows={5}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                    <p className="text-xs text-muted-foreground">
-                      Optional, aber je mehr ich weiß, desto persönlicher wird dein Report.
-                    </p>
-                  </FormItem>
-                )}
-              />
+              <div className="p-4 rounded-lg bg-gold/5 border border-gold/20">
+                <div className="flex items-center gap-2 mb-3">
+                  <Sparkles className="h-4 w-4 text-gold" />
+                  <span className="text-sm font-medium text-loam">
+                    Dein persönlicher Bonus
+                  </span>
+                </div>
+                <FormField
+                  control={form.control}
+                  name="freitext"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Textarea
+                          placeholder="z.B. besondere Umstände, Fragen, aktuelle Herausforderungen, Wünsche für den Report..."
+                          className="resize-none bg-white/80 border-gold/30 focus:border-gold/50"
+                          rows={5}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <p className="text-xs text-loam/60 mt-3 leading-relaxed">
+                  Je mehr ich über {form.watch('pferdename') || 'dein Pferd'} weiß, desto genauer kann ich
+                  auf eure individuelle Situation eingehen. Dieser Text macht deinen Report einzigartig.
+                </p>
+              </div>
             </QuestionCard>
           )}
 
