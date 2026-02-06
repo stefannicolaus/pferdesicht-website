@@ -17,14 +17,13 @@ export function QuizProgress({
   const progress = Math.round((currentStep / totalSteps) * 100)
 
   return (
-    <div className={cn('space-y-2', className)}>
-      <div className="flex items-center justify-between text-sm">
-        <span className="text-muted-foreground">
-          Frage {currentStep} von {totalSteps}
-        </span>
-        <span className="font-medium text-sage-700">{progress}%</span>
+    <div className={cn('space-y-1', className)}>
+      <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground">
+        <span>Frage {currentStep} von {totalSteps}</span>
+        <span>·</span>
+        <span className="text-sage">{progress}%</span>
       </div>
-      <Progress value={progress} className="h-2 bg-sage-100" />
+      <Progress value={progress} className="h-1 bg-sage/20" />
     </div>
   )
 }

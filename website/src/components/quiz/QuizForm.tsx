@@ -148,12 +148,6 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
 
   return (
     <div className="mx-auto w-full max-w-2xl">
-      <QuizProgress
-        currentStep={currentStep}
-        totalSteps={TOTAL_STEPS}
-        className="mb-8"
-      />
-
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleSubmit)}>
           {/* Step 1: Pferdename */}
@@ -670,13 +664,13 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
           )}
 
           {/* Navigation Buttons */}
-          <div className="mt-8 flex items-center justify-between">
+          <div className="mt-6 flex items-center justify-between">
             <Button
               type="button"
               variant="outline"
               onClick={handleBack}
               disabled={currentStep === 1}
-              className="gap-2"
+              className="gap-2 bg-sage/10 border-sage/30 text-sage hover:bg-sage/20 hover:text-sage disabled:opacity-30"
             >
               <ArrowLeft className="h-4 w-4" />
               Zurück
@@ -686,7 +680,7 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
               <Button
                 type="button"
                 onClick={handleNext}
-                className="gap-2 bg-gold-500 text-loam-900 hover:bg-gold-600"
+                className="gap-2 bg-gold hover:bg-gold/90 text-loam font-semibold px-6"
               >
                 Weiter
                 <ArrowRight className="h-4 w-4" />
@@ -695,7 +689,7 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="gap-2 bg-gold-500 text-loam-900 hover:bg-gold-600"
+                className="gap-2 bg-gold hover:bg-gold/90 text-loam font-semibold px-6"
               >
                 {isSubmitting ? (
                   <>
@@ -708,6 +702,13 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
               </Button>
             )}
           </div>
+
+          {/* Progress - below buttons */}
+          <QuizProgress
+            currentStep={currentStep}
+            totalSteps={TOTAL_STEPS}
+            className="mt-6"
+          />
         </form>
       </Form>
     </div>

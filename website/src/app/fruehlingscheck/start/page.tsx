@@ -25,18 +25,18 @@ export default function QuizStartPage() {
 
   return (
     <div className="min-h-screen bg-cream">
-      <div className="mx-auto max-w-3xl px-4 py-12">
+      <div className="mx-auto max-w-3xl px-4 py-3 md:py-4">
         <Link
           href="/fruehlingscheck"
-          className="inline-flex items-center gap-1 text-sm text-loam/60 hover:text-loam transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-sage font-medium hover:text-loam transition-colors mb-3 bg-sage/10 px-3 py-1.5 rounded-full"
         >
           ← Zurück
         </Link>
 
-        <div className="text-center mb-10">
+        <div className="text-center mb-4">
           {/* Diana Avatar */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-gold/30">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-gold/30">
               <Image
                 src="/images/Diana_Pferdesicht.jpeg"
                 alt="Diana von Pferdesicht"
@@ -44,48 +44,19 @@ export default function QuizStartPage() {
                 className="object-cover object-top"
               />
             </div>
-            <div className="text-left">
-              <p className="font-sans text-sm font-medium text-loam">Diana</p>
-              <p className="font-sans text-xs text-loam/60">von Pferdesicht</p>
-            </div>
-          </div>
-
-          <p className="text-xs font-sans uppercase tracking-widest text-sage mb-3 font-semibold">
-            Kostenloser Frühlingscheck · 2 Minuten
-          </p>
-          <h1 className="font-serif text-3xl md:text-4xl text-loam mb-3 leading-tight">
-            Fellwechsel, Anweiden, Parasiten, Fütterung —{' '}
-            <span className="text-sage">finde heraus, was bei deinem Pferd jetzt wirklich zählt.</span>
-          </h1>
-          <p className="text-loam/70 font-sans text-base max-w-xl mx-auto mb-4">
-            <span className="text-gold font-medium">8 Fragen.</span>{' '}
-            Persönliche Auswertung mit{' '}
-            <span className="text-gold font-medium">Ampelsystem.</span>{' '}
-            Dein Frühlings-Fahrplan — sortiert nach{' '}
-            <span className="text-gold font-medium">Dringlichkeit.</span>
-          </p>
-          <p className="text-loam/50 font-sans text-sm mb-6">
-            Inkl. Hufrehe-Risiko · Cushing-Einordnung · Fruktan-Ampel
-          </p>
-          <div className="flex justify-center gap-6 flex-wrap mb-6">
-            {[
-              { icon: '✉️', label: 'Persönliches Anschreiben' },
-              { icon: '🚦', label: 'Ampel-Auswertung' },
-              { icon: '📅', label: '4-Wochen-Plan' },
-              { icon: '🖨️', label: 'Zum Ausdrucken' },
-            ].map((b, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <span className="text-base">{b.icon}</span>
-                <span className="font-sans text-xs text-loam/60">{b.label}</span>
-              </div>
-            ))}
-          </div>
-          <div className="border-t border-loam/10 pt-6">
-            <p className="text-gold font-sans text-sm max-w-lg mx-auto font-medium">
-              Beantworte die Fragen ehrlich — es gibt kein Richtig oder Falsch.
-              Je genauer deine Angaben, desto persönlicher dein Report.
+            <p className="font-sans text-sm text-loam">
+              <span className="font-medium">Diana</span>
+              <span className="text-loam/60"> von Pferdesicht</span>
             </p>
           </div>
+
+          <h1 className="font-serif text-xl md:text-2xl text-loam mb-2 leading-tight">
+            Fellwechsel, Anweiden, Parasiten —{' '}
+            <span className="text-sage">was zählt bei deinem Pferd?</span>
+          </h1>
+          <p className="text-loam/60 font-sans text-sm max-w-md mx-auto">
+            8 Fragen · Ampelsystem · Persönlicher Fahrplan
+          </p>
         </div>
 
         <QuizForm onSubmit={handleSubmit} />
