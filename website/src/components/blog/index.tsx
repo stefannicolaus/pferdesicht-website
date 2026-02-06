@@ -63,7 +63,7 @@ export function QuizCTA() {
         <p className="text-sm font-sans text-white/80 mb-8 max-w-md mx-auto leading-relaxed">
           Fellwechsel, Anweiden, Parasiten – alle reden gleichzeitig auf dich ein. Aber was ist wirklich wichtig für DEIN Pferd? In 2 Minuten weißt du es.
         </p>
-        <a href="/quiz" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold/90 font-semibold uppercase tracking-wider text-sm rounded transition-colors w-full md:w-auto" style={{ color: "#2c2a25" }}>
+        <a href="/fruehlingscheck" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold/90 font-semibold uppercase tracking-wider text-sm rounded transition-colors w-full md:w-auto" style={{ color: "#2c2a25" }}>
           Quiz starten <span className="ml-1">→</span>
         </a>
         <p className="text-sm font-sans text-white/70 mt-6 mb-3">In 2 Minuten bekommst du:</p>

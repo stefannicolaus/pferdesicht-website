@@ -7,7 +7,7 @@ export function StickyQuizBanner() {
   const pathname = usePathname();
 
   // Banner auf Quiz-Seiten ausblenden (User ist bereits im Quiz)
-  if (pathname?.startsWith("/quiz")) {
+  if (pathname?.startsWith("/fruehlingscheck")) {
     return null;
   }
 
@@ -15,7 +15,7 @@ export function StickyQuizBanner() {
     <>
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-[#5f6b54] p-4 md:hidden z-50">
-        <Link href="/quiz" className="block text-center">
+        <Link href="/fruehlingscheck" className="block text-center">
           <span className="block text-[#c8a476] text-xs mb-1">
             Meine Frühlingsvorbereitung
           </span>
@@ -40,7 +40,7 @@ export function StickyQuizBanner() {
             </span>
           </div>
           <Link
-            href="/quiz"
+            href="/fruehlingscheck"
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-loam rounded-full hover:bg-[#b8946a] hover:text-white transition-colors font-medium text-sm"
           >
             Zeig mir, worauf ich achten sollte

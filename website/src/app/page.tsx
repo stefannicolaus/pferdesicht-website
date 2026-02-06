@@ -270,7 +270,7 @@ export default function PferdesichtPage() {
 
               {/* CTA Button */}
               <Link
-                href="/quiz"
+                href="/fruehlingscheck"
                 className="min-h-[48px] py-4 px-8 bg-gold hover:bg-gold/90 text-loam font-sans font-semibold text-sm uppercase tracking-wide rounded transition-colors inline-flex items-center justify-center gap-2"
               >
                 Quiz starten
@@ -611,7 +611,7 @@ export default function PferdesichtPage() {
 
             {/* CTA Button with Subtext */}
             <Link
-              href="/quiz"
+              href="/fruehlingscheck"
               className="w-full py-4 px-6 bg-gold hover:bg-gold/90 text-loam rounded transition-colors inline-flex flex-col items-center justify-center"
             >
               <span className="font-sans font-semibold text-base flex items-center gap-2">
@@ -636,7 +636,7 @@ export default function PferdesichtPage() {
       {/* ============================================ */}
       <div className="fixed bottom-0 left-0 right-0 bg-loam/95 backdrop-blur-sm border-t border-white/10 pt-3 pb-5 px-4 z-50 md:hidden safe-area-bottom">
         <Link
-          href="/quiz"
+          href="/fruehlingscheck"
           className="flex items-center justify-center gap-2 w-full min-h-[48px] py-3 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm tactile-button"
         >
           Frühlingscheck starten

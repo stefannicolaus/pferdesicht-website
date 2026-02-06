@@ -129,7 +129,7 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Frühlingscheck",
-    href: "/quiz",
+    href: "/fruehlingscheck",
   },
   {
     label: "Über mich",

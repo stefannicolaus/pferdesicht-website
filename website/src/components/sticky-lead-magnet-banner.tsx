@@ -28,7 +28,7 @@ export function StickyLeadMagnetBanner() {
 
         <div className="flex items-center gap-2 flex-shrink-0">
           <Link
-            href="/quiz"
+            href="/fruehlingscheck"
             className="bg-gold hover:bg-[#b8956a] text-white px-5 md:px-6 py-2.5 font-sans font-bold uppercase tracking-wider text-xs md:text-sm rounded-sm transition-colors whitespace-nowrap inline-flex items-center gap-2"
           >
             Quiz starten

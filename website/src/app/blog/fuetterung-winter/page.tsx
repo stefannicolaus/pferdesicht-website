@@ -586,7 +586,7 @@ export default function FuetterungWinterPage() {
                 8 Fragen zu deinem Pferd. Dein persönlicher Report – abgestimmt auf eure Situation.
               </p>
               <Link
-                href="/quiz"
+                href="/fruehlingscheck"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wider uppercase rounded-sm transition-colors"
               >
                 Quiz starten

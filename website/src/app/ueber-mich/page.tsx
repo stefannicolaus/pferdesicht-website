@@ -645,7 +645,7 @@ export default function UeberMichPage() {
                 8 Fragen zu deinem Pferd. 2 Minuten. Dein Plan für die nächsten Wochen.
               </p>
               <Link
-                href="/quiz"
+                href="/fruehlingscheck"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm transition-colors"
               >
                 Quiz starten
@@ -705,7 +705,7 @@ export default function UeberMichPage() {
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-loam/95 backdrop-blur-sm border-t border-white/10 p-4 z-50 md:hidden safe-area-bottom">
         <Link
-          href="/quiz"
+          href="/fruehlingscheck"
           className="flex items-center justify-center gap-2 w-full min-h-[48px] py-3 bg-gold hover:bg-[#b8956a] text-white font-sans font-bold text-sm tracking-wide uppercase rounded-sm transition-colors"
         >
           Frühlingscheck starten

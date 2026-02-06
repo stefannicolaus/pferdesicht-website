@@ -315,7 +315,7 @@ export default function ThermoregulationPage() {
             In 2 Minuten weißt du, wo du bei Fellwechsel, Fütterung und mehr stehst.
           </p>
           <Link
-            href="/quiz"
+            href="/fruehlingscheck"
             className="inline-flex items-center gap-2 bg-white text-sage-700 font-semibold px-8 py-4 rounded-full hover:bg-gold-50 transition-colors text-lg"
           >
             Jetzt Quiz starten
