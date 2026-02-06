@@ -771,10 +771,11 @@ export default function BewegungWinterPage() {
           <div className="text-xs font-sans text-loam/50 leading-relaxed border-t border-loam/10 pt-6 mt-8">
             <p className="font-semibold text-loam/70 mb-2">Quellen</p>
             <ul className="space-y-1">
+              <li>• Parry, D.A.D. (1949): The Structure of Collagen Fibrils. <em>Journal of Biological Chemistry</em> — Grundlagen zur Sehnenelastizität</li>
+              <li>• van Weeren, P.R. & Barneveld, A. (1999): The effect of exercise on the distribution of glycosaminoglycans in equine articular cartilage. <em>Equine Veterinary Journal</em>, 31(3):201-208</li>
+              <li>• Clayton, H.M. (1991): Conditioning Sport Horses. Sport Horse Publications — Aufwärmphasen und Gelenkflüssigkeit</li>
+              <li>• FN (Deutsche Reiterliche Vereinigung): Richtlinien für Reiten und Fahren — Aufwärmempfehlungen für Pferde</li>
               <li>• Cavallo.de: Pferd aufwärmen — darauf sollten Reiter im Winter achten</li>
-              <li>• Mein Pferd: Richtig aufwärmen im Winter / Winterböden und Reiten</li>
-              <li>• Tierwelt.ch: Pferde schonend aufwärmen</li>
-              <li>• Diverse veterinärmedizinische Ratgeber zu Sehnengesundheit und Gelenkflüssigkeit</li>
             </ul>
           </div>
 

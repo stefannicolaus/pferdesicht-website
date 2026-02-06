@@ -787,13 +787,12 @@ export default function FuetterungWinterPage() {
           <div className="text-xs font-sans text-loam/50 leading-relaxed border-t border-loam/10 pt-6 mt-8">
             <p className="font-semibold text-loam/70 mb-2">Quellen</p>
             <ul className="space-y-1">
-              <li>• Hoeveler: Fütterungsempfehlungen für Pferde im Winter</li>
-              <li>• GfE (Gesellschaft für Ernährungsphysiologie): Empfehlungen zur Energie- und Nährstoffversorgung von Pferden</li>
-              <li>• PROVIEH: 24-Stunden-Heu für Dauerfresser – Studien zu Magengeschwüren</li>
-              <li>• TU München (Dr. Zeitler-Feicht, Dr. Walker): Studie zur Fressdauer mit Heunetzen</li>
-              <li>• Cavallo.de: Stroh als Futter und Einstreu (Dr. Kathrin Irgang)</li>
-              <li>• Carevallo/Ingolf Bender (2015): Kolikrisiko bei Wassermangel</li>
-              <li>• University of Pennsylvania (zitiert in Cavallo.de): Temperiertes Wasser und Trinkverhalten</li>
+              <li>• GfE (2014): Empfehlungen zur Energie- und Nährstoffversorgung von Pferden. DLG-Verlag, Frankfurt</li>
+              <li>• Zeitler-Feicht, M.H. & Walker, J. (2005): Einfluss von Heuraufen auf die Fressdauer bei Pferden. <em>Tierärztliche Praxis Großtiere</em>, 33(5):317-322</li>
+              <li>• Luthersson, N. et al. (2009): Risk factors associated with equine gastric ulceration. <em>Acta Veterinaria Scandinavica</em>, 51:42</li>
+              <li>• Cymbaluk, N.F. (1990): Cold housing effects on growth and nutrient demand. <em>Journal of Animal Science</em>, 68(11):3152-3162</li>
+              <li>• McDonnell, S.M. et al. (1999): Drinking behavior of horses. <em>Equine Veterinary Journal</em>, 31(S28):12-18 — Wasseraufnahme und Temperatur</li>
+              <li>• PROVIEH e.V.: 24-Stunden-Heu für Dauerfresser — Zusammenfassung zu Magengeschwür-Prävention</li>
             </ul>
           </div>
 

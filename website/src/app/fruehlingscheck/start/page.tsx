@@ -64,7 +64,7 @@ export default function QuizStartPage() {
             ))}
           </div>
           <div className="border-t border-loam/10 pt-6">
-            <p className="text-loam/60 font-sans text-sm max-w-lg mx-auto">
+            <p className="text-gold font-sans text-sm max-w-lg mx-auto font-medium">
               Beantworte die Fragen ehrlich — es gibt kein Richtig oder Falsch.
               Je genauer deine Angaben, desto persönlicher dein Report.
             </p>

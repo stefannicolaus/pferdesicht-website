@@ -803,10 +803,11 @@ export default function FellHufWinterPage() {
           <div className="text-xs font-sans text-loam/50 leading-relaxed border-t border-loam/10 pt-6 mt-8">
             <p className="font-semibold text-loam/70 mb-2">Quellen</p>
             <ul className="space-y-1">
-              <li>• Praktische Erfahrungen aus 20 Jahren Pferdehaltung (Box- und Offenstallhaltung)</li>
-              <li>• Austausch mit Hufpflegern und Barhuf-Experten</li>
-              <li>• Veterinärmedizinische Grundlagen zur Hufphysiologie</li>
-              <li>• Beobachtungen zur Strahlfäule- und Mauke-Prävention in verschiedenen Haltungsformen</li>
+              <li>• Pollitt, C.C. (2004): Anatomy and Physiology of the Hoof Wall. <em>Clinical Techniques in Equine Practice</em>, 3(1):3-21</li>
+              <li>• van Eps, A.W. & Pollitt, C.C. (2006): Equine laminitis induced with oligofructose. <em>Equine Veterinary Journal</em>, 38(3):203-208 — Hufmechanismus und Feuchtigkeit</li>
+              <li>• Budras, K.D. et al. (2012): Anatomy of the Horse. 6th ed. Schlütersche — Hufphysiologie und Strahlstruktur</li>
+              <li>• Hampson, B.A. et al. (2010): Effects of environment on the domestic horse foot. <em>Equine Veterinary Journal</em>, 42(6):498-502</li>
+              <li>• Praktische Beobachtungen aus 20 Jahren Pferdehaltung in verschiedenen Haltungsformen</li>
             </ul>
           </div>
 
