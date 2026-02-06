@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 // ═══════════════════════════════════════════════════════════════
 // PFERDESICHT — SQUEEZE PAGE: FRÜHLINGSCHECK
@@ -91,9 +92,11 @@ function GrainOverlay() {
 // ── CTA Button ──
 function CTA({ children, full, sub, triggers, light }: { children: React.ReactNode; full?: boolean; sub?: string; triggers?: string[]; light?: boolean }) {
   const [h, setH] = useState(false);
+  const router = useRouter();
   return (
     <div style={{ textAlign: "center" }}>
       <button
+        onClick={() => router.push("/fruehlingscheck/start")}
         onMouseEnter={() => setH(true)}
         onMouseLeave={() => setH(false)}
         style={{
@@ -669,6 +672,7 @@ function FinalCTA() {
 // ═══════════════════════════════════════════════════════════════
 function Sticky() {
   const [show, setShow] = useState(false);
+  const router = useRouter();
   useEffect(() => {
     const h = () => {
       const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
@@ -686,7 +690,7 @@ function Sticky() {
       transition: "transform 0.35s ease",
       boxShadow: "0 -3px 16px rgba(0,0,0,0.05)",
     }}>
-      <button style={{
+      <button onClick={() => router.push("/fruehlingscheck/start")} style={{
         width: "100%", background: C.gold, color: C.loam, border: "none",
         borderRadius: "6px", padding: "13px", fontSize: "14px",
         fontFamily: F.sans, fontWeight: 600, cursor: "pointer",
