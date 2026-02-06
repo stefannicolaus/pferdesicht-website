@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { QuizForm } from '@/components/quiz/QuizForm'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function QuizStartPage() {
   const router = useRouter()
@@ -33,6 +34,22 @@ export default function QuizStartPage() {
         </Link>
 
         <div className="text-center mb-10">
+          {/* Diana Avatar */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-gold/30">
+              <Image
+                src="/images/Diana_Pferdesicht.jpeg"
+                alt="Diana von Pferdesicht"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="text-left">
+              <p className="font-sans text-sm font-medium text-loam">Diana</p>
+              <p className="font-sans text-xs text-loam/60">von Pferdesicht</p>
+            </div>
+          </div>
+
           <p className="text-xs font-sans uppercase tracking-widest text-sage mb-3 font-semibold">
             Kostenloser Frühlingscheck · 2 Minuten
           </p>

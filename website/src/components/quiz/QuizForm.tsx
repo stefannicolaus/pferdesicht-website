@@ -572,8 +572,8 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
           {/* Step 10: Freitext */}
           {currentStep === 10 && (
             <QuestionCard
-              title="Gibt es noch etwas, das wir wissen sollten?"
-              description="Hier ist Platz für alles, was du uns mitteilen möchtest."
+              title="Gibt es noch etwas, das ich wissen sollte?"
+              description="Hier ist Platz für alles, was du mir mitteilen möchtest."
             >
               <FormField
                 control={form.control}
@@ -590,7 +590,7 @@ export function QuizForm({ onSubmit }: QuizFormProps) {
                     </FormControl>
                     <FormMessage />
                     <p className="text-xs text-muted-foreground">
-                      Optional, aber je mehr wir wissen, desto persönlicher wird dein Report.
+                      Optional, aber je mehr ich weiß, desto persönlicher wird dein Report.
                     </p>
                   </FormItem>
                 )}

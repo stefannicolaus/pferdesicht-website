@@ -393,7 +393,7 @@ export default function PferdesichtPage() {
 
               <Link
                 href="/ueber-mich"
-                className="inline-flex items-center gap-2 mt-5 sm:mt-6 text-gold font-sans font-bold text-xs sm:text-sm tracking-widest uppercase hover:text-[#b8956a] transition-colors min-h-[44px]"
+                className="inline-flex items-center gap-2 mt-5 sm:mt-6 text-gold font-sans font-bold text-xs sm:text-sm tracking-widest uppercase hover:text-[#b8956a] transition-colors min-h-[44px] underline underline-offset-4"
               >
                 Meine ganze Geschichte
                 <ArrowRight className="w-4 h-4" />
