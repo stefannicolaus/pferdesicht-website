@@ -7,6 +7,7 @@ import { useState } from "react"
 import { ArrowRight, Shield, Brain, Heart, Sparkles, X, CheckCircle2, Check } from "lucide-react"
 import { HeroTextOverlay } from "@/components/features/HeroTextOverlay"
 import { HeroLeadMagnetBox } from "@/components/features/HeroLeadMagnetBox"
+import { DianaRamsesVideo } from "@/components/features/DianaRamsesVideo"
 
 export default function PferdesichtPage() {
   const [isHeroModalOpen, setIsHeroModalOpen] = useState(false)
@@ -401,6 +402,11 @@ export default function PferdesichtPage() {
           </div>
         </div>
       </section>
+
+      {/* ============================================ */}
+      {/* DIANA & RAMSES VIDEO SECTION */}
+      {/* ============================================ */}
+      <DianaRamsesVideo variant="homepage" />
 
       {/* ============================================ */}
       {/* TESTIMONIALS SECTION */}

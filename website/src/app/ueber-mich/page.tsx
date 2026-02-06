@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Check } from 'lucide-react'
+import { DianaRamsesVideo } from '@/components/features/DianaRamsesVideo'
 
 export const metadata = {
   title: 'Über Diana | Pferdesicht',
@@ -201,7 +202,14 @@ export default function UeberMichPage() {
               className="object-cover object-center"
             />
           </div>
+        </div>
+      </section>
 
+      {/* Video Section innerhalb des Ramses-Kontexts */}
+      <DianaRamsesVideo variant="ueber-mich" />
+
+      <section className="py-20 md:py-28 bg-[#faf8f5]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-serif text-2xl md:text-3xl text-loam leading-tight mb-10">
             Und damit begann die Realität.
           </p>
