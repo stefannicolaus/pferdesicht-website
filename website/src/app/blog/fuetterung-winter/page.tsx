@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, Droplets, Flame, Beaker, CheckCircle2 } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
+import { Disclaimer } from "@/components/Disclaimer"
 
 export default function FuetterungWinterPage() {
   return (
@@ -457,7 +458,7 @@ export default function FuetterungWinterPage() {
                   Das sagt die Wissenschaft dazu:
                 </h3>
                 <p className="text-sm font-sans text-loam/70 leading-relaxed mb-2">
-                  Bei eingeschränktem Wasserzugang steigt das Kolikrisiko um das <strong>2,5-fache</strong>. <em>(Quelle: Ingolf Bender, 2015, zitiert in Carevallo)</em>
+                  Bei eingeschränktem Wasserzugang steigt das Risiko für Koliken — akute, oft gefährliche Bauchschmerzen — um das <strong>2,5-fache</strong>. <em>(Quelle: Ingolf Bender, 2015, zitiert in Carevallo)</em>
                 </p>
                 <p className="text-sm font-sans text-loam/70 leading-relaxed">
                   Pferde, denen temperiertes Wasser (10-15°C) angeboten wird, trinken bis zu <strong>40 Prozent mehr</strong> als bei eiskaltem Wasser. <em>(Quelle: University of Pennsylvania, zitiert in Cavallo.de)</em>
@@ -797,9 +798,7 @@ export default function FuetterungWinterPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
-          </div>
+          <Disclaimer level={2} variant="article" />
         </div>
       </article>
 

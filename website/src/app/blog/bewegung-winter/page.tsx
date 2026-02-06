@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, Thermometer, Clock, AlertTriangle } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
+import { Disclaimer } from "@/components/Disclaimer"
 
 export default function BewegungWinterPage() {
   return (
@@ -780,9 +781,7 @@ export default function BewegungWinterPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
-          </div>
+          <Disclaimer level={2} variant="article" />
         </div>
       </article>
 

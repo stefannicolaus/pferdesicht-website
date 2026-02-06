@@ -30,7 +30,7 @@ const modules = [
     topics: [
       "Die Physiologie des Fellwechsels",
       "Anzeichen für Probleme erkennen",
-      "Sinnvolle Unterstützung (und was Unsinn ist)",
+      "Sinnvolle Unterstützung (und was nicht funktioniert)",
       "Stoffwechsel und Fellwechsel",
     ],
   },

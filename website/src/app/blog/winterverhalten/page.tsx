@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, Sun, Brain, Zap } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
+import { Disclaimer } from "@/components/Disclaimer"
 
 export default function WinterverhaltenPage() {
   return (
@@ -169,7 +170,7 @@ export default function WinterverhaltenPage() {
                   Was ich recherchiert habe (und es hat meinen Blick verändert):
                 </h3>
                 <p className="text-sm font-sans text-loam/70 leading-relaxed">
-                  Die Zirbeldrüse im Gehirn deines Pferdes registriert die Tageslichtlänge über das Auge. Ab der Sommersonnenwende am 21. Juni – wenn die Tage wieder kürzer werden – sendet sie ein Signal: „Winter kommt." Das Hormon Melatonin wird vermehrt ausgeschüttet. Und dieses Melatonin steuert nicht nur den Fellwechsel, sondern auch den Schlaf-Wach-Rhythmus, die Fortpflanzung – und das Aktivitätsniveau.
+                  Die Zirbeldrüse im Gehirn deines Pferdes registriert die Tageslichtlänge über das Auge. Ab der Sommersonnenwende am 21. Juni – wenn die Tage wieder kürzer werden – sendet sie ein Signal: „Winter kommt." Das Hormon Melatonin — ein lichtgesteuertes Schlafhormon — wird vermehrt ausgeschüttet. Und dieses Melatonin steuert nicht nur den Fellwechsel, sondern auch den Schlaf-Wach-Rhythmus, die Fortpflanzung – und das Aktivitätsniveau.
                 </p>
               </div>
             </div>
@@ -628,9 +629,7 @@ export default function WinterverhaltenPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
-          </div>
+          <Disclaimer level={2} variant="article" />
         </div>
       </article>
 

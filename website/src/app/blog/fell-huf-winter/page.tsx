@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useEffect } from "react"
 import { CheckCircle2, ArrowLeft, Sparkles, Droplets, AlertTriangle, Shield } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
+import { Disclaimer } from "@/components/Disclaimer"
 
 export default function FellHufWinterPage() {
   useEffect(() => {
@@ -812,9 +813,7 @@ export default function FellHufWinterPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
-          </div>
+          <Disclaimer level={2} variant="article" />
         </div>
       </article>
 

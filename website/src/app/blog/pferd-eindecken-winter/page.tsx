@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useEffect } from "react"
 import { Thermometer, CheckCircle2, ArrowLeft, Heart } from "lucide-react"
 import { StickyLeadMagnetBanner } from "@/components/sticky-lead-magnet-banner"
+import { Disclaimer } from "@/components/Disclaimer"
 
 export default function PferdEindeckenWinterPage() {
   useEffect(() => {
@@ -513,7 +514,7 @@ export default function PferdEindeckenWinterPage() {
               <div>
                 <h3 className="text-xl font-serif text-loam mb-2">2. Alte oder kranke Pferde</h3>
                 <p className="text-base font-sans text-loam/70 leading-relaxed">
-                  Pferde mit Stoffwechselproblemen (z.B. Cushing), sehr alte Pferde oder Pferde mit chronischen
+                  Pferde mit Stoffwechselproblemen (z.B. Cushing — eine hormonelle Erkrankung älterer Pferde), sehr alte Pferde oder Pferde mit chronischen
                   Erkrankungen können Schwierigkeiten haben, ihre Körpertemperatur zu regulieren.
                 </p>
               </div>
@@ -841,9 +842,7 @@ export default function PferdEindeckenWinterPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="text-xs font-sans text-loam/50 leading-relaxed italic border-t border-loam/10 pt-6 mt-8">
-            Hinweis: Dieser Beitrag ersetzt keine tierärztliche Beratung.
-          </div>
+          <Disclaimer level={2} variant="article" />
         </div>
       </article>
 

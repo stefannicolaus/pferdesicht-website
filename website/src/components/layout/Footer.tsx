@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { footerNavigation, branding } from "@/lib/design-system";
+import { Disclaimer } from "@/components/Disclaimer";
 import {
   Accordion,
   AccordionItem,
@@ -275,6 +276,11 @@ export function Footer() {
             <NewsletterForm />
           </div>
         </div>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Disclaimer level={2} variant="footer" />
       </div>
 
       {/* Bottom Bar */}
